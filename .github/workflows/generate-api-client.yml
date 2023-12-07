@@ -1,9 +1,10 @@
 name: Generate API Client
 
 on:
-  push:
-    branches:
-      - main # Update this based on your branch name
+  #push:
+  #  branches:
+  #    - main # Update this based on your branch name
+  workflow_dispatch:
 
 jobs:
   generate-api-client:
@@ -24,11 +25,11 @@ jobs:
         #wget https://github.com/OpenAPITools/openapi-generator-cli/releases/download/v5.3.0/openapi-generator-cli-5.3.0.jar
         wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/7.1.0/openapi-generator-cli-7.1.0.jar
         chmod +x openapi-generator-cli-7.1.0.jar
-        mv openapi-generator-cli-7.1.0.jar /usr/local/bin/openapi-generator
+        mv openapi-generator-cli-7.1.0.jar /usr/local/bin/openapi-generator.jar
 
     - name: Generate API Client
       run: |
-        openapi-generator generate -i schema.yaml -g php -o generated-client
+        java -jar openapi-generator.jar generate -i schema.yaml -g php -o generated-client
 
     - name: Commit Generated Code
       run: |
