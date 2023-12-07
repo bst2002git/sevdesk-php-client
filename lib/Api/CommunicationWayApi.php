@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Itsmind\\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Itsmind\\Sevdesk\ApiException;
+use Itsmind\\Sevdesk\Configuration;
+use Itsmind\\Sevdesk\HeaderSelector;
+use Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * CommunicationWayApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,12 +142,12 @@ class CommunicationWayApi
      *
      * Create a new contact communication way
      *
-     * @param  \OpenAPI\Client\Model\ModelCommunicationWay $model_communication_way Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelCommunicationWay $model_communication_way Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCommunicationWay'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetCommunicationWayById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response
      */
     public function createCommunicationWay($model_communication_way = null, string $contentType = self::contentTypes['createCommunicationWay'][0])
     {
@@ -160,12 +160,12 @@ class CommunicationWayApi
      *
      * Create a new contact communication way
      *
-     * @param  \OpenAPI\Client\Model\ModelCommunicationWay $model_communication_way Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelCommunicationWay $model_communication_way Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCommunicationWay'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetCommunicationWayById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createCommunicationWayWithHttpInfo($model_communication_way = null, string $contentType = self::contentTypes['createCommunicationWay'][0])
     {
@@ -208,11 +208,11 @@ class CommunicationWayApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\GetCommunicationWayById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetCommunicationWayById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -230,13 +230,13 @@ class CommunicationWayApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetCommunicationWayById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetCommunicationWayById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -269,7 +269,7 @@ class CommunicationWayApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetCommunicationWayById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -284,7 +284,7 @@ class CommunicationWayApi
      *
      * Create a new contact communication way
      *
-     * @param  \OpenAPI\Client\Model\ModelCommunicationWay $model_communication_way Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelCommunicationWay $model_communication_way Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCommunicationWay'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -305,7 +305,7 @@ class CommunicationWayApi
      *
      * Create a new contact communication way
      *
-     * @param  \OpenAPI\Client\Model\ModelCommunicationWay $model_communication_way Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelCommunicationWay $model_communication_way Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCommunicationWay'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -313,7 +313,7 @@ class CommunicationWayApi
      */
     public function createCommunicationWayAsyncWithHttpInfo($model_communication_way = null, string $contentType = self::contentTypes['createCommunicationWay'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetCommunicationWayById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response';
         $request = $this->createCommunicationWayRequest($model_communication_way, $contentType);
 
         return $this->client
@@ -355,7 +355,7 @@ class CommunicationWayApi
     /**
      * Create request for operation 'createCommunicationWay'
      *
-     * @param  \OpenAPI\Client\Model\ModelCommunicationWay $model_communication_way Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelCommunicationWay $model_communication_way Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCommunicationWay'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -450,9 +450,9 @@ class CommunicationWayApi
      * @param  int $communication_way_id Id of communication way resource to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteCommunicationWay'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeleteAccountingContact200Response
+     * @return \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response
      */
     public function deleteCommunicationWay($communication_way_id, string $contentType = self::contentTypes['deleteCommunicationWay'][0])
     {
@@ -468,9 +468,9 @@ class CommunicationWayApi
      * @param  int $communication_way_id Id of communication way resource to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteCommunicationWay'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteCommunicationWayWithHttpInfo($communication_way_id, string $contentType = self::contentTypes['deleteCommunicationWay'][0])
     {
@@ -513,11 +513,11 @@ class CommunicationWayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DeleteAccountingContact200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -535,13 +535,13 @@ class CommunicationWayApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DeleteAccountingContact200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\DeleteAccountingContact200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -574,7 +574,7 @@ class CommunicationWayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeleteAccountingContact200Response',
+                        '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -618,7 +618,7 @@ class CommunicationWayApi
      */
     public function deleteCommunicationWayAsyncWithHttpInfo($communication_way_id, string $contentType = self::contentTypes['deleteCommunicationWay'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeleteAccountingContact200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
         $request = $this->deleteCommunicationWayRequest($communication_way_id, $contentType);
 
         return $this->client
@@ -762,9 +762,9 @@ class CommunicationWayApi
      * @param  int $communication_way_id ID of communication way to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCommunicationWayById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetCommunicationWayById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response
      */
     public function getCommunicationWayById($communication_way_id, string $contentType = self::contentTypes['getCommunicationWayById'][0])
     {
@@ -780,9 +780,9 @@ class CommunicationWayApi
      * @param  int $communication_way_id ID of communication way to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCommunicationWayById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetCommunicationWayById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCommunicationWayByIdWithHttpInfo($communication_way_id, string $contentType = self::contentTypes['getCommunicationWayById'][0])
     {
@@ -825,11 +825,11 @@ class CommunicationWayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetCommunicationWayById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetCommunicationWayById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -847,13 +847,13 @@ class CommunicationWayApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetCommunicationWayById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetCommunicationWayById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -886,7 +886,7 @@ class CommunicationWayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetCommunicationWayById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -930,7 +930,7 @@ class CommunicationWayApi
      */
     public function getCommunicationWayByIdAsyncWithHttpInfo($communication_way_id, string $contentType = self::contentTypes['getCommunicationWayById'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetCommunicationWayById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response';
         $request = $this->getCommunicationWayByIdRequest($communication_way_id, $contentType);
 
         return $this->client
@@ -1073,9 +1073,9 @@ class CommunicationWayApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCommunicationWayKeys'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetCommunicationWayKeys200Response
+     * @return \Itsmind\\Sevdesk\Model\GetCommunicationWayKeys200Response
      */
     public function getCommunicationWayKeys(string $contentType = self::contentTypes['getCommunicationWayKeys'][0])
     {
@@ -1090,9 +1090,9 @@ class CommunicationWayApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCommunicationWayKeys'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetCommunicationWayKeys200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetCommunicationWayKeys200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCommunicationWayKeysWithHttpInfo(string $contentType = self::contentTypes['getCommunicationWayKeys'][0])
     {
@@ -1135,11 +1135,11 @@ class CommunicationWayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetCommunicationWayKeys200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetCommunicationWayKeys200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetCommunicationWayKeys200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetCommunicationWayKeys200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1157,13 +1157,13 @@ class CommunicationWayApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetCommunicationWayKeys200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetCommunicationWayKeys200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetCommunicationWayKeys200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetCommunicationWayKeys200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1196,7 +1196,7 @@ class CommunicationWayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetCommunicationWayKeys200Response',
+                        '\Itsmind\\Sevdesk\Model\GetCommunicationWayKeys200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1238,7 +1238,7 @@ class CommunicationWayApi
      */
     public function getCommunicationWayKeysAsyncWithHttpInfo(string $contentType = self::contentTypes['getCommunicationWayKeys'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetCommunicationWayKeys200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetCommunicationWayKeys200Response';
         $request = $this->getCommunicationWayKeysRequest($contentType);
 
         return $this->client
@@ -1369,9 +1369,9 @@ class CommunicationWayApi
      * @param  string $main Define if you only want the main communication way. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCommunicationWays'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetCommunicationWayById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response
      */
     public function getCommunicationWays($contact_id = null, $contact_object_name = null, $type = null, $main = null, string $contentType = self::contentTypes['getCommunicationWays'][0])
     {
@@ -1390,9 +1390,9 @@ class CommunicationWayApi
      * @param  string $main Define if you only want the main communication way. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCommunicationWays'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetCommunicationWayById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCommunicationWaysWithHttpInfo($contact_id = null, $contact_object_name = null, $type = null, $main = null, string $contentType = self::contentTypes['getCommunicationWays'][0])
     {
@@ -1435,11 +1435,11 @@ class CommunicationWayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetCommunicationWayById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetCommunicationWayById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1457,13 +1457,13 @@ class CommunicationWayApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetCommunicationWayById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetCommunicationWayById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1496,7 +1496,7 @@ class CommunicationWayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetCommunicationWayById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1546,7 +1546,7 @@ class CommunicationWayApi
      */
     public function getCommunicationWaysAsyncWithHttpInfo($contact_id = null, $contact_object_name = null, $type = null, $main = null, string $contentType = self::contentTypes['getCommunicationWays'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetCommunicationWayById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response';
         $request = $this->getCommunicationWaysRequest($contact_id, $contact_object_name, $type, $main, $contentType);
 
         return $this->client
@@ -1716,12 +1716,12 @@ class CommunicationWayApi
      * Update a existing communication way
      *
      * @param  int $communication_way_id ID of CommunicationWay to update (required)
-     * @param  \OpenAPI\Client\Model\ModelCommunicationWayUpdate $model_communication_way_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdate $model_communication_way_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCommunicationWay'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetCommunicationWayById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response
      */
     public function updateCommunicationWay($communication_way_id, $model_communication_way_update = null, string $contentType = self::contentTypes['updateCommunicationWay'][0])
     {
@@ -1735,12 +1735,12 @@ class CommunicationWayApi
      * Update a existing communication way
      *
      * @param  int $communication_way_id ID of CommunicationWay to update (required)
-     * @param  \OpenAPI\Client\Model\ModelCommunicationWayUpdate $model_communication_way_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdate $model_communication_way_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCommunicationWay'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetCommunicationWayById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCommunicationWayWithHttpInfo($communication_way_id, $model_communication_way_update = null, string $contentType = self::contentTypes['updateCommunicationWay'][0])
     {
@@ -1783,11 +1783,11 @@ class CommunicationWayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetCommunicationWayById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetCommunicationWayById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1805,13 +1805,13 @@ class CommunicationWayApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetCommunicationWayById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetCommunicationWayById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1844,7 +1844,7 @@ class CommunicationWayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetCommunicationWayById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1860,7 +1860,7 @@ class CommunicationWayApi
      * Update a existing communication way
      *
      * @param  int $communication_way_id ID of CommunicationWay to update (required)
-     * @param  \OpenAPI\Client\Model\ModelCommunicationWayUpdate $model_communication_way_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdate $model_communication_way_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCommunicationWay'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1882,7 +1882,7 @@ class CommunicationWayApi
      * Update a existing communication way
      *
      * @param  int $communication_way_id ID of CommunicationWay to update (required)
-     * @param  \OpenAPI\Client\Model\ModelCommunicationWayUpdate $model_communication_way_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdate $model_communication_way_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCommunicationWay'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1890,7 +1890,7 @@ class CommunicationWayApi
      */
     public function updateCommunicationWayAsyncWithHttpInfo($communication_way_id, $model_communication_way_update = null, string $contentType = self::contentTypes['updateCommunicationWay'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetCommunicationWayById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetCommunicationWayById200Response';
         $request = $this->updateCommunicationWayRequest($communication_way_id, $model_communication_way_update, $contentType);
 
         return $this->client
@@ -1933,7 +1933,7 @@ class CommunicationWayApi
      * Create request for operation 'updateCommunicationWay'
      *
      * @param  int $communication_way_id ID of CommunicationWay to update (required)
-     * @param  \OpenAPI\Client\Model\ModelCommunicationWayUpdate $model_communication_way_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdate $model_communication_way_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCommunicationWay'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

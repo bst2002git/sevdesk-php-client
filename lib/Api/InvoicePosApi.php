@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Itsmind\\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Itsmind\\Sevdesk\ApiException;
+use Itsmind\\Sevdesk\Configuration;
+use Itsmind\\Sevdesk\HeaderSelector;
+use Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * InvoicePosApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -134,9 +134,9 @@ class InvoicePosApi
      * @param  string $part_object_name Only required if part[id] was provided. &#39;Part&#39; should be used as value. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvoicePos'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetInvoicePos200Response
+     * @return \Itsmind\\Sevdesk\Model\GetInvoicePos200Response
      */
     public function getInvoicePos($id = null, $invoice_id = null, $invoice_object_name = null, $part_id = null, $part_object_name = null, string $contentType = self::contentTypes['getInvoicePos'][0])
     {
@@ -156,9 +156,9 @@ class InvoicePosApi
      * @param  string $part_object_name Only required if part[id] was provided. &#39;Part&#39; should be used as value. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvoicePos'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetInvoicePos200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetInvoicePos200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvoicePosWithHttpInfo($id = null, $invoice_id = null, $invoice_object_name = null, $part_id = null, $part_object_name = null, string $contentType = self::contentTypes['getInvoicePos'][0])
     {
@@ -201,11 +201,11 @@ class InvoicePosApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetInvoicePos200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetInvoicePos200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetInvoicePos200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetInvoicePos200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -223,13 +223,13 @@ class InvoicePosApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetInvoicePos200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetInvoicePos200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetInvoicePos200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetInvoicePos200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -262,7 +262,7 @@ class InvoicePosApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetInvoicePos200Response',
+                        '\Itsmind\\Sevdesk\Model\GetInvoicePos200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -314,7 +314,7 @@ class InvoicePosApi
      */
     public function getInvoicePosAsyncWithHttpInfo($id = null, $invoice_id = null, $invoice_object_name = null, $part_id = null, $part_object_name = null, string $contentType = self::contentTypes['getInvoicePos'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetInvoicePos200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetInvoicePos200Response';
         $request = $this->getInvoicePosRequest($id, $invoice_id, $invoice_object_name, $part_id, $part_object_name, $contentType);
 
         return $this->client

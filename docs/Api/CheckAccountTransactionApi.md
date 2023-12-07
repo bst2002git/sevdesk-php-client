@@ -1,4 +1,4 @@
-# OpenAPI\Client\CheckAccountTransactionApi
+# Itsmind\\Sevdesk\CheckAccountTransactionApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `createTransaction()`
 
 ```php
-createTransaction($model_check_account_transaction): \OpenAPI\Client\Model\GetCheckAccountTransactionById200Response
+createTransaction($model_check_account_transaction): \Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response
 ```
 
 Create a new transaction
@@ -29,18 +29,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\CheckAccountTransactionApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\CheckAccountTransactionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$model_check_account_transaction = new \OpenAPI\Client\Model\ModelCheckAccountTransaction(); // \OpenAPI\Client\Model\ModelCheckAccountTransaction | Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model!
+$model_check_account_transaction = new \Itsmind\\Sevdesk\Model\ModelCheckAccountTransaction(); // \Itsmind\\Sevdesk\Model\ModelCheckAccountTransaction | Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model!
 
 try {
     $result = $apiInstance->createTransaction($model_check_account_transaction);
@@ -54,11 +54,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **model_check_account_transaction** | [**\OpenAPI\Client\Model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)| Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! | [optional] |
+| **model_check_account_transaction** | [**\Itsmind\\Sevdesk\Model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)| Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetCheckAccountTransactionById200Response**](../Model/GetCheckAccountTransactionById200Response.md)
+[**\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response**](../Model/GetCheckAccountTransactionById200Response.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ try {
 ## `deleteCheckAccountTransaction()`
 
 ```php
-deleteCheckAccountTransaction($check_account_transaction_id): \OpenAPI\Client\Model\DeleteAccountingContact200Response
+deleteCheckAccountTransaction($check_account_transaction_id): \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response
 ```
 
 Deletes a check account transaction
@@ -89,12 +89,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\CheckAccountTransactionApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\CheckAccountTransactionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeleteAccountingContact200Response**](../Model/DeleteAccountingContact200Response.md)
+[**\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response**](../Model/DeleteAccountingContact200Response.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ try {
 ## `getCheckAccountTransactionById()`
 
 ```php
-getCheckAccountTransactionById($check_account_transaction_id): \OpenAPI\Client\Model\GetCheckAccountTransactionById200Response
+getCheckAccountTransactionById($check_account_transaction_id): \Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response
 ```
 
 Find check account transaction by ID
@@ -151,12 +151,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\CheckAccountTransactionApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\CheckAccountTransactionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -180,7 +180,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetCheckAccountTransactionById200Response**](../Model/GetCheckAccountTransactionById200Response.md)
+[**\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response**](../Model/GetCheckAccountTransactionById200Response.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ try {
 ## `getTransactions()`
 
 ```php
-getTransactions($count_all, $limit, $offset, $status, $check_account_id, $check_account_object_name, $hide_fees, $is_booked, $paymt_purpose, $start_date, $end_date, $search_for_invoice_and_voucher, $payee_payer_name, $only_credit, $only_debit): \OpenAPI\Client\Model\GetTransactions200Response
+getTransactions($count_all, $limit, $offset, $status, $check_account_id, $check_account_object_name, $hide_fees, $is_booked, $paymt_purpose, $start_date, $end_date, $search_for_invoice_and_voucher, $payee_payer_name, $only_credit, $only_debit): \Itsmind\\Sevdesk\Model\GetTransactions200Response
 ```
 
 Retrieve transactions
@@ -213,12 +213,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\CheckAccountTransactionApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\CheckAccountTransactionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -270,7 +270,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetTransactions200Response**](../Model/GetTransactions200Response.md)
+[**\Itsmind\\Sevdesk\Model\GetTransactions200Response**](../Model/GetTransactions200Response.md)
 
 ### Authorization
 
@@ -288,7 +288,7 @@ try {
 ## `updateCheckAccountTransaction()`
 
 ```php
-updateCheckAccountTransaction($check_account_transaction_id, $model_check_account_transaction_update): \OpenAPI\Client\Model\GetCheckAccountTransactionById200Response
+updateCheckAccountTransaction($check_account_transaction_id, $model_check_account_transaction_update): \Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response
 ```
 
 Update an existing check account transaction
@@ -303,19 +303,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\CheckAccountTransactionApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\CheckAccountTransactionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $check_account_transaction_id = 56; // int | ID of check account to update transaction
-$model_check_account_transaction_update = new \OpenAPI\Client\Model\ModelCheckAccountTransactionUpdate(); // \OpenAPI\Client\Model\ModelCheckAccountTransactionUpdate | Update data
+$model_check_account_transaction_update = new \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdate(); // \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdate | Update data
 
 try {
     $result = $apiInstance->updateCheckAccountTransaction($check_account_transaction_id, $model_check_account_transaction_update);
@@ -330,11 +330,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **check_account_transaction_id** | **int**| ID of check account to update transaction | |
-| **model_check_account_transaction_update** | [**\OpenAPI\Client\Model\ModelCheckAccountTransactionUpdate**](../Model/ModelCheckAccountTransactionUpdate.md)| Update data | [optional] |
+| **model_check_account_transaction_update** | [**\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdate**](../Model/ModelCheckAccountTransactionUpdate.md)| Update data | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetCheckAccountTransactionById200Response**](../Model/GetCheckAccountTransactionById200Response.md)
+[**\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response**](../Model/GetCheckAccountTransactionById200Response.md)
 
 ### Authorization
 

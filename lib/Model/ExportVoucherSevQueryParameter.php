@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ExportVoucherSevQueryParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class ExportVoucherSevQueryParameter implements ModelInterface, ArrayAccess, \Js
         'limit' => 'int',
         'model_name' => 'mixed',
         'object_name' => 'mixed',
-        'filter' => '\OpenAPI\Client\Model\ExportVoucherSevQueryParameterFilter'
+        'filter' => '\Itsmind\\Sevdesk\Model\ExportVoucherSevQueryParameterFilter'
     ];
 
     /**
@@ -414,7 +414,7 @@ class ExportVoucherSevQueryParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets filter
      *
-     * @return \OpenAPI\Client\Model\ExportVoucherSevQueryParameterFilter|null
+     * @return \Itsmind\\Sevdesk\Model\ExportVoucherSevQueryParameterFilter|null
      */
     public function getFilter()
     {
@@ -424,7 +424,7 @@ class ExportVoucherSevQueryParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets filter
      *
-     * @param \OpenAPI\Client\Model\ExportVoucherSevQueryParameterFilter|null $filter filter
+     * @param \Itsmind\\Sevdesk\Model\ExportVoucherSevQueryParameterFilter|null $filter filter
      *
      * @return self
      */

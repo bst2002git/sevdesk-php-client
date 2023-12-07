@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelCreditNoteUpdate Class Doc Comment
  *
  * @category Class
  * @description creditNote model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,23 +63,23 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
         'create' => '\DateTime',
         'update' => '\DateTime',
         'credit_note_number' => 'string',
-        'contact' => '\OpenAPI\Client\Model\ModelCreditNoteUpdateContact',
+        'contact' => '\Itsmind\\Sevdesk\Model\ModelCreditNoteUpdateContact',
         'credit_note_date' => '\DateTime',
         'status' => 'string',
         'header' => 'string',
         'head_text' => 'string',
         'foot_text' => 'string',
-        'address_country' => '\OpenAPI\Client\Model\ModelCreditNoteAddressCountry',
-        'create_user' => '\OpenAPI\Client\Model\ModelCreditNoteCreateUser',
-        'sev_client' => '\OpenAPI\Client\Model\ModelCreditNoteSevClient',
+        'address_country' => '\Itsmind\\Sevdesk\Model\ModelCreditNoteAddressCountry',
+        'create_user' => '\Itsmind\\Sevdesk\Model\ModelCreditNoteCreateUser',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelCreditNoteSevClient',
         'delivery_terms' => 'string',
         'delivery_date' => '\DateTime',
         'payment_terms' => 'string',
         'version' => 'int',
         'small_settlement' => 'bool',
-        'contact_person' => '\OpenAPI\Client\Model\ModelCreditNoteUpdateContactPerson',
+        'contact_person' => '\Itsmind\\Sevdesk\Model\ModelCreditNoteUpdateContactPerson',
         'tax_rate' => 'float',
-        'tax_set' => '\OpenAPI\Client\Model\ModelCreditNoteTaxSet',
+        'tax_set' => '\Itsmind\\Sevdesk\Model\ModelCreditNoteTaxSet',
         'tax_text' => 'string',
         'tax_type' => 'string',
         'credit_note_type' => 'string',
@@ -755,7 +755,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNoteUpdateContact|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNoteUpdateContact|null
      */
     public function getContact()
     {
@@ -765,7 +765,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNoteUpdateContact|null $contact contact
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNoteUpdateContact|null $contact contact
      *
      * @return self
      */
@@ -962,7 +962,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets address_country
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNoteAddressCountry|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNoteAddressCountry|null
      */
     public function getAddressCountry()
     {
@@ -972,7 +972,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets address_country
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNoteAddressCountry|null $address_country address_country
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNoteAddressCountry|null $address_country address_country
      *
      * @return self
      */
@@ -996,7 +996,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets create_user
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNoteCreateUser|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNoteCreateUser|null
      */
     public function getCreateUser()
     {
@@ -1006,7 +1006,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets create_user
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNoteCreateUser|null $create_user create_user
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNoteCreateUser|null $create_user create_user
      *
      * @return self
      */
@@ -1023,7 +1023,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNoteSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNoteSevClient|null
      */
     public function getSevClient()
     {
@@ -1033,7 +1033,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNoteSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNoteSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -1213,7 +1213,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets contact_person
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNoteUpdateContactPerson|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNoteUpdateContactPerson|null
      */
     public function getContactPerson()
     {
@@ -1223,7 +1223,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets contact_person
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNoteUpdateContactPerson|null $contact_person contact_person
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNoteUpdateContactPerson|null $contact_person contact_person
      *
      * @return self
      */
@@ -1281,7 +1281,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets tax_set
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNoteTaxSet|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNoteTaxSet|null
      */
     public function getTaxSet()
     {
@@ -1291,7 +1291,7 @@ class ModelCreditNoteUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets tax_set
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNoteTaxSet|null $tax_set tax_set
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNoteTaxSet|null $tax_set tax_set
      *
      * @return self
      */

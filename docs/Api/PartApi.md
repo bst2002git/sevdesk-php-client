@@ -1,4 +1,4 @@
-# OpenAPI\Client\PartApi
+# Itsmind\\Sevdesk\PartApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `createPart()`
 
 ```php
-createPart($model_part): \OpenAPI\Client\Model\GetPartById200Response
+createPart($model_part): \Itsmind\\Sevdesk\Model\GetPartById200Response
 ```
 
 Create a new part
@@ -29,18 +29,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\PartApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\PartApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$model_part = new \OpenAPI\Client\Model\ModelPart(); // \OpenAPI\Client\Model\ModelPart | Creation data. Please be aware, that you need to provide at least all required parameter      of the part model!
+$model_part = new \Itsmind\\Sevdesk\Model\ModelPart(); // \Itsmind\\Sevdesk\Model\ModelPart | Creation data. Please be aware, that you need to provide at least all required parameter      of the part model!
 
 try {
     $result = $apiInstance->createPart($model_part);
@@ -54,11 +54,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **model_part** | [**\OpenAPI\Client\Model\ModelPart**](../Model/ModelPart.md)| Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! | [optional] |
+| **model_part** | [**\Itsmind\\Sevdesk\Model\ModelPart**](../Model/ModelPart.md)| Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetPartById200Response**](../Model/GetPartById200Response.md)
+[**\Itsmind\\Sevdesk\Model\GetPartById200Response**](../Model/GetPartById200Response.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ try {
 ## `getPartById()`
 
 ```php
-getPartById($part_id): \OpenAPI\Client\Model\GetPartById200Response
+getPartById($part_id): \Itsmind\\Sevdesk\Model\GetPartById200Response
 ```
 
 Find part by ID
@@ -91,12 +91,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\PartApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\PartApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -120,7 +120,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetPartById200Response**](../Model/GetPartById200Response.md)
+[**\Itsmind\\Sevdesk\Model\GetPartById200Response**](../Model/GetPartById200Response.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ try {
 ## `getParts()`
 
 ```php
-getParts($part_number, $name): \OpenAPI\Client\Model\GetPartById200Response
+getParts($part_number, $name): \Itsmind\\Sevdesk\Model\GetPartById200Response
 ```
 
 Retrieve parts
@@ -153,12 +153,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\PartApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\PartApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -184,7 +184,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetPartById200Response**](../Model/GetPartById200Response.md)
+[**\Itsmind\\Sevdesk\Model\GetPartById200Response**](../Model/GetPartById200Response.md)
 
 ### Authorization
 
@@ -202,7 +202,7 @@ try {
 ## `partGetStock()`
 
 ```php
-partGetStock($part_id): \OpenAPI\Client\Model\PartGetStock200Response
+partGetStock($part_id): \Itsmind\\Sevdesk\Model\PartGetStock200Response
 ```
 
 Get stock of a part
@@ -217,12 +217,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\PartApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\PartApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -246,7 +246,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PartGetStock200Response**](../Model/PartGetStock200Response.md)
+[**\Itsmind\\Sevdesk\Model\PartGetStock200Response**](../Model/PartGetStock200Response.md)
 
 ### Authorization
 
@@ -264,7 +264,7 @@ try {
 ## `updatePart()`
 
 ```php
-updatePart($part_id, $model_part_update): \OpenAPI\Client\Model\GetPartById200Response
+updatePart($part_id, $model_part_update): \Itsmind\\Sevdesk\Model\GetPartById200Response
 ```
 
 Update an existing part
@@ -279,19 +279,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\PartApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\PartApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $part_id = 56; // int | ID of part to update
-$model_part_update = new \OpenAPI\Client\Model\ModelPartUpdate(); // \OpenAPI\Client\Model\ModelPartUpdate | Update data
+$model_part_update = new \Itsmind\\Sevdesk\Model\ModelPartUpdate(); // \Itsmind\\Sevdesk\Model\ModelPartUpdate | Update data
 
 try {
     $result = $apiInstance->updatePart($part_id, $model_part_update);
@@ -306,11 +306,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **part_id** | **int**| ID of part to update | |
-| **model_part_update** | [**\OpenAPI\Client\Model\ModelPartUpdate**](../Model/ModelPartUpdate.md)| Update data | [optional] |
+| **model_part_update** | [**\Itsmind\\Sevdesk\Model\ModelPartUpdate**](../Model/ModelPartUpdate.md)| Update data | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetPartById200Response**](../Model/GetPartById200Response.md)
+[**\Itsmind\\Sevdesk\Model\GetPartById200Response**](../Model/GetPartById200Response.md)
 
 ### Authorization
 

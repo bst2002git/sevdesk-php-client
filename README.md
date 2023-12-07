@@ -77,18 +77,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\AccountingContactApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\AccountingContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$model_accounting_contact = new \OpenAPI\Client\Model\ModelAccountingContact(); // \OpenAPI\Client\Model\ModelAccountingContact | Creation data
+$model_accounting_contact = new \Itsmind\\Sevdesk\Model\ModelAccountingContact(); // \Itsmind\\Sevdesk\Model\ModelAccountingContact | Creation data
 
 try {
     $result = $apiInstance->createAccountingContact($model_accounting_contact);

@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**objects** | [**\OpenAPI\Client\Model\ModelContactCustomFieldSettingResponse[]**](ModelContactCustomFieldSettingResponse.md) |  | [optional]
+**objects** | [**\Itsmind\\Sevdesk\Model\ModelContactCustomFieldSettingResponse[]**](ModelContactCustomFieldSettingResponse.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelContactAddressUpdate Class Doc Comment
  *
  * @category Class
  * @description ContactAddress model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,12 +58,12 @@ class ModelContactAddressUpdate implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'contact' => '\OpenAPI\Client\Model\ModelContactAddressUpdateContact',
+        'contact' => '\Itsmind\\Sevdesk\Model\ModelContactAddressUpdateContact',
         'street' => 'string',
         'zip' => 'string',
         'city' => 'string',
-        'country' => '\OpenAPI\Client\Model\ModelContactAddressUpdateCountry',
-        'category' => '\OpenAPI\Client\Model\ModelContactAddressCategory',
+        'country' => '\Itsmind\\Sevdesk\Model\ModelContactAddressUpdateCountry',
+        'category' => '\Itsmind\\Sevdesk\Model\ModelContactAddressCategory',
         'name' => 'string',
         'name2' => 'string',
         'name3' => 'string',
@@ -356,7 +356,7 @@ class ModelContactAddressUpdate implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ModelContactAddressUpdateContact|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactAddressUpdateContact|null
      */
     public function getContact()
     {
@@ -366,7 +366,7 @@ class ModelContactAddressUpdate implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ModelContactAddressUpdateContact|null $contact contact
+     * @param \Itsmind\\Sevdesk\Model\ModelContactAddressUpdateContact|null $contact contact
      *
      * @return self
      */
@@ -492,7 +492,7 @@ class ModelContactAddressUpdate implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets country
      *
-     * @return \OpenAPI\Client\Model\ModelContactAddressUpdateCountry|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactAddressUpdateCountry|null
      */
     public function getCountry()
     {
@@ -502,7 +502,7 @@ class ModelContactAddressUpdate implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets country
      *
-     * @param \OpenAPI\Client\Model\ModelContactAddressUpdateCountry|null $country country
+     * @param \Itsmind\\Sevdesk\Model\ModelContactAddressUpdateCountry|null $country country
      *
      * @return self
      */
@@ -526,7 +526,7 @@ class ModelContactAddressUpdate implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\ModelContactAddressCategory|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactAddressCategory|null
      */
     public function getCategory()
     {
@@ -536,7 +536,7 @@ class ModelContactAddressUpdate implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\ModelContactAddressCategory|null $category category
+     * @param \Itsmind\\Sevdesk\Model\ModelContactAddressCategory|null $category category
      *
      * @return self
      */

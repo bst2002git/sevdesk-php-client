@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * SaveOrder Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class SaveOrder implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order' => '\OpenAPI\Client\Model\ModelOrder',
-        'order_pos_save' => '\OpenAPI\Client\Model\ModelOrderPos',
-        'order_pos_delete' => '\OpenAPI\Client\Model\SaveOrderOrderPosDelete'
+        'order' => '\Itsmind\\Sevdesk\Model\ModelOrder',
+        'order_pos_save' => '\Itsmind\\Sevdesk\Model\ModelOrderPos',
+        'order_pos_delete' => '\Itsmind\\Sevdesk\Model\SaveOrderOrderPosDelete'
     ];
 
     /**
@@ -309,7 +309,7 @@ class SaveOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\ModelOrder
+     * @return \Itsmind\\Sevdesk\Model\ModelOrder
      */
     public function getOrder()
     {
@@ -319,7 +319,7 @@ class SaveOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\ModelOrder $order order
+     * @param \Itsmind\\Sevdesk\Model\ModelOrder $order order
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class SaveOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order_pos_save
      *
-     * @return \OpenAPI\Client\Model\ModelOrderPos|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderPos|null
      */
     public function getOrderPosSave()
     {
@@ -346,7 +346,7 @@ class SaveOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order_pos_save
      *
-     * @param \OpenAPI\Client\Model\ModelOrderPos|null $order_pos_save order_pos_save
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderPos|null $order_pos_save order_pos_save
      *
      * @return self
      */
@@ -363,7 +363,7 @@ class SaveOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order_pos_delete
      *
-     * @return \OpenAPI\Client\Model\SaveOrderOrderPosDelete|null
+     * @return \Itsmind\\Sevdesk\Model\SaveOrderOrderPosDelete|null
      */
     public function getOrderPosDelete()
     {
@@ -373,7 +373,7 @@ class SaveOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order_pos_delete
      *
-     * @param \OpenAPI\Client\Model\SaveOrderOrderPosDelete|null $order_pos_delete order_pos_delete
+     * @param \Itsmind\\Sevdesk\Model\SaveOrderOrderPosDelete|null $order_pos_delete order_pos_delete
      *
      * @return self
      */

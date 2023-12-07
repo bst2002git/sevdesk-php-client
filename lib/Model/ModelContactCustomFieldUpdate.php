@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelContactCustomFieldUpdate Class Doc Comment
  *
  * @category Class
  * @description contact fields model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ModelContactCustomFieldUpdate implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'contact' => '\OpenAPI\Client\Model\ModelContactCustomFieldContact',
-        'contact_custom_field_setting' => '\OpenAPI\Client\Model\ModelContactCustomFieldContactCustomFieldSetting',
+        'contact' => '\Itsmind\\Sevdesk\Model\ModelContactCustomFieldContact',
+        'contact_custom_field_setting' => '\Itsmind\\Sevdesk\Model\ModelContactCustomFieldContactCustomFieldSetting',
         'value' => 'string',
         'object_name' => 'string'
     ];
@@ -314,7 +314,7 @@ class ModelContactCustomFieldUpdate implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ModelContactCustomFieldContact|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactCustomFieldContact|null
      */
     public function getContact()
     {
@@ -324,7 +324,7 @@ class ModelContactCustomFieldUpdate implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ModelContactCustomFieldContact|null $contact contact
+     * @param \Itsmind\\Sevdesk\Model\ModelContactCustomFieldContact|null $contact contact
      *
      * @return self
      */
@@ -341,7 +341,7 @@ class ModelContactCustomFieldUpdate implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets contact_custom_field_setting
      *
-     * @return \OpenAPI\Client\Model\ModelContactCustomFieldContactCustomFieldSetting|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactCustomFieldContactCustomFieldSetting|null
      */
     public function getContactCustomFieldSetting()
     {
@@ -351,7 +351,7 @@ class ModelContactCustomFieldUpdate implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets contact_custom_field_setting
      *
-     * @param \OpenAPI\Client\Model\ModelContactCustomFieldContactCustomFieldSetting|null $contact_custom_field_setting contact_custom_field_setting
+     * @param \Itsmind\\Sevdesk\Model\ModelContactCustomFieldContactCustomFieldSetting|null $contact_custom_field_setting contact_custom_field_setting
      *
      * @return self
      */

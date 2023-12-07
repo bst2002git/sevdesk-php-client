@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelOrderPosResponse Class Doc Comment
  *
  * @category Class
  * @description Order position model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,16 +62,16 @@ class ModelOrderPosResponse implements ModelInterface, ArrayAccess, \JsonSeriali
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'order' => '\OpenAPI\Client\Model\ModelOrderPosResponseOrder',
-        'part' => '\OpenAPI\Client\Model\ModelCreditNotePosResponsePart',
+        'order' => '\Itsmind\\Sevdesk\Model\ModelOrderPosResponseOrder',
+        'part' => '\Itsmind\\Sevdesk\Model\ModelCreditNotePosResponsePart',
         'quantity' => 'string',
         'price' => 'string',
         'price_net' => 'string',
         'price_tax' => 'string',
         'price_gross' => 'string',
         'name' => 'string',
-        'unity' => '\OpenAPI\Client\Model\ModelCreditNotePosResponseUnity',
-        'sev_client' => '\OpenAPI\Client\Model\ModelOrderPosResponseSevClient',
+        'unity' => '\Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseUnity',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelOrderPosResponseSevClient',
         'position_number' => 'string',
         'text' => 'string',
         'discount' => 'string',
@@ -534,7 +534,7 @@ class ModelOrderPosResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\ModelOrderPosResponseOrder|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderPosResponseOrder|null
      */
     public function getOrder()
     {
@@ -544,7 +544,7 @@ class ModelOrderPosResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\ModelOrderPosResponseOrder|null $order order
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderPosResponseOrder|null $order order
      *
      * @return self
      */
@@ -561,7 +561,7 @@ class ModelOrderPosResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets part
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNotePosResponsePart|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponsePart|null
      */
     public function getPart()
     {
@@ -571,7 +571,7 @@ class ModelOrderPosResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets part
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNotePosResponsePart|null $part part
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponsePart|null $part part
      *
      * @return self
      */
@@ -785,7 +785,7 @@ class ModelOrderPosResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets unity
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNotePosResponseUnity|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseUnity|null
      */
     public function getUnity()
     {
@@ -795,7 +795,7 @@ class ModelOrderPosResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets unity
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNotePosResponseUnity|null $unity unity
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseUnity|null $unity unity
      *
      * @return self
      */
@@ -812,7 +812,7 @@ class ModelOrderPosResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelOrderPosResponseSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderPosResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -822,7 +822,7 @@ class ModelOrderPosResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelOrderPosResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderPosResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */

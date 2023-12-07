@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * InvoiceRender201Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class InvoiceRender201Response implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'objects' => '\OpenAPI\Client\Model\InvoiceRender201ResponseObjectsInner[]'
+        'objects' => '\Itsmind\\Sevdesk\Model\InvoiceRender201ResponseObjectsInner[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class InvoiceRender201Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets objects
      *
-     * @return \OpenAPI\Client\Model\InvoiceRender201ResponseObjectsInner[]|null
+     * @return \Itsmind\\Sevdesk\Model\InvoiceRender201ResponseObjectsInner[]|null
      */
     public function getObjects()
     {
@@ -302,7 +302,7 @@ class InvoiceRender201Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets objects
      *
-     * @param \OpenAPI\Client\Model\InvoiceRender201ResponseObjectsInner[]|null $objects objects
+     * @param \Itsmind\\Sevdesk\Model\InvoiceRender201ResponseObjectsInner[]|null $objects objects
      *
      * @return self
      */

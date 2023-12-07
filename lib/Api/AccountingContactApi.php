@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Itsmind\\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Itsmind\\Sevdesk\ApiException;
+use Itsmind\\Sevdesk\Configuration;
+use Itsmind\\Sevdesk\HeaderSelector;
+use Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * AccountingContactApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,12 +139,12 @@ class AccountingContactApi
      *
      * Create a new accounting contact
      *
-     * @param  \OpenAPI\Client\Model\ModelAccountingContact $model_accounting_contact Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelAccountingContact $model_accounting_contact Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAccountingContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetAccountingContactById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetAccountingContactById200Response
      */
     public function createAccountingContact($model_accounting_contact = null, string $contentType = self::contentTypes['createAccountingContact'][0])
     {
@@ -157,12 +157,12 @@ class AccountingContactApi
      *
      * Create a new accounting contact
      *
-     * @param  \OpenAPI\Client\Model\ModelAccountingContact $model_accounting_contact Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelAccountingContact $model_accounting_contact Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAccountingContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetAccountingContactById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetAccountingContactById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createAccountingContactWithHttpInfo($model_accounting_contact = null, string $contentType = self::contentTypes['createAccountingContact'][0])
     {
@@ -205,11 +205,11 @@ class AccountingContactApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\GetAccountingContactById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetAccountingContactById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -227,13 +227,13 @@ class AccountingContactApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetAccountingContactById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetAccountingContactById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -266,7 +266,7 @@ class AccountingContactApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetAccountingContactById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -281,7 +281,7 @@ class AccountingContactApi
      *
      * Create a new accounting contact
      *
-     * @param  \OpenAPI\Client\Model\ModelAccountingContact $model_accounting_contact Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelAccountingContact $model_accounting_contact Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAccountingContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -302,7 +302,7 @@ class AccountingContactApi
      *
      * Create a new accounting contact
      *
-     * @param  \OpenAPI\Client\Model\ModelAccountingContact $model_accounting_contact Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelAccountingContact $model_accounting_contact Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAccountingContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -310,7 +310,7 @@ class AccountingContactApi
      */
     public function createAccountingContactAsyncWithHttpInfo($model_accounting_contact = null, string $contentType = self::contentTypes['createAccountingContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetAccountingContactById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response';
         $request = $this->createAccountingContactRequest($model_accounting_contact, $contentType);
 
         return $this->client
@@ -352,7 +352,7 @@ class AccountingContactApi
     /**
      * Create request for operation 'createAccountingContact'
      *
-     * @param  \OpenAPI\Client\Model\ModelAccountingContact $model_accounting_contact Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelAccountingContact $model_accounting_contact Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAccountingContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -447,9 +447,9 @@ class AccountingContactApi
      * @param  int $accounting_contact_id Id of accounting contact resource to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteAccountingContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeleteAccountingContact200Response
+     * @return \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response
      */
     public function deleteAccountingContact($accounting_contact_id, string $contentType = self::contentTypes['deleteAccountingContact'][0])
     {
@@ -465,9 +465,9 @@ class AccountingContactApi
      * @param  int $accounting_contact_id Id of accounting contact resource to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteAccountingContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteAccountingContactWithHttpInfo($accounting_contact_id, string $contentType = self::contentTypes['deleteAccountingContact'][0])
     {
@@ -510,11 +510,11 @@ class AccountingContactApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DeleteAccountingContact200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -532,13 +532,13 @@ class AccountingContactApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DeleteAccountingContact200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\DeleteAccountingContact200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -571,7 +571,7 @@ class AccountingContactApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeleteAccountingContact200Response',
+                        '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -615,7 +615,7 @@ class AccountingContactApi
      */
     public function deleteAccountingContactAsyncWithHttpInfo($accounting_contact_id, string $contentType = self::contentTypes['deleteAccountingContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeleteAccountingContact200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
         $request = $this->deleteAccountingContactRequest($accounting_contact_id, $contentType);
 
         return $this->client
@@ -760,9 +760,9 @@ class AccountingContactApi
      * @param  string $contact_object_name Object name. Only needed if you also defined the ID of a contact. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAccountingContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetAccountingContactById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetAccountingContactById200Response
      */
     public function getAccountingContact($contact_id = null, $contact_object_name = null, string $contentType = self::contentTypes['getAccountingContact'][0])
     {
@@ -779,9 +779,9 @@ class AccountingContactApi
      * @param  string $contact_object_name Object name. Only needed if you also defined the ID of a contact. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAccountingContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetAccountingContactById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetAccountingContactById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAccountingContactWithHttpInfo($contact_id = null, $contact_object_name = null, string $contentType = self::contentTypes['getAccountingContact'][0])
     {
@@ -824,11 +824,11 @@ class AccountingContactApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetAccountingContactById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetAccountingContactById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -846,13 +846,13 @@ class AccountingContactApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetAccountingContactById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetAccountingContactById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -885,7 +885,7 @@ class AccountingContactApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetAccountingContactById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -931,7 +931,7 @@ class AccountingContactApi
      */
     public function getAccountingContactAsyncWithHttpInfo($contact_id = null, $contact_object_name = null, string $contentType = self::contentTypes['getAccountingContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetAccountingContactById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response';
         $request = $this->getAccountingContactRequest($contact_id, $contact_object_name, $contentType);
 
         return $this->client
@@ -1081,9 +1081,9 @@ class AccountingContactApi
      * @param  int $accounting_contact_id ID of accounting contact to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAccountingContactById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetAccountingContactById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetAccountingContactById200Response
      */
     public function getAccountingContactById($accounting_contact_id, string $contentType = self::contentTypes['getAccountingContactById'][0])
     {
@@ -1099,9 +1099,9 @@ class AccountingContactApi
      * @param  int $accounting_contact_id ID of accounting contact to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAccountingContactById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetAccountingContactById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetAccountingContactById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAccountingContactByIdWithHttpInfo($accounting_contact_id, string $contentType = self::contentTypes['getAccountingContactById'][0])
     {
@@ -1144,11 +1144,11 @@ class AccountingContactApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetAccountingContactById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetAccountingContactById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1166,13 +1166,13 @@ class AccountingContactApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetAccountingContactById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetAccountingContactById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1205,7 +1205,7 @@ class AccountingContactApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetAccountingContactById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1249,7 +1249,7 @@ class AccountingContactApi
      */
     public function getAccountingContactByIdAsyncWithHttpInfo($accounting_contact_id, string $contentType = self::contentTypes['getAccountingContactById'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetAccountingContactById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response';
         $request = $this->getAccountingContactByIdRequest($accounting_contact_id, $contentType);
 
         return $this->client
@@ -1391,12 +1391,12 @@ class AccountingContactApi
      * Update an existing accounting contact
      *
      * @param  int $accounting_contact_id ID of accounting contact to update (required)
-     * @param  \OpenAPI\Client\Model\ModelAccountingContactUpdate $model_accounting_contact_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelAccountingContactUpdate $model_accounting_contact_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAccountingContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetAccountingContactById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetAccountingContactById200Response
      */
     public function updateAccountingContact($accounting_contact_id, $model_accounting_contact_update = null, string $contentType = self::contentTypes['updateAccountingContact'][0])
     {
@@ -1410,12 +1410,12 @@ class AccountingContactApi
      * Update an existing accounting contact
      *
      * @param  int $accounting_contact_id ID of accounting contact to update (required)
-     * @param  \OpenAPI\Client\Model\ModelAccountingContactUpdate $model_accounting_contact_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelAccountingContactUpdate $model_accounting_contact_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAccountingContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetAccountingContactById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetAccountingContactById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateAccountingContactWithHttpInfo($accounting_contact_id, $model_accounting_contact_update = null, string $contentType = self::contentTypes['updateAccountingContact'][0])
     {
@@ -1458,11 +1458,11 @@ class AccountingContactApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetAccountingContactById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetAccountingContactById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1480,13 +1480,13 @@ class AccountingContactApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetAccountingContactById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetAccountingContactById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1519,7 +1519,7 @@ class AccountingContactApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetAccountingContactById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1535,7 +1535,7 @@ class AccountingContactApi
      * Update an existing accounting contact
      *
      * @param  int $accounting_contact_id ID of accounting contact to update (required)
-     * @param  \OpenAPI\Client\Model\ModelAccountingContactUpdate $model_accounting_contact_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelAccountingContactUpdate $model_accounting_contact_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAccountingContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1557,7 +1557,7 @@ class AccountingContactApi
      * Update an existing accounting contact
      *
      * @param  int $accounting_contact_id ID of accounting contact to update (required)
-     * @param  \OpenAPI\Client\Model\ModelAccountingContactUpdate $model_accounting_contact_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelAccountingContactUpdate $model_accounting_contact_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAccountingContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1565,7 +1565,7 @@ class AccountingContactApi
      */
     public function updateAccountingContactAsyncWithHttpInfo($accounting_contact_id, $model_accounting_contact_update = null, string $contentType = self::contentTypes['updateAccountingContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetAccountingContactById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetAccountingContactById200Response';
         $request = $this->updateAccountingContactRequest($accounting_contact_id, $model_accounting_contact_update, $contentType);
 
         return $this->client
@@ -1608,7 +1608,7 @@ class AccountingContactApi
      * Create request for operation 'updateAccountingContact'
      *
      * @param  int $accounting_contact_id ID of accounting contact to update (required)
-     * @param  \OpenAPI\Client\Model\ModelAccountingContactUpdate $model_accounting_contact_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelAccountingContactUpdate $model_accounting_contact_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAccountingContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

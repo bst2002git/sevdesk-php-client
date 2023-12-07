@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelOrderResponse Class Doc Comment
  *
  * @category Class
  * @description Order model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,23 +63,23 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
         'create' => '\DateTime',
         'update' => '\DateTime',
         'order_number' => 'string',
-        'contact' => '\OpenAPI\Client\Model\ModelOrderResponseContact',
+        'contact' => '\Itsmind\\Sevdesk\Model\ModelOrderResponseContact',
         'order_date' => '\DateTime',
         'status' => 'string',
         'header' => 'string',
         'head_text' => 'string',
         'foot_text' => 'string',
-        'address_country' => '\OpenAPI\Client\Model\ModelOrderResponseAddressCountry',
-        'create_user' => '\OpenAPI\Client\Model\ModelInvoiceResponseCreateUser',
-        'sev_client' => '\OpenAPI\Client\Model\ModelOrderResponseSevClient',
+        'address_country' => '\Itsmind\\Sevdesk\Model\ModelOrderResponseAddressCountry',
+        'create_user' => '\Itsmind\\Sevdesk\Model\ModelInvoiceResponseCreateUser',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelOrderResponseSevClient',
         'delivery_terms' => 'string',
         'payment_terms' => 'string',
-        'origin' => '\OpenAPI\Client\Model\ModelOrderResponseOrigin',
+        'origin' => '\Itsmind\\Sevdesk\Model\ModelOrderResponseOrigin',
         'version' => 'string',
         'small_settlement' => 'bool',
-        'contact_person' => '\OpenAPI\Client\Model\ModelOrderResponseContactPerson',
+        'contact_person' => '\Itsmind\\Sevdesk\Model\ModelOrderResponseContactPerson',
         'tax_rate' => 'string',
-        'tax_set' => '\OpenAPI\Client\Model\ModelOrderResponseTaxSet',
+        'tax_set' => '\Itsmind\\Sevdesk\Model\ModelOrderResponseTaxSet',
         'tax_text' => 'string',
         'tax_type' => 'string',
         'order_type' => 'string',
@@ -780,7 +780,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ModelOrderResponseContact|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderResponseContact|null
      */
     public function getContact()
     {
@@ -790,7 +790,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ModelOrderResponseContact|null $contact contact
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderResponseContact|null $contact contact
      *
      * @return self
      */
@@ -966,7 +966,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets address_country
      *
-     * @return \OpenAPI\Client\Model\ModelOrderResponseAddressCountry|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderResponseAddressCountry|null
      */
     public function getAddressCountry()
     {
@@ -976,7 +976,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets address_country
      *
-     * @param \OpenAPI\Client\Model\ModelOrderResponseAddressCountry|null $address_country address_country
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderResponseAddressCountry|null $address_country address_country
      *
      * @return self
      */
@@ -1000,7 +1000,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets create_user
      *
-     * @return \OpenAPI\Client\Model\ModelInvoiceResponseCreateUser|null
+     * @return \Itsmind\\Sevdesk\Model\ModelInvoiceResponseCreateUser|null
      */
     public function getCreateUser()
     {
@@ -1010,7 +1010,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets create_user
      *
-     * @param \OpenAPI\Client\Model\ModelInvoiceResponseCreateUser|null $create_user create_user
+     * @param \Itsmind\\Sevdesk\Model\ModelInvoiceResponseCreateUser|null $create_user create_user
      *
      * @return self
      */
@@ -1027,7 +1027,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelOrderResponseSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -1037,7 +1037,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelOrderResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -1122,7 +1122,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets origin
      *
-     * @return \OpenAPI\Client\Model\ModelOrderResponseOrigin|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderResponseOrigin|null
      */
     public function getOrigin()
     {
@@ -1132,7 +1132,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets origin
      *
-     * @param \OpenAPI\Client\Model\ModelOrderResponseOrigin|null $origin origin
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderResponseOrigin|null $origin origin
      *
      * @return self
      */
@@ -1210,7 +1210,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets contact_person
      *
-     * @return \OpenAPI\Client\Model\ModelOrderResponseContactPerson|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderResponseContactPerson|null
      */
     public function getContactPerson()
     {
@@ -1220,7 +1220,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets contact_person
      *
-     * @param \OpenAPI\Client\Model\ModelOrderResponseContactPerson|null $contact_person contact_person
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderResponseContactPerson|null $contact_person contact_person
      *
      * @return self
      */
@@ -1264,7 +1264,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets tax_set
      *
-     * @return \OpenAPI\Client\Model\ModelOrderResponseTaxSet|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderResponseTaxSet|null
      */
     public function getTaxSet()
     {
@@ -1274,7 +1274,7 @@ class ModelOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets tax_set
      *
-     * @param \OpenAPI\Client\Model\ModelOrderResponseTaxSet|null $tax_set tax_set
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderResponseTaxSet|null $tax_set tax_set
      *
      * @return self
      */

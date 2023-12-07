@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Itsmind\\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Itsmind\\Sevdesk\ApiException;
+use Itsmind\\Sevdesk\Configuration;
+use Itsmind\\Sevdesk\HeaderSelector;
+use Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ReportApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,7 +140,7 @@ class ReportApi
      * @param  bool $download download (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['reportContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -159,7 +159,7 @@ class ReportApi
      * @param  bool $download (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['reportContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -468,7 +468,7 @@ class ReportApi
      * @param  bool $download download (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['reportInvoice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -487,7 +487,7 @@ class ReportApi
      * @param  bool $download (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['reportInvoice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -796,7 +796,7 @@ class ReportApi
      * @param  bool $download download (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['reportOrder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -815,7 +815,7 @@ class ReportApi
      * @param  bool $download (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['reportOrder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1124,7 +1124,7 @@ class ReportApi
      * @param  bool $download download (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['reportVoucher'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1143,7 +1143,7 @@ class ReportApi
      * @param  bool $download (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['reportVoucher'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelCreateInvoiceFromOrder Class Doc Comment
  *
  * @category Class
  * @description Invoice model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ModelCreateInvoiceFromOrder implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order' => '\OpenAPI\Client\Model\ModelCreateInvoiceFromOrderOrder',
+        'order' => '\Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrderOrder',
         'type' => 'string',
         'amount' => 'float',
         'partial_type' => 'string'
@@ -369,7 +369,7 @@ class ModelCreateInvoiceFromOrder implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\ModelCreateInvoiceFromOrderOrder
+     * @return \Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrderOrder
      */
     public function getOrder()
     {
@@ -379,7 +379,7 @@ class ModelCreateInvoiceFromOrder implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\ModelCreateInvoiceFromOrderOrder $order order
+     * @param \Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrderOrder $order order
      *
      * @return self
      */

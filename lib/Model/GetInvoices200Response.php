@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * GetInvoices200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetInvoices200Response implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'total' => 'int',
-        'objects' => '\OpenAPI\Client\Model\ModelInvoiceResponse[]'
+        'objects' => '\Itsmind\\Sevdesk\Model\ModelInvoiceResponse[]'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetInvoices200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets objects
      *
-     * @return \OpenAPI\Client\Model\ModelInvoiceResponse[]
+     * @return \Itsmind\\Sevdesk\Model\ModelInvoiceResponse[]
      */
     public function getObjects()
     {
@@ -339,7 +339,7 @@ class GetInvoices200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets objects
      *
-     * @param \OpenAPI\Client\Model\ModelInvoiceResponse[] $objects objects
+     * @param \Itsmind\\Sevdesk\Model\ModelInvoiceResponse[] $objects objects
      *
      * @return self
      */

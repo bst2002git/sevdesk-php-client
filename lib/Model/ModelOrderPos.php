@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelOrderPos Class Doc Comment
  *
  * @category Class
  * @description Order position model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,16 +62,16 @@ class ModelOrderPos implements ModelInterface, ArrayAccess, \JsonSerializable
         'object_name' => 'string',
         'create' => 'string',
         'update' => 'string',
-        'order' => '\OpenAPI\Client\Model\ModelOrderPosOrder',
-        'part' => '\OpenAPI\Client\Model\ModelInvoicePosPart',
+        'order' => '\Itsmind\\Sevdesk\Model\ModelOrderPosOrder',
+        'part' => '\Itsmind\\Sevdesk\Model\ModelInvoicePosPart',
         'quantity' => 'float',
         'price' => 'float',
         'price_net' => 'float',
         'price_tax' => 'float',
         'price_gross' => 'float',
         'name' => 'float',
-        'unity' => '\OpenAPI\Client\Model\ModelCreditNotePosUnity',
-        'sev_client' => '\OpenAPI\Client\Model\ModelOrderPosSevClient',
+        'unity' => '\Itsmind\\Sevdesk\Model\ModelCreditNotePosUnity',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelOrderPosSevClient',
         'position_number' => 'int',
         'text' => 'string',
         'discount' => 'float',
@@ -543,7 +543,7 @@ class ModelOrderPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\ModelOrderPosOrder|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderPosOrder|null
      */
     public function getOrder()
     {
@@ -553,7 +553,7 @@ class ModelOrderPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\ModelOrderPosOrder|null $order order
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderPosOrder|null $order order
      *
      * @return self
      */
@@ -570,7 +570,7 @@ class ModelOrderPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets part
      *
-     * @return \OpenAPI\Client\Model\ModelInvoicePosPart|null
+     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePosPart|null
      */
     public function getPart()
     {
@@ -580,7 +580,7 @@ class ModelOrderPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets part
      *
-     * @param \OpenAPI\Client\Model\ModelInvoicePosPart|null $part part
+     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePosPart|null $part part
      *
      * @return self
      */
@@ -794,7 +794,7 @@ class ModelOrderPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unity
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNotePosUnity
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNotePosUnity
      */
     public function getUnity()
     {
@@ -804,7 +804,7 @@ class ModelOrderPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unity
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNotePosUnity $unity unity
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNotePosUnity $unity unity
      *
      * @return self
      */
@@ -821,7 +821,7 @@ class ModelOrderPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelOrderPosSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderPosSevClient|null
      */
     public function getSevClient()
     {
@@ -831,7 +831,7 @@ class ModelOrderPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelOrderPosSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderPosSevClient|null $sev_client sev_client
      *
      * @return self
      */

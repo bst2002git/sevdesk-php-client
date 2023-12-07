@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelInvoicePosUpdate Class Doc Comment
  *
  * @category Class
  * @description Invoice position model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,13 +62,13 @@ class ModelInvoicePosUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'invoice' => '\OpenAPI\Client\Model\ModelInvoicePosUpdateInvoice',
-        'part' => '\OpenAPI\Client\Model\ModelInvoicePosPart',
+        'invoice' => '\Itsmind\\Sevdesk\Model\ModelInvoicePosUpdateInvoice',
+        'part' => '\Itsmind\\Sevdesk\Model\ModelInvoicePosPart',
         'quantity' => 'float',
         'price' => 'float',
         'name' => 'string',
-        'unity' => '\OpenAPI\Client\Model\ModelInvoicePosUnity',
-        'sev_client' => '\OpenAPI\Client\Model\ModelInvoicePosSevClient',
+        'unity' => '\Itsmind\\Sevdesk\Model\ModelInvoicePosUnity',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelInvoicePosSevClient',
         'position_number' => 'int',
         'text' => 'string',
         'discount' => 'float',
@@ -548,7 +548,7 @@ class ModelInvoicePosUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets invoice
      *
-     * @return \OpenAPI\Client\Model\ModelInvoicePosUpdateInvoice|null
+     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePosUpdateInvoice|null
      */
     public function getInvoice()
     {
@@ -558,7 +558,7 @@ class ModelInvoicePosUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets invoice
      *
-     * @param \OpenAPI\Client\Model\ModelInvoicePosUpdateInvoice|null $invoice invoice
+     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePosUpdateInvoice|null $invoice invoice
      *
      * @return self
      */
@@ -582,7 +582,7 @@ class ModelInvoicePosUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets part
      *
-     * @return \OpenAPI\Client\Model\ModelInvoicePosPart|null
+     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePosPart|null
      */
     public function getPart()
     {
@@ -592,7 +592,7 @@ class ModelInvoicePosUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets part
      *
-     * @param \OpenAPI\Client\Model\ModelInvoicePosPart|null $part part
+     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePosPart|null $part part
      *
      * @return self
      */
@@ -711,7 +711,7 @@ class ModelInvoicePosUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets unity
      *
-     * @return \OpenAPI\Client\Model\ModelInvoicePosUnity|null
+     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePosUnity|null
      */
     public function getUnity()
     {
@@ -721,7 +721,7 @@ class ModelInvoicePosUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets unity
      *
-     * @param \OpenAPI\Client\Model\ModelInvoicePosUnity|null $unity unity
+     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePosUnity|null $unity unity
      *
      * @return self
      */
@@ -738,7 +738,7 @@ class ModelInvoicePosUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelInvoicePosSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePosSevClient|null
      */
     public function getSevClient()
     {
@@ -748,7 +748,7 @@ class ModelInvoicePosUpdate implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelInvoicePosSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePosSevClient|null $sev_client sev_client
      *
      * @return self
      */

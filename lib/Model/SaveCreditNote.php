@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * SaveCreditNote Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,12 +57,12 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'credit_note' => '\OpenAPI\Client\Model\ModelCreditNote',
-        'credit_note_pos_save' => '\OpenAPI\Client\Model\ModelCreditNotePos',
-        'credit_note_pos_delete' => '\OpenAPI\Client\Model\SaveCreditNoteCreditNotePosDelete',
+        'credit_note' => '\Itsmind\\Sevdesk\Model\ModelCreditNote',
+        'credit_note_pos_save' => '\Itsmind\\Sevdesk\Model\ModelCreditNotePos',
+        'credit_note_pos_delete' => '\Itsmind\\Sevdesk\Model\SaveCreditNoteCreditNotePosDelete',
         'filename' => '\SplFileObject',
-        'discount_save' => '\OpenAPI\Client\Model\SaveCreditNoteDiscountSave',
-        'discount_delete' => '\OpenAPI\Client\Model\SaveCreditNoteDiscountDelete'
+        'discount_save' => '\Itsmind\\Sevdesk\Model\SaveCreditNoteDiscountSave',
+        'discount_delete' => '\Itsmind\\Sevdesk\Model\SaveCreditNoteDiscountDelete'
     ];
 
     /**
@@ -330,7 +330,7 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets credit_note
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNote
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNote
      */
     public function getCreditNote()
     {
@@ -340,7 +340,7 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets credit_note
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNote $credit_note credit_note
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNote $credit_note credit_note
      *
      * @return self
      */
@@ -357,7 +357,7 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets credit_note_pos_save
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNotePos|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNotePos|null
      */
     public function getCreditNotePosSave()
     {
@@ -367,7 +367,7 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets credit_note_pos_save
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNotePos|null $credit_note_pos_save credit_note_pos_save
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNotePos|null $credit_note_pos_save credit_note_pos_save
      *
      * @return self
      */
@@ -384,7 +384,7 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets credit_note_pos_delete
      *
-     * @return \OpenAPI\Client\Model\SaveCreditNoteCreditNotePosDelete|null
+     * @return \Itsmind\\Sevdesk\Model\SaveCreditNoteCreditNotePosDelete|null
      */
     public function getCreditNotePosDelete()
     {
@@ -394,7 +394,7 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets credit_note_pos_delete
      *
-     * @param \OpenAPI\Client\Model\SaveCreditNoteCreditNotePosDelete|null $credit_note_pos_delete credit_note_pos_delete
+     * @param \Itsmind\\Sevdesk\Model\SaveCreditNoteCreditNotePosDelete|null $credit_note_pos_delete credit_note_pos_delete
      *
      * @return self
      */
@@ -438,7 +438,7 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discount_save
      *
-     * @return \OpenAPI\Client\Model\SaveCreditNoteDiscountSave|null
+     * @return \Itsmind\\Sevdesk\Model\SaveCreditNoteDiscountSave|null
      */
     public function getDiscountSave()
     {
@@ -448,7 +448,7 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discount_save
      *
-     * @param \OpenAPI\Client\Model\SaveCreditNoteDiscountSave|null $discount_save discount_save
+     * @param \Itsmind\\Sevdesk\Model\SaveCreditNoteDiscountSave|null $discount_save discount_save
      *
      * @return self
      */
@@ -465,7 +465,7 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discount_delete
      *
-     * @return \OpenAPI\Client\Model\SaveCreditNoteDiscountDelete|null
+     * @return \Itsmind\\Sevdesk\Model\SaveCreditNoteDiscountDelete|null
      */
     public function getDiscountDelete()
     {
@@ -475,7 +475,7 @@ class SaveCreditNote implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discount_delete
      *
-     * @param \OpenAPI\Client\Model\SaveCreditNoteDiscountDelete|null $discount_delete discount_delete
+     * @param \Itsmind\\Sevdesk\Model\SaveCreditNoteDiscountDelete|null $discount_delete discount_delete
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\CreditNotePosApi
+# Itsmind\\Sevdesk\CreditNotePosApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `getcreditNotePositions()`
 
 ```php
-getcreditNotePositions($credit_note_id, $credit_note_object_name): \OpenAPI\Client\Model\GetcreditNotePositions200Response
+getcreditNotePositions($credit_note_id, $credit_note_object_name): \Itsmind\\Sevdesk\Model\GetcreditNotePositions200Response
 ```
 
 Retrieve creditNote positions
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\CreditNotePosApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\CreditNotePosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetcreditNotePositions200Response**](../Model/GetcreditNotePositions200Response.md)
+[**\Itsmind\\Sevdesk\Model\GetcreditNotePositions200Response**](../Model/GetcreditNotePositions200Response.md)
 
 ### Authorization
 

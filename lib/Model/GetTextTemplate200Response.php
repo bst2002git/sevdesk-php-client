@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * GetTextTemplate200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetTextTemplate200Response implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'objects' => '\OpenAPI\Client\Model\ModelTextTemplateResponse[]'
+        'objects' => '\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class GetTextTemplate200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets objects
      *
-     * @return \OpenAPI\Client\Model\ModelTextTemplateResponse[]
+     * @return \Itsmind\\Sevdesk\Model\ModelTextTemplateResponse[]
      */
     public function getObjects()
     {
@@ -305,7 +305,7 @@ class GetTextTemplate200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets objects
      *
-     * @param \OpenAPI\Client\Model\ModelTextTemplateResponse[] $objects objects
+     * @param \Itsmind\\Sevdesk\Model\ModelTextTemplateResponse[] $objects objects
      *
      * @return self
      */

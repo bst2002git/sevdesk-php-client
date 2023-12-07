@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ExportCreditNoteSevQueryParameterFilter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class ExportCreditNoteSevQueryParameterFilter implements ModelInterface, ArrayAc
     protected static $openAPITypes = [
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
-        'contact' => '\OpenAPI\Client\Model\ExportCreditNoteSevQueryParameterFilterContact',
+        'contact' => '\Itsmind\\Sevdesk\Model\ExportCreditNoteSevQueryParameterFilterContact',
         'start_amount' => 'int',
         'end_amount' => 'int'
     ];
@@ -374,7 +374,7 @@ class ExportCreditNoteSevQueryParameterFilter implements ModelInterface, ArrayAc
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ExportCreditNoteSevQueryParameterFilterContact|null
+     * @return \Itsmind\\Sevdesk\Model\ExportCreditNoteSevQueryParameterFilterContact|null
      */
     public function getContact()
     {
@@ -384,7 +384,7 @@ class ExportCreditNoteSevQueryParameterFilter implements ModelInterface, ArrayAc
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ExportCreditNoteSevQueryParameterFilterContact|null $contact contact
+     * @param \Itsmind\\Sevdesk\Model\ExportCreditNoteSevQueryParameterFilterContact|null $contact contact
      *
      * @return self
      */

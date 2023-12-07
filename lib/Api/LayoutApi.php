@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Itsmind\\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Itsmind\\Sevdesk\ApiException;
+use Itsmind\\Sevdesk\Configuration;
+use Itsmind\\Sevdesk\HeaderSelector;
+use Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * LayoutApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -141,9 +141,9 @@ class LayoutApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getLetterpapersWithThumb'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetLetterpapersWithThumb200Response
+     * @return \Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200Response
      */
     public function getLetterpapersWithThumb(string $contentType = self::contentTypes['getLetterpapersWithThumb'][0])
     {
@@ -158,9 +158,9 @@ class LayoutApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getLetterpapersWithThumb'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetLetterpapersWithThumb200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getLetterpapersWithThumbWithHttpInfo(string $contentType = self::contentTypes['getLetterpapersWithThumb'][0])
     {
@@ -203,11 +203,11 @@ class LayoutApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetLetterpapersWithThumb200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetLetterpapersWithThumb200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -225,13 +225,13 @@ class LayoutApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetLetterpapersWithThumb200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetLetterpapersWithThumb200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -264,7 +264,7 @@ class LayoutApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetLetterpapersWithThumb200Response',
+                        '\Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -306,7 +306,7 @@ class LayoutApi
      */
     public function getLetterpapersWithThumbAsyncWithHttpInfo(string $contentType = self::contentTypes['getLetterpapersWithThumb'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetLetterpapersWithThumb200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200Response';
         $request = $this->getLetterpapersWithThumbRequest($contentType);
 
         return $this->client
@@ -434,9 +434,9 @@ class LayoutApi
      * @param  string $type Type of the templates you want to get. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTemplates'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetTemplates200Response
+     * @return \Itsmind\\Sevdesk\Model\GetTemplates200Response
      */
     public function getTemplates($type = null, string $contentType = self::contentTypes['getTemplates'][0])
     {
@@ -452,9 +452,9 @@ class LayoutApi
      * @param  string $type Type of the templates you want to get. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTemplates'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetTemplates200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetTemplates200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTemplatesWithHttpInfo($type = null, string $contentType = self::contentTypes['getTemplates'][0])
     {
@@ -497,11 +497,11 @@ class LayoutApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetTemplates200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetTemplates200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetTemplates200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetTemplates200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -519,13 +519,13 @@ class LayoutApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetTemplates200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetTemplates200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetTemplates200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetTemplates200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -558,7 +558,7 @@ class LayoutApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetTemplates200Response',
+                        '\Itsmind\\Sevdesk\Model\GetTemplates200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -602,7 +602,7 @@ class LayoutApi
      */
     public function getTemplatesAsyncWithHttpInfo($type = null, string $contentType = self::contentTypes['getTemplates'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetTemplates200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetTemplates200Response';
         $request = $this->getTemplatesRequest($type, $contentType);
 
         return $this->client
@@ -739,12 +739,12 @@ class LayoutApi
      * Update an of credit note template
      *
      * @param  int $credit_note_id ID of credit note to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCreditNoteTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UpdateOrderTemplate200Response
+     * @return \Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response
      */
     public function updateCreditNoteTemplate($credit_note_id, $model_change_layout = null, string $contentType = self::contentTypes['updateCreditNoteTemplate'][0])
     {
@@ -758,12 +758,12 @@ class LayoutApi
      * Update an of credit note template
      *
      * @param  int $credit_note_id ID of credit note to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCreditNoteTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UpdateOrderTemplate200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCreditNoteTemplateWithHttpInfo($credit_note_id, $model_change_layout = null, string $contentType = self::contentTypes['updateCreditNoteTemplate'][0])
     {
@@ -806,11 +806,11 @@ class LayoutApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UpdateOrderTemplate200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UpdateOrderTemplate200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -828,13 +828,13 @@ class LayoutApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UpdateOrderTemplate200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\UpdateOrderTemplate200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -867,7 +867,7 @@ class LayoutApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UpdateOrderTemplate200Response',
+                        '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -883,7 +883,7 @@ class LayoutApi
      * Update an of credit note template
      *
      * @param  int $credit_note_id ID of credit note to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCreditNoteTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -905,7 +905,7 @@ class LayoutApi
      * Update an of credit note template
      *
      * @param  int $credit_note_id ID of credit note to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCreditNoteTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -913,7 +913,7 @@ class LayoutApi
      */
     public function updateCreditNoteTemplateAsyncWithHttpInfo($credit_note_id, $model_change_layout = null, string $contentType = self::contentTypes['updateCreditNoteTemplate'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UpdateOrderTemplate200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response';
         $request = $this->updateCreditNoteTemplateRequest($credit_note_id, $model_change_layout, $contentType);
 
         return $this->client
@@ -956,7 +956,7 @@ class LayoutApi
      * Create request for operation 'updateCreditNoteTemplate'
      *
      * @param  int $credit_note_id ID of credit note to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCreditNoteTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1064,12 +1064,12 @@ class LayoutApi
      * Update an invoice template
      *
      * @param  int $invoice_id ID of invoice to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateInvoiceTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UpdateOrderTemplate200Response
+     * @return \Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response
      */
     public function updateInvoiceTemplate($invoice_id, $model_change_layout = null, string $contentType = self::contentTypes['updateInvoiceTemplate'][0])
     {
@@ -1083,12 +1083,12 @@ class LayoutApi
      * Update an invoice template
      *
      * @param  int $invoice_id ID of invoice to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateInvoiceTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UpdateOrderTemplate200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateInvoiceTemplateWithHttpInfo($invoice_id, $model_change_layout = null, string $contentType = self::contentTypes['updateInvoiceTemplate'][0])
     {
@@ -1131,11 +1131,11 @@ class LayoutApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UpdateOrderTemplate200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UpdateOrderTemplate200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1153,13 +1153,13 @@ class LayoutApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UpdateOrderTemplate200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\UpdateOrderTemplate200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1192,7 +1192,7 @@ class LayoutApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UpdateOrderTemplate200Response',
+                        '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1208,7 +1208,7 @@ class LayoutApi
      * Update an invoice template
      *
      * @param  int $invoice_id ID of invoice to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateInvoiceTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1230,7 +1230,7 @@ class LayoutApi
      * Update an invoice template
      *
      * @param  int $invoice_id ID of invoice to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateInvoiceTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1238,7 +1238,7 @@ class LayoutApi
      */
     public function updateInvoiceTemplateAsyncWithHttpInfo($invoice_id, $model_change_layout = null, string $contentType = self::contentTypes['updateInvoiceTemplate'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UpdateOrderTemplate200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response';
         $request = $this->updateInvoiceTemplateRequest($invoice_id, $model_change_layout, $contentType);
 
         return $this->client
@@ -1281,7 +1281,7 @@ class LayoutApi
      * Create request for operation 'updateInvoiceTemplate'
      *
      * @param  int $invoice_id ID of invoice to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateInvoiceTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1389,12 +1389,12 @@ class LayoutApi
      * Update an order template
      *
      * @param  int $order_id ID of order to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOrderTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UpdateOrderTemplate200Response
+     * @return \Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response
      */
     public function updateOrderTemplate($order_id, $model_change_layout = null, string $contentType = self::contentTypes['updateOrderTemplate'][0])
     {
@@ -1408,12 +1408,12 @@ class LayoutApi
      * Update an order template
      *
      * @param  int $order_id ID of order to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOrderTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UpdateOrderTemplate200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateOrderTemplateWithHttpInfo($order_id, $model_change_layout = null, string $contentType = self::contentTypes['updateOrderTemplate'][0])
     {
@@ -1456,11 +1456,11 @@ class LayoutApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UpdateOrderTemplate200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UpdateOrderTemplate200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1478,13 +1478,13 @@ class LayoutApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UpdateOrderTemplate200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\UpdateOrderTemplate200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1517,7 +1517,7 @@ class LayoutApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UpdateOrderTemplate200Response',
+                        '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1533,7 +1533,7 @@ class LayoutApi
      * Update an order template
      *
      * @param  int $order_id ID of order to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOrderTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1555,7 +1555,7 @@ class LayoutApi
      * Update an order template
      *
      * @param  int $order_id ID of order to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOrderTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1563,7 +1563,7 @@ class LayoutApi
      */
     public function updateOrderTemplateAsyncWithHttpInfo($order_id, $model_change_layout = null, string $contentType = self::contentTypes['updateOrderTemplate'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UpdateOrderTemplate200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\UpdateOrderTemplate200Response';
         $request = $this->updateOrderTemplateRequest($order_id, $model_change_layout, $contentType);
 
         return $this->client
@@ -1606,7 +1606,7 @@ class LayoutApi
      * Create request for operation 'updateOrderTemplate'
      *
      * @param  int $order_id ID of order to update (required)
-     * @param  \OpenAPI\Client\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelChangeLayout $model_change_layout Change Layout (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOrderTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

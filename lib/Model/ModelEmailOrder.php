@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelEmailOrder Class Doc Comment
  *
  * @category Class
  * @description Email model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,12 +62,12 @@ class ModelEmailOrder implements ModelInterface, ArrayAccess, \JsonSerializable
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'object' => '\OpenAPI\Client\Model\ModelEmailOrderObject',
+        'object' => '\Itsmind\\Sevdesk\Model\ModelEmailOrderObject',
         'from' => 'string',
         'to' => 'string',
         'subject' => 'string',
         'text' => 'string',
-        'sev_client' => '\OpenAPI\Client\Model\ModelEmailOrderSevClient',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelEmailOrderSevClient',
         'cc' => 'string',
         'bcc' => 'string',
         'arrived' => '\DateTime'
@@ -494,7 +494,7 @@ class ModelEmailOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets object
      *
-     * @return \OpenAPI\Client\Model\ModelEmailOrderObject|null
+     * @return \Itsmind\\Sevdesk\Model\ModelEmailOrderObject|null
      */
     public function getObject()
     {
@@ -504,7 +504,7 @@ class ModelEmailOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets object
      *
-     * @param \OpenAPI\Client\Model\ModelEmailOrderObject|null $object object
+     * @param \Itsmind\\Sevdesk\Model\ModelEmailOrderObject|null $object object
      *
      * @return self
      */
@@ -643,7 +643,7 @@ class ModelEmailOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelEmailOrderSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelEmailOrderSevClient|null
      */
     public function getSevClient()
     {
@@ -653,7 +653,7 @@ class ModelEmailOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelEmailOrderSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelEmailOrderSevClient|null $sev_client sev_client
      *
      * @return self
      */

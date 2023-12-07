@@ -8,10 +8,10 @@ Name | Type | Description | Notes
 **object_name** | **string** | The voucher position object name | [optional] [readonly]
 **create** | **string** | Date of voucher position creation | [optional] [readonly]
 **update** | **string** | Date of last voucher position update | [optional] [readonly]
-**sev_client** | [**\OpenAPI\Client\Model\ModelVoucherPosResponseSevClient**](ModelVoucherPosResponseSevClient.md) |  | [optional]
-**voucher** | [**\OpenAPI\Client\Model\ModelVoucherPosResponseVoucher**](ModelVoucherPosResponseVoucher.md) |  |
-**accounting_type** | [**\OpenAPI\Client\Model\ModelVoucherPosResponseAccountingType**](ModelVoucherPosResponseAccountingType.md) |  |
-**estimated_accounting_type** | [**\OpenAPI\Client\Model\ModelVoucherPosResponseEstimatedAccountingType**](ModelVoucherPosResponseEstimatedAccountingType.md) |  | [optional]
+**sev_client** | [**\Itsmind\\Sevdesk\Model\ModelVoucherPosResponseSevClient**](ModelVoucherPosResponseSevClient.md) |  | [optional]
+**voucher** | [**\Itsmind\\Sevdesk\Model\ModelVoucherPosResponseVoucher**](ModelVoucherPosResponseVoucher.md) |  |
+**accounting_type** | [**\Itsmind\\Sevdesk\Model\ModelVoucherPosResponseAccountingType**](ModelVoucherPosResponseAccountingType.md) |  |
+**estimated_accounting_type** | [**\Itsmind\\Sevdesk\Model\ModelVoucherPosResponseEstimatedAccountingType**](ModelVoucherPosResponseEstimatedAccountingType.md) |  | [optional]
 **tax_rate** | **string** | Tax rate of the voucher position. |
 **net** | **bool** | Determines whether &#39;sumNet&#39; or &#39;sumGross&#39; is regarded.&lt;br&gt;       If both are not given, &#39;sum&#39; is regarded and treated as net or gross depending on &#39;net&#39;.  All positions must be either net or gross, a mixture of the two is not possible. |
 **is_asset** | **bool** | Determines whether position is regarded as an asset which can be depreciated. | [optional]

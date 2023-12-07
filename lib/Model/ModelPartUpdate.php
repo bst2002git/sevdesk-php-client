@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelPartUpdate Class Doc Comment
  *
  * @category Class
  * @description Part model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,14 +65,14 @@ class ModelPartUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
         'name' => 'string',
         'part_number' => 'string',
         'text' => 'string',
-        'category' => '\OpenAPI\Client\Model\ModelPartCategory',
+        'category' => '\Itsmind\\Sevdesk\Model\ModelPartCategory',
         'stock' => 'float',
         'stock_enabled' => 'bool',
-        'unity' => '\OpenAPI\Client\Model\ModelPartUnity',
+        'unity' => '\Itsmind\\Sevdesk\Model\ModelPartUnity',
         'price' => 'float',
         'price_net' => 'float',
         'price_gross' => 'float',
-        'sev_client' => '\OpenAPI\Client\Model\ModelPartSevClient',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelPartSevClient',
         'price_purchase' => 'float',
         'tax_rate' => 'float',
         'status' => 'int',
@@ -653,7 +653,7 @@ class ModelPartUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\ModelPartCategory|null
+     * @return \Itsmind\\Sevdesk\Model\ModelPartCategory|null
      */
     public function getCategory()
     {
@@ -663,7 +663,7 @@ class ModelPartUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\ModelPartCategory|null $category category
+     * @param \Itsmind\\Sevdesk\Model\ModelPartCategory|null $category category
      *
      * @return self
      */
@@ -748,7 +748,7 @@ class ModelPartUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unity
      *
-     * @return \OpenAPI\Client\Model\ModelPartUnity|null
+     * @return \Itsmind\\Sevdesk\Model\ModelPartUnity|null
      */
     public function getUnity()
     {
@@ -758,7 +758,7 @@ class ModelPartUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unity
      *
-     * @param \OpenAPI\Client\Model\ModelPartUnity|null $unity unity
+     * @param \Itsmind\\Sevdesk\Model\ModelPartUnity|null $unity unity
      *
      * @return self
      */
@@ -877,7 +877,7 @@ class ModelPartUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelPartSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelPartSevClient|null
      */
     public function getSevClient()
     {
@@ -887,7 +887,7 @@ class ModelPartUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelPartSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelPartSevClient|null $sev_client sev_client
      *
      * @return self
      */

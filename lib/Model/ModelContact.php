@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelContact Class Doc Comment
  *
  * @category Class
  * @description Contact model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,11 +61,11 @@ class ModelContact implements ModelInterface, ArrayAccess, \JsonSerializable
         'name' => 'string',
         'status' => 'int',
         'customer_number' => 'string',
-        'parent' => '\OpenAPI\Client\Model\ModelContactParent',
+        'parent' => '\Itsmind\\Sevdesk\Model\ModelContactParent',
         'surename' => 'string',
         'familyname' => 'string',
         'titel' => 'string',
-        'category' => '\OpenAPI\Client\Model\ModelContactCategory',
+        'category' => '\Itsmind\\Sevdesk\Model\ModelContactCategory',
         'description' => 'string',
         'academic_title' => 'string',
         'gender' => 'string',
@@ -81,7 +81,7 @@ class ModelContact implements ModelInterface, ArrayAccess, \JsonSerializable
         'tax_office' => 'string',
         'exempt_vat' => 'bool',
         'tax_type' => 'string',
-        'tax_set' => '\OpenAPI\Client\Model\ModelContactTaxSet',
+        'tax_set' => '\Itsmind\\Sevdesk\Model\ModelContactTaxSet',
         'default_discount_amount' => 'float',
         'default_discount_percentage' => 'bool',
         'buyer_reference' => 'string',
@@ -617,7 +617,7 @@ class ModelContact implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parent
      *
-     * @return \OpenAPI\Client\Model\ModelContactParent|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactParent|null
      */
     public function getParent()
     {
@@ -627,7 +627,7 @@ class ModelContact implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parent
      *
-     * @param \OpenAPI\Client\Model\ModelContactParent|null $parent parent
+     * @param \Itsmind\\Sevdesk\Model\ModelContactParent|null $parent parent
      *
      * @return self
      */
@@ -753,7 +753,7 @@ class ModelContact implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\ModelContactCategory
+     * @return \Itsmind\\Sevdesk\Model\ModelContactCategory
      */
     public function getCategory()
     {
@@ -763,7 +763,7 @@ class ModelContact implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\ModelContactCategory $category category
+     * @param \Itsmind\\Sevdesk\Model\ModelContactCategory $category category
      *
      * @return self
      */
@@ -1300,7 +1300,7 @@ class ModelContact implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tax_set
      *
-     * @return \OpenAPI\Client\Model\ModelContactTaxSet|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactTaxSet|null
      */
     public function getTaxSet()
     {
@@ -1310,7 +1310,7 @@ class ModelContact implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tax_set
      *
-     * @param \OpenAPI\Client\Model\ModelContactTaxSet|null $tax_set tax_set
+     * @param \Itsmind\\Sevdesk\Model\ModelContactTaxSet|null $tax_set tax_set
      *
      * @return self
      */

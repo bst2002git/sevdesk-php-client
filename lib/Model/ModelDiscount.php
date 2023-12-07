@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelDiscount Class Doc Comment
  *
  * @category Class
  * @description Discount model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class ModelDiscount implements ModelInterface, ArrayAccess, \JsonSerializable
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'object' => '\OpenAPI\Client\Model\ModelDiscountObject',
+        'object' => '\Itsmind\\Sevdesk\Model\ModelDiscountObject',
         'sev_client' => 'string',
         'text' => 'string',
         'percentage' => 'string',
@@ -464,7 +464,7 @@ class ModelDiscount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets object
      *
-     * @return \OpenAPI\Client\Model\ModelDiscountObject|null
+     * @return \Itsmind\\Sevdesk\Model\ModelDiscountObject|null
      */
     public function getObject()
     {
@@ -474,7 +474,7 @@ class ModelDiscount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets object
      *
-     * @param \OpenAPI\Client\Model\ModelDiscountObject|null $object object
+     * @param \Itsmind\\Sevdesk\Model\ModelDiscountObject|null $object object
      *
      * @return self
      */

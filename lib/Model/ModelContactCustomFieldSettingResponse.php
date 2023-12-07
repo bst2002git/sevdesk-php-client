@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelContactCustomFieldSettingResponse Class Doc Comment
  *
  * @category Class
  * @description contact fields model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class ModelContactCustomFieldSettingResponse implements ModelInterface, ArrayAcc
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'sev_client' => '\OpenAPI\Client\Model\ModelContactCustomFieldSettingResponseSevClient',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelContactCustomFieldSettingResponseSevClient',
         'name' => 'string',
         'identifier' => 'string',
         'description' => 'string'
@@ -450,7 +450,7 @@ class ModelContactCustomFieldSettingResponse implements ModelInterface, ArrayAcc
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelContactCustomFieldSettingResponseSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSettingResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -460,7 +460,7 @@ class ModelContactCustomFieldSettingResponse implements ModelInterface, ArrayAcc
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelContactCustomFieldSettingResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSettingResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */

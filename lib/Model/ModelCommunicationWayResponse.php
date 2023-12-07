@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelCommunicationWayResponse Class Doc Comment
  *
  * @category Class
  * @description Contact communication way model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,12 +62,12 @@ class ModelCommunicationWayResponse implements ModelInterface, ArrayAccess, \Jso
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'contact' => '\OpenAPI\Client\Model\ModelCommunicationWayResponseContact',
+        'contact' => '\Itsmind\\Sevdesk\Model\ModelCommunicationWayResponseContact',
         'type' => 'string',
         'value' => 'string',
-        'key' => '\OpenAPI\Client\Model\ModelCommunicationWayResponseKey',
+        'key' => '\Itsmind\\Sevdesk\Model\ModelCommunicationWayResponseKey',
         'main' => 'string',
-        'sev_client' => '\OpenAPI\Client\Model\ModelCommunicationWayResponseSevClient'
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelCommunicationWayResponseSevClient'
     ];
 
     /**
@@ -492,7 +492,7 @@ class ModelCommunicationWayResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ModelCommunicationWayResponseContact|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCommunicationWayResponseContact|null
      */
     public function getContact()
     {
@@ -502,7 +502,7 @@ class ModelCommunicationWayResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ModelCommunicationWayResponseContact|null $contact contact
+     * @param \Itsmind\\Sevdesk\Model\ModelCommunicationWayResponseContact|null $contact contact
      *
      * @return self
      */
@@ -583,7 +583,7 @@ class ModelCommunicationWayResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets key
      *
-     * @return \OpenAPI\Client\Model\ModelCommunicationWayResponseKey|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCommunicationWayResponseKey|null
      */
     public function getKey()
     {
@@ -593,7 +593,7 @@ class ModelCommunicationWayResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets key
      *
-     * @param \OpenAPI\Client\Model\ModelCommunicationWayResponseKey|null $key key
+     * @param \Itsmind\\Sevdesk\Model\ModelCommunicationWayResponseKey|null $key key
      *
      * @return self
      */
@@ -637,7 +637,7 @@ class ModelCommunicationWayResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelCommunicationWayResponseSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCommunicationWayResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -647,7 +647,7 @@ class ModelCommunicationWayResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelCommunicationWayResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelCommunicationWayResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */
