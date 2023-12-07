@@ -1,0 +1,38 @@
+name: Generate API Client
+
+on:
+  push:
+    branches:
+      - main # Update this based on your branch name
+
+jobs:
+  generate-api-client:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up JDK (if using a Java-based generator)
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: '11'
+
+    - name: Install OpenAPI Generator
+      run: |
+        wget https://github.com/OpenAPITools/openapi-generator-cli/releases/download/v5.3.0/openapi-generator-cli-5.3.0.jar
+        chmod +x openapi-generator-cli-5.3.0.jar
+        mv openapi-generator-cli-5.3.0.jar /usr/local/bin/openapi-generator
+
+    - name: Generate API Client
+      run: |
+        openapi-generator generate -i schema.yaml -g php -o generated-client
+
+    - name: Commit Generated Code
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add generated-client
+        git commit -m "Update generated API client" || true
+        git push
