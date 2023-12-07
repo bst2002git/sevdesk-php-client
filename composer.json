@@ -1,6 +1,7 @@
 {
     "name": "itsmind/sevdesk-php-client",
-    "description": "An unofficial PHP client for the official sevDesk API",     "type": "library",
+    "description": "An unofficial PHP client for the official sevDesk API",     
+	"type": "library",
     "keywords": [
         "openapitools",
         "openapi-generator",
