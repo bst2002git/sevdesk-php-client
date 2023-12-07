@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelInvoiceAddressCountry Class Doc Comment
  *
  * @category Class
  * @description Can be omitted as complete address is defined in address attribute
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

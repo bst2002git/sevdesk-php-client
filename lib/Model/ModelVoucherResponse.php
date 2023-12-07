@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelVoucherResponse Class Doc Comment
  *
  * @category Class
  * @description Voucher model
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,13 +63,13 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
         'map_all' => 'bool',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelVoucherResponseSevClient',
-        'create_user' => '\Itsmind\\Sevdesk\Model\ModelVoucherResponseCreateUser',
+        'sev_client' => '\Itsmind\Sevdesk\Model\ModelVoucherResponseSevClient',
+        'create_user' => '\Itsmind\Sevdesk\Model\ModelVoucherResponseCreateUser',
         'voucher_date' => '\DateTime',
-        'supplier' => '\Itsmind\\Sevdesk\Model\ModelVoucherResponseSupplier',
+        'supplier' => '\Itsmind\Sevdesk\Model\ModelVoucherResponseSupplier',
         'supplier_name' => 'string',
         'description' => 'string',
-        'document' => '\Itsmind\\Sevdesk\Model\ModelVoucherResponseDocument',
+        'document' => '\Itsmind\Sevdesk\Model\ModelVoucherResponseDocument',
         'pay_date' => '\DateTime',
         'status' => 'string',
         'sum_net' => 'string',
@@ -83,7 +83,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
         'paid_amount' => 'float',
         'tax_type' => 'string',
         'credit_debit' => 'string',
-        'cost_centre' => '\Itsmind\\Sevdesk\Model\ModelVoucherResponseCostCentre',
+        'cost_centre' => '\Itsmind\Sevdesk\Model\ModelVoucherResponseCostCentre',
         'voucher_type' => 'string',
         'currency' => 'string',
         'property_foreign_currency_deadline' => '\DateTime',
@@ -94,7 +94,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
         'recurring_last_voucher' => '\DateTime',
         'recurring_end_date' => '\DateTime',
         'enshrined' => '\DateTime',
-        'tax_set' => '\Itsmind\\Sevdesk\Model\ModelVoucherResponseTaxSet',
+        'tax_set' => '\Itsmind\Sevdesk\Model\ModelVoucherResponseTaxSet',
         'payment_deadline' => '\DateTime',
         'delivery_date' => '\DateTime',
         'delivery_date_until' => '\DateTime'
@@ -815,7 +815,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets sev_client
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherResponseSevClient|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -825,7 +825,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets sev_client
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -842,7 +842,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets create_user
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherResponseCreateUser|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherResponseCreateUser|null
      */
     public function getCreateUser()
     {
@@ -852,7 +852,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets create_user
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherResponseCreateUser|null $create_user create_user
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherResponseCreateUser|null $create_user create_user
      *
      * @return self
      */
@@ -903,7 +903,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets supplier
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherResponseSupplier|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherResponseSupplier|null
      */
     public function getSupplier()
     {
@@ -913,7 +913,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets supplier
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherResponseSupplier|null $supplier supplier
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherResponseSupplier|null $supplier supplier
      *
      * @return self
      */
@@ -1005,7 +1005,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets document
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherResponseDocument|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherResponseDocument|null
      */
     public function getDocument()
     {
@@ -1015,7 +1015,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets document
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherResponseDocument|null $document document
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherResponseDocument|null $document document
      *
      * @return self
      */
@@ -1445,7 +1445,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets cost_centre
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherResponseCostCentre|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherResponseCostCentre|null
      */
     public function getCostCentre()
     {
@@ -1455,7 +1455,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets cost_centre
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherResponseCostCentre|null $cost_centre cost_centre
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherResponseCostCentre|null $cost_centre cost_centre
      *
      * @return self
      */
@@ -1832,7 +1832,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets tax_set
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherResponseTaxSet|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherResponseTaxSet|null
      */
     public function getTaxSet()
     {
@@ -1842,7 +1842,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets tax_set
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherResponseTaxSet|null $tax_set tax_set
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherResponseTaxSet|null $tax_set tax_set
      *
      * @return self
      */

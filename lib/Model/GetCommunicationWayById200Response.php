@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * GetCommunicationWayById200Response Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetCommunicationWayById200Response implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'objects' => '\Itsmind\\Sevdesk\Model\ModelCommunicationWayResponse[]'
+        'objects' => '\Itsmind\Sevdesk\Model\ModelCommunicationWayResponse[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetCommunicationWayById200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets objects
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCommunicationWayResponse[]|null
+     * @return \Itsmind\Sevdesk\Model\ModelCommunicationWayResponse[]|null
      */
     public function getObjects()
     {
@@ -302,7 +302,7 @@ class GetCommunicationWayById200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets objects
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCommunicationWayResponse[]|null $objects objects
+     * @param \Itsmind\Sevdesk\Model\ModelCommunicationWayResponse[]|null $objects objects
      *
      * @return self
      */

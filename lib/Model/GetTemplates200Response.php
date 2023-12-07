@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * GetTemplates200Response Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetTemplates200Response implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'result' => 'string',
-        'templates' => '\Itsmind\\Sevdesk\Model\GetTemplates200ResponseTemplates'
+        'templates' => '\Itsmind\Sevdesk\Model\GetTemplates200ResponseTemplates'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetTemplates200Response implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets templates
      *
-     * @return \Itsmind\\Sevdesk\Model\GetTemplates200ResponseTemplates|null
+     * @return \Itsmind\Sevdesk\Model\GetTemplates200ResponseTemplates|null
      */
     public function getTemplates()
     {
@@ -336,7 +336,7 @@ class GetTemplates200Response implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets templates
      *
-     * @param \Itsmind\\Sevdesk\Model\GetTemplates200ResponseTemplates|null $templates templates
+     * @param \Itsmind\Sevdesk\Model\GetTemplates200ResponseTemplates|null $templates templates
      *
      * @return self
      */

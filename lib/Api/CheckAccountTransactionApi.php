@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Api;
+namespace Itsmind\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Itsmind\\Sevdesk\ApiException;
-use Itsmind\\Sevdesk\Configuration;
-use Itsmind\\Sevdesk\HeaderSelector;
-use Itsmind\\Sevdesk\ObjectSerializer;
+use Itsmind\Sevdesk\ApiException;
+use Itsmind\Sevdesk\Configuration;
+use Itsmind\Sevdesk\HeaderSelector;
+use Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * CheckAccountTransactionApi Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,12 +139,12 @@ class CheckAccountTransactionApi
      *
      * Create a new transaction
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelCheckAccountTransaction $model_check_account_transaction Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCheckAccountTransaction $model_check_account_transaction Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTransaction'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response
+     * @return \Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response
      */
     public function createTransaction($model_check_account_transaction = null, string $contentType = self::contentTypes['createTransaction'][0])
     {
@@ -157,12 +157,12 @@ class CheckAccountTransactionApi
      *
      * Create a new transaction
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelCheckAccountTransaction $model_check_account_transaction Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCheckAccountTransaction $model_check_account_transaction Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTransaction'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTransactionWithHttpInfo($model_check_account_transaction = null, string $contentType = self::contentTypes['createTransaction'][0])
     {
@@ -205,11 +205,11 @@ class CheckAccountTransactionApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -227,13 +227,13 @@ class CheckAccountTransactionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -266,7 +266,7 @@ class CheckAccountTransactionApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response',
+                        '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -281,7 +281,7 @@ class CheckAccountTransactionApi
      *
      * Create a new transaction
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelCheckAccountTransaction $model_check_account_transaction Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCheckAccountTransaction $model_check_account_transaction Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTransaction'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -302,7 +302,7 @@ class CheckAccountTransactionApi
      *
      * Create a new transaction
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelCheckAccountTransaction $model_check_account_transaction Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCheckAccountTransaction $model_check_account_transaction Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTransaction'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -310,7 +310,7 @@ class CheckAccountTransactionApi
      */
     public function createTransactionAsyncWithHttpInfo($model_check_account_transaction = null, string $contentType = self::contentTypes['createTransaction'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response';
         $request = $this->createTransactionRequest($model_check_account_transaction, $contentType);
 
         return $this->client
@@ -352,7 +352,7 @@ class CheckAccountTransactionApi
     /**
      * Create request for operation 'createTransaction'
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelCheckAccountTransaction $model_check_account_transaction Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCheckAccountTransaction $model_check_account_transaction Creation data. Please be aware, that you need to provide at least all required parameter      of the CheckAccountTransaction model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTransaction'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -447,9 +447,9 @@ class CheckAccountTransactionApi
      * @param  int $check_account_transaction_id Id of check account transaction to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteCheckAccountTransaction'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response
+     * @return \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response
      */
     public function deleteCheckAccountTransaction($check_account_transaction_id, string $contentType = self::contentTypes['deleteCheckAccountTransaction'][0])
     {
@@ -465,9 +465,9 @@ class CheckAccountTransactionApi
      * @param  int $check_account_transaction_id Id of check account transaction to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteCheckAccountTransaction'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteCheckAccountTransactionWithHttpInfo($check_account_transaction_id, string $contentType = self::contentTypes['deleteCheckAccountTransaction'][0])
     {
@@ -510,11 +510,11 @@ class CheckAccountTransactionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -532,13 +532,13 @@ class CheckAccountTransactionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -571,7 +571,7 @@ class CheckAccountTransactionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response',
+                        '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -615,7 +615,7 @@ class CheckAccountTransactionApi
      */
     public function deleteCheckAccountTransactionAsyncWithHttpInfo($check_account_transaction_id, string $contentType = self::contentTypes['deleteCheckAccountTransaction'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response';
         $request = $this->deleteCheckAccountTransactionRequest($check_account_transaction_id, $contentType);
 
         return $this->client
@@ -759,9 +759,9 @@ class CheckAccountTransactionApi
      * @param  int $check_account_transaction_id ID of check account transaction (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCheckAccountTransactionById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response
+     * @return \Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response
      */
     public function getCheckAccountTransactionById($check_account_transaction_id, string $contentType = self::contentTypes['getCheckAccountTransactionById'][0])
     {
@@ -777,9 +777,9 @@ class CheckAccountTransactionApi
      * @param  int $check_account_transaction_id ID of check account transaction (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCheckAccountTransactionById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCheckAccountTransactionByIdWithHttpInfo($check_account_transaction_id, string $contentType = self::contentTypes['getCheckAccountTransactionById'][0])
     {
@@ -822,11 +822,11 @@ class CheckAccountTransactionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -844,13 +844,13 @@ class CheckAccountTransactionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -883,7 +883,7 @@ class CheckAccountTransactionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response',
+                        '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -927,7 +927,7 @@ class CheckAccountTransactionApi
      */
     public function getCheckAccountTransactionByIdAsyncWithHttpInfo($check_account_transaction_id, string $contentType = self::contentTypes['getCheckAccountTransactionById'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response';
         $request = $this->getCheckAccountTransactionByIdRequest($check_account_transaction_id, $contentType);
 
         return $this->client
@@ -1085,9 +1085,9 @@ class CheckAccountTransactionApi
      * @param  bool $only_debit Only retrieve debit transactions (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTransactions'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetTransactions200Response
+     * @return \Itsmind\Sevdesk\Model\GetTransactions200Response
      */
     public function getTransactions($count_all = null, $limit = null, $offset = null, $status = null, $check_account_id = null, $check_account_object_name = null, $hide_fees = null, $is_booked = null, $paymt_purpose = null, $start_date = null, $end_date = null, $search_for_invoice_and_voucher = null, $payee_payer_name = null, $only_credit = null, $only_debit = null, string $contentType = self::contentTypes['getTransactions'][0])
     {
@@ -1117,9 +1117,9 @@ class CheckAccountTransactionApi
      * @param  bool $only_debit Only retrieve debit transactions (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTransactions'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetTransactions200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetTransactions200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTransactionsWithHttpInfo($count_all = null, $limit = null, $offset = null, $status = null, $check_account_id = null, $check_account_object_name = null, $hide_fees = null, $is_booked = null, $paymt_purpose = null, $start_date = null, $end_date = null, $search_for_invoice_and_voucher = null, $payee_payer_name = null, $only_credit = null, $only_debit = null, string $contentType = self::contentTypes['getTransactions'][0])
     {
@@ -1162,11 +1162,11 @@ class CheckAccountTransactionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetTransactions200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetTransactions200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetTransactions200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetTransactions200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1184,13 +1184,13 @@ class CheckAccountTransactionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetTransactions200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetTransactions200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetTransactions200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetTransactions200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1223,7 +1223,7 @@ class CheckAccountTransactionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetTransactions200Response',
+                        '\Itsmind\Sevdesk\Model\GetTransactions200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1295,7 +1295,7 @@ class CheckAccountTransactionApi
      */
     public function getTransactionsAsyncWithHttpInfo($count_all = null, $limit = null, $offset = null, $status = null, $check_account_id = null, $check_account_object_name = null, $hide_fees = null, $is_booked = null, $paymt_purpose = null, $start_date = null, $end_date = null, $search_for_invoice_and_voucher = null, $payee_payer_name = null, $only_credit = null, $only_debit = null, string $contentType = self::contentTypes['getTransactions'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetTransactions200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetTransactions200Response';
         $request = $this->getTransactionsRequest($count_all, $limit, $offset, $status, $check_account_id, $check_account_object_name, $hide_fees, $is_booked, $paymt_purpose, $start_date, $end_date, $search_for_invoice_and_voucher, $payee_payer_name, $only_credit, $only_debit, $contentType);
 
         return $this->client
@@ -1586,12 +1586,12 @@ class CheckAccountTransactionApi
      * Update an existing check account transaction
      *
      * @param  int $check_account_transaction_id ID of check account to update transaction (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdate $model_check_account_transaction_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionUpdate $model_check_account_transaction_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCheckAccountTransaction'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response
+     * @return \Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response
      */
     public function updateCheckAccountTransaction($check_account_transaction_id, $model_check_account_transaction_update = null, string $contentType = self::contentTypes['updateCheckAccountTransaction'][0])
     {
@@ -1605,12 +1605,12 @@ class CheckAccountTransactionApi
      * Update an existing check account transaction
      *
      * @param  int $check_account_transaction_id ID of check account to update transaction (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdate $model_check_account_transaction_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionUpdate $model_check_account_transaction_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCheckAccountTransaction'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCheckAccountTransactionWithHttpInfo($check_account_transaction_id, $model_check_account_transaction_update = null, string $contentType = self::contentTypes['updateCheckAccountTransaction'][0])
     {
@@ -1653,11 +1653,11 @@ class CheckAccountTransactionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1675,13 +1675,13 @@ class CheckAccountTransactionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1714,7 +1714,7 @@ class CheckAccountTransactionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response',
+                        '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1730,7 +1730,7 @@ class CheckAccountTransactionApi
      * Update an existing check account transaction
      *
      * @param  int $check_account_transaction_id ID of check account to update transaction (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdate $model_check_account_transaction_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionUpdate $model_check_account_transaction_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCheckAccountTransaction'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1752,7 +1752,7 @@ class CheckAccountTransactionApi
      * Update an existing check account transaction
      *
      * @param  int $check_account_transaction_id ID of check account to update transaction (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdate $model_check_account_transaction_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionUpdate $model_check_account_transaction_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCheckAccountTransaction'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1760,7 +1760,7 @@ class CheckAccountTransactionApi
      */
     public function updateCheckAccountTransactionAsyncWithHttpInfo($check_account_transaction_id, $model_check_account_transaction_update = null, string $contentType = self::contentTypes['updateCheckAccountTransaction'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetCheckAccountTransactionById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetCheckAccountTransactionById200Response';
         $request = $this->updateCheckAccountTransactionRequest($check_account_transaction_id, $model_check_account_transaction_update, $contentType);
 
         return $this->client
@@ -1803,7 +1803,7 @@ class CheckAccountTransactionApi
      * Create request for operation 'updateCheckAccountTransaction'
      *
      * @param  int $check_account_transaction_id ID of check account to update transaction (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdate $model_check_account_transaction_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionUpdate $model_check_account_transaction_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateCheckAccountTransaction'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

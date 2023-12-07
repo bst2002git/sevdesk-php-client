@@ -1,4 +1,4 @@
-# Itsmind\\Sevdesk\VoucherApi
+# Itsmind\Sevdesk\VoucherApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `bookVoucher()`
 
 ```php
-bookVoucher($voucher_id, $book_voucher_request): \Itsmind\\Sevdesk\Model\BookVoucher200Response
+bookVoucher($voucher_id, $book_voucher_request): \Itsmind\Sevdesk\Model\BookVoucher200Response
 ```
 
 Book a voucher
@@ -30,19 +30,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\VoucherApi(
+$apiInstance = new Itsmind\Sevdesk\Api\VoucherApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $voucher_id = 56; // int | ID of voucher to book
-$book_voucher_request = new \Itsmind\\Sevdesk\Model\BookVoucherRequest(); // \Itsmind\\Sevdesk\Model\BookVoucherRequest | Booking data
+$book_voucher_request = new \Itsmind\Sevdesk\Model\BookVoucherRequest(); // \Itsmind\Sevdesk\Model\BookVoucherRequest | Booking data
 
 try {
     $result = $apiInstance->bookVoucher($voucher_id, $book_voucher_request);
@@ -57,11 +57,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **voucher_id** | **int**| ID of voucher to book | |
-| **book_voucher_request** | [**\Itsmind\\Sevdesk\Model\BookVoucherRequest**](../Model/BookVoucherRequest.md)| Booking data | [optional] |
+| **book_voucher_request** | [**\Itsmind\Sevdesk\Model\BookVoucherRequest**](../Model/BookVoucherRequest.md)| Booking data | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\BookVoucher200Response**](../Model/BookVoucher200Response.md)
+[**\Itsmind\Sevdesk\Model\BookVoucher200Response**](../Model/BookVoucher200Response.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ try {
 ## `createVoucherByFactory()`
 
 ```php
-createVoucherByFactory($save_voucher): \Itsmind\\Sevdesk\Model\CreateVoucherByFactory201Response
+createVoucherByFactory($save_voucher): \Itsmind\Sevdesk\Model\CreateVoucherByFactory201Response
 ```
 
 Create a new voucher
@@ -94,18 +94,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\VoucherApi(
+$apiInstance = new Itsmind\Sevdesk\Api\VoucherApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$save_voucher = new \Itsmind\\Sevdesk\Model\SaveVoucher(); // \Itsmind\\Sevdesk\Model\SaveVoucher | Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model!
+$save_voucher = new \Itsmind\Sevdesk\Model\SaveVoucher(); // \Itsmind\Sevdesk\Model\SaveVoucher | Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model!
 
 try {
     $result = $apiInstance->createVoucherByFactory($save_voucher);
@@ -119,11 +119,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **save_voucher** | [**\Itsmind\\Sevdesk\Model\SaveVoucher**](../Model/SaveVoucher.md)| Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! | [optional] |
+| **save_voucher** | [**\Itsmind\Sevdesk\Model\SaveVoucher**](../Model/SaveVoucher.md)| Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\CreateVoucherByFactory201Response**](../Model/CreateVoucherByFactory201Response.md)
+[**\Itsmind\Sevdesk\Model\CreateVoucherByFactory201Response**](../Model/CreateVoucherByFactory201Response.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ try {
 ## `getVoucherById()`
 
 ```php
-getVoucherById($voucher_id): \Itsmind\\Sevdesk\Model\GetVoucherById200Response
+getVoucherById($voucher_id): \Itsmind\Sevdesk\Model\GetVoucherById200Response
 ```
 
 Find voucher by ID
@@ -156,12 +156,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\VoucherApi(
+$apiInstance = new Itsmind\Sevdesk\Api\VoucherApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -185,7 +185,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetVoucherById200Response**](../Model/GetVoucherById200Response.md)
+[**\Itsmind\Sevdesk\Model\GetVoucherById200Response**](../Model/GetVoucherById200Response.md)
 
 ### Authorization
 
@@ -203,7 +203,7 @@ try {
 ## `getVouchers()`
 
 ```php
-getVouchers($status, $credit_debit, $description_like, $start_date, $end_date, $contact_id, $contact_object_name): \Itsmind\\Sevdesk\Model\GetVoucherById200Response
+getVouchers($status, $credit_debit, $description_like, $start_date, $end_date, $contact_id, $contact_object_name): \Itsmind\Sevdesk\Model\GetVoucherById200Response
 ```
 
 Retrieve vouchers
@@ -218,12 +218,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\VoucherApi(
+$apiInstance = new Itsmind\Sevdesk\Api\VoucherApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -259,7 +259,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetVoucherById200Response**](../Model/GetVoucherById200Response.md)
+[**\Itsmind\Sevdesk\Model\GetVoucherById200Response**](../Model/GetVoucherById200Response.md)
 
 ### Authorization
 
@@ -277,7 +277,7 @@ try {
 ## `updateVoucher()`
 
 ```php
-updateVoucher($voucher_id, $model_voucher_update): \Itsmind\\Sevdesk\Model\GetVoucherById200Response
+updateVoucher($voucher_id, $model_voucher_update): \Itsmind\Sevdesk\Model\GetVoucherById200Response
 ```
 
 Update an existing voucher
@@ -292,19 +292,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\VoucherApi(
+$apiInstance = new Itsmind\Sevdesk\Api\VoucherApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $voucher_id = 56; // int | ID of voucher to update
-$model_voucher_update = new \Itsmind\\Sevdesk\Model\ModelVoucherUpdate(); // \Itsmind\\Sevdesk\Model\ModelVoucherUpdate | Update data
+$model_voucher_update = new \Itsmind\Sevdesk\Model\ModelVoucherUpdate(); // \Itsmind\Sevdesk\Model\ModelVoucherUpdate | Update data
 
 try {
     $result = $apiInstance->updateVoucher($voucher_id, $model_voucher_update);
@@ -319,11 +319,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **voucher_id** | **int**| ID of voucher to update | |
-| **model_voucher_update** | [**\Itsmind\\Sevdesk\Model\ModelVoucherUpdate**](../Model/ModelVoucherUpdate.md)| Update data | [optional] |
+| **model_voucher_update** | [**\Itsmind\Sevdesk\Model\ModelVoucherUpdate**](../Model/ModelVoucherUpdate.md)| Update data | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetVoucherById200Response**](../Model/GetVoucherById200Response.md)
+[**\Itsmind\Sevdesk\Model\GetVoucherById200Response**](../Model/GetVoucherById200Response.md)
 
 ### Authorization
 
@@ -341,7 +341,7 @@ try {
 ## `voucherUploadFile()`
 
 ```php
-voucherUploadFile($voucher_upload_file_request): \Itsmind\\Sevdesk\Model\VoucherUploadFile201Response
+voucherUploadFile($voucher_upload_file_request): \Itsmind\Sevdesk\Model\VoucherUploadFile201Response
 ```
 
 Upload voucher file
@@ -356,18 +356,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\VoucherApi(
+$apiInstance = new Itsmind\Sevdesk\Api\VoucherApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$voucher_upload_file_request = new \Itsmind\\Sevdesk\Model\VoucherUploadFileRequest(); // \Itsmind\\Sevdesk\Model\VoucherUploadFileRequest | File to upload
+$voucher_upload_file_request = new \Itsmind\Sevdesk\Model\VoucherUploadFileRequest(); // \Itsmind\Sevdesk\Model\VoucherUploadFileRequest | File to upload
 
 try {
     $result = $apiInstance->voucherUploadFile($voucher_upload_file_request);
@@ -381,11 +381,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **voucher_upload_file_request** | [**\Itsmind\\Sevdesk\Model\VoucherUploadFileRequest**](../Model/VoucherUploadFileRequest.md)| File to upload | [optional] |
+| **voucher_upload_file_request** | [**\Itsmind\Sevdesk\Model\VoucherUploadFileRequest**](../Model/VoucherUploadFileRequest.md)| File to upload | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\VoucherUploadFile201Response**](../Model/VoucherUploadFile201Response.md)
+[**\Itsmind\Sevdesk\Model\VoucherUploadFile201Response**](../Model/VoucherUploadFile201Response.md)
 
 ### Authorization
 

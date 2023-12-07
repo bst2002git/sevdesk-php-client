@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelCheckAccountTransactionLogResponse Class Doc Comment
  *
  * @category Class
  * @description CheckAccountTransaction model. Responsible for the transactions on payment accounts.
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,9 +61,9 @@ class ModelCheckAccountTransactionLogResponse implements ModelInterface, ArrayAc
         'id' => 'string',
         'object_name' => 'string',
         'create' => '\DateTime',
-        'check_account_transaction' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponse',
-        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseSevClient',
-        'object' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionLogResponseObject',
+        'check_account_transaction' => '\Itsmind\Sevdesk\Model\ModelCheckAccountTransactionResponse',
+        'sev_client' => '\Itsmind\Sevdesk\Model\ModelCheckAccountTransactionResponseSevClient',
+        'object' => '\Itsmind\Sevdesk\Model\ModelCheckAccountTransactionLogResponseObject',
         'booking_date' => '\DateTime',
         'amount_paid' => 'float',
         'from_status' => 'string',
@@ -536,7 +536,7 @@ class ModelCheckAccountTransactionLogResponse implements ModelInterface, ArrayAc
     /**
      * Gets check_account_transaction
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponse|null
+     * @return \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionResponse|null
      */
     public function getCheckAccountTransaction()
     {
@@ -546,7 +546,7 @@ class ModelCheckAccountTransactionLogResponse implements ModelInterface, ArrayAc
     /**
      * Sets check_account_transaction
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponse|null $check_account_transaction check_account_transaction
+     * @param \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionResponse|null $check_account_transaction check_account_transaction
      *
      * @return self
      */
@@ -563,7 +563,7 @@ class ModelCheckAccountTransactionLogResponse implements ModelInterface, ArrayAc
     /**
      * Gets sev_client
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseSevClient|null
+     * @return \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -573,7 +573,7 @@ class ModelCheckAccountTransactionLogResponse implements ModelInterface, ArrayAc
     /**
      * Sets sev_client
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -590,7 +590,7 @@ class ModelCheckAccountTransactionLogResponse implements ModelInterface, ArrayAc
     /**
      * Gets object
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionLogResponseObject|null
+     * @return \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionLogResponseObject|null
      */
     public function getObject()
     {
@@ -600,7 +600,7 @@ class ModelCheckAccountTransactionLogResponse implements ModelInterface, ArrayAc
     /**
      * Sets object
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionLogResponseObject|null $object object
+     * @param \Itsmind\Sevdesk\Model\ModelCheckAccountTransactionLogResponseObject|null $object object
      *
      * @return self
      */

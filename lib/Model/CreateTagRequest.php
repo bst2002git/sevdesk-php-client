@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * CreateTagRequest Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CreateTagRequest implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'object' => '\Itsmind\\Sevdesk\Model\CreateTagRequestObject'
+        'object' => '\Itsmind\Sevdesk\Model\CreateTagRequestObject'
     ];
 
     /**
@@ -326,7 +326,7 @@ class CreateTagRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets object
      *
-     * @return \Itsmind\\Sevdesk\Model\CreateTagRequestObject|null
+     * @return \Itsmind\Sevdesk\Model\CreateTagRequestObject|null
      */
     public function getObject()
     {
@@ -336,7 +336,7 @@ class CreateTagRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets object
      *
-     * @param \Itsmind\\Sevdesk\Model\CreateTagRequestObject|null $object object
+     * @param \Itsmind\Sevdesk\Model\CreateTagRequestObject|null $object object
      *
      * @return self
      */

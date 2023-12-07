@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Api;
+namespace Itsmind\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Itsmind\\Sevdesk\ApiException;
-use Itsmind\\Sevdesk\Configuration;
-use Itsmind\\Sevdesk\HeaderSelector;
-use Itsmind\\Sevdesk\ObjectSerializer;
+use Itsmind\Sevdesk\ApiException;
+use Itsmind\Sevdesk\Configuration;
+use Itsmind\Sevdesk\HeaderSelector;
+use Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * InvoiceApi Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -179,12 +179,12 @@ class InvoiceApi
      * Book an invoice
      *
      * @param  int $invoice_id ID of invoice to book (required)
-     * @param  \Itsmind\\Sevdesk\Model\BookInvoiceRequest $book_invoice_request Booking data (optional)
+     * @param  \Itsmind\Sevdesk\Model\BookInvoiceRequest $book_invoice_request Booking data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bookInvoice'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\BookInvoice200Response
+     * @return \Itsmind\Sevdesk\Model\BookInvoice200Response
      */
     public function bookInvoice($invoice_id, $book_invoice_request = null, string $contentType = self::contentTypes['bookInvoice'][0])
     {
@@ -198,12 +198,12 @@ class InvoiceApi
      * Book an invoice
      *
      * @param  int $invoice_id ID of invoice to book (required)
-     * @param  \Itsmind\\Sevdesk\Model\BookInvoiceRequest $book_invoice_request Booking data (optional)
+     * @param  \Itsmind\Sevdesk\Model\BookInvoiceRequest $book_invoice_request Booking data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bookInvoice'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\BookInvoice200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\BookInvoice200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function bookInvoiceWithHttpInfo($invoice_id, $book_invoice_request = null, string $contentType = self::contentTypes['bookInvoice'][0])
     {
@@ -246,11 +246,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\BookInvoice200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\BookInvoice200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\BookInvoice200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\BookInvoice200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -268,13 +268,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\BookInvoice200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\BookInvoice200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\BookInvoice200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\BookInvoice200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -307,7 +307,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\BookInvoice200Response',
+                        '\Itsmind\Sevdesk\Model\BookInvoice200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -323,7 +323,7 @@ class InvoiceApi
      * Book an invoice
      *
      * @param  int $invoice_id ID of invoice to book (required)
-     * @param  \Itsmind\\Sevdesk\Model\BookInvoiceRequest $book_invoice_request Booking data (optional)
+     * @param  \Itsmind\Sevdesk\Model\BookInvoiceRequest $book_invoice_request Booking data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bookInvoice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -345,7 +345,7 @@ class InvoiceApi
      * Book an invoice
      *
      * @param  int $invoice_id ID of invoice to book (required)
-     * @param  \Itsmind\\Sevdesk\Model\BookInvoiceRequest $book_invoice_request Booking data (optional)
+     * @param  \Itsmind\Sevdesk\Model\BookInvoiceRequest $book_invoice_request Booking data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bookInvoice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -353,7 +353,7 @@ class InvoiceApi
      */
     public function bookInvoiceAsyncWithHttpInfo($invoice_id, $book_invoice_request = null, string $contentType = self::contentTypes['bookInvoice'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\BookInvoice200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\BookInvoice200Response';
         $request = $this->bookInvoiceRequest($invoice_id, $book_invoice_request, $contentType);
 
         return $this->client
@@ -396,7 +396,7 @@ class InvoiceApi
      * Create request for operation 'bookInvoice'
      *
      * @param  int $invoice_id ID of invoice to book (required)
-     * @param  \Itsmind\\Sevdesk\Model\BookInvoiceRequest $book_invoice_request Booking data (optional)
+     * @param  \Itsmind\Sevdesk\Model\BookInvoiceRequest $book_invoice_request Booking data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bookInvoice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -506,9 +506,9 @@ class InvoiceApi
      * @param  int $invoice_id ID of invoice to be cancelled (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelInvoice'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetInvoiceById200Response
+     * @return \Itsmind\Sevdesk\Model\GetInvoiceById200Response
      */
     public function cancelInvoice($invoice_id, string $contentType = self::contentTypes['cancelInvoice'][0])
     {
@@ -524,9 +524,9 @@ class InvoiceApi
      * @param  int $invoice_id ID of invoice to be cancelled (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelInvoice'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function cancelInvoiceWithHttpInfo($invoice_id, string $contentType = self::contentTypes['cancelInvoice'][0])
     {
@@ -569,11 +569,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\Itsmind\\Sevdesk\Model\GetInvoiceById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetInvoiceById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetInvoiceById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetInvoiceById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -591,13 +591,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetInvoiceById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetInvoiceById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -630,7 +630,7 @@ class InvoiceApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response',
+                        '\Itsmind\Sevdesk\Model\GetInvoiceById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -674,7 +674,7 @@ class InvoiceApi
      */
     public function cancelInvoiceAsyncWithHttpInfo($invoice_id, string $contentType = self::contentTypes['cancelInvoice'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetInvoiceById200Response';
         $request = $this->cancelInvoiceRequest($invoice_id, $contentType);
 
         return $this->client
@@ -815,12 +815,12 @@ class InvoiceApi
      *
      * Create a new invoice
      *
-     * @param  \Itsmind\\Sevdesk\Model\SaveInvoice $save_invoice Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\SaveInvoice $save_invoice Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceByFactory'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\SaveInvoiceResponse
+     * @return \Itsmind\Sevdesk\Model\SaveInvoiceResponse
      */
     public function createInvoiceByFactory($save_invoice = null, string $contentType = self::contentTypes['createInvoiceByFactory'][0])
     {
@@ -833,12 +833,12 @@ class InvoiceApi
      *
      * Create a new invoice
      *
-     * @param  \Itsmind\\Sevdesk\Model\SaveInvoice $save_invoice Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\SaveInvoice $save_invoice Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceByFactory'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\SaveInvoiceResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\SaveInvoiceResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createInvoiceByFactoryWithHttpInfo($save_invoice = null, string $contentType = self::contentTypes['createInvoiceByFactory'][0])
     {
@@ -881,11 +881,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\Itsmind\\Sevdesk\Model\SaveInvoiceResponse' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\SaveInvoiceResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\SaveInvoiceResponse' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\SaveInvoiceResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -903,13 +903,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\SaveInvoiceResponse', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\SaveInvoiceResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\SaveInvoiceResponse';
+            $returnType = '\Itsmind\Sevdesk\Model\SaveInvoiceResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -942,7 +942,7 @@ class InvoiceApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\SaveInvoiceResponse',
+                        '\Itsmind\Sevdesk\Model\SaveInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -957,7 +957,7 @@ class InvoiceApi
      *
      * Create a new invoice
      *
-     * @param  \Itsmind\\Sevdesk\Model\SaveInvoice $save_invoice Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\SaveInvoice $save_invoice Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceByFactory'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -978,7 +978,7 @@ class InvoiceApi
      *
      * Create a new invoice
      *
-     * @param  \Itsmind\\Sevdesk\Model\SaveInvoice $save_invoice Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\SaveInvoice $save_invoice Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceByFactory'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -986,7 +986,7 @@ class InvoiceApi
      */
     public function createInvoiceByFactoryAsyncWithHttpInfo($save_invoice = null, string $contentType = self::contentTypes['createInvoiceByFactory'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\SaveInvoiceResponse';
+        $returnType = '\Itsmind\Sevdesk\Model\SaveInvoiceResponse';
         $request = $this->createInvoiceByFactoryRequest($save_invoice, $contentType);
 
         return $this->client
@@ -1028,7 +1028,7 @@ class InvoiceApi
     /**
      * Create request for operation 'createInvoiceByFactory'
      *
-     * @param  \Itsmind\\Sevdesk\Model\SaveInvoice $save_invoice Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\SaveInvoice $save_invoice Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceByFactory'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1122,12 +1122,12 @@ class InvoiceApi
      *
      * @param  int $invoice_id the id of the invoice (required)
      * @param  string $invoice_object_name Model name, which is &#39;Invoice&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrder $model_create_invoice_from_order Create invoice (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreateInvoiceFromOrder $model_create_invoice_from_order Create invoice (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceFromOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetInvoiceById200Response
+     * @return \Itsmind\Sevdesk\Model\GetInvoiceById200Response
      */
     public function createInvoiceFromOrder($invoice_id, $invoice_object_name, $model_create_invoice_from_order = null, string $contentType = self::contentTypes['createInvoiceFromOrder'][0])
     {
@@ -1142,12 +1142,12 @@ class InvoiceApi
      *
      * @param  int $invoice_id the id of the invoice (required)
      * @param  string $invoice_object_name Model name, which is &#39;Invoice&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrder $model_create_invoice_from_order Create invoice (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreateInvoiceFromOrder $model_create_invoice_from_order Create invoice (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceFromOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createInvoiceFromOrderWithHttpInfo($invoice_id, $invoice_object_name, $model_create_invoice_from_order = null, string $contentType = self::contentTypes['createInvoiceFromOrder'][0])
     {
@@ -1190,11 +1190,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetInvoiceById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetInvoiceById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetInvoiceById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetInvoiceById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1212,13 +1212,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetInvoiceById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetInvoiceById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1251,7 +1251,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response',
+                        '\Itsmind\Sevdesk\Model\GetInvoiceById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1268,7 +1268,7 @@ class InvoiceApi
      *
      * @param  int $invoice_id the id of the invoice (required)
      * @param  string $invoice_object_name Model name, which is &#39;Invoice&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrder $model_create_invoice_from_order Create invoice (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreateInvoiceFromOrder $model_create_invoice_from_order Create invoice (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceFromOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1291,7 +1291,7 @@ class InvoiceApi
      *
      * @param  int $invoice_id the id of the invoice (required)
      * @param  string $invoice_object_name Model name, which is &#39;Invoice&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrder $model_create_invoice_from_order Create invoice (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreateInvoiceFromOrder $model_create_invoice_from_order Create invoice (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceFromOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1299,7 +1299,7 @@ class InvoiceApi
      */
     public function createInvoiceFromOrderAsyncWithHttpInfo($invoice_id, $invoice_object_name, $model_create_invoice_from_order = null, string $contentType = self::contentTypes['createInvoiceFromOrder'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetInvoiceById200Response';
         $request = $this->createInvoiceFromOrderRequest($invoice_id, $invoice_object_name, $model_create_invoice_from_order, $contentType);
 
         return $this->client
@@ -1343,7 +1343,7 @@ class InvoiceApi
      *
      * @param  int $invoice_id the id of the invoice (required)
      * @param  string $invoice_object_name Model name, which is &#39;Invoice&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrder $model_create_invoice_from_order Create invoice (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreateInvoiceFromOrder $model_create_invoice_from_order Create invoice (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceFromOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1469,12 +1469,12 @@ class InvoiceApi
      *
      * @param  int $invoice_id the id of the invoice (required)
      * @param  string $invoice_object_name Model name, which is &#39;Invoice&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequest $create_invoice_reminder_request Create invoice (optional)
+     * @param  \Itsmind\Sevdesk\Model\CreateInvoiceReminderRequest $create_invoice_reminder_request Create invoice (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceReminder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response
+     * @return \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response
      */
     public function createInvoiceReminder($invoice_id, $invoice_object_name, $create_invoice_reminder_request = null, string $contentType = self::contentTypes['createInvoiceReminder'][0])
     {
@@ -1489,12 +1489,12 @@ class InvoiceApi
      *
      * @param  int $invoice_id the id of the invoice (required)
      * @param  string $invoice_object_name Model name, which is &#39;Invoice&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequest $create_invoice_reminder_request Create invoice (optional)
+     * @param  \Itsmind\Sevdesk\Model\CreateInvoiceReminderRequest $create_invoice_reminder_request Create invoice (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceReminder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createInvoiceReminderWithHttpInfo($invoice_id, $invoice_object_name, $create_invoice_reminder_request = null, string $contentType = self::contentTypes['createInvoiceReminder'][0])
     {
@@ -1537,11 +1537,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1559,13 +1559,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1598,7 +1598,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response',
+                        '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1615,7 +1615,7 @@ class InvoiceApi
      *
      * @param  int $invoice_id the id of the invoice (required)
      * @param  string $invoice_object_name Model name, which is &#39;Invoice&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequest $create_invoice_reminder_request Create invoice (optional)
+     * @param  \Itsmind\Sevdesk\Model\CreateInvoiceReminderRequest $create_invoice_reminder_request Create invoice (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceReminder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1638,7 +1638,7 @@ class InvoiceApi
      *
      * @param  int $invoice_id the id of the invoice (required)
      * @param  string $invoice_object_name Model name, which is &#39;Invoice&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequest $create_invoice_reminder_request Create invoice (optional)
+     * @param  \Itsmind\Sevdesk\Model\CreateInvoiceReminderRequest $create_invoice_reminder_request Create invoice (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceReminder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1646,7 +1646,7 @@ class InvoiceApi
      */
     public function createInvoiceReminderAsyncWithHttpInfo($invoice_id, $invoice_object_name, $create_invoice_reminder_request = null, string $contentType = self::contentTypes['createInvoiceReminder'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response';
         $request = $this->createInvoiceReminderRequest($invoice_id, $invoice_object_name, $create_invoice_reminder_request, $contentType);
 
         return $this->client
@@ -1690,7 +1690,7 @@ class InvoiceApi
      *
      * @param  int $invoice_id the id of the invoice (required)
      * @param  string $invoice_object_name Model name, which is &#39;Invoice&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequest $create_invoice_reminder_request Create invoice (optional)
+     * @param  \Itsmind\Sevdesk\Model\CreateInvoiceReminderRequest $create_invoice_reminder_request Create invoice (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createInvoiceReminder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1817,7 +1817,7 @@ class InvoiceApi
      * @param  int $invoice_id ID of invoice to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteInvoiceById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1834,7 +1834,7 @@ class InvoiceApi
      * @param  int $invoice_id ID of invoice to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteInvoiceById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2052,9 +2052,9 @@ class InvoiceApi
      * @param  string[] $embed embed (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvoiceById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetInvoiceById200Response
+     * @return \Itsmind\Sevdesk\Model\GetInvoiceById200Response
      */
     public function getInvoiceById($invoice_id, $embed = null, string $contentType = self::contentTypes['getInvoiceById'][0])
     {
@@ -2071,9 +2071,9 @@ class InvoiceApi
      * @param  string[] $embed (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvoiceById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvoiceByIdWithHttpInfo($invoice_id, $embed = null, string $contentType = self::contentTypes['getInvoiceById'][0])
     {
@@ -2116,11 +2116,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetInvoiceById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetInvoiceById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetInvoiceById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetInvoiceById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2138,13 +2138,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetInvoiceById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetInvoiceById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2177,7 +2177,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response',
+                        '\Itsmind\Sevdesk\Model\GetInvoiceById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2223,7 +2223,7 @@ class InvoiceApi
      */
     public function getInvoiceByIdAsyncWithHttpInfo($invoice_id, $embed = null, string $contentType = self::contentTypes['getInvoiceById'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetInvoiceById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetInvoiceById200Response';
         $request = $this->getInvoiceByIdRequest($invoice_id, $embed, $contentType);
 
         return $this->client
@@ -2381,9 +2381,9 @@ class InvoiceApi
      * @param  string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvoicePositionsById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetInvoicePos200Response
+     * @return \Itsmind\Sevdesk\Model\GetInvoicePos200Response
      */
     public function getInvoicePositionsById($invoice_id, $limit = null, $offset = null, $embed = null, string $contentType = self::contentTypes['getInvoicePositionsById'][0])
     {
@@ -2402,9 +2402,9 @@ class InvoiceApi
      * @param  string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvoicePositionsById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetInvoicePos200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetInvoicePos200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvoicePositionsByIdWithHttpInfo($invoice_id, $limit = null, $offset = null, $embed = null, string $contentType = self::contentTypes['getInvoicePositionsById'][0])
     {
@@ -2447,11 +2447,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetInvoicePos200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetInvoicePos200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetInvoicePos200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetInvoicePos200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2469,13 +2469,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetInvoicePos200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetInvoicePos200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetInvoicePos200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetInvoicePos200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2508,7 +2508,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetInvoicePos200Response',
+                        '\Itsmind\Sevdesk\Model\GetInvoicePos200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2558,7 +2558,7 @@ class InvoiceApi
      */
     public function getInvoicePositionsByIdAsyncWithHttpInfo($invoice_id, $limit = null, $offset = null, $embed = null, string $contentType = self::contentTypes['getInvoicePositionsById'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetInvoicePos200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetInvoicePos200Response';
         $request = $this->getInvoicePositionsByIdRequest($invoice_id, $limit, $offset, $embed, $contentType);
 
         return $this->client
@@ -2747,9 +2747,9 @@ class InvoiceApi
      * @param  string[] $embed embed (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvoices'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetInvoices200Response
+     * @return \Itsmind\Sevdesk\Model\GetInvoices200Response
      */
     public function getInvoices($count_all = null, $invoice_type = null, $offset = null, $limit = null, $partially_paid = null, $canceled = null, $status = null, $invoice_number = null, $start_date = null, $end_date = null, $contact = null, $payment_method = null, $embed = null, string $contentType = self::contentTypes['getInvoices'][0])
     {
@@ -2777,9 +2777,9 @@ class InvoiceApi
      * @param  string[] $embed (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvoices'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetInvoices200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetInvoices200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvoicesWithHttpInfo($count_all = null, $invoice_type = null, $offset = null, $limit = null, $partially_paid = null, $canceled = null, $status = null, $invoice_number = null, $start_date = null, $end_date = null, $contact = null, $payment_method = null, $embed = null, string $contentType = self::contentTypes['getInvoices'][0])
     {
@@ -2822,11 +2822,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetInvoices200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetInvoices200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetInvoices200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetInvoices200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2844,13 +2844,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetInvoices200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetInvoices200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetInvoices200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetInvoices200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2883,7 +2883,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetInvoices200Response',
+                        '\Itsmind\Sevdesk\Model\GetInvoices200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2951,7 +2951,7 @@ class InvoiceApi
      */
     public function getInvoicesAsyncWithHttpInfo($count_all = null, $invoice_type = null, $offset = null, $limit = null, $partially_paid = null, $canceled = null, $status = null, $invoice_number = null, $start_date = null, $end_date = null, $contact = null, $payment_method = null, $embed = null, string $contentType = self::contentTypes['getInvoices'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetInvoices200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetInvoices200Response';
         $request = $this->getInvoicesRequest($count_all, $invoice_type, $offset, $limit, $partially_paid, $canceled, $status, $invoice_number, $start_date, $end_date, $contact, $payment_method, $embed, $contentType);
 
         return $this->client
@@ -3222,9 +3222,9 @@ class InvoiceApi
      * @param  int $invoice_id ID of invoice to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getIsInvoicePartiallyPaid'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response
+     * @return \Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response
      */
     public function getIsInvoicePartiallyPaid($invoice_id, string $contentType = self::contentTypes['getIsInvoicePartiallyPaid'][0])
     {
@@ -3240,9 +3240,9 @@ class InvoiceApi
      * @param  int $invoice_id ID of invoice to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getIsInvoicePartiallyPaid'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getIsInvoicePartiallyPaidWithHttpInfo($invoice_id, string $contentType = self::contentTypes['getIsInvoicePartiallyPaid'][0])
     {
@@ -3285,11 +3285,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3307,13 +3307,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3346,7 +3346,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response',
+                        '\Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3390,7 +3390,7 @@ class InvoiceApi
      */
     public function getIsInvoicePartiallyPaidAsyncWithHttpInfo($invoice_id, string $contentType = self::contentTypes['getIsInvoicePartiallyPaid'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response';
         $request = $this->getIsInvoicePartiallyPaidRequest($invoice_id, $contentType);
 
         return $this->client
@@ -3534,9 +3534,9 @@ class InvoiceApi
      * @param  int $invoice_id ID of invoice to get last dunning for (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getLastDunning'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response
+     * @return \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response
      */
     public function getLastDunning($invoice_id, string $contentType = self::contentTypes['getLastDunning'][0])
     {
@@ -3552,9 +3552,9 @@ class InvoiceApi
      * @param  int $invoice_id ID of invoice to get last dunning for (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getLastDunning'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getLastDunningWithHttpInfo($invoice_id, string $contentType = self::contentTypes['getLastDunning'][0])
     {
@@ -3597,11 +3597,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3619,13 +3619,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3658,7 +3658,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response',
+                        '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3702,7 +3702,7 @@ class InvoiceApi
      */
     public function getLastDunningAsyncWithHttpInfo($invoice_id, string $contentType = self::contentTypes['getLastDunning'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response';
         $request = $this->getLastDunningRequest($invoice_id, $contentType);
 
         return $this->client
@@ -3846,9 +3846,9 @@ class InvoiceApi
      * @param  GetOpenInvoiceReminderDebitInvoiceParameter $invoice Retrieve the open reminder debit for this invoice. The value of invoice[objectName] must be &#39;Invoice&#39;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOpenInvoiceReminderDebit'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response
+     * @return \Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response
      */
     public function getOpenInvoiceReminderDebit($invoice, string $contentType = self::contentTypes['getOpenInvoiceReminderDebit'][0])
     {
@@ -3864,9 +3864,9 @@ class InvoiceApi
      * @param  GetOpenInvoiceReminderDebitInvoiceParameter $invoice Retrieve the open reminder debit for this invoice. The value of invoice[objectName] must be &#39;Invoice&#39;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOpenInvoiceReminderDebit'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOpenInvoiceReminderDebitWithHttpInfo($invoice, string $contentType = self::contentTypes['getOpenInvoiceReminderDebit'][0])
     {
@@ -3909,11 +3909,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3931,13 +3931,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3970,7 +3970,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response',
+                        '\Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4014,7 +4014,7 @@ class InvoiceApi
      */
     public function getOpenInvoiceReminderDebitAsyncWithHttpInfo($invoice, string $contentType = self::contentTypes['getOpenInvoiceReminderDebit'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response';
         $request = $this->getOpenInvoiceReminderDebitRequest($invoice, $contentType);
 
         return $this->client
@@ -4161,9 +4161,9 @@ class InvoiceApi
      * @param  bool $prevent_send_by Defines if u want to send the invoice. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceGetPdf'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response
+     * @return \Itsmind\Sevdesk\Model\InvoiceGetPdf200Response
      */
     public function invoiceGetPdf($invoice_id, $download = null, $prevent_send_by = null, string $contentType = self::contentTypes['invoiceGetPdf'][0])
     {
@@ -4181,9 +4181,9 @@ class InvoiceApi
      * @param  bool $prevent_send_by Defines if u want to send the invoice. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceGetPdf'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\InvoiceGetPdf200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetPdfWithHttpInfo($invoice_id, $download = null, $prevent_send_by = null, string $contentType = self::contentTypes['invoiceGetPdf'][0])
     {
@@ -4226,11 +4226,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4248,13 +4248,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4287,7 +4287,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response',
+                        '\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4335,7 +4335,7 @@ class InvoiceApi
      */
     public function invoiceGetPdfAsyncWithHttpInfo($invoice_id, $download = null, $prevent_send_by = null, string $contentType = self::contentTypes['invoiceGetPdf'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response';
         $request = $this->invoiceGetPdfRequest($invoice_id, $download, $prevent_send_by, $contentType);
 
         return $this->client
@@ -4499,12 +4499,12 @@ class InvoiceApi
      * Render the pdf document of an invoice
      *
      * @param  int $invoice_id ID of invoice to render (required)
-     * @param  \Itsmind\\Sevdesk\Model\InvoiceRenderRequest $invoice_render_request Define if the document should be forcefully re-rendered. (optional)
+     * @param  \Itsmind\Sevdesk\Model\InvoiceRenderRequest $invoice_render_request Define if the document should be forcefully re-rendered. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceRender'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\InvoiceRender201Response
+     * @return \Itsmind\Sevdesk\Model\InvoiceRender201Response
      */
     public function invoiceRender($invoice_id, $invoice_render_request = null, string $contentType = self::contentTypes['invoiceRender'][0])
     {
@@ -4518,12 +4518,12 @@ class InvoiceApi
      * Render the pdf document of an invoice
      *
      * @param  int $invoice_id ID of invoice to render (required)
-     * @param  \Itsmind\\Sevdesk\Model\InvoiceRenderRequest $invoice_render_request Define if the document should be forcefully re-rendered. (optional)
+     * @param  \Itsmind\Sevdesk\Model\InvoiceRenderRequest $invoice_render_request Define if the document should be forcefully re-rendered. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceRender'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\InvoiceRender201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\InvoiceRender201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceRenderWithHttpInfo($invoice_id, $invoice_render_request = null, string $contentType = self::contentTypes['invoiceRender'][0])
     {
@@ -4566,11 +4566,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\Itsmind\\Sevdesk\Model\InvoiceRender201Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\InvoiceRender201Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\InvoiceRender201Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\InvoiceRender201Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4588,13 +4588,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\InvoiceRender201Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\InvoiceRender201Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\InvoiceRender201Response';
+            $returnType = '\Itsmind\Sevdesk\Model\InvoiceRender201Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4627,7 +4627,7 @@ class InvoiceApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\InvoiceRender201Response',
+                        '\Itsmind\Sevdesk\Model\InvoiceRender201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4643,7 +4643,7 @@ class InvoiceApi
      * Render the pdf document of an invoice
      *
      * @param  int $invoice_id ID of invoice to render (required)
-     * @param  \Itsmind\\Sevdesk\Model\InvoiceRenderRequest $invoice_render_request Define if the document should be forcefully re-rendered. (optional)
+     * @param  \Itsmind\Sevdesk\Model\InvoiceRenderRequest $invoice_render_request Define if the document should be forcefully re-rendered. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceRender'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4665,7 +4665,7 @@ class InvoiceApi
      * Render the pdf document of an invoice
      *
      * @param  int $invoice_id ID of invoice to render (required)
-     * @param  \Itsmind\\Sevdesk\Model\InvoiceRenderRequest $invoice_render_request Define if the document should be forcefully re-rendered. (optional)
+     * @param  \Itsmind\Sevdesk\Model\InvoiceRenderRequest $invoice_render_request Define if the document should be forcefully re-rendered. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceRender'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4673,7 +4673,7 @@ class InvoiceApi
      */
     public function invoiceRenderAsyncWithHttpInfo($invoice_id, $invoice_render_request = null, string $contentType = self::contentTypes['invoiceRender'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\InvoiceRender201Response';
+        $returnType = '\Itsmind\Sevdesk\Model\InvoiceRender201Response';
         $request = $this->invoiceRenderRequest($invoice_id, $invoice_render_request, $contentType);
 
         return $this->client
@@ -4716,7 +4716,7 @@ class InvoiceApi
      * Create request for operation 'invoiceRender'
      *
      * @param  int $invoice_id ID of invoice to render (required)
-     * @param  \Itsmind\\Sevdesk\Model\InvoiceRenderRequest $invoice_render_request Define if the document should be forcefully re-rendered. (optional)
+     * @param  \Itsmind\Sevdesk\Model\InvoiceRenderRequest $invoice_render_request Define if the document should be forcefully re-rendered. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceRender'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4824,12 +4824,12 @@ class InvoiceApi
      * Mark invoice as sent
      *
      * @param  int $invoice_id ID of invoice to mark as sent (required)
-     * @param  \Itsmind\\Sevdesk\Model\InvoiceSendByRequest $invoice_send_by_request Specify the send type (optional)
+     * @param  \Itsmind\Sevdesk\Model\InvoiceSendByRequest $invoice_send_by_request Specify the send type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceSendBy'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response
+     * @return \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response
      */
     public function invoiceSendBy($invoice_id, $invoice_send_by_request = null, string $contentType = self::contentTypes['invoiceSendBy'][0])
     {
@@ -4843,12 +4843,12 @@ class InvoiceApi
      * Mark invoice as sent
      *
      * @param  int $invoice_id ID of invoice to mark as sent (required)
-     * @param  \Itsmind\\Sevdesk\Model\InvoiceSendByRequest $invoice_send_by_request Specify the send type (optional)
+     * @param  \Itsmind\Sevdesk\Model\InvoiceSendByRequest $invoice_send_by_request Specify the send type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceSendBy'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceSendByWithHttpInfo($invoice_id, $invoice_send_by_request = null, string $contentType = self::contentTypes['invoiceSendBy'][0])
     {
@@ -4891,11 +4891,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4913,13 +4913,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4952,7 +4952,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response',
+                        '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4968,7 +4968,7 @@ class InvoiceApi
      * Mark invoice as sent
      *
      * @param  int $invoice_id ID of invoice to mark as sent (required)
-     * @param  \Itsmind\\Sevdesk\Model\InvoiceSendByRequest $invoice_send_by_request Specify the send type (optional)
+     * @param  \Itsmind\Sevdesk\Model\InvoiceSendByRequest $invoice_send_by_request Specify the send type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceSendBy'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4990,7 +4990,7 @@ class InvoiceApi
      * Mark invoice as sent
      *
      * @param  int $invoice_id ID of invoice to mark as sent (required)
-     * @param  \Itsmind\\Sevdesk\Model\InvoiceSendByRequest $invoice_send_by_request Specify the send type (optional)
+     * @param  \Itsmind\Sevdesk\Model\InvoiceSendByRequest $invoice_send_by_request Specify the send type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceSendBy'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4998,7 +4998,7 @@ class InvoiceApi
      */
     public function invoiceSendByAsyncWithHttpInfo($invoice_id, $invoice_send_by_request = null, string $contentType = self::contentTypes['invoiceSendBy'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response';
         $request = $this->invoiceSendByRequest($invoice_id, $invoice_send_by_request, $contentType);
 
         return $this->client
@@ -5041,7 +5041,7 @@ class InvoiceApi
      * Create request for operation 'invoiceSendBy'
      *
      * @param  int $invoice_id ID of invoice to mark as sent (required)
-     * @param  \Itsmind\\Sevdesk\Model\InvoiceSendByRequest $invoice_send_by_request Specify the send type (optional)
+     * @param  \Itsmind\Sevdesk\Model\InvoiceSendByRequest $invoice_send_by_request Specify the send type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoiceSendBy'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5149,12 +5149,12 @@ class InvoiceApi
      * Send invoice via email
      *
      * @param  int $invoice_id ID of invoice to be sent via email (required)
-     * @param  \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
+     * @param  \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendInvoiceViaEMail'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\SendInvoiceViaEMail201Response
+     * @return \Itsmind\Sevdesk\Model\SendInvoiceViaEMail201Response
      */
     public function sendInvoiceViaEMail($invoice_id, $send_invoice_via_e_mail_request = null, string $contentType = self::contentTypes['sendInvoiceViaEMail'][0])
     {
@@ -5168,12 +5168,12 @@ class InvoiceApi
      * Send invoice via email
      *
      * @param  int $invoice_id ID of invoice to be sent via email (required)
-     * @param  \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
+     * @param  \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendInvoiceViaEMail'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\SendInvoiceViaEMail201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\SendInvoiceViaEMail201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendInvoiceViaEMailWithHttpInfo($invoice_id, $send_invoice_via_e_mail_request = null, string $contentType = self::contentTypes['sendInvoiceViaEMail'][0])
     {
@@ -5216,11 +5216,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\Itsmind\\Sevdesk\Model\SendInvoiceViaEMail201Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\SendInvoiceViaEMail201Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\SendInvoiceViaEMail201Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\SendInvoiceViaEMail201Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5238,13 +5238,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\SendInvoiceViaEMail201Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\SendInvoiceViaEMail201Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\SendInvoiceViaEMail201Response';
+            $returnType = '\Itsmind\Sevdesk\Model\SendInvoiceViaEMail201Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5277,7 +5277,7 @@ class InvoiceApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\SendInvoiceViaEMail201Response',
+                        '\Itsmind\Sevdesk\Model\SendInvoiceViaEMail201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5293,7 +5293,7 @@ class InvoiceApi
      * Send invoice via email
      *
      * @param  int $invoice_id ID of invoice to be sent via email (required)
-     * @param  \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
+     * @param  \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendInvoiceViaEMail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5315,7 +5315,7 @@ class InvoiceApi
      * Send invoice via email
      *
      * @param  int $invoice_id ID of invoice to be sent via email (required)
-     * @param  \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
+     * @param  \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendInvoiceViaEMail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5323,7 +5323,7 @@ class InvoiceApi
      */
     public function sendInvoiceViaEMailAsyncWithHttpInfo($invoice_id, $send_invoice_via_e_mail_request = null, string $contentType = self::contentTypes['sendInvoiceViaEMail'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\SendInvoiceViaEMail201Response';
+        $returnType = '\Itsmind\Sevdesk\Model\SendInvoiceViaEMail201Response';
         $request = $this->sendInvoiceViaEMailRequest($invoice_id, $send_invoice_via_e_mail_request, $contentType);
 
         return $this->client
@@ -5366,7 +5366,7 @@ class InvoiceApi
      * Create request for operation 'sendInvoiceViaEMail'
      *
      * @param  int $invoice_id ID of invoice to be sent via email (required)
-     * @param  \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
+     * @param  \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendInvoiceViaEMail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5475,12 +5475,12 @@ class InvoiceApi
      *
      * @param  int $invoice_id ID of invoice to return (required)
      * @param  string[] $embed embed (optional)
-     * @param  \Itsmind\\Sevdesk\Model\ModelInvoiceUpdate $model_invoice_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelInvoiceUpdate $model_invoice_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateInvoiceById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response
+     * @return \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response
      */
     public function updateInvoiceById($invoice_id, $embed = null, $model_invoice_update = null, string $contentType = self::contentTypes['updateInvoiceById'][0])
     {
@@ -5495,12 +5495,12 @@ class InvoiceApi
      *
      * @param  int $invoice_id ID of invoice to return (required)
      * @param  string[] $embed (optional)
-     * @param  \Itsmind\\Sevdesk\Model\ModelInvoiceUpdate $model_invoice_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelInvoiceUpdate $model_invoice_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateInvoiceById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateInvoiceByIdWithHttpInfo($invoice_id, $embed = null, $model_invoice_update = null, string $contentType = self::contentTypes['updateInvoiceById'][0])
     {
@@ -5543,11 +5543,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5565,13 +5565,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5604,7 +5604,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response',
+                        '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5621,7 +5621,7 @@ class InvoiceApi
      *
      * @param  int $invoice_id ID of invoice to return (required)
      * @param  string[] $embed (optional)
-     * @param  \Itsmind\\Sevdesk\Model\ModelInvoiceUpdate $model_invoice_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelInvoiceUpdate $model_invoice_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateInvoiceById'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5644,7 +5644,7 @@ class InvoiceApi
      *
      * @param  int $invoice_id ID of invoice to return (required)
      * @param  string[] $embed (optional)
-     * @param  \Itsmind\\Sevdesk\Model\ModelInvoiceUpdate $model_invoice_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelInvoiceUpdate $model_invoice_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateInvoiceById'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5652,7 +5652,7 @@ class InvoiceApi
      */
     public function updateInvoiceByIdAsyncWithHttpInfo($invoice_id, $embed = null, $model_invoice_update = null, string $contentType = self::contentTypes['updateInvoiceById'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response';
         $request = $this->updateInvoiceByIdRequest($invoice_id, $embed, $model_invoice_update, $contentType);
 
         return $this->client
@@ -5696,7 +5696,7 @@ class InvoiceApi
      *
      * @param  int $invoice_id ID of invoice to return (required)
      * @param  string[] $embed (optional)
-     * @param  \Itsmind\\Sevdesk\Model\ModelInvoiceUpdate $model_invoice_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelInvoiceUpdate $model_invoice_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateInvoiceById'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5814,12 +5814,12 @@ class InvoiceApi
      * Update the status of an invoice
      *
      * @param  int $invoice_id ID of invoice to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\UpdateStatusRequest $update_status_request Update the status of an invoice. (optional)
+     * @param  \Itsmind\Sevdesk\Model\UpdateStatusRequest $update_status_request Update the status of an invoice. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateStatus'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response
+     * @return \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response
      */
     public function updateStatus($invoice_id, $update_status_request = null, string $contentType = self::contentTypes['updateStatus'][0])
     {
@@ -5833,12 +5833,12 @@ class InvoiceApi
      * Update the status of an invoice
      *
      * @param  int $invoice_id ID of invoice to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\UpdateStatusRequest $update_status_request Update the status of an invoice. (optional)
+     * @param  \Itsmind\Sevdesk\Model\UpdateStatusRequest $update_status_request Update the status of an invoice. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateStatus'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateStatusWithHttpInfo($invoice_id, $update_status_request = null, string $contentType = self::contentTypes['updateStatus'][0])
     {
@@ -5881,11 +5881,11 @@ class InvoiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5903,13 +5903,13 @@ class InvoiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5942,7 +5942,7 @@ class InvoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response',
+                        '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5958,7 +5958,7 @@ class InvoiceApi
      * Update the status of an invoice
      *
      * @param  int $invoice_id ID of invoice to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\UpdateStatusRequest $update_status_request Update the status of an invoice. (optional)
+     * @param  \Itsmind\Sevdesk\Model\UpdateStatusRequest $update_status_request Update the status of an invoice. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateStatus'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5980,7 +5980,7 @@ class InvoiceApi
      * Update the status of an invoice
      *
      * @param  int $invoice_id ID of invoice to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\UpdateStatusRequest $update_status_request Update the status of an invoice. (optional)
+     * @param  \Itsmind\Sevdesk\Model\UpdateStatusRequest $update_status_request Update the status of an invoice. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateStatus'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5988,7 +5988,7 @@ class InvoiceApi
      */
     public function updateStatusAsyncWithHttpInfo($invoice_id, $update_status_request = null, string $contentType = self::contentTypes['updateStatus'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response';
         $request = $this->updateStatusRequest($invoice_id, $update_status_request, $contentType);
 
         return $this->client
@@ -6031,7 +6031,7 @@ class InvoiceApi
      * Create request for operation 'updateStatus'
      *
      * @param  int $invoice_id ID of invoice to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\UpdateStatusRequest $update_status_request Update the status of an invoice. (optional)
+     * @param  \Itsmind\Sevdesk\Model\UpdateStatusRequest $update_status_request Update the status of an invoice. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateStatus'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

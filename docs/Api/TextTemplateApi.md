@@ -1,4 +1,4 @@
-# Itsmind\\Sevdesk\TextTemplateApi
+# Itsmind\Sevdesk\TextTemplateApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `addTextTemplate()`
 
 ```php
-addTextTemplate($model_text_template): \Itsmind\\Sevdesk\Model\ModelTextTemplateResponse
+addTextTemplate($model_text_template): \Itsmind\Sevdesk\Model\ModelTextTemplateResponse
 ```
 
 Create a new text template
@@ -28,18 +28,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\TextTemplateApi(
+$apiInstance = new Itsmind\Sevdesk\Api\TextTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$model_text_template = new \Itsmind\\Sevdesk\Model\ModelTextTemplate(); // \Itsmind\\Sevdesk\Model\ModelTextTemplate | Text Template Data
+$model_text_template = new \Itsmind\Sevdesk\Model\ModelTextTemplate(); // \Itsmind\Sevdesk\Model\ModelTextTemplate | Text Template Data
 
 try {
     $result = $apiInstance->addTextTemplate($model_text_template);
@@ -53,11 +53,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **model_text_template** | [**\Itsmind\\Sevdesk\Model\ModelTextTemplate**](../Model/ModelTextTemplate.md)| Text Template Data | [optional] |
+| **model_text_template** | [**\Itsmind\Sevdesk\Model\ModelTextTemplate**](../Model/ModelTextTemplate.md)| Text Template Data | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse**](../Model/ModelTextTemplateResponse.md)
+[**\Itsmind\Sevdesk\Model\ModelTextTemplateResponse**](../Model/ModelTextTemplateResponse.md)
 
 ### Authorization
 
@@ -90,12 +90,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\TextTemplateApi(
+$apiInstance = new Itsmind\Sevdesk\Api\TextTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -136,7 +136,7 @@ void (empty response body)
 ## `getTextTemplate()`
 
 ```php
-getTextTemplate($limit, $offset, $embed, $category, $object_type, $text_type): \Itsmind\\Sevdesk\Model\GetTextTemplate200Response
+getTextTemplate($limit, $offset, $embed, $category, $object_type, $text_type): \Itsmind\Sevdesk\Model\GetTextTemplate200Response
 ```
 
 Get an overview of all text template
@@ -151,12 +151,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\TextTemplateApi(
+$apiInstance = new Itsmind\Sevdesk\Api\TextTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -190,7 +190,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetTextTemplate200Response**](../Model/GetTextTemplate200Response.md)
+[**\Itsmind\Sevdesk\Model\GetTextTemplate200Response**](../Model/GetTextTemplate200Response.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ try {
 ## `updateTextTemplate()`
 
 ```php
-updateTextTemplate($id, $model_text_template): \Itsmind\\Sevdesk\Model\ModelTextTemplateResponse
+updateTextTemplate($id, $model_text_template): \Itsmind\Sevdesk\Model\ModelTextTemplateResponse
 ```
 
 Update an existing text template
@@ -223,19 +223,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\TextTemplateApi(
+$apiInstance = new Itsmind\Sevdesk\Api\TextTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | Id of text template you want to update
-$model_text_template = new \Itsmind\\Sevdesk\Model\ModelTextTemplate(); // \Itsmind\\Sevdesk\Model\ModelTextTemplate | Text Template Data
+$model_text_template = new \Itsmind\Sevdesk\Model\ModelTextTemplate(); // \Itsmind\Sevdesk\Model\ModelTextTemplate | Text Template Data
 
 try {
     $result = $apiInstance->updateTextTemplate($id, $model_text_template);
@@ -250,11 +250,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**| Id of text template you want to update | |
-| **model_text_template** | [**\Itsmind\\Sevdesk\Model\ModelTextTemplate**](../Model/ModelTextTemplate.md)| Text Template Data | [optional] |
+| **model_text_template** | [**\Itsmind\Sevdesk\Model\ModelTextTemplate**](../Model/ModelTextTemplate.md)| Text Template Data | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse**](../Model/ModelTextTemplateResponse.md)
+[**\Itsmind\Sevdesk\Model\ModelTextTemplateResponse**](../Model/ModelTextTemplateResponse.md)
 
 ### Authorization
 

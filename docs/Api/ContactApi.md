@@ -1,4 +1,4 @@
-# Itsmind\\Sevdesk\ContactApi
+# Itsmind\Sevdesk\ContactApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -18,7 +18,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `contactCustomerNumberAvailabilityCheck()`
 
 ```php
-contactCustomerNumberAvailabilityCheck($customer_number): \Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response
+contactCustomerNumberAvailabilityCheck($customer_number): \Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response
 ```
 
 Check if a customer number is available
@@ -33,12 +33,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\ContactApi(
+$apiInstance = new Itsmind\Sevdesk\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response**](../Model/GetIsInvoicePartiallyPaid200Response.md)
+[**\Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response**](../Model/GetIsInvoicePartiallyPaid200Response.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ try {
 ## `createContact()`
 
 ```php
-createContact($model_contact): \Itsmind\\Sevdesk\Model\CreateContact201Response
+createContact($model_contact): \Itsmind\Sevdesk\Model\CreateContact201Response
 ```
 
 Create a new contact
@@ -95,18 +95,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\ContactApi(
+$apiInstance = new Itsmind\Sevdesk\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$model_contact = new \Itsmind\\Sevdesk\Model\ModelContact(); // \Itsmind\\Sevdesk\Model\ModelContact | Creation data
+$model_contact = new \Itsmind\Sevdesk\Model\ModelContact(); // \Itsmind\Sevdesk\Model\ModelContact | Creation data
 
 try {
     $result = $apiInstance->createContact($model_contact);
@@ -120,11 +120,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **model_contact** | [**\Itsmind\\Sevdesk\Model\ModelContact**](../Model/ModelContact.md)| Creation data | [optional] |
+| **model_contact** | [**\Itsmind\Sevdesk\Model\ModelContact**](../Model/ModelContact.md)| Creation data | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\CreateContact201Response**](../Model/CreateContact201Response.md)
+[**\Itsmind\Sevdesk\Model\CreateContact201Response**](../Model/CreateContact201Response.md)
 
 ### Authorization
 
@@ -142,7 +142,7 @@ try {
 ## `deleteContact()`
 
 ```php
-deleteContact($contact_id): \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response
+deleteContact($contact_id): \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response
 ```
 
 Deletes a contact
@@ -155,12 +155,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\ContactApi(
+$apiInstance = new Itsmind\Sevdesk\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -184,7 +184,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response**](../Model/DeleteAccountingContact200Response.md)
+[**\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response**](../Model/DeleteAccountingContact200Response.md)
 
 ### Authorization
 
@@ -202,7 +202,7 @@ try {
 ## `findContactsByCustomFieldValue()`
 
 ```php
-findContactsByCustomFieldValue($value, $custom_field_setting_id, $custom_field_setting_object_name, $custom_field_name): \Itsmind\\Sevdesk\Model\CreateContact201Response
+findContactsByCustomFieldValue($value, $custom_field_setting_id, $custom_field_setting_object_name, $custom_field_name): \Itsmind\Sevdesk\Model\CreateContact201Response
 ```
 
 Find contacts by custom field value
@@ -217,12 +217,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\ContactApi(
+$apiInstance = new Itsmind\Sevdesk\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -252,7 +252,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\CreateContact201Response**](../Model/CreateContact201Response.md)
+[**\Itsmind\Sevdesk\Model\CreateContact201Response**](../Model/CreateContact201Response.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ try {
 ## `getContactById()`
 
 ```php
-getContactById($contact_id): \Itsmind\\Sevdesk\Model\CreateContact201Response
+getContactById($contact_id): \Itsmind\Sevdesk\Model\CreateContact201Response
 ```
 
 Find contact by ID
@@ -285,12 +285,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\ContactApi(
+$apiInstance = new Itsmind\Sevdesk\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -314,7 +314,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\CreateContact201Response**](../Model/CreateContact201Response.md)
+[**\Itsmind\Sevdesk\Model\CreateContact201Response**](../Model/CreateContact201Response.md)
 
 ### Authorization
 
@@ -332,7 +332,7 @@ try {
 ## `getContactTabsItemCountById()`
 
 ```php
-getContactTabsItemCountById($contact_id): \Itsmind\\Sevdesk\Model\GetContactTabsItemCountById200Response
+getContactTabsItemCountById($contact_id): \Itsmind\Sevdesk\Model\GetContactTabsItemCountById200Response
 ```
 
 Get number of all items
@@ -347,12 +347,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\ContactApi(
+$apiInstance = new Itsmind\Sevdesk\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -376,7 +376,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetContactTabsItemCountById200Response**](../Model/GetContactTabsItemCountById200Response.md)
+[**\Itsmind\Sevdesk\Model\GetContactTabsItemCountById200Response**](../Model/GetContactTabsItemCountById200Response.md)
 
 ### Authorization
 
@@ -394,7 +394,7 @@ try {
 ## `getContacts()`
 
 ```php
-getContacts($count_all, $limit, $offset, $depth, $customer_number): \Itsmind\\Sevdesk\Model\GetContacts200Response
+getContacts($count_all, $limit, $offset, $depth, $customer_number): \Itsmind\Sevdesk\Model\GetContacts200Response
 ```
 
 Retrieve contacts
@@ -409,12 +409,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\ContactApi(
+$apiInstance = new Itsmind\Sevdesk\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -446,7 +446,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetContacts200Response**](../Model/GetContacts200Response.md)
+[**\Itsmind\Sevdesk\Model\GetContacts200Response**](../Model/GetContacts200Response.md)
 
 ### Authorization
 
@@ -464,7 +464,7 @@ try {
 ## `getNextCustomerNumber()`
 
 ```php
-getNextCustomerNumber(): \Itsmind\\Sevdesk\Model\GetNextCustomerNumber200Response
+getNextCustomerNumber(): \Itsmind\Sevdesk\Model\GetNextCustomerNumber200Response
 ```
 
 Get next free customer number
@@ -479,12 +479,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\ContactApi(
+$apiInstance = new Itsmind\Sevdesk\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -505,7 +505,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetNextCustomerNumber200Response**](../Model/GetNextCustomerNumber200Response.md)
+[**\Itsmind\Sevdesk\Model\GetNextCustomerNumber200Response**](../Model/GetNextCustomerNumber200Response.md)
 
 ### Authorization
 
@@ -523,7 +523,7 @@ This endpoint does not need any parameter.
 ## `updateContact()`
 
 ```php
-updateContact($contact_id, $model_contact_update): \Itsmind\\Sevdesk\Model\CreateContact201Response
+updateContact($contact_id, $model_contact_update): \Itsmind\Sevdesk\Model\CreateContact201Response
 ```
 
 Update a existing contact
@@ -538,19 +538,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\ContactApi(
+$apiInstance = new Itsmind\Sevdesk\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $contact_id = 56; // int | ID of contact to update
-$model_contact_update = new \Itsmind\\Sevdesk\Model\ModelContactUpdate(); // \Itsmind\\Sevdesk\Model\ModelContactUpdate | Update data
+$model_contact_update = new \Itsmind\Sevdesk\Model\ModelContactUpdate(); // \Itsmind\Sevdesk\Model\ModelContactUpdate | Update data
 
 try {
     $result = $apiInstance->updateContact($contact_id, $model_contact_update);
@@ -565,11 +565,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **contact_id** | **int**| ID of contact to update | |
-| **model_contact_update** | [**\Itsmind\\Sevdesk\Model\ModelContactUpdate**](../Model/ModelContactUpdate.md)| Update data | [optional] |
+| **model_contact_update** | [**\Itsmind\Sevdesk\Model\ModelContactUpdate**](../Model/ModelContactUpdate.md)| Update data | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\CreateContact201Response**](../Model/CreateContact201Response.md)
+[**\Itsmind\Sevdesk\Model\CreateContact201Response**](../Model/CreateContact201Response.md)
 
 ### Authorization
 

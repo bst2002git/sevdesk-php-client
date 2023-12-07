@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelCreditNotePosResponse Class Doc Comment
  *
  * @category Class
  * @description creditNote position model
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,16 +62,16 @@ class ModelCreditNotePosResponse implements ModelInterface, ArrayAccess, \JsonSe
         'object_name' => 'string',
         'create' => 'string',
         'update' => 'string',
-        'credit_note' => '\Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseCreditNote',
-        'part' => '\Itsmind\\Sevdesk\Model\ModelCreditNotePosResponsePart',
+        'credit_note' => '\Itsmind\Sevdesk\Model\ModelCreditNotePosResponseCreditNote',
+        'part' => '\Itsmind\Sevdesk\Model\ModelCreditNotePosResponsePart',
         'quantity' => 'string',
         'price' => 'string',
         'price_net' => 'string',
         'price_tax' => 'string',
         'price_gross' => 'string',
         'name' => 'string',
-        'unity' => '\Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseUnity',
-        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseSevClient',
+        'unity' => '\Itsmind\Sevdesk\Model\ModelCreditNotePosResponseUnity',
+        'sev_client' => '\Itsmind\Sevdesk\Model\ModelCreditNotePosResponseSevClient',
         'position_number' => 'string',
         'text' => 'string',
         'discount' => 'string',
@@ -546,7 +546,7 @@ class ModelCreditNotePosResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets credit_note
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseCreditNote
+     * @return \Itsmind\Sevdesk\Model\ModelCreditNotePosResponseCreditNote
      */
     public function getCreditNote()
     {
@@ -556,7 +556,7 @@ class ModelCreditNotePosResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets credit_note
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseCreditNote $credit_note credit_note
+     * @param \Itsmind\Sevdesk\Model\ModelCreditNotePosResponseCreditNote $credit_note credit_note
      *
      * @return self
      */
@@ -573,7 +573,7 @@ class ModelCreditNotePosResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets part
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponsePart|null
+     * @return \Itsmind\Sevdesk\Model\ModelCreditNotePosResponsePart|null
      */
     public function getPart()
     {
@@ -583,7 +583,7 @@ class ModelCreditNotePosResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets part
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponsePart|null $part part
+     * @param \Itsmind\Sevdesk\Model\ModelCreditNotePosResponsePart|null $part part
      *
      * @return self
      */
@@ -797,7 +797,7 @@ class ModelCreditNotePosResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets unity
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseUnity
+     * @return \Itsmind\Sevdesk\Model\ModelCreditNotePosResponseUnity
      */
     public function getUnity()
     {
@@ -807,7 +807,7 @@ class ModelCreditNotePosResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets unity
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseUnity $unity unity
+     * @param \Itsmind\Sevdesk\Model\ModelCreditNotePosResponseUnity $unity unity
      *
      * @return self
      */
@@ -824,7 +824,7 @@ class ModelCreditNotePosResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets sev_client
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseSevClient|null
+     * @return \Itsmind\Sevdesk\Model\ModelCreditNotePosResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -834,7 +834,7 @@ class ModelCreditNotePosResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets sev_client
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\Sevdesk\Model\ModelCreditNotePosResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */

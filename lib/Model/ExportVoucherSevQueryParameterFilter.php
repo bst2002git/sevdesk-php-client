@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ExportVoucherSevQueryParameterFilter Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ExportVoucherSevQueryParameterFilter implements ModelInterface, ArrayAcces
         'end_date' => '\DateTime',
         'start_pay_date' => '\DateTime',
         'end_pay_date' => '\DateTime',
-        'contact' => '\Itsmind\\Sevdesk\Model\ExportVoucherSevQueryParameterFilterContact',
+        'contact' => '\Itsmind\Sevdesk\Model\ExportVoucherSevQueryParameterFilterContact',
         'start_amount' => 'int',
         'end_amount' => 'int'
     ];
@@ -442,7 +442,7 @@ class ExportVoucherSevQueryParameterFilter implements ModelInterface, ArrayAcces
     /**
      * Gets contact
      *
-     * @return \Itsmind\\Sevdesk\Model\ExportVoucherSevQueryParameterFilterContact|null
+     * @return \Itsmind\Sevdesk\Model\ExportVoucherSevQueryParameterFilterContact|null
      */
     public function getContact()
     {
@@ -452,7 +452,7 @@ class ExportVoucherSevQueryParameterFilter implements ModelInterface, ArrayAcces
     /**
      * Sets contact
      *
-     * @param \Itsmind\\Sevdesk\Model\ExportVoucherSevQueryParameterFilterContact|null $contact contact
+     * @param \Itsmind\Sevdesk\Model\ExportVoucherSevQueryParameterFilterContact|null $contact contact
      *
      * @return self
      */

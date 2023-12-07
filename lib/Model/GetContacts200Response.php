@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * GetContacts200Response Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetContacts200Response implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'total' => 'int',
-        'objects' => '\Itsmind\\Sevdesk\Model\ModelContactResponse[]'
+        'objects' => '\Itsmind\Sevdesk\Model\ModelContactResponse[]'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetContacts200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets objects
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelContactResponse[]
+     * @return \Itsmind\Sevdesk\Model\ModelContactResponse[]
      */
     public function getObjects()
     {
@@ -339,7 +339,7 @@ class GetContacts200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets objects
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelContactResponse[] $objects objects
+     * @param \Itsmind\Sevdesk\Model\ModelContactResponse[] $objects objects
      *
      * @return self
      */

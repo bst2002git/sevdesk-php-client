@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * BookCreditNoteRequest Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class BookCreditNoteRequest implements ModelInterface, ArrayAccess, \JsonSeriali
         'amount' => 'float',
         'date' => 'int',
         'type' => 'string',
-        'check_account' => '\Itsmind\\Sevdesk\Model\BookInvoiceRequestCheckAccount',
-        'check_account_transaction' => '\Itsmind\\Sevdesk\Model\BookCreditNoteRequestCheckAccountTransaction',
+        'check_account' => '\Itsmind\Sevdesk\Model\BookInvoiceRequestCheckAccount',
+        'check_account_transaction' => '\Itsmind\Sevdesk\Model\BookCreditNoteRequestCheckAccountTransaction',
         'create_feed' => 'bool'
     ];
 
@@ -462,7 +462,7 @@ class BookCreditNoteRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets check_account
      *
-     * @return \Itsmind\\Sevdesk\Model\BookInvoiceRequestCheckAccount
+     * @return \Itsmind\Sevdesk\Model\BookInvoiceRequestCheckAccount
      */
     public function getCheckAccount()
     {
@@ -472,7 +472,7 @@ class BookCreditNoteRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets check_account
      *
-     * @param \Itsmind\\Sevdesk\Model\BookInvoiceRequestCheckAccount $check_account check_account
+     * @param \Itsmind\Sevdesk\Model\BookInvoiceRequestCheckAccount $check_account check_account
      *
      * @return self
      */
@@ -489,7 +489,7 @@ class BookCreditNoteRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets check_account_transaction
      *
-     * @return \Itsmind\\Sevdesk\Model\BookCreditNoteRequestCheckAccountTransaction|null
+     * @return \Itsmind\Sevdesk\Model\BookCreditNoteRequestCheckAccountTransaction|null
      */
     public function getCheckAccountTransaction()
     {
@@ -499,7 +499,7 @@ class BookCreditNoteRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets check_account_transaction
      *
-     * @param \Itsmind\\Sevdesk\Model\BookCreditNoteRequestCheckAccountTransaction|null $check_account_transaction check_account_transaction
+     * @param \Itsmind\Sevdesk\Model\BookCreditNoteRequestCheckAccountTransaction|null $check_account_transaction check_account_transaction
      *
      * @return self
      */

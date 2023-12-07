@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * GetContactFieldsById200Response Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetContactFieldsById200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'objects' => '\Itsmind\\Sevdesk\Model\ModelContactCustomFieldResponse[]'
+        'objects' => '\Itsmind\Sevdesk\Model\ModelContactCustomFieldResponse[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetContactFieldsById200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets objects
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelContactCustomFieldResponse[]|null
+     * @return \Itsmind\Sevdesk\Model\ModelContactCustomFieldResponse[]|null
      */
     public function getObjects()
     {
@@ -302,7 +302,7 @@ class GetContactFieldsById200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets objects
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelContactCustomFieldResponse[]|null $objects objects
+     * @param \Itsmind\Sevdesk\Model\ModelContactCustomFieldResponse[]|null $objects objects
      *
      * @return self
      */

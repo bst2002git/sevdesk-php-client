@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Api;
+namespace Itsmind\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Itsmind\\Sevdesk\ApiException;
-use Itsmind\\Sevdesk\Configuration;
-use Itsmind\\Sevdesk\HeaderSelector;
-use Itsmind\\Sevdesk\ObjectSerializer;
+use Itsmind\Sevdesk\ApiException;
+use Itsmind\Sevdesk\Configuration;
+use Itsmind\Sevdesk\HeaderSelector;
+use Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * TextTemplateApi Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -136,12 +136,12 @@ class TextTemplateApi
      *
      * Create a new text template
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addTextTemplate'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\ModelTextTemplateResponse
+     * @return \Itsmind\Sevdesk\Model\ModelTextTemplateResponse
      */
     public function addTextTemplate($model_text_template = null, string $contentType = self::contentTypes['addTextTemplate'][0])
     {
@@ -154,12 +154,12 @@ class TextTemplateApi
      *
      * Create a new text template
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addTextTemplate'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\ModelTextTemplateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\ModelTextTemplateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function addTextTemplateWithHttpInfo($model_text_template = null, string $contentType = self::contentTypes['addTextTemplate'][0])
     {
@@ -202,11 +202,11 @@ class TextTemplateApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\ModelTextTemplateResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\ModelTextTemplateResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -224,13 +224,13 @@ class TextTemplateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\ModelTextTemplateResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse';
+            $returnType = '\Itsmind\Sevdesk\Model\ModelTextTemplateResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -263,7 +263,7 @@ class TextTemplateApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse',
+                        '\Itsmind\Sevdesk\Model\ModelTextTemplateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -278,7 +278,7 @@ class TextTemplateApi
      *
      * Create a new text template
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addTextTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -299,7 +299,7 @@ class TextTemplateApi
      *
      * Create a new text template
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addTextTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -307,7 +307,7 @@ class TextTemplateApi
      */
     public function addTextTemplateAsyncWithHttpInfo($model_text_template = null, string $contentType = self::contentTypes['addTextTemplate'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse';
+        $returnType = '\Itsmind\Sevdesk\Model\ModelTextTemplateResponse';
         $request = $this->addTextTemplateRequest($model_text_template, $contentType);
 
         return $this->client
@@ -349,7 +349,7 @@ class TextTemplateApi
     /**
      * Create request for operation 'addTextTemplate'
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addTextTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -444,7 +444,7 @@ class TextTemplateApi
      * @param  int $id Id of text template you want to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTextTemplate'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -461,7 +461,7 @@ class TextTemplateApi
      * @param  int $id Id of text template you want to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTextTemplate'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -683,9 +683,9 @@ class TextTemplateApi
      * @param  string $text_type type of your text (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTextTemplate'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetTextTemplate200Response
+     * @return \Itsmind\Sevdesk\Model\GetTextTemplate200Response
      */
     public function getTextTemplate($limit = 100, $offset = 0, $embed = null, $category = null, $object_type = null, $text_type = null, string $contentType = self::contentTypes['getTextTemplate'][0])
     {
@@ -706,9 +706,9 @@ class TextTemplateApi
      * @param  string $text_type type of your text (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTextTemplate'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetTextTemplate200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetTextTemplate200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTextTemplateWithHttpInfo($limit = 100, $offset = 0, $embed = null, $category = null, $object_type = null, $text_type = null, string $contentType = self::contentTypes['getTextTemplate'][0])
     {
@@ -751,11 +751,11 @@ class TextTemplateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetTextTemplate200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetTextTemplate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetTextTemplate200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetTextTemplate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -773,13 +773,13 @@ class TextTemplateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetTextTemplate200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetTextTemplate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetTextTemplate200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetTextTemplate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -812,7 +812,7 @@ class TextTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetTextTemplate200Response',
+                        '\Itsmind\Sevdesk\Model\GetTextTemplate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -866,7 +866,7 @@ class TextTemplateApi
      */
     public function getTextTemplateAsyncWithHttpInfo($limit = 100, $offset = 0, $embed = null, $category = null, $object_type = null, $text_type = null, string $contentType = self::contentTypes['getTextTemplate'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetTextTemplate200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetTextTemplate200Response';
         $request = $this->getTextTemplateRequest($limit, $offset, $embed, $category, $object_type, $text_type, $contentType);
 
         return $this->client
@@ -1058,12 +1058,12 @@ class TextTemplateApi
      * Update an existing text template
      *
      * @param  int $id Id of text template you want to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTextTemplate'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\ModelTextTemplateResponse
+     * @return \Itsmind\Sevdesk\Model\ModelTextTemplateResponse
      */
     public function updateTextTemplate($id, $model_text_template = null, string $contentType = self::contentTypes['updateTextTemplate'][0])
     {
@@ -1077,12 +1077,12 @@ class TextTemplateApi
      * Update an existing text template
      *
      * @param  int $id Id of text template you want to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTextTemplate'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\ModelTextTemplateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\ModelTextTemplateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateTextTemplateWithHttpInfo($id, $model_text_template = null, string $contentType = self::contentTypes['updateTextTemplate'][0])
     {
@@ -1125,11 +1125,11 @@ class TextTemplateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\ModelTextTemplateResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\ModelTextTemplateResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1147,13 +1147,13 @@ class TextTemplateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\ModelTextTemplateResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse';
+            $returnType = '\Itsmind\Sevdesk\Model\ModelTextTemplateResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1186,7 +1186,7 @@ class TextTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse',
+                        '\Itsmind\Sevdesk\Model\ModelTextTemplateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1202,7 +1202,7 @@ class TextTemplateApi
      * Update an existing text template
      *
      * @param  int $id Id of text template you want to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTextTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1224,7 +1224,7 @@ class TextTemplateApi
      * Update an existing text template
      *
      * @param  int $id Id of text template you want to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTextTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1232,7 +1232,7 @@ class TextTemplateApi
      */
     public function updateTextTemplateAsyncWithHttpInfo($id, $model_text_template = null, string $contentType = self::contentTypes['updateTextTemplate'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\ModelTextTemplateResponse';
+        $returnType = '\Itsmind\Sevdesk\Model\ModelTextTemplateResponse';
         $request = $this->updateTextTemplateRequest($id, $model_text_template, $contentType);
 
         return $this->client
@@ -1275,7 +1275,7 @@ class TextTemplateApi
      * Create request for operation 'updateTextTemplate'
      *
      * @param  int $id Id of text template you want to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelTextTemplate $model_text_template Text Template Data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTextTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

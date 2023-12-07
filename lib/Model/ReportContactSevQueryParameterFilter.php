@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ReportContactSevQueryParameterFilter Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class ReportContactSevQueryParameterFilter implements ModelInterface, ArrayAcces
     protected static $openAPITypes = [
         'zip' => 'int',
         'city' => 'string',
-        'country' => '\Itsmind\\Sevdesk\Model\ReportContactSevQueryParameterFilterCountry',
+        'country' => '\Itsmind\Sevdesk\Model\ReportContactSevQueryParameterFilterCountry',
         'depth' => 'bool',
         'only_people' => 'bool'
     ];
@@ -374,7 +374,7 @@ class ReportContactSevQueryParameterFilter implements ModelInterface, ArrayAcces
     /**
      * Gets country
      *
-     * @return \Itsmind\\Sevdesk\Model\ReportContactSevQueryParameterFilterCountry|null
+     * @return \Itsmind\Sevdesk\Model\ReportContactSevQueryParameterFilterCountry|null
      */
     public function getCountry()
     {
@@ -384,7 +384,7 @@ class ReportContactSevQueryParameterFilter implements ModelInterface, ArrayAcces
     /**
      * Sets country
      *
-     * @param \Itsmind\\Sevdesk\Model\ReportContactSevQueryParameterFilterCountry|null $country country
+     * @param \Itsmind\Sevdesk\Model\ReportContactSevQueryParameterFilterCountry|null $country country
      *
      * @return self
      */

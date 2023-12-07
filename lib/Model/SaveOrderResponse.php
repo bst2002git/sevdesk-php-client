@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * SaveOrderResponse Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class SaveOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order' => '\Itsmind\\Sevdesk\Model\ModelOrderResponse',
-        'order_pos' => '\Itsmind\\Sevdesk\Model\ModelOrderPosResponse'
+        'order' => '\Itsmind\Sevdesk\Model\ModelOrderResponse',
+        'order_pos' => '\Itsmind\Sevdesk\Model\ModelOrderPosResponse'
     ];
 
     /**
@@ -299,7 +299,7 @@ class SaveOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets order
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelOrderResponse|null
+     * @return \Itsmind\Sevdesk\Model\ModelOrderResponse|null
      */
     public function getOrder()
     {
@@ -309,7 +309,7 @@ class SaveOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets order
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelOrderResponse|null $order order
+     * @param \Itsmind\Sevdesk\Model\ModelOrderResponse|null $order order
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class SaveOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets order_pos
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelOrderPosResponse|null
+     * @return \Itsmind\Sevdesk\Model\ModelOrderPosResponse|null
      */
     public function getOrderPos()
     {
@@ -336,7 +336,7 @@ class SaveOrderResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets order_pos
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelOrderPosResponse|null $order_pos order_pos
+     * @param \Itsmind\Sevdesk\Model\ModelOrderPosResponse|null $order_pos order_pos
      *
      * @return self
      */

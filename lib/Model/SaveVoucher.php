@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * SaveVoucher Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class SaveVoucher implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'voucher' => '\Itsmind\\Sevdesk\Model\ModelVoucher',
-        'voucher_pos_save' => '\Itsmind\\Sevdesk\Model\ModelVoucherPos',
-        'voucher_pos_delete' => '\Itsmind\\Sevdesk\Model\SaveVoucherVoucherPosDelete',
+        'voucher' => '\Itsmind\Sevdesk\Model\ModelVoucher',
+        'voucher_pos_save' => '\Itsmind\Sevdesk\Model\ModelVoucherPos',
+        'voucher_pos_delete' => '\Itsmind\Sevdesk\Model\SaveVoucherVoucherPosDelete',
         'filename' => '\SplFileObject'
     ];
 
@@ -316,7 +316,7 @@ class SaveVoucher implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets voucher
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucher
+     * @return \Itsmind\Sevdesk\Model\ModelVoucher
      */
     public function getVoucher()
     {
@@ -326,7 +326,7 @@ class SaveVoucher implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets voucher
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucher $voucher voucher
+     * @param \Itsmind\Sevdesk\Model\ModelVoucher $voucher voucher
      *
      * @return self
      */
@@ -343,7 +343,7 @@ class SaveVoucher implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets voucher_pos_save
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherPos|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherPos|null
      */
     public function getVoucherPosSave()
     {
@@ -353,7 +353,7 @@ class SaveVoucher implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets voucher_pos_save
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherPos|null $voucher_pos_save voucher_pos_save
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherPos|null $voucher_pos_save voucher_pos_save
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class SaveVoucher implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets voucher_pos_delete
      *
-     * @return \Itsmind\\Sevdesk\Model\SaveVoucherVoucherPosDelete|null
+     * @return \Itsmind\Sevdesk\Model\SaveVoucherVoucherPosDelete|null
      */
     public function getVoucherPosDelete()
     {
@@ -380,7 +380,7 @@ class SaveVoucher implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets voucher_pos_delete
      *
-     * @param \Itsmind\\Sevdesk\Model\SaveVoucherVoucherPosDelete|null $voucher_pos_delete voucher_pos_delete
+     * @param \Itsmind\Sevdesk\Model\SaveVoucherVoucherPosDelete|null $voucher_pos_delete voucher_pos_delete
      *
      * @return self
      */

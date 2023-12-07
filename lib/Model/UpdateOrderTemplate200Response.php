@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * UpdateOrderTemplate200Response Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class UpdateOrderTemplate200Response implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'objects' => '\Itsmind\\Sevdesk\Model\ModelChangeLayoutResponse[]'
+        'objects' => '\Itsmind\Sevdesk\Model\ModelChangeLayoutResponse[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class UpdateOrderTemplate200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets objects
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelChangeLayoutResponse[]|null
+     * @return \Itsmind\Sevdesk\Model\ModelChangeLayoutResponse[]|null
      */
     public function getObjects()
     {
@@ -302,7 +302,7 @@ class UpdateOrderTemplate200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets objects
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelChangeLayoutResponse[]|null $objects objects
+     * @param \Itsmind\Sevdesk\Model\ModelChangeLayoutResponse[]|null $objects objects
      *
      * @return self
      */

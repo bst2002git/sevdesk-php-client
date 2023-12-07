@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk\Model
+ * @package  Itsmind\Sevdesk\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package Itsmind\\Sevdesk\Model
+ * @package Itsmind\Sevdesk\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

@@ -1,4 +1,4 @@
-# Itsmind\\Sevdesk\InvoiceApi
+# Itsmind\Sevdesk\InvoiceApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -27,7 +27,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `bookInvoice()`
 
 ```php
-bookInvoice($invoice_id, $book_invoice_request): \Itsmind\\Sevdesk\Model\BookInvoice200Response
+bookInvoice($invoice_id, $book_invoice_request): \Itsmind\Sevdesk\Model\BookInvoice200Response
 ```
 
 Book an invoice
@@ -42,19 +42,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $invoice_id = 56; // int | ID of invoice to book
-$book_invoice_request = new \Itsmind\\Sevdesk\Model\BookInvoiceRequest(); // \Itsmind\\Sevdesk\Model\BookInvoiceRequest | Booking data
+$book_invoice_request = new \Itsmind\Sevdesk\Model\BookInvoiceRequest(); // \Itsmind\Sevdesk\Model\BookInvoiceRequest | Booking data
 
 try {
     $result = $apiInstance->bookInvoice($invoice_id, $book_invoice_request);
@@ -69,11 +69,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **invoice_id** | **int**| ID of invoice to book | |
-| **book_invoice_request** | [**\Itsmind\\Sevdesk\Model\BookInvoiceRequest**](../Model/BookInvoiceRequest.md)| Booking data | [optional] |
+| **book_invoice_request** | [**\Itsmind\Sevdesk\Model\BookInvoiceRequest**](../Model/BookInvoiceRequest.md)| Booking data | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\BookInvoice200Response**](../Model/BookInvoice200Response.md)
+[**\Itsmind\Sevdesk\Model\BookInvoice200Response**](../Model/BookInvoice200Response.md)
 
 ### Authorization
 
@@ -91,7 +91,7 @@ try {
 ## `cancelInvoice()`
 
 ```php
-cancelInvoice($invoice_id): \Itsmind\\Sevdesk\Model\GetInvoiceById200Response
+cancelInvoice($invoice_id): \Itsmind\Sevdesk\Model\GetInvoiceById200Response
 ```
 
 Cancel an invoice / Create cancellation invoice
@@ -106,12 +106,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -135,7 +135,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetInvoiceById200Response**](../Model/GetInvoiceById200Response.md)
+[**\Itsmind\Sevdesk\Model\GetInvoiceById200Response**](../Model/GetInvoiceById200Response.md)
 
 ### Authorization
 
@@ -153,7 +153,7 @@ try {
 ## `createInvoiceByFactory()`
 
 ```php
-createInvoiceByFactory($save_invoice): \Itsmind\\Sevdesk\Model\SaveInvoiceResponse
+createInvoiceByFactory($save_invoice): \Itsmind\Sevdesk\Model\SaveInvoiceResponse
 ```
 
 Create a new invoice
@@ -168,18 +168,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$save_invoice = new \Itsmind\\Sevdesk\Model\SaveInvoice(); // \Itsmind\\Sevdesk\Model\SaveInvoice | Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model!
+$save_invoice = new \Itsmind\Sevdesk\Model\SaveInvoice(); // \Itsmind\Sevdesk\Model\SaveInvoice | Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model!
 
 try {
     $result = $apiInstance->createInvoiceByFactory($save_invoice);
@@ -193,11 +193,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **save_invoice** | [**\Itsmind\\Sevdesk\Model\SaveInvoice**](../Model/SaveInvoice.md)| Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! | [optional] |
+| **save_invoice** | [**\Itsmind\Sevdesk\Model\SaveInvoice**](../Model/SaveInvoice.md)| Creation data. Please be aware, that you need to provide at least all required parameter      of the invoice model! | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\SaveInvoiceResponse**](../Model/SaveInvoiceResponse.md)
+[**\Itsmind\Sevdesk\Model\SaveInvoiceResponse**](../Model/SaveInvoiceResponse.md)
 
 ### Authorization
 
@@ -215,7 +215,7 @@ try {
 ## `createInvoiceFromOrder()`
 
 ```php
-createInvoiceFromOrder($invoice_id, $invoice_object_name, $model_create_invoice_from_order): \Itsmind\\Sevdesk\Model\GetInvoiceById200Response
+createInvoiceFromOrder($invoice_id, $invoice_object_name, $model_create_invoice_from_order): \Itsmind\Sevdesk\Model\GetInvoiceById200Response
 ```
 
 Create invoice from order
@@ -230,12 +230,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -243,7 +243,7 @@ $apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
 );
 $invoice_id = 56; // int | the id of the invoice
 $invoice_object_name = Invoice; // string | Model name, which is 'Invoice'
-$model_create_invoice_from_order = new \Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrder(); // \Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrder | Create invoice
+$model_create_invoice_from_order = new \Itsmind\Sevdesk\Model\ModelCreateInvoiceFromOrder(); // \Itsmind\Sevdesk\Model\ModelCreateInvoiceFromOrder | Create invoice
 
 try {
     $result = $apiInstance->createInvoiceFromOrder($invoice_id, $invoice_object_name, $model_create_invoice_from_order);
@@ -259,11 +259,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **invoice_id** | **int**| the id of the invoice | |
 | **invoice_object_name** | **string**| Model name, which is &#39;Invoice&#39; | |
-| **model_create_invoice_from_order** | [**\Itsmind\\Sevdesk\Model\ModelCreateInvoiceFromOrder**](../Model/ModelCreateInvoiceFromOrder.md)| Create invoice | [optional] |
+| **model_create_invoice_from_order** | [**\Itsmind\Sevdesk\Model\ModelCreateInvoiceFromOrder**](../Model/ModelCreateInvoiceFromOrder.md)| Create invoice | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetInvoiceById200Response**](../Model/GetInvoiceById200Response.md)
+[**\Itsmind\Sevdesk\Model\GetInvoiceById200Response**](../Model/GetInvoiceById200Response.md)
 
 ### Authorization
 
@@ -281,7 +281,7 @@ try {
 ## `createInvoiceReminder()`
 
 ```php
-createInvoiceReminder($invoice_id, $invoice_object_name, $create_invoice_reminder_request): \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response
+createInvoiceReminder($invoice_id, $invoice_object_name, $create_invoice_reminder_request): \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response
 ```
 
 Create invoice reminder
@@ -296,12 +296,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -309,7 +309,7 @@ $apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
 );
 $invoice_id = 56; // int | the id of the invoice
 $invoice_object_name = Invoice; // string | Model name, which is 'Invoice'
-$create_invoice_reminder_request = new \Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequest(); // \Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequest | Create invoice
+$create_invoice_reminder_request = new \Itsmind\Sevdesk\Model\CreateInvoiceReminderRequest(); // \Itsmind\Sevdesk\Model\CreateInvoiceReminderRequest | Create invoice
 
 try {
     $result = $apiInstance->createInvoiceReminder($invoice_id, $invoice_object_name, $create_invoice_reminder_request);
@@ -325,11 +325,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **invoice_id** | **int**| the id of the invoice | |
 | **invoice_object_name** | **string**| Model name, which is &#39;Invoice&#39; | |
-| **create_invoice_reminder_request** | [**\Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequest**](../Model/CreateInvoiceReminderRequest.md)| Create invoice | [optional] |
+| **create_invoice_reminder_request** | [**\Itsmind\Sevdesk\Model\CreateInvoiceReminderRequest**](../Model/CreateInvoiceReminderRequest.md)| Create invoice | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response**](../Model/UpdateInvoiceById200Response.md)
+[**\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response**](../Model/UpdateInvoiceById200Response.md)
 
 ### Authorization
 
@@ -362,12 +362,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -408,7 +408,7 @@ void (empty response body)
 ## `getInvoiceById()`
 
 ```php
-getInvoiceById($invoice_id, $embed): \Itsmind\\Sevdesk\Model\GetInvoiceById200Response
+getInvoiceById($invoice_id, $embed): \Itsmind\Sevdesk\Model\GetInvoiceById200Response
 ```
 
 Find invoice by ID
@@ -423,12 +423,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -454,7 +454,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetInvoiceById200Response**](../Model/GetInvoiceById200Response.md)
+[**\Itsmind\Sevdesk\Model\GetInvoiceById200Response**](../Model/GetInvoiceById200Response.md)
 
 ### Authorization
 
@@ -472,7 +472,7 @@ try {
 ## `getInvoicePositionsById()`
 
 ```php
-getInvoicePositionsById($invoice_id, $limit, $offset, $embed): \Itsmind\\Sevdesk\Model\GetInvoicePos200Response
+getInvoicePositionsById($invoice_id, $limit, $offset, $embed): \Itsmind\Sevdesk\Model\GetInvoicePos200Response
 ```
 
 Find invoice positions
@@ -487,12 +487,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -522,7 +522,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetInvoicePos200Response**](../Model/GetInvoicePos200Response.md)
+[**\Itsmind\Sevdesk\Model\GetInvoicePos200Response**](../Model/GetInvoicePos200Response.md)
 
 ### Authorization
 
@@ -540,7 +540,7 @@ try {
 ## `getInvoices()`
 
 ```php
-getInvoices($count_all, $invoice_type, $offset, $limit, $partially_paid, $canceled, $status, $invoice_number, $start_date, $end_date, $contact, $payment_method, $embed): \Itsmind\\Sevdesk\Model\GetInvoices200Response
+getInvoices($count_all, $invoice_type, $offset, $limit, $partially_paid, $canceled, $status, $invoice_number, $start_date, $end_date, $contact, $payment_method, $embed): \Itsmind\Sevdesk\Model\GetInvoices200Response
 ```
 
 Retrieve invoices
@@ -555,12 +555,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -576,8 +576,8 @@ $status = 3.4; // float | Status of the invoices
 $invoice_number = 'invoice_number_example'; // string | Retrieve all invoices with this invoice number
 $start_date = 56; // int | Retrieve all invoices with a date equal or higher
 $end_date = 56; // int | Retrieve all invoices with a date equal or lower
-$contact = new \Itsmind\\Sevdesk\Model\GetInvoicesContactParameter(); // GetInvoicesContactParameter | Retrieve all invoices with this contact. The value of contact[objectName] must be 'Contact'.
-$payment_method = new \Itsmind\\Sevdesk\Model\GetInvoicesPaymentMethodParameter(); // GetInvoicesPaymentMethodParameter | Retrieve all invoices with this paymentMethod. The value of paymentMethod[objectName] must be 'PaymentMethod'.
+$contact = new \Itsmind\Sevdesk\Model\GetInvoicesContactParameter(); // GetInvoicesContactParameter | Retrieve all invoices with this contact. The value of contact[objectName] must be 'Contact'.
+$payment_method = new \Itsmind\Sevdesk\Model\GetInvoicesPaymentMethodParameter(); // GetInvoicesPaymentMethodParameter | Retrieve all invoices with this paymentMethod. The value of paymentMethod[objectName] must be 'PaymentMethod'.
 $embed = array('embed_example'); // string[]
 
 try {
@@ -608,7 +608,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetInvoices200Response**](../Model/GetInvoices200Response.md)
+[**\Itsmind\Sevdesk\Model\GetInvoices200Response**](../Model/GetInvoices200Response.md)
 
 ### Authorization
 
@@ -626,7 +626,7 @@ try {
 ## `getIsInvoicePartiallyPaid()`
 
 ```php
-getIsInvoicePartiallyPaid($invoice_id): \Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response
+getIsInvoicePartiallyPaid($invoice_id): \Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response
 ```
 
 Check if an invoice is already partially paid
@@ -641,12 +641,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -670,7 +670,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response**](../Model/GetIsInvoicePartiallyPaid200Response.md)
+[**\Itsmind\Sevdesk\Model\GetIsInvoicePartiallyPaid200Response**](../Model/GetIsInvoicePartiallyPaid200Response.md)
 
 ### Authorization
 
@@ -688,7 +688,7 @@ try {
 ## `getLastDunning()`
 
 ```php
-getLastDunning($invoice_id): \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response
+getLastDunning($invoice_id): \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response
 ```
 
 Get the last dunning of an invoice
@@ -703,12 +703,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -732,7 +732,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response**](../Model/UpdateInvoiceById200Response.md)
+[**\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response**](../Model/UpdateInvoiceById200Response.md)
 
 ### Authorization
 
@@ -750,7 +750,7 @@ try {
 ## `getOpenInvoiceReminderDebit()`
 
 ```php
-getOpenInvoiceReminderDebit($invoice): \Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response
+getOpenInvoiceReminderDebit($invoice): \Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response
 ```
 
 Get the oben reminder debit for an invoice
@@ -765,18 +765,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$invoice = new \Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebitInvoiceParameter(); // GetOpenInvoiceReminderDebitInvoiceParameter | Retrieve the open reminder debit for this invoice. The value of invoice[objectName] must be 'Invoice'.
+$invoice = new \Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebitInvoiceParameter(); // GetOpenInvoiceReminderDebitInvoiceParameter | Retrieve the open reminder debit for this invoice. The value of invoice[objectName] must be 'Invoice'.
 
 try {
     $result = $apiInstance->getOpenInvoiceReminderDebit($invoice);
@@ -794,7 +794,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response**](../Model/GetOpenInvoiceReminderDebit200Response.md)
+[**\Itsmind\Sevdesk\Model\GetOpenInvoiceReminderDebit200Response**](../Model/GetOpenInvoiceReminderDebit200Response.md)
 
 ### Authorization
 
@@ -812,7 +812,7 @@ try {
 ## `invoiceGetPdf()`
 
 ```php
-invoiceGetPdf($invoice_id, $download, $prevent_send_by): \Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response
+invoiceGetPdf($invoice_id, $download, $prevent_send_by): \Itsmind\Sevdesk\Model\InvoiceGetPdf200Response
 ```
 
 Retrieve pdf document of an invoice
@@ -827,12 +827,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -860,7 +860,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response**](../Model/InvoiceGetPdf200Response.md)
+[**\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response**](../Model/InvoiceGetPdf200Response.md)
 
 ### Authorization
 
@@ -878,7 +878,7 @@ try {
 ## `invoiceRender()`
 
 ```php
-invoiceRender($invoice_id, $invoice_render_request): \Itsmind\\Sevdesk\Model\InvoiceRender201Response
+invoiceRender($invoice_id, $invoice_render_request): \Itsmind\Sevdesk\Model\InvoiceRender201Response
 ```
 
 Render the pdf document of an invoice
@@ -893,19 +893,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $invoice_id = 56; // int | ID of invoice to render
-$invoice_render_request = new \Itsmind\\Sevdesk\Model\InvoiceRenderRequest(); // \Itsmind\\Sevdesk\Model\InvoiceRenderRequest | Define if the document should be forcefully re-rendered.
+$invoice_render_request = new \Itsmind\Sevdesk\Model\InvoiceRenderRequest(); // \Itsmind\Sevdesk\Model\InvoiceRenderRequest | Define if the document should be forcefully re-rendered.
 
 try {
     $result = $apiInstance->invoiceRender($invoice_id, $invoice_render_request);
@@ -920,11 +920,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **invoice_id** | **int**| ID of invoice to render | |
-| **invoice_render_request** | [**\Itsmind\\Sevdesk\Model\InvoiceRenderRequest**](../Model/InvoiceRenderRequest.md)| Define if the document should be forcefully re-rendered. | [optional] |
+| **invoice_render_request** | [**\Itsmind\Sevdesk\Model\InvoiceRenderRequest**](../Model/InvoiceRenderRequest.md)| Define if the document should be forcefully re-rendered. | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\InvoiceRender201Response**](../Model/InvoiceRender201Response.md)
+[**\Itsmind\Sevdesk\Model\InvoiceRender201Response**](../Model/InvoiceRender201Response.md)
 
 ### Authorization
 
@@ -942,7 +942,7 @@ try {
 ## `invoiceSendBy()`
 
 ```php
-invoiceSendBy($invoice_id, $invoice_send_by_request): \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response
+invoiceSendBy($invoice_id, $invoice_send_by_request): \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response
 ```
 
 Mark invoice as sent
@@ -957,19 +957,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $invoice_id = 56; // int | ID of invoice to mark as sent
-$invoice_send_by_request = new \Itsmind\\Sevdesk\Model\InvoiceSendByRequest(); // \Itsmind\\Sevdesk\Model\InvoiceSendByRequest | Specify the send type
+$invoice_send_by_request = new \Itsmind\Sevdesk\Model\InvoiceSendByRequest(); // \Itsmind\Sevdesk\Model\InvoiceSendByRequest | Specify the send type
 
 try {
     $result = $apiInstance->invoiceSendBy($invoice_id, $invoice_send_by_request);
@@ -984,11 +984,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **invoice_id** | **int**| ID of invoice to mark as sent | |
-| **invoice_send_by_request** | [**\Itsmind\\Sevdesk\Model\InvoiceSendByRequest**](../Model/InvoiceSendByRequest.md)| Specify the send type | [optional] |
+| **invoice_send_by_request** | [**\Itsmind\Sevdesk\Model\InvoiceSendByRequest**](../Model/InvoiceSendByRequest.md)| Specify the send type | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response**](../Model/UpdateInvoiceById200Response.md)
+[**\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response**](../Model/UpdateInvoiceById200Response.md)
 
 ### Authorization
 
@@ -1006,7 +1006,7 @@ try {
 ## `sendInvoiceViaEMail()`
 
 ```php
-sendInvoiceViaEMail($invoice_id, $send_invoice_via_e_mail_request): \Itsmind\\Sevdesk\Model\SendInvoiceViaEMail201Response
+sendInvoiceViaEMail($invoice_id, $send_invoice_via_e_mail_request): \Itsmind\Sevdesk\Model\SendInvoiceViaEMail201Response
 ```
 
 Send invoice via email
@@ -1021,19 +1021,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $invoice_id = 56; // int | ID of invoice to be sent via email
-$send_invoice_via_e_mail_request = new \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest(); // \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest | Mail data
+$send_invoice_via_e_mail_request = new \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest(); // \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest | Mail data
 
 try {
     $result = $apiInstance->sendInvoiceViaEMail($invoice_id, $send_invoice_via_e_mail_request);
@@ -1048,11 +1048,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **invoice_id** | **int**| ID of invoice to be sent via email | |
-| **send_invoice_via_e_mail_request** | [**\Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest**](../Model/SendInvoiceViaEMailRequest.md)| Mail data | [optional] |
+| **send_invoice_via_e_mail_request** | [**\Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest**](../Model/SendInvoiceViaEMailRequest.md)| Mail data | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\SendInvoiceViaEMail201Response**](../Model/SendInvoiceViaEMail201Response.md)
+[**\Itsmind\Sevdesk\Model\SendInvoiceViaEMail201Response**](../Model/SendInvoiceViaEMail201Response.md)
 
 ### Authorization
 
@@ -1070,7 +1070,7 @@ try {
 ## `updateInvoiceById()`
 
 ```php
-updateInvoiceById($invoice_id, $embed, $model_invoice_update): \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response
+updateInvoiceById($invoice_id, $embed, $model_invoice_update): \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response
 ```
 
 Update invoice by ID
@@ -1085,12 +1085,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1098,7 +1098,7 @@ $apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
 );
 $invoice_id = 56; // int | ID of invoice to return
 $embed = array('embed_example'); // string[]
-$model_invoice_update = new \Itsmind\\Sevdesk\Model\ModelInvoiceUpdate(); // \Itsmind\\Sevdesk\Model\ModelInvoiceUpdate | Update data
+$model_invoice_update = new \Itsmind\Sevdesk\Model\ModelInvoiceUpdate(); // \Itsmind\Sevdesk\Model\ModelInvoiceUpdate | Update data
 
 try {
     $result = $apiInstance->updateInvoiceById($invoice_id, $embed, $model_invoice_update);
@@ -1114,11 +1114,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **invoice_id** | **int**| ID of invoice to return | |
 | **embed** | [**string[]**](../Model/string.md)|  | [optional] |
-| **model_invoice_update** | [**\Itsmind\\Sevdesk\Model\ModelInvoiceUpdate**](../Model/ModelInvoiceUpdate.md)| Update data | [optional] |
+| **model_invoice_update** | [**\Itsmind\Sevdesk\Model\ModelInvoiceUpdate**](../Model/ModelInvoiceUpdate.md)| Update data | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response**](../Model/UpdateInvoiceById200Response.md)
+[**\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response**](../Model/UpdateInvoiceById200Response.md)
 
 ### Authorization
 
@@ -1136,7 +1136,7 @@ try {
 ## `updateStatus()`
 
 ```php
-updateStatus($invoice_id, $update_status_request): \Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response
+updateStatus($invoice_id, $update_status_request): \Itsmind\Sevdesk\Model\UpdateInvoiceById200Response
 ```
 
 Update the status of an invoice
@@ -1151,19 +1151,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\InvoiceApi(
+$apiInstance = new Itsmind\Sevdesk\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $invoice_id = 56; // int | ID of invoice to update
-$update_status_request = new \Itsmind\\Sevdesk\Model\UpdateStatusRequest(); // \Itsmind\\Sevdesk\Model\UpdateStatusRequest | Update the status of an invoice.
+$update_status_request = new \Itsmind\Sevdesk\Model\UpdateStatusRequest(); // \Itsmind\Sevdesk\Model\UpdateStatusRequest | Update the status of an invoice.
 
 try {
     $result = $apiInstance->updateStatus($invoice_id, $update_status_request);
@@ -1178,11 +1178,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **invoice_id** | **int**| ID of invoice to update | |
-| **update_status_request** | [**\Itsmind\\Sevdesk\Model\UpdateStatusRequest**](../Model/UpdateStatusRequest.md)| Update the status of an invoice. | [optional] |
+| **update_status_request** | [**\Itsmind\Sevdesk\Model\UpdateStatusRequest**](../Model/UpdateStatusRequest.md)| Update the status of an invoice. | [optional] |
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\UpdateInvoiceById200Response**](../Model/UpdateInvoiceById200Response.md)
+[**\Itsmind\Sevdesk\Model\UpdateInvoiceById200Response**](../Model/UpdateInvoiceById200Response.md)
 
 ### Authorization
 

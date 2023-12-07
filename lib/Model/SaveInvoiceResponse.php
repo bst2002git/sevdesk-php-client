@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * SaveInvoiceResponse Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class SaveInvoiceResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'invoice' => '\Itsmind\\Sevdesk\Model\ModelInvoiceResponse',
-        'invoice_pos' => '\Itsmind\\Sevdesk\Model\ModelInvoicePosResponse',
+        'invoice' => '\Itsmind\Sevdesk\Model\ModelInvoiceResponse',
+        'invoice_pos' => '\Itsmind\Sevdesk\Model\ModelInvoicePosResponse',
         'filename' => '\SplFileObject'
     ];
 
@@ -306,7 +306,7 @@ class SaveInvoiceResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets invoice
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoiceResponse|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoiceResponse|null
      */
     public function getInvoice()
     {
@@ -316,7 +316,7 @@ class SaveInvoiceResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets invoice
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoiceResponse|null $invoice invoice
+     * @param \Itsmind\Sevdesk\Model\ModelInvoiceResponse|null $invoice invoice
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class SaveInvoiceResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets invoice_pos
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePosResponse|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoicePosResponse|null
      */
     public function getInvoicePos()
     {
@@ -343,7 +343,7 @@ class SaveInvoiceResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets invoice_pos
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePosResponse|null $invoice_pos invoice_pos
+     * @param \Itsmind\Sevdesk\Model\ModelInvoicePosResponse|null $invoice_pos invoice_pos
      *
      * @return self
      */

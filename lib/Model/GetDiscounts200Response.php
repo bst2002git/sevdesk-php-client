@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * GetDiscounts200Response Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetDiscounts200Response implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'objects' => '\Itsmind\\Sevdesk\Model\ModelDiscount[]'
+        'objects' => '\Itsmind\Sevdesk\Model\ModelDiscount[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetDiscounts200Response implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets objects
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelDiscount[]|null
+     * @return \Itsmind\Sevdesk\Model\ModelDiscount[]|null
      */
     public function getObjects()
     {
@@ -302,7 +302,7 @@ class GetDiscounts200Response implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets objects
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelDiscount[]|null $objects objects
+     * @param \Itsmind\Sevdesk\Model\ModelDiscount[]|null $objects objects
      *
      * @return self
      */

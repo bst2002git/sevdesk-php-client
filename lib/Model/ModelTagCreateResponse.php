@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelTagCreateResponse Class Doc Comment
  *
  * @category Class
  * @description tag model
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,9 +61,9 @@ class ModelTagCreateResponse implements ModelInterface, ArrayAccess, \JsonSerial
         'id' => 'string',
         'object_name' => 'string',
         'create' => '\DateTime',
-        'tag' => '\Itsmind\\Sevdesk\Model\ModelTagCreateResponseTag',
-        'object' => '\Itsmind\\Sevdesk\Model\ModelTagCreateResponseObject',
-        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelTagCreateResponseSevClient'
+        'tag' => '\Itsmind\Sevdesk\Model\ModelTagCreateResponseTag',
+        'object' => '\Itsmind\Sevdesk\Model\ModelTagCreateResponseObject',
+        'sev_client' => '\Itsmind\Sevdesk\Model\ModelTagCreateResponseSevClient'
     ];
 
     /**
@@ -409,7 +409,7 @@ class ModelTagCreateResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets tag
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelTagCreateResponseTag|null
+     * @return \Itsmind\Sevdesk\Model\ModelTagCreateResponseTag|null
      */
     public function getTag()
     {
@@ -419,7 +419,7 @@ class ModelTagCreateResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets tag
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelTagCreateResponseTag|null $tag tag
+     * @param \Itsmind\Sevdesk\Model\ModelTagCreateResponseTag|null $tag tag
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class ModelTagCreateResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets object
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelTagCreateResponseObject|null
+     * @return \Itsmind\Sevdesk\Model\ModelTagCreateResponseObject|null
      */
     public function getObject()
     {
@@ -446,7 +446,7 @@ class ModelTagCreateResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets object
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelTagCreateResponseObject|null $object object
+     * @param \Itsmind\Sevdesk\Model\ModelTagCreateResponseObject|null $object object
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class ModelTagCreateResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets sev_client
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelTagCreateResponseSevClient|null
+     * @return \Itsmind\Sevdesk\Model\ModelTagCreateResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -473,7 +473,7 @@ class ModelTagCreateResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets sev_client
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelTagCreateResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\Sevdesk\Model\ModelTagCreateResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Api;
+namespace Itsmind\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Itsmind\\Sevdesk\ApiException;
-use Itsmind\\Sevdesk\Configuration;
-use Itsmind\\Sevdesk\HeaderSelector;
-use Itsmind\\Sevdesk\ObjectSerializer;
+use Itsmind\Sevdesk\ApiException;
+use Itsmind\Sevdesk\Configuration;
+use Itsmind\Sevdesk\HeaderSelector;
+use Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ContactFieldApi Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -160,12 +160,12 @@ class ContactFieldApi
      *
      * Create contact field
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomField $model_contact_custom_field model_contact_custom_field (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomField $model_contact_custom_field model_contact_custom_field (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactField'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetContactFieldsById200Response
+     * @return \Itsmind\Sevdesk\Model\GetContactFieldsById200Response
      */
     public function createContactField($model_contact_custom_field = null, string $contentType = self::contentTypes['createContactField'][0])
     {
@@ -178,12 +178,12 @@ class ContactFieldApi
      *
      * Create contact field
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomField $model_contact_custom_field (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomField $model_contact_custom_field (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactField'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetContactFieldsById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetContactFieldsById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createContactFieldWithHttpInfo($model_contact_custom_field = null, string $contentType = self::contentTypes['createContactField'][0])
     {
@@ -226,11 +226,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetContactFieldsById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetContactFieldsById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -248,13 +248,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -287,7 +287,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response',
+                        '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -302,7 +302,7 @@ class ContactFieldApi
      *
      * Create contact field
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomField $model_contact_custom_field (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomField $model_contact_custom_field (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactField'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -323,7 +323,7 @@ class ContactFieldApi
      *
      * Create contact field
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomField $model_contact_custom_field (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomField $model_contact_custom_field (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactField'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -331,7 +331,7 @@ class ContactFieldApi
      */
     public function createContactFieldAsyncWithHttpInfo($model_contact_custom_field = null, string $contentType = self::contentTypes['createContactField'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response';
         $request = $this->createContactFieldRequest($model_contact_custom_field, $contentType);
 
         return $this->client
@@ -373,7 +373,7 @@ class ContactFieldApi
     /**
      * Create request for operation 'createContactField'
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomField $model_contact_custom_field (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomField $model_contact_custom_field (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactField'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -465,12 +465,12 @@ class ContactFieldApi
      *
      * Create contact field setting
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSetting $model_contact_custom_field_setting model_contact_custom_field_setting (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldSetting $model_contact_custom_field_setting model_contact_custom_field_setting (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactFieldSetting'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response
+     * @return \Itsmind\Sevdesk\Model\GetContactFieldSettings200Response
      */
     public function createContactFieldSetting($model_contact_custom_field_setting = null, string $contentType = self::contentTypes['createContactFieldSetting'][0])
     {
@@ -483,12 +483,12 @@ class ContactFieldApi
      *
      * Create contact field setting
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSetting $model_contact_custom_field_setting (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldSetting $model_contact_custom_field_setting (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactFieldSetting'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetContactFieldSettings200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createContactFieldSettingWithHttpInfo($model_contact_custom_field_setting = null, string $contentType = self::contentTypes['createContactFieldSetting'][0])
     {
@@ -531,11 +531,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -553,13 +553,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -592,7 +592,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response',
+                        '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -607,7 +607,7 @@ class ContactFieldApi
      *
      * Create contact field setting
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSetting $model_contact_custom_field_setting (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldSetting $model_contact_custom_field_setting (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactFieldSetting'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -628,7 +628,7 @@ class ContactFieldApi
      *
      * Create contact field setting
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSetting $model_contact_custom_field_setting (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldSetting $model_contact_custom_field_setting (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactFieldSetting'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -636,7 +636,7 @@ class ContactFieldApi
      */
     public function createContactFieldSettingAsyncWithHttpInfo($model_contact_custom_field_setting = null, string $contentType = self::contentTypes['createContactFieldSetting'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response';
         $request = $this->createContactFieldSettingRequest($model_contact_custom_field_setting, $contentType);
 
         return $this->client
@@ -678,7 +678,7 @@ class ContactFieldApi
     /**
      * Create request for operation 'createContactFieldSetting'
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSetting $model_contact_custom_field_setting (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldSetting $model_contact_custom_field_setting (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactFieldSetting'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -773,9 +773,9 @@ class ContactFieldApi
      * @param  int $contact_custom_field_id Id of contact field (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteContactCustomFieldId'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response
+     * @return \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response
      */
     public function deleteContactCustomFieldId($contact_custom_field_id, string $contentType = self::contentTypes['deleteContactCustomFieldId'][0])
     {
@@ -791,9 +791,9 @@ class ContactFieldApi
      * @param  int $contact_custom_field_id Id of contact field (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteContactCustomFieldId'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteContactCustomFieldIdWithHttpInfo($contact_custom_field_id, string $contentType = self::contentTypes['deleteContactCustomFieldId'][0])
     {
@@ -836,11 +836,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -858,13 +858,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -897,7 +897,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response',
+                        '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -941,7 +941,7 @@ class ContactFieldApi
      */
     public function deleteContactCustomFieldIdAsyncWithHttpInfo($contact_custom_field_id, string $contentType = self::contentTypes['deleteContactCustomFieldId'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response';
         $request = $this->deleteContactCustomFieldIdRequest($contact_custom_field_id, $contentType);
 
         return $this->client
@@ -1085,9 +1085,9 @@ class ContactFieldApi
      * @param  int $contact_custom_field_setting_id Id of contact field to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteContactFieldSetting'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response
+     * @return \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response
      */
     public function deleteContactFieldSetting($contact_custom_field_setting_id, string $contentType = self::contentTypes['deleteContactFieldSetting'][0])
     {
@@ -1103,9 +1103,9 @@ class ContactFieldApi
      * @param  int $contact_custom_field_setting_id Id of contact field to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteContactFieldSetting'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteContactFieldSettingWithHttpInfo($contact_custom_field_setting_id, string $contentType = self::contentTypes['deleteContactFieldSetting'][0])
     {
@@ -1148,11 +1148,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1170,13 +1170,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1209,7 +1209,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response',
+                        '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1253,7 +1253,7 @@ class ContactFieldApi
      */
     public function deleteContactFieldSettingAsyncWithHttpInfo($contact_custom_field_setting_id, string $contentType = self::contentTypes['deleteContactFieldSetting'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response';
         $request = $this->deleteContactFieldSettingRequest($contact_custom_field_setting_id, $contentType);
 
         return $this->client
@@ -1397,9 +1397,9 @@ class ContactFieldApi
      * @param  int $contact_custom_field_setting_id ID of contact field to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactFieldSettingById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response
+     * @return \Itsmind\Sevdesk\Model\GetContactFieldSettings200Response
      */
     public function getContactFieldSettingById($contact_custom_field_setting_id, string $contentType = self::contentTypes['getContactFieldSettingById'][0])
     {
@@ -1415,9 +1415,9 @@ class ContactFieldApi
      * @param  int $contact_custom_field_setting_id ID of contact field to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactFieldSettingById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetContactFieldSettings200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactFieldSettingByIdWithHttpInfo($contact_custom_field_setting_id, string $contentType = self::contentTypes['getContactFieldSettingById'][0])
     {
@@ -1460,11 +1460,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1482,13 +1482,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1521,7 +1521,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response',
+                        '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1565,7 +1565,7 @@ class ContactFieldApi
      */
     public function getContactFieldSettingByIdAsyncWithHttpInfo($contact_custom_field_setting_id, string $contentType = self::contentTypes['getContactFieldSettingById'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response';
         $request = $this->getContactFieldSettingByIdRequest($contact_custom_field_setting_id, $contentType);
 
         return $this->client
@@ -1708,9 +1708,9 @@ class ContactFieldApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactFieldSettings'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response
+     * @return \Itsmind\Sevdesk\Model\GetContactFieldSettings200Response
      */
     public function getContactFieldSettings(string $contentType = self::contentTypes['getContactFieldSettings'][0])
     {
@@ -1725,9 +1725,9 @@ class ContactFieldApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactFieldSettings'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetContactFieldSettings200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactFieldSettingsWithHttpInfo(string $contentType = self::contentTypes['getContactFieldSettings'][0])
     {
@@ -1770,11 +1770,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1792,13 +1792,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1831,7 +1831,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response',
+                        '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1873,7 +1873,7 @@ class ContactFieldApi
      */
     public function getContactFieldSettingsAsyncWithHttpInfo(string $contentType = self::contentTypes['getContactFieldSettings'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response';
         $request = $this->getContactFieldSettingsRequest($contentType);
 
         return $this->client
@@ -2000,9 +2000,9 @@ class ContactFieldApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactFields'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetContactFieldsById200Response
+     * @return \Itsmind\Sevdesk\Model\GetContactFieldsById200Response
      */
     public function getContactFields(string $contentType = self::contentTypes['getContactFields'][0])
     {
@@ -2017,9 +2017,9 @@ class ContactFieldApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactFields'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetContactFieldsById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetContactFieldsById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactFieldsWithHttpInfo(string $contentType = self::contentTypes['getContactFields'][0])
     {
@@ -2062,11 +2062,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetContactFieldsById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetContactFieldsById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2084,13 +2084,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2123,7 +2123,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response',
+                        '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2165,7 +2165,7 @@ class ContactFieldApi
      */
     public function getContactFieldsAsyncWithHttpInfo(string $contentType = self::contentTypes['getContactFields'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response';
         $request = $this->getContactFieldsRequest($contentType);
 
         return $this->client
@@ -2293,9 +2293,9 @@ class ContactFieldApi
      * @param  float $contact_custom_field_id id of the contact field (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactFieldsById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetContactFieldsById200Response
+     * @return \Itsmind\Sevdesk\Model\GetContactFieldsById200Response
      */
     public function getContactFieldsById($contact_custom_field_id, string $contentType = self::contentTypes['getContactFieldsById'][0])
     {
@@ -2311,9 +2311,9 @@ class ContactFieldApi
      * @param  float $contact_custom_field_id id of the contact field (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactFieldsById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetContactFieldsById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetContactFieldsById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactFieldsByIdWithHttpInfo($contact_custom_field_id, string $contentType = self::contentTypes['getContactFieldsById'][0])
     {
@@ -2356,11 +2356,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetContactFieldsById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetContactFieldsById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2378,13 +2378,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2417,7 +2417,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response',
+                        '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2461,7 +2461,7 @@ class ContactFieldApi
      */
     public function getContactFieldsByIdAsyncWithHttpInfo($contact_custom_field_id, string $contentType = self::contentTypes['getContactFieldsById'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response';
         $request = $this->getContactFieldsByIdRequest($contact_custom_field_id, $contentType);
 
         return $this->client
@@ -2606,9 +2606,9 @@ class ContactFieldApi
      * @param  string $sub_object_name Sub model name, required if you have \&quot;Email\&quot; at objectName (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPlaceholder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetPlaceholder200Response
+     * @return \Itsmind\Sevdesk\Model\GetPlaceholder200Response
      */
     public function getPlaceholder($object_name, $sub_object_name = null, string $contentType = self::contentTypes['getPlaceholder'][0])
     {
@@ -2625,9 +2625,9 @@ class ContactFieldApi
      * @param  string $sub_object_name Sub model name, required if you have \&quot;Email\&quot; at objectName (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPlaceholder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetPlaceholder200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetPlaceholder200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPlaceholderWithHttpInfo($object_name, $sub_object_name = null, string $contentType = self::contentTypes['getPlaceholder'][0])
     {
@@ -2670,11 +2670,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetPlaceholder200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetPlaceholder200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetPlaceholder200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetPlaceholder200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2692,13 +2692,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetPlaceholder200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetPlaceholder200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetPlaceholder200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetPlaceholder200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2731,7 +2731,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetPlaceholder200Response',
+                        '\Itsmind\Sevdesk\Model\GetPlaceholder200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2777,7 +2777,7 @@ class ContactFieldApi
      */
     public function getPlaceholderAsyncWithHttpInfo($object_name, $sub_object_name = null, string $contentType = self::contentTypes['getPlaceholder'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetPlaceholder200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetPlaceholder200Response';
         $request = $this->getPlaceholderRequest($object_name, $sub_object_name, $contentType);
 
         return $this->client
@@ -2933,9 +2933,9 @@ class ContactFieldApi
      * @param  int $contact_custom_field_setting_id ID of contact field you want to get the reference count (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getReferenceCount'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetReferenceCount200Response
+     * @return \Itsmind\Sevdesk\Model\GetReferenceCount200Response
      */
     public function getReferenceCount($contact_custom_field_setting_id, string $contentType = self::contentTypes['getReferenceCount'][0])
     {
@@ -2951,9 +2951,9 @@ class ContactFieldApi
      * @param  int $contact_custom_field_setting_id ID of contact field you want to get the reference count (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getReferenceCount'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetReferenceCount200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetReferenceCount200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getReferenceCountWithHttpInfo($contact_custom_field_setting_id, string $contentType = self::contentTypes['getReferenceCount'][0])
     {
@@ -2996,11 +2996,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetReferenceCount200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetReferenceCount200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetReferenceCount200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetReferenceCount200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3018,13 +3018,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetReferenceCount200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetReferenceCount200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetReferenceCount200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetReferenceCount200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3057,7 +3057,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetReferenceCount200Response',
+                        '\Itsmind\Sevdesk\Model\GetReferenceCount200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3101,7 +3101,7 @@ class ContactFieldApi
      */
     public function getReferenceCountAsyncWithHttpInfo($contact_custom_field_setting_id, string $contentType = self::contentTypes['getReferenceCount'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetReferenceCount200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetReferenceCount200Response';
         $request = $this->getReferenceCountRequest($contact_custom_field_setting_id, $contentType);
 
         return $this->client
@@ -3243,12 +3243,12 @@ class ContactFieldApi
      * Update contact field setting
      *
      * @param  int $contact_custom_field_setting_id ID of contact field setting you want to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSettingUpdate $model_contact_custom_field_setting_update model_contact_custom_field_setting_update (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldSettingUpdate $model_contact_custom_field_setting_update model_contact_custom_field_setting_update (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactFieldSetting'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response
+     * @return \Itsmind\Sevdesk\Model\GetContactFieldSettings200Response
      */
     public function updateContactFieldSetting($contact_custom_field_setting_id, $model_contact_custom_field_setting_update = null, string $contentType = self::contentTypes['updateContactFieldSetting'][0])
     {
@@ -3262,12 +3262,12 @@ class ContactFieldApi
      * Update contact field setting
      *
      * @param  int $contact_custom_field_setting_id ID of contact field setting you want to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSettingUpdate $model_contact_custom_field_setting_update (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldSettingUpdate $model_contact_custom_field_setting_update (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactFieldSetting'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetContactFieldSettings200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateContactFieldSettingWithHttpInfo($contact_custom_field_setting_id, $model_contact_custom_field_setting_update = null, string $contentType = self::contentTypes['updateContactFieldSetting'][0])
     {
@@ -3310,11 +3310,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3332,13 +3332,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3371,7 +3371,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response',
+                        '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3387,7 +3387,7 @@ class ContactFieldApi
      * Update contact field setting
      *
      * @param  int $contact_custom_field_setting_id ID of contact field setting you want to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSettingUpdate $model_contact_custom_field_setting_update (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldSettingUpdate $model_contact_custom_field_setting_update (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactFieldSetting'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3409,7 +3409,7 @@ class ContactFieldApi
      * Update contact field setting
      *
      * @param  int $contact_custom_field_setting_id ID of contact field setting you want to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSettingUpdate $model_contact_custom_field_setting_update (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldSettingUpdate $model_contact_custom_field_setting_update (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactFieldSetting'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3417,7 +3417,7 @@ class ContactFieldApi
      */
     public function updateContactFieldSettingAsyncWithHttpInfo($contact_custom_field_setting_id, $model_contact_custom_field_setting_update = null, string $contentType = self::contentTypes['updateContactFieldSetting'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldSettings200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldSettings200Response';
         $request = $this->updateContactFieldSettingRequest($contact_custom_field_setting_id, $model_contact_custom_field_setting_update, $contentType);
 
         return $this->client
@@ -3460,7 +3460,7 @@ class ContactFieldApi
      * Create request for operation 'updateContactFieldSetting'
      *
      * @param  int $contact_custom_field_setting_id ID of contact field setting you want to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldSettingUpdate $model_contact_custom_field_setting_update (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldSettingUpdate $model_contact_custom_field_setting_update (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactFieldSetting'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3568,12 +3568,12 @@ class ContactFieldApi
      * Update a contact field
      *
      * @param  float $contact_custom_field_id id of the contact field (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldUpdate $model_contact_custom_field_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldUpdate $model_contact_custom_field_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactfield'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetContactFieldsById200Response
+     * @return \Itsmind\Sevdesk\Model\GetContactFieldsById200Response
      */
     public function updateContactfield($contact_custom_field_id, $model_contact_custom_field_update = null, string $contentType = self::contentTypes['updateContactfield'][0])
     {
@@ -3587,12 +3587,12 @@ class ContactFieldApi
      * Update a contact field
      *
      * @param  float $contact_custom_field_id id of the contact field (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldUpdate $model_contact_custom_field_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldUpdate $model_contact_custom_field_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactfield'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetContactFieldsById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetContactFieldsById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateContactfieldWithHttpInfo($contact_custom_field_id, $model_contact_custom_field_update = null, string $contentType = self::contentTypes['updateContactfield'][0])
     {
@@ -3635,11 +3635,11 @@ class ContactFieldApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetContactFieldsById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetContactFieldsById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3657,13 +3657,13 @@ class ContactFieldApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3696,7 +3696,7 @@ class ContactFieldApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response',
+                        '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3712,7 +3712,7 @@ class ContactFieldApi
      * Update a contact field
      *
      * @param  float $contact_custom_field_id id of the contact field (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldUpdate $model_contact_custom_field_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldUpdate $model_contact_custom_field_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactfield'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3734,7 +3734,7 @@ class ContactFieldApi
      * Update a contact field
      *
      * @param  float $contact_custom_field_id id of the contact field (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldUpdate $model_contact_custom_field_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldUpdate $model_contact_custom_field_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactfield'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3742,7 +3742,7 @@ class ContactFieldApi
      */
     public function updateContactfieldAsyncWithHttpInfo($contact_custom_field_id, $model_contact_custom_field_update = null, string $contentType = self::contentTypes['updateContactfield'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetContactFieldsById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetContactFieldsById200Response';
         $request = $this->updateContactfieldRequest($contact_custom_field_id, $model_contact_custom_field_update, $contentType);
 
         return $this->client
@@ -3785,7 +3785,7 @@ class ContactFieldApi
      * Create request for operation 'updateContactfield'
      *
      * @param  float $contact_custom_field_id id of the contact field (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelContactCustomFieldUpdate $model_contact_custom_field_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelContactCustomFieldUpdate $model_contact_custom_field_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactfield'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

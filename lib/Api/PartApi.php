@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Api;
+namespace Itsmind\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Itsmind\\Sevdesk\ApiException;
-use Itsmind\\Sevdesk\Configuration;
-use Itsmind\\Sevdesk\HeaderSelector;
-use Itsmind\\Sevdesk\ObjectSerializer;
+use Itsmind\Sevdesk\ApiException;
+use Itsmind\Sevdesk\Configuration;
+use Itsmind\Sevdesk\HeaderSelector;
+use Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * PartApi Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,12 +139,12 @@ class PartApi
      *
      * Create a new part
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelPart $model_part Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelPart $model_part Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPart'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetPartById200Response
+     * @return \Itsmind\Sevdesk\Model\GetPartById200Response
      */
     public function createPart($model_part = null, string $contentType = self::contentTypes['createPart'][0])
     {
@@ -157,12 +157,12 @@ class PartApi
      *
      * Create a new part
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelPart $model_part Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelPart $model_part Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPart'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetPartById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetPartById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createPartWithHttpInfo($model_part = null, string $contentType = self::contentTypes['createPart'][0])
     {
@@ -205,11 +205,11 @@ class PartApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\Itsmind\\Sevdesk\Model\GetPartById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetPartById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetPartById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetPartById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -227,13 +227,13 @@ class PartApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetPartById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetPartById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetPartById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetPartById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -266,7 +266,7 @@ class PartApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetPartById200Response',
+                        '\Itsmind\Sevdesk\Model\GetPartById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -281,7 +281,7 @@ class PartApi
      *
      * Create a new part
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelPart $model_part Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelPart $model_part Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPart'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -302,7 +302,7 @@ class PartApi
      *
      * Create a new part
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelPart $model_part Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelPart $model_part Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPart'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -310,7 +310,7 @@ class PartApi
      */
     public function createPartAsyncWithHttpInfo($model_part = null, string $contentType = self::contentTypes['createPart'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetPartById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetPartById200Response';
         $request = $this->createPartRequest($model_part, $contentType);
 
         return $this->client
@@ -352,7 +352,7 @@ class PartApi
     /**
      * Create request for operation 'createPart'
      *
-     * @param  \Itsmind\\Sevdesk\Model\ModelPart $model_part Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelPart $model_part Creation data. Please be aware, that you need to provide at least all required parameter      of the part model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPart'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -447,9 +447,9 @@ class PartApi
      * @param  int $part_id ID of part to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPartById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetPartById200Response
+     * @return \Itsmind\Sevdesk\Model\GetPartById200Response
      */
     public function getPartById($part_id, string $contentType = self::contentTypes['getPartById'][0])
     {
@@ -465,9 +465,9 @@ class PartApi
      * @param  int $part_id ID of part to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPartById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetPartById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetPartById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPartByIdWithHttpInfo($part_id, string $contentType = self::contentTypes['getPartById'][0])
     {
@@ -510,11 +510,11 @@ class PartApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetPartById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetPartById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetPartById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetPartById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -532,13 +532,13 @@ class PartApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetPartById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetPartById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetPartById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetPartById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -571,7 +571,7 @@ class PartApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetPartById200Response',
+                        '\Itsmind\Sevdesk\Model\GetPartById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -615,7 +615,7 @@ class PartApi
      */
     public function getPartByIdAsyncWithHttpInfo($part_id, string $contentType = self::contentTypes['getPartById'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetPartById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetPartById200Response';
         $request = $this->getPartByIdRequest($part_id, $contentType);
 
         return $this->client
@@ -760,9 +760,9 @@ class PartApi
      * @param  string $name Retrieve all parts with this name (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParts'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetPartById200Response
+     * @return \Itsmind\Sevdesk\Model\GetPartById200Response
      */
     public function getParts($part_number = null, $name = null, string $contentType = self::contentTypes['getParts'][0])
     {
@@ -779,9 +779,9 @@ class PartApi
      * @param  string $name Retrieve all parts with this name (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParts'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetPartById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetPartById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPartsWithHttpInfo($part_number = null, $name = null, string $contentType = self::contentTypes['getParts'][0])
     {
@@ -824,11 +824,11 @@ class PartApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetPartById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetPartById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetPartById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetPartById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -846,13 +846,13 @@ class PartApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetPartById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetPartById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetPartById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetPartById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -885,7 +885,7 @@ class PartApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetPartById200Response',
+                        '\Itsmind\Sevdesk\Model\GetPartById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -931,7 +931,7 @@ class PartApi
      */
     public function getPartsAsyncWithHttpInfo($part_number = null, $name = null, string $contentType = self::contentTypes['getParts'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetPartById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetPartById200Response';
         $request = $this->getPartsRequest($part_number, $name, $contentType);
 
         return $this->client
@@ -1081,9 +1081,9 @@ class PartApi
      * @param  int $part_id ID of part for which you want the current stock. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['partGetStock'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\PartGetStock200Response
+     * @return \Itsmind\Sevdesk\Model\PartGetStock200Response
      */
     public function partGetStock($part_id, string $contentType = self::contentTypes['partGetStock'][0])
     {
@@ -1099,9 +1099,9 @@ class PartApi
      * @param  int $part_id ID of part for which you want the current stock. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['partGetStock'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\PartGetStock200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\PartGetStock200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function partGetStockWithHttpInfo($part_id, string $contentType = self::contentTypes['partGetStock'][0])
     {
@@ -1144,11 +1144,11 @@ class PartApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\PartGetStock200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\PartGetStock200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\PartGetStock200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\PartGetStock200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1166,13 +1166,13 @@ class PartApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\PartGetStock200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\PartGetStock200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\PartGetStock200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\PartGetStock200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1205,7 +1205,7 @@ class PartApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\PartGetStock200Response',
+                        '\Itsmind\Sevdesk\Model\PartGetStock200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1249,7 +1249,7 @@ class PartApi
      */
     public function partGetStockAsyncWithHttpInfo($part_id, string $contentType = self::contentTypes['partGetStock'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\PartGetStock200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\PartGetStock200Response';
         $request = $this->partGetStockRequest($part_id, $contentType);
 
         return $this->client
@@ -1391,12 +1391,12 @@ class PartApi
      * Update an existing part
      *
      * @param  int $part_id ID of part to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelPartUpdate $model_part_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelPartUpdate $model_part_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePart'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetPartById200Response
+     * @return \Itsmind\Sevdesk\Model\GetPartById200Response
      */
     public function updatePart($part_id, $model_part_update = null, string $contentType = self::contentTypes['updatePart'][0])
     {
@@ -1410,12 +1410,12 @@ class PartApi
      * Update an existing part
      *
      * @param  int $part_id ID of part to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelPartUpdate $model_part_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelPartUpdate $model_part_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePart'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetPartById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetPartById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updatePartWithHttpInfo($part_id, $model_part_update = null, string $contentType = self::contentTypes['updatePart'][0])
     {
@@ -1458,11 +1458,11 @@ class PartApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetPartById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetPartById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetPartById200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetPartById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1480,13 +1480,13 @@ class PartApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetPartById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetPartById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetPartById200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetPartById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1519,7 +1519,7 @@ class PartApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetPartById200Response',
+                        '\Itsmind\Sevdesk\Model\GetPartById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1535,7 +1535,7 @@ class PartApi
      * Update an existing part
      *
      * @param  int $part_id ID of part to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelPartUpdate $model_part_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelPartUpdate $model_part_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePart'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1557,7 +1557,7 @@ class PartApi
      * Update an existing part
      *
      * @param  int $part_id ID of part to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelPartUpdate $model_part_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelPartUpdate $model_part_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePart'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1565,7 +1565,7 @@ class PartApi
      */
     public function updatePartAsyncWithHttpInfo($part_id, $model_part_update = null, string $contentType = self::contentTypes['updatePart'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetPartById200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetPartById200Response';
         $request = $this->updatePartRequest($part_id, $model_part_update, $contentType);
 
         return $this->client
@@ -1608,7 +1608,7 @@ class PartApi
      * Create request for operation 'updatePart'
      *
      * @param  int $part_id ID of part to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelPartUpdate $model_part_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelPartUpdate $model_part_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePart'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

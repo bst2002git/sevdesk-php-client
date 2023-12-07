@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ReportContactSevQueryParameter Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class ReportContactSevQueryParameter implements ModelInterface, ArrayAccess, \Js
         'limit' => 'int',
         'model_name' => 'mixed',
         'object_name' => 'mixed',
-        'filter' => '\Itsmind\\Sevdesk\Model\ReportContactSevQueryParameterFilter'
+        'filter' => '\Itsmind\Sevdesk\Model\ReportContactSevQueryParameterFilter'
     ];
 
     /**
@@ -414,7 +414,7 @@ class ReportContactSevQueryParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets filter
      *
-     * @return \Itsmind\\Sevdesk\Model\ReportContactSevQueryParameterFilter|null
+     * @return \Itsmind\Sevdesk\Model\ReportContactSevQueryParameterFilter|null
      */
     public function getFilter()
     {
@@ -424,7 +424,7 @@ class ReportContactSevQueryParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets filter
      *
-     * @param \Itsmind\\Sevdesk\Model\ReportContactSevQueryParameterFilter|null $filter filter
+     * @param \Itsmind\Sevdesk\Model\ReportContactSevQueryParameterFilter|null $filter filter
      *
      * @return self
      */

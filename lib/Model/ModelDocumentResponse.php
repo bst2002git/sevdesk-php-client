@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelDocumentResponse Class Doc Comment
  *
  * @category Class
  * @description Document model
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,18 +65,18 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
         'filename' => 'string',
         'status' => 'string',
         'mime_type' => 'string',
-        'object' => '\Itsmind\\Sevdesk\Model\ModelDocumentResponseObject',
+        'object' => '\Itsmind\Sevdesk\Model\ModelDocumentResponseObject',
         'additional_information' => 'string',
         'document_number' => 'string',
         'description' => 'string',
-        'base_object' => '\Itsmind\\Sevdesk\Model\ModelDocumentResponseBaseObject',
+        'base_object' => '\Itsmind\Sevdesk\Model\ModelDocumentResponseBaseObject',
         'extension' => 'string',
         'filesize' => 'int',
-        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelDocumentResponseSevClient',
+        'sev_client' => '\Itsmind\Sevdesk\Model\ModelDocumentResponseSevClient',
         'content_hash' => 'string',
-        'create_user' => '\Itsmind\\Sevdesk\Model\ModelDocumentResponseCreateUser',
-        'update_user' => '\Itsmind\\Sevdesk\Model\ModelDocumentResponseUpdateUser',
-        'folder' => '\Itsmind\\Sevdesk\Model\ModelDocumentResponseFolder'
+        'create_user' => '\Itsmind\Sevdesk\Model\ModelDocumentResponseCreateUser',
+        'update_user' => '\Itsmind\Sevdesk\Model\ModelDocumentResponseUpdateUser',
+        'folder' => '\Itsmind\Sevdesk\Model\ModelDocumentResponseFolder'
     ];
 
     /**
@@ -608,7 +608,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets object
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelDocumentResponseObject|null
+     * @return \Itsmind\Sevdesk\Model\ModelDocumentResponseObject|null
      */
     public function getObject()
     {
@@ -618,7 +618,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets object
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelDocumentResponseObject|null $object object
+     * @param \Itsmind\Sevdesk\Model\ModelDocumentResponseObject|null $object object
      *
      * @return self
      */
@@ -718,7 +718,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets base_object
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelDocumentResponseBaseObject|null
+     * @return \Itsmind\Sevdesk\Model\ModelDocumentResponseBaseObject|null
      */
     public function getBaseObject()
     {
@@ -728,7 +728,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets base_object
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelDocumentResponseBaseObject|null $base_object base_object
+     * @param \Itsmind\Sevdesk\Model\ModelDocumentResponseBaseObject|null $base_object base_object
      *
      * @return self
      */
@@ -799,7 +799,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets sev_client
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelDocumentResponseSevClient|null
+     * @return \Itsmind\Sevdesk\Model\ModelDocumentResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -809,7 +809,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets sev_client
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelDocumentResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\Sevdesk\Model\ModelDocumentResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -853,7 +853,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets create_user
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelDocumentResponseCreateUser|null
+     * @return \Itsmind\Sevdesk\Model\ModelDocumentResponseCreateUser|null
      */
     public function getCreateUser()
     {
@@ -863,7 +863,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets create_user
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelDocumentResponseCreateUser|null $create_user create_user
+     * @param \Itsmind\Sevdesk\Model\ModelDocumentResponseCreateUser|null $create_user create_user
      *
      * @return self
      */
@@ -880,7 +880,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets update_user
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelDocumentResponseUpdateUser|null
+     * @return \Itsmind\Sevdesk\Model\ModelDocumentResponseUpdateUser|null
      */
     public function getUpdateUser()
     {
@@ -890,7 +890,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets update_user
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelDocumentResponseUpdateUser|null $update_user update_user
+     * @param \Itsmind\Sevdesk\Model\ModelDocumentResponseUpdateUser|null $update_user update_user
      *
      * @return self
      */
@@ -907,7 +907,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets folder
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelDocumentResponseFolder|null
+     * @return \Itsmind\Sevdesk\Model\ModelDocumentResponseFolder|null
      */
     public function getFolder()
     {
@@ -917,7 +917,7 @@ class ModelDocumentResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets folder
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelDocumentResponseFolder|null $folder folder
+     * @param \Itsmind\Sevdesk\Model\ModelDocumentResponseFolder|null $folder folder
      *
      * @return self
      */

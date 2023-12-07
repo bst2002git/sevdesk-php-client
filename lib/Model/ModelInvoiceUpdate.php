@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelInvoiceUpdate Class Doc Comment
  *
  * @category Class
  * @description Invoice model
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,10 +61,10 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
         'id' => 'int',
         'object_name' => 'string',
         'invoice_number' => 'string',
-        'contact' => '\Itsmind\\Sevdesk\Model\ModelInvoiceUpdateContact',
+        'contact' => '\Itsmind\Sevdesk\Model\ModelInvoiceUpdateContact',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelInvoiceUpdateSevClient',
+        'sev_client' => '\Itsmind\Sevdesk\Model\ModelInvoiceUpdateSevClient',
         'invoice_date' => 'string',
         'header' => 'string',
         'head_text' => 'string',
@@ -72,21 +72,21 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
         'time_to_pay' => 'int',
         'discount_time' => 'int',
         'discount' => 'int',
-        'address_country' => '\Itsmind\\Sevdesk\Model\ModelCreditNoteAddressCountry',
+        'address_country' => '\Itsmind\Sevdesk\Model\ModelCreditNoteAddressCountry',
         'pay_date' => '\DateTime',
-        'create_user' => '\Itsmind\\Sevdesk\Model\ModelCreditNoteCreateUser',
+        'create_user' => '\Itsmind\Sevdesk\Model\ModelCreditNoteCreateUser',
         'delivery_date' => '\DateTime',
         'status' => 'string',
         'small_settlement' => 'bool',
-        'contact_person' => '\Itsmind\\Sevdesk\Model\ModelInvoiceUpdateContactPerson',
+        'contact_person' => '\Itsmind\Sevdesk\Model\ModelInvoiceUpdateContactPerson',
         'tax_rate' => 'float',
         'tax_text' => 'string',
         'dunning_level' => 'int',
         'tax_type' => 'string',
-        'payment_method' => '\Itsmind\\Sevdesk\Model\ModelInvoiceUpdatePaymentMethod',
-        'cost_centre' => '\Itsmind\\Sevdesk\Model\ModelInvoiceUpdateCostCentre',
+        'payment_method' => '\Itsmind\Sevdesk\Model\ModelInvoiceUpdatePaymentMethod',
+        'cost_centre' => '\Itsmind\Sevdesk\Model\ModelInvoiceUpdateCostCentre',
         'send_date' => '\DateTime',
-        'origin' => '\Itsmind\\Sevdesk\Model\ModelInvoiceUpdateOrigin',
+        'origin' => '\Itsmind\Sevdesk\Model\ModelInvoiceUpdateOrigin',
         'invoice_type' => 'string',
         'account_intervall' => 'string',
         'account_next_invoice' => 'int',
@@ -94,7 +94,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
         'reminder_debit' => 'float',
         'reminder_deadline' => 'int',
         'reminder_charge' => 'float',
-        'tax_set' => '\Itsmind\\Sevdesk\Model\ModelInvoiceUpdateTaxSet',
+        'tax_set' => '\Itsmind\Sevdesk\Model\ModelInvoiceUpdateTaxSet',
         'address' => 'string',
         'currency' => 'string',
         'sum_net' => 'float',
@@ -896,7 +896,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets contact
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateContact|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoiceUpdateContact|null
      */
     public function getContact()
     {
@@ -906,7 +906,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets contact
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateContact|null $contact contact
+     * @param \Itsmind\Sevdesk\Model\ModelInvoiceUpdateContact|null $contact contact
      *
      * @return self
      */
@@ -984,7 +984,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets sev_client
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateSevClient|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoiceUpdateSevClient|null
      */
     public function getSevClient()
     {
@@ -994,7 +994,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets sev_client
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateSevClient|null $sev_client sev_client
+     * @param \Itsmind\Sevdesk\Model\ModelInvoiceUpdateSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -1249,7 +1249,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets address_country
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCreditNoteAddressCountry|null
+     * @return \Itsmind\Sevdesk\Model\ModelCreditNoteAddressCountry|null
      */
     public function getAddressCountry()
     {
@@ -1259,7 +1259,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets address_country
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCreditNoteAddressCountry|null $address_country address_country
+     * @param \Itsmind\Sevdesk\Model\ModelCreditNoteAddressCountry|null $address_country address_country
      *
      * @return self
      */
@@ -1317,7 +1317,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets create_user
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCreditNoteCreateUser|null
+     * @return \Itsmind\Sevdesk\Model\ModelCreditNoteCreateUser|null
      */
     public function getCreateUser()
     {
@@ -1327,7 +1327,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets create_user
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCreditNoteCreateUser|null $create_user create_user
+     * @param \Itsmind\Sevdesk\Model\ModelCreditNoteCreateUser|null $create_user create_user
      *
      * @return self
      */
@@ -1456,7 +1456,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets contact_person
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateContactPerson|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoiceUpdateContactPerson|null
      */
     public function getContactPerson()
     {
@@ -1466,7 +1466,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets contact_person
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateContactPerson|null $contact_person contact_person
+     * @param \Itsmind\Sevdesk\Model\ModelInvoiceUpdateContactPerson|null $contact_person contact_person
      *
      * @return self
      */
@@ -1629,7 +1629,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets payment_method
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoiceUpdatePaymentMethod|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoiceUpdatePaymentMethod|null
      */
     public function getPaymentMethod()
     {
@@ -1639,7 +1639,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets payment_method
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoiceUpdatePaymentMethod|null $payment_method payment_method
+     * @param \Itsmind\Sevdesk\Model\ModelInvoiceUpdatePaymentMethod|null $payment_method payment_method
      *
      * @return self
      */
@@ -1656,7 +1656,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets cost_centre
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateCostCentre|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoiceUpdateCostCentre|null
      */
     public function getCostCentre()
     {
@@ -1666,7 +1666,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets cost_centre
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateCostCentre|null $cost_centre cost_centre
+     * @param \Itsmind\Sevdesk\Model\ModelInvoiceUpdateCostCentre|null $cost_centre cost_centre
      *
      * @return self
      */
@@ -1717,7 +1717,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets origin
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateOrigin|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoiceUpdateOrigin|null
      */
     public function getOrigin()
     {
@@ -1727,7 +1727,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets origin
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateOrigin|null $origin origin
+     * @param \Itsmind\Sevdesk\Model\ModelInvoiceUpdateOrigin|null $origin origin
      *
      * @return self
      */
@@ -1999,7 +1999,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets tax_set
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateTaxSet|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoiceUpdateTaxSet|null
      */
     public function getTaxSet()
     {
@@ -2009,7 +2009,7 @@ class ModelInvoiceUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets tax_set
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoiceUpdateTaxSet|null $tax_set tax_set
+     * @param \Itsmind\Sevdesk\Model\ModelInvoiceUpdateTaxSet|null $tax_set tax_set
      *
      * @return self
      */

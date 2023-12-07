@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * SendInvoiceViaEMail201Response Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class SendInvoiceViaEMail201Response implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'objects' => '\Itsmind\\Sevdesk\Model\ModelEmail[]'
+        'objects' => '\Itsmind\Sevdesk\Model\ModelEmail[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class SendInvoiceViaEMail201Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets objects
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelEmail[]|null
+     * @return \Itsmind\Sevdesk\Model\ModelEmail[]|null
      */
     public function getObjects()
     {
@@ -302,7 +302,7 @@ class SendInvoiceViaEMail201Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets objects
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelEmail[]|null $objects objects
+     * @param \Itsmind\Sevdesk\Model\ModelEmail[]|null $objects objects
      *
      * @return self
      */

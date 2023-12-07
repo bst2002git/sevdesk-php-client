@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelVoucherPosResponseAccountingType Class Doc Comment
  *
  * @category Class
  * @description The accounting type to which the position belongs.&lt;br&gt;       An accounting type is the booking account to which the position belongs.&lt;br&gt;       For more information, please refer to       &lt;a href&#x3D;&#39;https://api.sevdesk.de/#section/Accounting-type&#39;&gt;this&lt;/a&gt; section.
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

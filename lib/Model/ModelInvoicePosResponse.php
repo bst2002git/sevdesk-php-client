@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelInvoicePosResponse Class Doc Comment
  *
  * @category Class
  * @description Invoice position model
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,13 +62,13 @@ class ModelInvoicePosResponse implements ModelInterface, ArrayAccess, \JsonSeria
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'invoice' => '\Itsmind\\Sevdesk\Model\ModelInvoicePosResponseInvoice',
-        'part' => '\Itsmind\\Sevdesk\Model\ModelInvoicePosResponsePart',
+        'invoice' => '\Itsmind\Sevdesk\Model\ModelInvoicePosResponseInvoice',
+        'part' => '\Itsmind\Sevdesk\Model\ModelInvoicePosResponsePart',
         'quantity' => 'string',
         'price' => 'string',
         'name' => 'string',
-        'unity' => '\Itsmind\\Sevdesk\Model\ModelInvoicePosResponseUnity',
-        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelInvoicePosResponseSevClient',
+        'unity' => '\Itsmind\Sevdesk\Model\ModelInvoicePosResponseUnity',
+        'sev_client' => '\Itsmind\Sevdesk\Model\ModelInvoicePosResponseSevClient',
         'position_number' => 'string',
         'text' => 'string',
         'discount' => 'string',
@@ -548,7 +548,7 @@ class ModelInvoicePosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets invoice
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePosResponseInvoice|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoicePosResponseInvoice|null
      */
     public function getInvoice()
     {
@@ -558,7 +558,7 @@ class ModelInvoicePosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets invoice
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePosResponseInvoice|null $invoice invoice
+     * @param \Itsmind\Sevdesk\Model\ModelInvoicePosResponseInvoice|null $invoice invoice
      *
      * @return self
      */
@@ -575,7 +575,7 @@ class ModelInvoicePosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets part
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePosResponsePart|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoicePosResponsePart|null
      */
     public function getPart()
     {
@@ -585,7 +585,7 @@ class ModelInvoicePosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets part
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePosResponsePart|null $part part
+     * @param \Itsmind\Sevdesk\Model\ModelInvoicePosResponsePart|null $part part
      *
      * @return self
      */
@@ -683,7 +683,7 @@ class ModelInvoicePosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets unity
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePosResponseUnity|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoicePosResponseUnity|null
      */
     public function getUnity()
     {
@@ -693,7 +693,7 @@ class ModelInvoicePosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets unity
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePosResponseUnity|null $unity unity
+     * @param \Itsmind\Sevdesk\Model\ModelInvoicePosResponseUnity|null $unity unity
      *
      * @return self
      */
@@ -710,7 +710,7 @@ class ModelInvoicePosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets sev_client
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePosResponseSevClient|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoicePosResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -720,7 +720,7 @@ class ModelInvoicePosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets sev_client
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePosResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\Sevdesk\Model\ModelInvoicePosResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */

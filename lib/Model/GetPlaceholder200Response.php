@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * GetPlaceholder200Response Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetPlaceholder200Response implements ModelInterface, ArrayAccess, \JsonSer
       */
     protected static $openAPITypes = [
         'key' => 'string',
-        'value' => '\Itsmind\\Sevdesk\Model\GetPlaceholder200ResponseValueInner[]'
+        'value' => '\Itsmind\Sevdesk\Model\GetPlaceholder200ResponseValueInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetPlaceholder200Response implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets value
      *
-     * @return \Itsmind\\Sevdesk\Model\GetPlaceholder200ResponseValueInner[]|null
+     * @return \Itsmind\Sevdesk\Model\GetPlaceholder200ResponseValueInner[]|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class GetPlaceholder200Response implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets value
      *
-     * @param \Itsmind\\Sevdesk\Model\GetPlaceholder200ResponseValueInner[]|null $value value
+     * @param \Itsmind\Sevdesk\Model\GetPlaceholder200ResponseValueInner[]|null $value value
      *
      * @return self
      */

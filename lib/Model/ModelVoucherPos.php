@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelVoucherPos Class Doc Comment
  *
  * @category Class
  * @description Voucher position model
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,10 +63,10 @@ class ModelVoucherPos implements ModelInterface, ArrayAccess, \JsonSerializable
         'map_all' => 'bool',
         'create' => 'string',
         'update' => 'string',
-        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelVoucherPosSevClient',
-        'voucher' => '\Itsmind\\Sevdesk\Model\ModelVoucherPosVoucher',
-        'accounting_type' => '\Itsmind\\Sevdesk\Model\ModelVoucherPosAccountingType',
-        'estimated_accounting_type' => '\Itsmind\\Sevdesk\Model\ModelVoucherPosEstimatedAccountingType',
+        'sev_client' => '\Itsmind\Sevdesk\Model\ModelVoucherPosSevClient',
+        'voucher' => '\Itsmind\Sevdesk\Model\ModelVoucherPosVoucher',
+        'accounting_type' => '\Itsmind\Sevdesk\Model\ModelVoucherPosAccountingType',
+        'estimated_accounting_type' => '\Itsmind\Sevdesk\Model\ModelVoucherPosEstimatedAccountingType',
         'tax_rate' => 'float',
         'net' => 'bool',
         'is_asset' => 'bool',
@@ -578,7 +578,7 @@ class ModelVoucherPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sev_client
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherPosSevClient|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherPosSevClient|null
      */
     public function getSevClient()
     {
@@ -588,7 +588,7 @@ class ModelVoucherPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sev_client
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherPosSevClient|null $sev_client sev_client
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherPosSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -605,7 +605,7 @@ class ModelVoucherPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets voucher
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherPosVoucher
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherPosVoucher
      */
     public function getVoucher()
     {
@@ -615,7 +615,7 @@ class ModelVoucherPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets voucher
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherPosVoucher $voucher voucher
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherPosVoucher $voucher voucher
      *
      * @return self
      */
@@ -632,7 +632,7 @@ class ModelVoucherPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets accounting_type
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherPosAccountingType
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherPosAccountingType
      */
     public function getAccountingType()
     {
@@ -642,7 +642,7 @@ class ModelVoucherPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets accounting_type
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherPosAccountingType $accounting_type accounting_type
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherPosAccountingType $accounting_type accounting_type
      *
      * @return self
      */
@@ -659,7 +659,7 @@ class ModelVoucherPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets estimated_accounting_type
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherPosEstimatedAccountingType|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherPosEstimatedAccountingType|null
      */
     public function getEstimatedAccountingType()
     {
@@ -669,7 +669,7 @@ class ModelVoucherPos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets estimated_accounting_type
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherPosEstimatedAccountingType|null $estimated_accounting_type estimated_accounting_type
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherPosEstimatedAccountingType|null $estimated_accounting_type estimated_accounting_type
      *
      * @return self
      */

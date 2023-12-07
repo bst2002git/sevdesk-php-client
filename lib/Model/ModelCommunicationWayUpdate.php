@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ModelCommunicationWayUpdate Class Doc Comment
  *
  * @category Class
  * @description Contact communication way model
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class ModelCommunicationWayUpdate implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'contact' => '\Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdateContact',
+        'contact' => '\Itsmind\Sevdesk\Model\ModelCommunicationWayUpdateContact',
         'type' => 'string',
         'value' => 'string',
-        'key' => '\Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdateKey',
+        'key' => '\Itsmind\Sevdesk\Model\ModelCommunicationWayUpdateKey',
         'main' => 'bool'
     ];
 
@@ -349,7 +349,7 @@ class ModelCommunicationWayUpdate implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets contact
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdateContact|null
+     * @return \Itsmind\Sevdesk\Model\ModelCommunicationWayUpdateContact|null
      */
     public function getContact()
     {
@@ -359,7 +359,7 @@ class ModelCommunicationWayUpdate implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets contact
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdateContact|null $contact contact
+     * @param \Itsmind\Sevdesk\Model\ModelCommunicationWayUpdateContact|null $contact contact
      *
      * @return self
      */
@@ -447,7 +447,7 @@ class ModelCommunicationWayUpdate implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets key
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdateKey|null
+     * @return \Itsmind\Sevdesk\Model\ModelCommunicationWayUpdateKey|null
      */
     public function getKey()
     {
@@ -457,7 +457,7 @@ class ModelCommunicationWayUpdate implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets key
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelCommunicationWayUpdateKey|null $key key
+     * @param \Itsmind\Sevdesk\Model\ModelCommunicationWayUpdateKey|null $key key
      *
      * @return self
      */

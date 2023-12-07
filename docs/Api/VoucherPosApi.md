@@ -1,4 +1,4 @@
-# Itsmind\\Sevdesk\VoucherPosApi
+# Itsmind\Sevdesk\VoucherPosApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `getVoucherPositions()`
 
 ```php
-getVoucherPositions($voucher_id, $voucher_object_name): \Itsmind\\Sevdesk\Model\GetVoucherPositions200Response
+getVoucherPositions($voucher_id, $voucher_object_name): \Itsmind\Sevdesk\Model\GetVoucherPositions200Response
 ```
 
 Retrieve voucher positions
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\\Sevdesk\Api\VoucherPosApi(
+$apiInstance = new Itsmind\Sevdesk\Api\VoucherPosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\\Sevdesk\Model\GetVoucherPositions200Response**](../Model/GetVoucherPositions200Response.md)
+[**\Itsmind\Sevdesk\Model\GetVoucherPositions200Response**](../Model/GetVoucherPositions200Response.md)
 
 ### Authorization
 

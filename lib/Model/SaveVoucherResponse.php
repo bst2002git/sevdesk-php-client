@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * SaveVoucherResponse Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class SaveVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'voucher' => '\Itsmind\\Sevdesk\Model\ModelVoucherResponse',
-        'voucher_pos' => '\Itsmind\\Sevdesk\Model\ModelVoucherPosResponse',
+        'voucher' => '\Itsmind\Sevdesk\Model\ModelVoucherResponse',
+        'voucher_pos' => '\Itsmind\Sevdesk\Model\ModelVoucherPosResponse',
         'filename' => '\SplFileObject'
     ];
 
@@ -306,7 +306,7 @@ class SaveVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets voucher
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherResponse|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherResponse|null
      */
     public function getVoucher()
     {
@@ -316,7 +316,7 @@ class SaveVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets voucher
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherResponse|null $voucher voucher
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherResponse|null $voucher voucher
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class SaveVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets voucher_pos
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelVoucherPosResponse|null
+     * @return \Itsmind\Sevdesk\Model\ModelVoucherPosResponse|null
      */
     public function getVoucherPos()
     {
@@ -343,7 +343,7 @@ class SaveVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets voucher_pos
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelVoucherPosResponse|null $voucher_pos voucher_pos
+     * @param \Itsmind\Sevdesk\Model\ModelVoucherPosResponse|null $voucher_pos voucher_pos
      *
      * @return self
      */

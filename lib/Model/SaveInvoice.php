@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * SaveInvoice Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,12 +57,12 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'invoice' => '\Itsmind\\Sevdesk\Model\ModelInvoice',
-        'invoice_pos_save' => '\Itsmind\\Sevdesk\Model\ModelInvoicePos',
-        'invoice_pos_delete' => '\Itsmind\\Sevdesk\Model\SaveInvoiceInvoicePosDelete',
+        'invoice' => '\Itsmind\Sevdesk\Model\ModelInvoice',
+        'invoice_pos_save' => '\Itsmind\Sevdesk\Model\ModelInvoicePos',
+        'invoice_pos_delete' => '\Itsmind\Sevdesk\Model\SaveInvoiceInvoicePosDelete',
         'filename' => '\SplFileObject',
-        'discount_save' => '\Itsmind\\Sevdesk\Model\SaveInvoiceDiscountSave',
-        'discount_delete' => '\Itsmind\\Sevdesk\Model\SaveInvoiceDiscountDelete'
+        'discount_save' => '\Itsmind\Sevdesk\Model\SaveInvoiceDiscountSave',
+        'discount_delete' => '\Itsmind\Sevdesk\Model\SaveInvoiceDiscountDelete'
     ];
 
     /**
@@ -330,7 +330,7 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets invoice
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoice
+     * @return \Itsmind\Sevdesk\Model\ModelInvoice
      */
     public function getInvoice()
     {
@@ -340,7 +340,7 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoice
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoice $invoice invoice
+     * @param \Itsmind\Sevdesk\Model\ModelInvoice $invoice invoice
      *
      * @return self
      */
@@ -357,7 +357,7 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets invoice_pos_save
      *
-     * @return \Itsmind\\Sevdesk\Model\ModelInvoicePos|null
+     * @return \Itsmind\Sevdesk\Model\ModelInvoicePos|null
      */
     public function getInvoicePosSave()
     {
@@ -367,7 +367,7 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoice_pos_save
      *
-     * @param \Itsmind\\Sevdesk\Model\ModelInvoicePos|null $invoice_pos_save invoice_pos_save
+     * @param \Itsmind\Sevdesk\Model\ModelInvoicePos|null $invoice_pos_save invoice_pos_save
      *
      * @return self
      */
@@ -384,7 +384,7 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets invoice_pos_delete
      *
-     * @return \Itsmind\\Sevdesk\Model\SaveInvoiceInvoicePosDelete|null
+     * @return \Itsmind\Sevdesk\Model\SaveInvoiceInvoicePosDelete|null
      */
     public function getInvoicePosDelete()
     {
@@ -394,7 +394,7 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoice_pos_delete
      *
-     * @param \Itsmind\\Sevdesk\Model\SaveInvoiceInvoicePosDelete|null $invoice_pos_delete invoice_pos_delete
+     * @param \Itsmind\Sevdesk\Model\SaveInvoiceInvoicePosDelete|null $invoice_pos_delete invoice_pos_delete
      *
      * @return self
      */
@@ -438,7 +438,7 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discount_save
      *
-     * @return \Itsmind\\Sevdesk\Model\SaveInvoiceDiscountSave|null
+     * @return \Itsmind\Sevdesk\Model\SaveInvoiceDiscountSave|null
      */
     public function getDiscountSave()
     {
@@ -448,7 +448,7 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discount_save
      *
-     * @param \Itsmind\\Sevdesk\Model\SaveInvoiceDiscountSave|null $discount_save discount_save
+     * @param \Itsmind\Sevdesk\Model\SaveInvoiceDiscountSave|null $discount_save discount_save
      *
      * @return self
      */
@@ -465,7 +465,7 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discount_delete
      *
-     * @return \Itsmind\\Sevdesk\Model\SaveInvoiceDiscountDelete|null
+     * @return \Itsmind\Sevdesk\Model\SaveInvoiceDiscountDelete|null
      */
     public function getDiscountDelete()
     {
@@ -475,7 +475,7 @@ class SaveInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discount_delete
      *
-     * @param \Itsmind\\Sevdesk\Model\SaveInvoiceDiscountDelete|null $discount_delete discount_delete
+     * @param \Itsmind\Sevdesk\Model\SaveInvoiceDiscountDelete|null $discount_delete discount_delete
      *
      * @return self
      */

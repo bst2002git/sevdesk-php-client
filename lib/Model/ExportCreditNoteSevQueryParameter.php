@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Model;
+namespace Itsmind\Sevdesk\Model;
 
 use \ArrayAccess;
-use \Itsmind\\Sevdesk\ObjectSerializer;
+use \Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * ExportCreditNoteSevQueryParameter Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class ExportCreditNoteSevQueryParameter implements ModelInterface, ArrayAccess, 
         'limit' => 'int',
         'model_name' => 'mixed',
         'object_name' => 'mixed',
-        'filter' => '\Itsmind\\Sevdesk\Model\ExportCreditNoteSevQueryParameterFilter'
+        'filter' => '\Itsmind\Sevdesk\Model\ExportCreditNoteSevQueryParameterFilter'
     ];
 
     /**
@@ -414,7 +414,7 @@ class ExportCreditNoteSevQueryParameter implements ModelInterface, ArrayAccess, 
     /**
      * Gets filter
      *
-     * @return \Itsmind\\Sevdesk\Model\ExportCreditNoteSevQueryParameterFilter|null
+     * @return \Itsmind\Sevdesk\Model\ExportCreditNoteSevQueryParameterFilter|null
      */
     public function getFilter()
     {
@@ -424,7 +424,7 @@ class ExportCreditNoteSevQueryParameter implements ModelInterface, ArrayAccess, 
     /**
      * Sets filter
      *
-     * @param \Itsmind\\Sevdesk\Model\ExportCreditNoteSevQueryParameterFilter|null $filter filter
+     * @param \Itsmind\Sevdesk\Model\ExportCreditNoteSevQueryParameterFilter|null $filter filter
      *
      * @return self
      */

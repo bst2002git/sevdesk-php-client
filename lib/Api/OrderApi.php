@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Itsmind\\Sevdesk\Api;
+namespace Itsmind\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Itsmind\\Sevdesk\ApiException;
-use Itsmind\\Sevdesk\Configuration;
-use Itsmind\\Sevdesk\HeaderSelector;
-use Itsmind\\Sevdesk\ObjectSerializer;
+use Itsmind\Sevdesk\ApiException;
+use Itsmind\Sevdesk\Configuration;
+use Itsmind\Sevdesk\HeaderSelector;
+use Itsmind\Sevdesk\ObjectSerializer;
 
 /**
  * OrderApi Class Doc Comment
  *
  * @category Class
- * @package  Itsmind\\Sevdesk
+ * @package  Itsmind\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -165,12 +165,12 @@ class OrderApi
      *
      * @param  int $order_id the id of the order (required)
      * @param  string $order_object_name Model name, which is &#39;Order&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create contract note (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create contract note (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContractNoteFromOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response
+     * @return \Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response
      */
     public function createContractNoteFromOrder($order_id, $order_object_name, $model_create_packing_list_from_order = null, string $contentType = self::contentTypes['createContractNoteFromOrder'][0])
     {
@@ -185,12 +185,12 @@ class OrderApi
      *
      * @param  int $order_id the id of the order (required)
      * @param  string $order_object_name Model name, which is &#39;Order&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create contract note (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create contract note (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContractNoteFromOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createContractNoteFromOrderWithHttpInfo($order_id, $order_object_name, $model_create_packing_list_from_order = null, string $contentType = self::contentTypes['createContractNoteFromOrder'][0])
     {
@@ -233,11 +233,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -255,13 +255,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -294,7 +294,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response',
+                        '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -311,7 +311,7 @@ class OrderApi
      *
      * @param  int $order_id the id of the order (required)
      * @param  string $order_object_name Model name, which is &#39;Order&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create contract note (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create contract note (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContractNoteFromOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -334,7 +334,7 @@ class OrderApi
      *
      * @param  int $order_id the id of the order (required)
      * @param  string $order_object_name Model name, which is &#39;Order&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create contract note (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create contract note (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContractNoteFromOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -342,7 +342,7 @@ class OrderApi
      */
     public function createContractNoteFromOrderAsyncWithHttpInfo($order_id, $order_object_name, $model_create_packing_list_from_order = null, string $contentType = self::contentTypes['createContractNoteFromOrder'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response';
         $request = $this->createContractNoteFromOrderRequest($order_id, $order_object_name, $model_create_packing_list_from_order, $contentType);
 
         return $this->client
@@ -386,7 +386,7 @@ class OrderApi
      *
      * @param  int $order_id the id of the order (required)
      * @param  string $order_object_name Model name, which is &#39;Order&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create contract note (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create contract note (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContractNoteFromOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -510,12 +510,12 @@ class OrderApi
      *
      * Create a new order
      *
-     * @param  \Itsmind\\Sevdesk\Model\SaveOrder $save_order Creation data. Please be aware, that you need to provide at least all required parameter      of the order model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\SaveOrder $save_order Creation data. Please be aware, that you need to provide at least all required parameter      of the order model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\SaveOrderResponse
+     * @return \Itsmind\Sevdesk\Model\SaveOrderResponse
      */
     public function createOrder($save_order = null, string $contentType = self::contentTypes['createOrder'][0])
     {
@@ -528,12 +528,12 @@ class OrderApi
      *
      * Create a new order
      *
-     * @param  \Itsmind\\Sevdesk\Model\SaveOrder $save_order Creation data. Please be aware, that you need to provide at least all required parameter      of the order model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\SaveOrder $save_order Creation data. Please be aware, that you need to provide at least all required parameter      of the order model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\SaveOrderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\SaveOrderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createOrderWithHttpInfo($save_order = null, string $contentType = self::contentTypes['createOrder'][0])
     {
@@ -576,11 +576,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\Itsmind\\Sevdesk\Model\SaveOrderResponse' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\SaveOrderResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\SaveOrderResponse' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\SaveOrderResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -598,13 +598,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\SaveOrderResponse', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\SaveOrderResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\SaveOrderResponse';
+            $returnType = '\Itsmind\Sevdesk\Model\SaveOrderResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -637,7 +637,7 @@ class OrderApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\SaveOrderResponse',
+                        '\Itsmind\Sevdesk\Model\SaveOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -652,7 +652,7 @@ class OrderApi
      *
      * Create a new order
      *
-     * @param  \Itsmind\\Sevdesk\Model\SaveOrder $save_order Creation data. Please be aware, that you need to provide at least all required parameter      of the order model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\SaveOrder $save_order Creation data. Please be aware, that you need to provide at least all required parameter      of the order model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -673,7 +673,7 @@ class OrderApi
      *
      * Create a new order
      *
-     * @param  \Itsmind\\Sevdesk\Model\SaveOrder $save_order Creation data. Please be aware, that you need to provide at least all required parameter      of the order model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\SaveOrder $save_order Creation data. Please be aware, that you need to provide at least all required parameter      of the order model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -681,7 +681,7 @@ class OrderApi
      */
     public function createOrderAsyncWithHttpInfo($save_order = null, string $contentType = self::contentTypes['createOrder'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\SaveOrderResponse';
+        $returnType = '\Itsmind\Sevdesk\Model\SaveOrderResponse';
         $request = $this->createOrderRequest($save_order, $contentType);
 
         return $this->client
@@ -723,7 +723,7 @@ class OrderApi
     /**
      * Create request for operation 'createOrder'
      *
-     * @param  \Itsmind\\Sevdesk\Model\SaveOrder $save_order Creation data. Please be aware, that you need to provide at least all required parameter      of the order model! (optional)
+     * @param  \Itsmind\Sevdesk\Model\SaveOrder $save_order Creation data. Please be aware, that you need to provide at least all required parameter      of the order model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -817,12 +817,12 @@ class OrderApi
      *
      * @param  int $order_id the id of the order (required)
      * @param  string $order_object_name Model name, which is &#39;Order&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create packing list (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create packing list (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPackingListFromOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response
+     * @return \Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response
      */
     public function createPackingListFromOrder($order_id, $order_object_name, $model_create_packing_list_from_order = null, string $contentType = self::contentTypes['createPackingListFromOrder'][0])
     {
@@ -837,12 +837,12 @@ class OrderApi
      *
      * @param  int $order_id the id of the order (required)
      * @param  string $order_object_name Model name, which is &#39;Order&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create packing list (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create packing list (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPackingListFromOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createPackingListFromOrderWithHttpInfo($order_id, $order_object_name, $model_create_packing_list_from_order = null, string $contentType = self::contentTypes['createPackingListFromOrder'][0])
     {
@@ -885,11 +885,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -907,13 +907,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -946,7 +946,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response',
+                        '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -963,7 +963,7 @@ class OrderApi
      *
      * @param  int $order_id the id of the order (required)
      * @param  string $order_object_name Model name, which is &#39;Order&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create packing list (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create packing list (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPackingListFromOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -986,7 +986,7 @@ class OrderApi
      *
      * @param  int $order_id the id of the order (required)
      * @param  string $order_object_name Model name, which is &#39;Order&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create packing list (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create packing list (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPackingListFromOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -994,7 +994,7 @@ class OrderApi
      */
     public function createPackingListFromOrderAsyncWithHttpInfo($order_id, $order_object_name, $model_create_packing_list_from_order = null, string $contentType = self::contentTypes['createPackingListFromOrder'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response';
         $request = $this->createPackingListFromOrderRequest($order_id, $order_object_name, $model_create_packing_list_from_order, $contentType);
 
         return $this->client
@@ -1038,7 +1038,7 @@ class OrderApi
      *
      * @param  int $order_id the id of the order (required)
      * @param  string $order_object_name Model name, which is &#39;Order&#39; (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create packing list (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelCreatePackingListFromOrder $model_create_packing_list_from_order Create packing list (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPackingListFromOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1165,9 +1165,9 @@ class OrderApi
      * @param  int $order_id Id of order resource to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response
+     * @return \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response
      */
     public function deleteOrder($order_id, string $contentType = self::contentTypes['deleteOrder'][0])
     {
@@ -1183,9 +1183,9 @@ class OrderApi
      * @param  int $order_id Id of order resource to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteOrderWithHttpInfo($order_id, string $contentType = self::contentTypes['deleteOrder'][0])
     {
@@ -1228,11 +1228,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1250,13 +1250,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1289,7 +1289,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response',
+                        '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1333,7 +1333,7 @@ class OrderApi
      */
     public function deleteOrderAsyncWithHttpInfo($order_id, string $contentType = self::contentTypes['deleteOrder'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response';
         $request = $this->deleteOrderRequest($order_id, $contentType);
 
         return $this->client
@@ -1480,9 +1480,9 @@ class OrderApi
      * @param  string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDiscounts'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetDiscounts200Response
+     * @return \Itsmind\Sevdesk\Model\GetDiscounts200Response
      */
     public function getDiscounts($order_id, $limit = null, $offset = null, $embed = null, string $contentType = self::contentTypes['getDiscounts'][0])
     {
@@ -1501,9 +1501,9 @@ class OrderApi
      * @param  string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDiscounts'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetDiscounts200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetDiscounts200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDiscountsWithHttpInfo($order_id, $limit = null, $offset = null, $embed = null, string $contentType = self::contentTypes['getDiscounts'][0])
     {
@@ -1546,11 +1546,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetDiscounts200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetDiscounts200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetDiscounts200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetDiscounts200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1568,13 +1568,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetDiscounts200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetDiscounts200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetDiscounts200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetDiscounts200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1607,7 +1607,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetDiscounts200Response',
+                        '\Itsmind\Sevdesk\Model\GetDiscounts200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1657,7 +1657,7 @@ class OrderApi
      */
     public function getDiscountsAsyncWithHttpInfo($order_id, $limit = null, $offset = null, $embed = null, string $contentType = self::contentTypes['getDiscounts'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetDiscounts200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetDiscounts200Response';
         $request = $this->getDiscountsRequest($order_id, $limit, $offset, $embed, $contentType);
 
         return $this->client
@@ -1834,9 +1834,9 @@ class OrderApi
      * @param  int $order_id ID of order to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response
+     * @return \Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response
      */
     public function getOrderById($order_id, string $contentType = self::contentTypes['getOrderById'][0])
     {
@@ -1852,9 +1852,9 @@ class OrderApi
      * @param  int $order_id ID of order to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderByIdWithHttpInfo($order_id, string $contentType = self::contentTypes['getOrderById'][0])
     {
@@ -1897,11 +1897,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1919,13 +1919,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1958,7 +1958,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response',
+                        '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2002,7 +2002,7 @@ class OrderApi
      */
     public function getOrderByIdAsyncWithHttpInfo($order_id, string $contentType = self::contentTypes['getOrderById'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response';
         $request = $this->getOrderByIdRequest($order_id, $contentType);
 
         return $this->client
@@ -2149,9 +2149,9 @@ class OrderApi
      * @param  string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderPositionsById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetOrderPositions200Response
+     * @return \Itsmind\Sevdesk\Model\GetOrderPositions200Response
      */
     public function getOrderPositionsById($order_id, $limit = null, $offset = null, $embed = null, string $contentType = self::contentTypes['getOrderPositionsById'][0])
     {
@@ -2170,9 +2170,9 @@ class OrderApi
      * @param  string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderPositionsById'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetOrderPositions200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetOrderPositions200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderPositionsByIdWithHttpInfo($order_id, $limit = null, $offset = null, $embed = null, string $contentType = self::contentTypes['getOrderPositionsById'][0])
     {
@@ -2215,11 +2215,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetOrderPositions200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetOrderPositions200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetOrderPositions200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetOrderPositions200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2237,13 +2237,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetOrderPositions200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetOrderPositions200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetOrderPositions200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetOrderPositions200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2276,7 +2276,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetOrderPositions200Response',
+                        '\Itsmind\Sevdesk\Model\GetOrderPositions200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2326,7 +2326,7 @@ class OrderApi
      */
     public function getOrderPositionsByIdAsyncWithHttpInfo($order_id, $limit = null, $offset = null, $embed = null, string $contentType = self::contentTypes['getOrderPositionsById'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetOrderPositions200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetOrderPositions200Response';
         $request = $this->getOrderPositionsByIdRequest($order_id, $limit, $offset, $embed, $contentType);
 
         return $this->client
@@ -2508,9 +2508,9 @@ class OrderApi
      * @param  string $contact_object_name Only required if contact[id] was provided. &#39;Contact&#39; should be used as value. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrders'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response
+     * @return \Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response
      */
     public function getOrders($status = null, $order_number = null, $start_date = null, $end_date = null, $contact_id = null, $contact_object_name = null, string $contentType = self::contentTypes['getOrders'][0])
     {
@@ -2531,9 +2531,9 @@ class OrderApi
      * @param  string $contact_object_name Only required if contact[id] was provided. &#39;Contact&#39; should be used as value. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrders'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrdersWithHttpInfo($status = null, $order_number = null, $start_date = null, $end_date = null, $contact_id = null, $contact_object_name = null, string $contentType = self::contentTypes['getOrders'][0])
     {
@@ -2576,11 +2576,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2598,13 +2598,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2637,7 +2637,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response',
+                        '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2691,7 +2691,7 @@ class OrderApi
      */
     public function getOrdersAsyncWithHttpInfo($status = null, $order_number = null, $start_date = null, $end_date = null, $contact_id = null, $contact_object_name = null, string $contentType = self::contentTypes['getOrders'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response';
         $request = $this->getOrdersRequest($status, $order_number, $start_date, $end_date, $contact_id, $contact_object_name, $contentType);
 
         return $this->client
@@ -2888,9 +2888,9 @@ class OrderApi
      * @param  string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getRelatedObjects'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\GetRelatedObjects200Response
+     * @return \Itsmind\Sevdesk\Model\GetRelatedObjects200Response
      */
     public function getRelatedObjects($order_id, $include_itself = null, $sort_by_type = null, $embed = null, string $contentType = self::contentTypes['getRelatedObjects'][0])
     {
@@ -2909,9 +2909,9 @@ class OrderApi
      * @param  string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getRelatedObjects'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\GetRelatedObjects200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\GetRelatedObjects200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRelatedObjectsWithHttpInfo($order_id, $include_itself = null, $sort_by_type = null, $embed = null, string $contentType = self::contentTypes['getRelatedObjects'][0])
     {
@@ -2954,11 +2954,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\GetRelatedObjects200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\GetRelatedObjects200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\GetRelatedObjects200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\GetRelatedObjects200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2976,13 +2976,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetRelatedObjects200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\GetRelatedObjects200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\GetRelatedObjects200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\GetRelatedObjects200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3015,7 +3015,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\GetRelatedObjects200Response',
+                        '\Itsmind\Sevdesk\Model\GetRelatedObjects200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3065,7 +3065,7 @@ class OrderApi
      */
     public function getRelatedObjectsAsyncWithHttpInfo($order_id, $include_itself = null, $sort_by_type = null, $embed = null, string $contentType = self::contentTypes['getRelatedObjects'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\GetRelatedObjects200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\GetRelatedObjects200Response';
         $request = $this->getRelatedObjectsRequest($order_id, $include_itself, $sort_by_type, $embed, $contentType);
 
         return $this->client
@@ -3244,9 +3244,9 @@ class OrderApi
      * @param  bool $prevent_send_by Defines if u want to send the order. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['orderGetPdf'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response
+     * @return \Itsmind\Sevdesk\Model\InvoiceGetPdf200Response
      */
     public function orderGetPdf($order_id, $download = null, $prevent_send_by = null, string $contentType = self::contentTypes['orderGetPdf'][0])
     {
@@ -3264,9 +3264,9 @@ class OrderApi
      * @param  bool $prevent_send_by Defines if u want to send the order. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['orderGetPdf'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\InvoiceGetPdf200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetPdfWithHttpInfo($order_id, $download = null, $prevent_send_by = null, string $contentType = self::contentTypes['orderGetPdf'][0])
     {
@@ -3309,11 +3309,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3331,13 +3331,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3370,7 +3370,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response',
+                        '\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3418,7 +3418,7 @@ class OrderApi
      */
     public function orderGetPdfAsyncWithHttpInfo($order_id, $download = null, $prevent_send_by = null, string $contentType = self::contentTypes['orderGetPdf'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\InvoiceGetPdf200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\InvoiceGetPdf200Response';
         $request = $this->orderGetPdfRequest($order_id, $download, $prevent_send_by, $contentType);
 
         return $this->client
@@ -3582,12 +3582,12 @@ class OrderApi
      * Mark order as sent
      *
      * @param  int $order_id ID of order to mark as sent (required)
-     * @param  \Itsmind\\Sevdesk\Model\OrderSendByRequest $order_send_by_request Specify the send type (optional)
+     * @param  \Itsmind\Sevdesk\Model\OrderSendByRequest $order_send_by_request Specify the send type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['orderSendBy'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\OrderSendBy200Response
+     * @return \Itsmind\Sevdesk\Model\OrderSendBy200Response
      */
     public function orderSendBy($order_id, $order_send_by_request = null, string $contentType = self::contentTypes['orderSendBy'][0])
     {
@@ -3601,12 +3601,12 @@ class OrderApi
      * Mark order as sent
      *
      * @param  int $order_id ID of order to mark as sent (required)
-     * @param  \Itsmind\\Sevdesk\Model\OrderSendByRequest $order_send_by_request Specify the send type (optional)
+     * @param  \Itsmind\Sevdesk\Model\OrderSendByRequest $order_send_by_request Specify the send type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['orderSendBy'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\OrderSendBy200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\OrderSendBy200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderSendByWithHttpInfo($order_id, $order_send_by_request = null, string $contentType = self::contentTypes['orderSendBy'][0])
     {
@@ -3649,11 +3649,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\OrderSendBy200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\OrderSendBy200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\OrderSendBy200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\OrderSendBy200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3671,13 +3671,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\OrderSendBy200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\OrderSendBy200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\OrderSendBy200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\OrderSendBy200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3710,7 +3710,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\OrderSendBy200Response',
+                        '\Itsmind\Sevdesk\Model\OrderSendBy200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3726,7 +3726,7 @@ class OrderApi
      * Mark order as sent
      *
      * @param  int $order_id ID of order to mark as sent (required)
-     * @param  \Itsmind\\Sevdesk\Model\OrderSendByRequest $order_send_by_request Specify the send type (optional)
+     * @param  \Itsmind\Sevdesk\Model\OrderSendByRequest $order_send_by_request Specify the send type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['orderSendBy'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3748,7 +3748,7 @@ class OrderApi
      * Mark order as sent
      *
      * @param  int $order_id ID of order to mark as sent (required)
-     * @param  \Itsmind\\Sevdesk\Model\OrderSendByRequest $order_send_by_request Specify the send type (optional)
+     * @param  \Itsmind\Sevdesk\Model\OrderSendByRequest $order_send_by_request Specify the send type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['orderSendBy'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3756,7 +3756,7 @@ class OrderApi
      */
     public function orderSendByAsyncWithHttpInfo($order_id, $order_send_by_request = null, string $contentType = self::contentTypes['orderSendBy'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\OrderSendBy200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\OrderSendBy200Response';
         $request = $this->orderSendByRequest($order_id, $order_send_by_request, $contentType);
 
         return $this->client
@@ -3799,7 +3799,7 @@ class OrderApi
      * Create request for operation 'orderSendBy'
      *
      * @param  int $order_id ID of order to mark as sent (required)
-     * @param  \Itsmind\\Sevdesk\Model\OrderSendByRequest $order_send_by_request Specify the send type (optional)
+     * @param  \Itsmind\Sevdesk\Model\OrderSendByRequest $order_send_by_request Specify the send type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['orderSendBy'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3907,12 +3907,12 @@ class OrderApi
      * Send order via email
      *
      * @param  int $order_id ID of order to be sent via email (required)
-     * @param  \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
+     * @param  \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendorderViaEMail'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\SendorderViaEMail201Response
+     * @return \Itsmind\Sevdesk\Model\SendorderViaEMail201Response
      */
     public function sendorderViaEMail($order_id, $send_invoice_via_e_mail_request = null, string $contentType = self::contentTypes['sendorderViaEMail'][0])
     {
@@ -3926,12 +3926,12 @@ class OrderApi
      * Send order via email
      *
      * @param  int $order_id ID of order to be sent via email (required)
-     * @param  \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
+     * @param  \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendorderViaEMail'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\SendorderViaEMail201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\SendorderViaEMail201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendorderViaEMailWithHttpInfo($order_id, $send_invoice_via_e_mail_request = null, string $contentType = self::contentTypes['sendorderViaEMail'][0])
     {
@@ -3974,11 +3974,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\Itsmind\\Sevdesk\Model\SendorderViaEMail201Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\SendorderViaEMail201Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\SendorderViaEMail201Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\SendorderViaEMail201Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3996,13 +3996,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\SendorderViaEMail201Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\SendorderViaEMail201Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\SendorderViaEMail201Response';
+            $returnType = '\Itsmind\Sevdesk\Model\SendorderViaEMail201Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4035,7 +4035,7 @@ class OrderApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\SendorderViaEMail201Response',
+                        '\Itsmind\Sevdesk\Model\SendorderViaEMail201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4051,7 +4051,7 @@ class OrderApi
      * Send order via email
      *
      * @param  int $order_id ID of order to be sent via email (required)
-     * @param  \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
+     * @param  \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendorderViaEMail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4073,7 +4073,7 @@ class OrderApi
      * Send order via email
      *
      * @param  int $order_id ID of order to be sent via email (required)
-     * @param  \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
+     * @param  \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendorderViaEMail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4081,7 +4081,7 @@ class OrderApi
      */
     public function sendorderViaEMailAsyncWithHttpInfo($order_id, $send_invoice_via_e_mail_request = null, string $contentType = self::contentTypes['sendorderViaEMail'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\SendorderViaEMail201Response';
+        $returnType = '\Itsmind\Sevdesk\Model\SendorderViaEMail201Response';
         $request = $this->sendorderViaEMailRequest($order_id, $send_invoice_via_e_mail_request, $contentType);
 
         return $this->client
@@ -4124,7 +4124,7 @@ class OrderApi
      * Create request for operation 'sendorderViaEMail'
      *
      * @param  int $order_id ID of order to be sent via email (required)
-     * @param  \Itsmind\\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
+     * @param  \Itsmind\Sevdesk\Model\SendInvoiceViaEMailRequest $send_invoice_via_e_mail_request Mail data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendorderViaEMail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4232,12 +4232,12 @@ class OrderApi
      * Update an existing order
      *
      * @param  int $order_id ID of order to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelOrderUpdate $model_order_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelOrderUpdate $model_order_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response
+     * @return \Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response
      */
     public function updateOrder($order_id, $model_order_update = null, string $contentType = self::contentTypes['updateOrder'][0])
     {
@@ -4251,12 +4251,12 @@ class OrderApi
      * Update an existing order
      *
      * @param  int $order_id ID of order to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelOrderUpdate $model_order_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelOrderUpdate $model_order_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOrder'] to see the possible values for this operation
      *
-     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateOrderWithHttpInfo($order_id, $model_order_update = null, string $contentType = self::contentTypes['updateOrder'][0])
     {
@@ -4299,11 +4299,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response' === '\SplFileObject') {
+                    if ('\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response' !== 'string') {
+                        if ('\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4321,13 +4321,13 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response';
+            $returnType = '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4360,7 +4360,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response',
+                        '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4376,7 +4376,7 @@ class OrderApi
      * Update an existing order
      *
      * @param  int $order_id ID of order to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelOrderUpdate $model_order_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelOrderUpdate $model_order_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4398,7 +4398,7 @@ class OrderApi
      * Update an existing order
      *
      * @param  int $order_id ID of order to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelOrderUpdate $model_order_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelOrderUpdate $model_order_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4406,7 +4406,7 @@ class OrderApi
      */
     public function updateOrderAsyncWithHttpInfo($order_id, $model_order_update = null, string $contentType = self::contentTypes['updateOrder'][0])
     {
-        $returnType = '\Itsmind\\Sevdesk\Model\CreatePackingListFromOrder200Response';
+        $returnType = '\Itsmind\Sevdesk\Model\CreatePackingListFromOrder200Response';
         $request = $this->updateOrderRequest($order_id, $model_order_update, $contentType);
 
         return $this->client
@@ -4449,7 +4449,7 @@ class OrderApi
      * Create request for operation 'updateOrder'
      *
      * @param  int $order_id ID of order to update (required)
-     * @param  \Itsmind\\Sevdesk\Model\ModelOrderUpdate $model_order_update Update data (optional)
+     * @param  \Itsmind\Sevdesk\Model\ModelOrderUpdate $model_order_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
