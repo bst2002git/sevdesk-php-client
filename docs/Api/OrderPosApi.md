@@ -1,4 +1,4 @@
-# Itsmind\Sevdesk\OrderPosApi
+# OpenAPI\Client\OrderPosApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `deleteOrderPos()`
 
 ```php
-deleteOrderPos($order_pos_id): \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response
+deleteOrderPos($order_pos_id): \OpenAPI\Client\Model\DeleteAccountingContact200Response
 ```
 
 Deletes an order Position
@@ -26,12 +26,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\OrderPosApi(
+$apiInstance = new OpenAPI\Client\Api\OrderPosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response**](../Model/DeleteAccountingContact200Response.md)
+[**\OpenAPI\Client\Model\DeleteAccountingContact200Response**](../Model/DeleteAccountingContact200Response.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ try {
 ## `getOrderPositionById()`
 
 ```php
-getOrderPositionById($order_pos_id): \Itsmind\Sevdesk\Model\GetOrderPositions200Response
+getOrderPositionById($order_pos_id): \OpenAPI\Client\Model\GetOrderPositions200Response
 ```
 
 Find order position by ID
@@ -88,12 +88,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\OrderPosApi(
+$apiInstance = new OpenAPI\Client\Api\OrderPosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetOrderPositions200Response**](../Model/GetOrderPositions200Response.md)
+[**\OpenAPI\Client\Model\GetOrderPositions200Response**](../Model/GetOrderPositions200Response.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ try {
 ## `getOrderPositions()`
 
 ```php
-getOrderPositions($order_id, $order_object_name): \Itsmind\Sevdesk\Model\GetOrderPositions200Response
+getOrderPositions($order_id, $order_object_name): \OpenAPI\Client\Model\GetOrderPositions200Response
 ```
 
 Retrieve order positions
@@ -150,12 +150,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\OrderPosApi(
+$apiInstance = new OpenAPI\Client\Api\OrderPosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -181,7 +181,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetOrderPositions200Response**](../Model/GetOrderPositions200Response.md)
+[**\OpenAPI\Client\Model\GetOrderPositions200Response**](../Model/GetOrderPositions200Response.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ try {
 ## `updateOrderPosition()`
 
 ```php
-updateOrderPosition($order_pos_id, $model_order_pos_update): \Itsmind\Sevdesk\Model\GetOrderPositions200Response
+updateOrderPosition($order_pos_id, $model_order_pos_update): \OpenAPI\Client\Model\GetOrderPositions200Response
 ```
 
 Update an existing order position
@@ -214,19 +214,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\OrderPosApi(
+$apiInstance = new OpenAPI\Client\Api\OrderPosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $order_pos_id = 56; // int | ID of order position to update
-$model_order_pos_update = new \Itsmind\Sevdesk\Model\ModelOrderPosUpdate(); // \Itsmind\Sevdesk\Model\ModelOrderPosUpdate | Update data
+$model_order_pos_update = new \OpenAPI\Client\Model\ModelOrderPosUpdate(); // \OpenAPI\Client\Model\ModelOrderPosUpdate | Update data
 
 try {
     $result = $apiInstance->updateOrderPosition($order_pos_id, $model_order_pos_update);
@@ -241,11 +241,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **order_pos_id** | **int**| ID of order position to update | |
-| **model_order_pos_update** | [**\Itsmind\Sevdesk\Model\ModelOrderPosUpdate**](../Model/ModelOrderPosUpdate.md)| Update data | [optional] |
+| **model_order_pos_update** | [**\OpenAPI\Client\Model\ModelOrderPosUpdate**](../Model/ModelOrderPosUpdate.md)| Update data | [optional] |
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetOrderPositions200Response**](../Model/GetOrderPositions200Response.md)
+[**\OpenAPI\Client\Model\GetOrderPositions200Response**](../Model/GetOrderPositions200Response.md)
 
 ### Authorization
 

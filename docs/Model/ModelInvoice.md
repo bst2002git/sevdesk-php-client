@@ -7,11 +7,11 @@ Name | Type | Description | Notes
 **id** | **int** | The invoice id. &lt;span style&#x3D;&#39;color:red&#39;&gt;Required&lt;/span&gt; if you want to create or update an invoice position for an existing invoice | [optional]
 **object_name** | **string** | The invoice object name. | [optional]
 **invoice_number** | **string** | The invoice number | [optional]
-**contact** | [**\Itsmind\Sevdesk\Model\ModelInvoiceContact**](ModelInvoiceContact.md) |  |
-**contact_person** | [**\Itsmind\Sevdesk\Model\ModelInvoiceUpdateContactPerson**](ModelInvoiceUpdateContactPerson.md) |  |
+**contact** | [**\OpenAPI\Client\Model\ModelInvoiceContact**](ModelInvoiceContact.md) |  |
+**contact_person** | [**\OpenAPI\Client\Model\ModelInvoiceUpdateContactPerson**](ModelInvoiceUpdateContactPerson.md) |  |
 **create** | **\DateTime** | Date of invoice creation | [optional] [readonly]
 **update** | **\DateTime** | Date of last invoice update | [optional] [readonly]
-**sev_client** | [**\Itsmind\Sevdesk\Model\ModelInvoiceUpdateSevClient**](ModelInvoiceUpdateSevClient.md) |  | [optional]
+**sev_client** | [**\OpenAPI\Client\Model\ModelInvoiceUpdateSevClient**](ModelInvoiceUpdateSevClient.md) |  | [optional]
 **invoice_date** | **string** | Needs to be provided as timestamp or dd.mm.yyyy |
 **header** | **string** | Normally consist of prefix plus the invoice number | [optional]
 **head_text** | **string** | Certain html tags can be used here to format your text | [optional]
@@ -19,9 +19,9 @@ Name | Type | Description | Notes
 **time_to_pay** | **int** | The time the customer has to pay the invoice in days | [optional]
 **discount** | **int** | If you want to give a discount, define the percentage here. Otherwise provide zero as value |
 **address** | **string** | Complete address of the recipient including name, street, city, zip and country.       * Line breaks can be used and will be displayed on the invoice pdf. | [optional]
-**address_country** | [**\Itsmind\Sevdesk\Model\ModelInvoiceAddressCountry**](ModelInvoiceAddressCountry.md) |  |
+**address_country** | [**\OpenAPI\Client\Model\ModelInvoiceAddressCountry**](ModelInvoiceAddressCountry.md) |  |
 **pay_date** | **\DateTime** | Needs to be timestamp or dd.mm.yyyy | [optional]
-**create_user** | [**\Itsmind\Sevdesk\Model\ModelCreditNoteCreateUser**](ModelCreditNoteCreateUser.md) |  | [optional]
+**create_user** | [**\OpenAPI\Client\Model\ModelCreditNoteCreateUser**](ModelCreditNoteCreateUser.md) |  | [optional]
 **delivery_date** | **\DateTime** | Timestamp. This can also be a date range if you also use the attribute deliveryDateUntil | [optional]
 **delivery_date_until** | **int** | If the delivery date should be a time range, another timestamp can be provided in this attribute       * to define a range from timestamp used in deliveryDate attribute to the timestamp used here. | [optional]
 **status** | **string** | Please have a look in our       &lt;a href&#x3D;&#39;https://api.sevdesk.de/#section/Types-and-status-of-invoices&#39;&gt;Types and status of invoices&lt;/a&gt;       to see what the different status codes mean |
@@ -29,9 +29,9 @@ Name | Type | Description | Notes
 **tax_rate** | **float** | Is overwritten by invoice position tax rates |
 **tax_text** | **string** | A common tax text would be &#39;Umsatzsteuer 19%&#39; |
 **tax_type** | **string** | Tax type of the invoice. There are four tax types: 1. default - Umsatzsteuer ausweisen 2. eu - Steuerfreie innergemeinschaftliche Lieferung (Europäische Union) 3. noteu - Steuerschuldnerschaft des Leistungsempfängers (außerhalb EU, z. B. Schweiz) 4. custom - Using custom tax set 5. ss - Not subject to VAT according to §19 1 UStG Tax rates are heavily connected to the tax type used. |
-**tax_set** | [**\Itsmind\Sevdesk\Model\ModelInvoiceTaxSet**](ModelInvoiceTaxSet.md) |  | [optional]
+**tax_set** | [**\OpenAPI\Client\Model\ModelInvoiceTaxSet**](ModelInvoiceTaxSet.md) |  | [optional]
 **dunning_level** | **int** | Defines how many reminders have already been sent for the invoice.      Starts with 1 (Payment reminder) and should be incremented by one every time another reminder is sent. | [optional] [readonly]
-**payment_method** | [**\Itsmind\Sevdesk\Model\ModelInvoicePaymentMethod**](ModelInvoicePaymentMethod.md) |  | [optional]
+**payment_method** | [**\OpenAPI\Client\Model\ModelInvoicePaymentMethod**](ModelInvoicePaymentMethod.md) |  | [optional]
 **send_date** | **\DateTime** | The date the invoice was sent to the customer | [optional]
 **invoice_type** | **string** | Type of the invoice. For more information on the different types, check       &lt;a href&#x3D;&#39;https://api.sevdesk.de/#section/Types-and-status-of-invoices&#39;&gt;this&lt;/a&gt; section |
 **account_intervall** | **string** | The interval in which recurring invoices are due as ISO-8601 duration.&lt;br&gt;       Necessary attribute for all recurring invoices. | [optional] [readonly]
@@ -52,7 +52,7 @@ Name | Type | Description | Notes
 **show_net** | **bool** | If true, the net amount of each position will be shown on the invoice. Otherwise gross amount | [optional]
 **enshrined** | **\DateTime** | Defines if and when invoice was enshrined. Enshrined invoices can not be manipulated. | [optional] [readonly]
 **send_type** | **string** | Type which was used to send the invoice. | [optional]
-**origin** | [**\Itsmind\Sevdesk\Model\ModelInvoiceOrigin**](ModelInvoiceOrigin.md) |  | [optional]
+**origin** | [**\OpenAPI\Client\Model\ModelInvoiceOrigin**](ModelInvoiceOrigin.md) |  | [optional]
 **customer_internal_note** | **string** | Internal note of the customer. Contains data entered into field &#39;Referenz/Bestellnummer&#39; | [optional]
 **map_all** | **bool** |  |
 

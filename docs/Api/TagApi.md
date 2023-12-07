@@ -1,4 +1,4 @@
-# Itsmind\Sevdesk\TagApi
+# OpenAPI\Client\TagApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `createTag()`
 
 ```php
-createTag($create_tag_request): \Itsmind\Sevdesk\Model\GetTagRelations200Response
+createTag($create_tag_request): \OpenAPI\Client\Model\GetTagRelations200Response
 ```
 
 Create a new tag
@@ -30,18 +30,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\TagApi(
+$apiInstance = new OpenAPI\Client\Api\TagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_tag_request = new \Itsmind\Sevdesk\Model\CreateTagRequest(); // \Itsmind\Sevdesk\Model\CreateTagRequest
+$create_tag_request = new \OpenAPI\Client\Model\CreateTagRequest(); // \OpenAPI\Client\Model\CreateTagRequest
 
 try {
     $result = $apiInstance->createTag($create_tag_request);
@@ -55,11 +55,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_tag_request** | [**\Itsmind\Sevdesk\Model\CreateTagRequest**](../Model/CreateTagRequest.md)|  | [optional] |
+| **create_tag_request** | [**\OpenAPI\Client\Model\CreateTagRequest**](../Model/CreateTagRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetTagRelations200Response**](../Model/GetTagRelations200Response.md)
+[**\OpenAPI\Client\Model\GetTagRelations200Response**](../Model/GetTagRelations200Response.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ try {
 ## `deleteTag()`
 
 ```php
-deleteTag($tag_id): \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response
+deleteTag($tag_id): \OpenAPI\Client\Model\DeleteAccountingContact200Response
 ```
 
 Deletes a tag
@@ -90,12 +90,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\TagApi(
+$apiInstance = new OpenAPI\Client\Api\TagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response**](../Model/DeleteAccountingContact200Response.md)
+[**\OpenAPI\Client\Model\DeleteAccountingContact200Response**](../Model/DeleteAccountingContact200Response.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ try {
 ## `getTagById()`
 
 ```php
-getTagById($tag_id): \Itsmind\Sevdesk\Model\GetTagById200Response
+getTagById($tag_id): \OpenAPI\Client\Model\GetTagById200Response
 ```
 
 Find tag by ID
@@ -152,12 +152,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\TagApi(
+$apiInstance = new OpenAPI\Client\Api\TagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -181,7 +181,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetTagById200Response**](../Model/GetTagById200Response.md)
+[**\OpenAPI\Client\Model\GetTagById200Response**](../Model/GetTagById200Response.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ try {
 ## `getTagRelations()`
 
 ```php
-getTagRelations(): \Itsmind\Sevdesk\Model\GetTagRelations200Response
+getTagRelations(): \OpenAPI\Client\Model\GetTagRelations200Response
 ```
 
 Retrieve tag relations
@@ -214,12 +214,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\TagApi(
+$apiInstance = new OpenAPI\Client\Api\TagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -240,7 +240,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetTagRelations200Response**](../Model/GetTagRelations200Response.md)
+[**\OpenAPI\Client\Model\GetTagRelations200Response**](../Model/GetTagRelations200Response.md)
 
 ### Authorization
 
@@ -258,7 +258,7 @@ This endpoint does not need any parameter.
 ## `getTags()`
 
 ```php
-getTags($id, $name): \Itsmind\Sevdesk\Model\GetTagById200Response
+getTags($id, $name): \OpenAPI\Client\Model\GetTagById200Response
 ```
 
 Retrieve tags
@@ -273,12 +273,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\TagApi(
+$apiInstance = new OpenAPI\Client\Api\TagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -304,7 +304,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetTagById200Response**](../Model/GetTagById200Response.md)
+[**\OpenAPI\Client\Model\GetTagById200Response**](../Model/GetTagById200Response.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ try {
 ## `updateTag()`
 
 ```php
-updateTag($tag_id, $update_tag_request): \Itsmind\Sevdesk\Model\GetTagById200Response
+updateTag($tag_id, $update_tag_request): \OpenAPI\Client\Model\GetTagById200Response
 ```
 
 Update tag
@@ -337,19 +337,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\TagApi(
+$apiInstance = new OpenAPI\Client\Api\TagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $tag_id = 56; // int | ID of tag you want to update
-$update_tag_request = new \Itsmind\Sevdesk\Model\UpdateTagRequest(); // \Itsmind\Sevdesk\Model\UpdateTagRequest
+$update_tag_request = new \OpenAPI\Client\Model\UpdateTagRequest(); // \OpenAPI\Client\Model\UpdateTagRequest
 
 try {
     $result = $apiInstance->updateTag($tag_id, $update_tag_request);
@@ -364,11 +364,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **tag_id** | **int**| ID of tag you want to update | |
-| **update_tag_request** | [**\Itsmind\Sevdesk\Model\UpdateTagRequest**](../Model/UpdateTagRequest.md)|  | [optional] |
+| **update_tag_request** | [**\OpenAPI\Client\Model\UpdateTagRequest**](../Model/UpdateTagRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetTagById200Response**](../Model/GetTagById200Response.md)
+[**\OpenAPI\Client\Model\GetTagById200Response**](../Model/GetTagById200Response.md)
 
 ### Authorization
 

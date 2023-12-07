@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**objects** | [**\Itsmind\Sevdesk\Model\ModelCommunicationWayResponse[]**](ModelCommunicationWayResponse.md) |  | [optional]
+**objects** | [**\OpenAPI\Client\Model\ModelCommunicationWayResponse[]**](ModelCommunicationWayResponse.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

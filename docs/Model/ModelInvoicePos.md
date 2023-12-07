@@ -9,13 +9,13 @@ Name | Type | Description | Notes
 **map_all** | **bool** |  |
 **create** | **\DateTime** | Date of invoice position creation | [optional] [readonly]
 **update** | **\DateTime** | Date of last invoice position update | [optional] [readonly]
-**invoice** | [**\Itsmind\Sevdesk\Model\ModelInvoicePosInvoice**](ModelInvoicePosInvoice.md) |  | [optional]
-**part** | [**\Itsmind\Sevdesk\Model\ModelInvoicePosPart**](ModelInvoicePosPart.md) |  | [optional]
+**invoice** | [**\OpenAPI\Client\Model\ModelInvoicePosInvoice**](ModelInvoicePosInvoice.md) |  | [optional]
+**part** | [**\OpenAPI\Client\Model\ModelInvoicePosPart**](ModelInvoicePosPart.md) |  | [optional]
 **quantity** | **float** | Quantity of the article/part |
 **price** | **float** | Price of the article/part. Is either gross or net, depending on the sevDesk account setting. | [optional]
 **name** | **string** | Name of the article/part. | [optional]
-**unity** | [**\Itsmind\Sevdesk\Model\ModelInvoicePosUnity**](ModelInvoicePosUnity.md) |  |
-**sev_client** | [**\Itsmind\Sevdesk\Model\ModelInvoicePosSevClient**](ModelInvoicePosSevClient.md) |  | [optional]
+**unity** | [**\OpenAPI\Client\Model\ModelInvoicePosUnity**](ModelInvoicePosUnity.md) |  |
+**sev_client** | [**\OpenAPI\Client\Model\ModelInvoicePosSevClient**](ModelInvoicePosSevClient.md) |  | [optional]
 **position_number** | **int** | Position number of your position. Can be used to order multiple positions. | [optional]
 **text** | **string** | A text describing your position. | [optional]
 **discount** | **float** | An optional discount of the position. | [optional]

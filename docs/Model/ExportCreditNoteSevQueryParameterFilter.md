@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **start_date** | **\DateTime** | Start date of the credit note | [optional]
 **end_date** | **\DateTime** | End date of the credit note | [optional]
-**contact** | [**\Itsmind\Sevdesk\Model\ExportCreditNoteSevQueryParameterFilterContact**](ExportCreditNoteSevQueryParameterFilterContact.md) |  | [optional]
+**contact** | [**\OpenAPI\Client\Model\ExportCreditNoteSevQueryParameterFilterContact**](ExportCreditNoteSevQueryParameterFilterContact.md) |  | [optional]
 **start_amount** | **int** | filters the credit notes by amount | [optional]
 **end_amount** | **int** | filters the credit notes by amount | [optional]
 
