@@ -29,12 +29,14 @@ jobs:
 
     - name: Generate API Client
       run: |
+        #java -jar /usr/local/bin/openapi-generator.jar generate -i schema.yaml -g php -o generated-client
         java -jar /usr/local/bin/openapi-generator.jar generate -i schema.yaml -g php -o .
 
     - name: Commit Generated Code
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
-        git add generated-client
+        #git add generated-client
+        git add --all
         git commit -m "Update generated API client" || true
         git push
