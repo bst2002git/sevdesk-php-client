@@ -6020,6 +6020,8 @@ components:
           enum:
             - 50
             - 100
+            - 150
+            - 750
             - 1000
           example: 50
           nullable: false
