@@ -21,9 +21,10 @@ jobs:
 
     - name: Install OpenAPI Generator
       run: |
-        wget https://github.com/OpenAPITools/openapi-generator-cli/releases/download/v5.3.0/openapi-generator-cli-5.3.0.jar
-        chmod +x openapi-generator-cli-5.3.0.jar
-        mv openapi-generator-cli-5.3.0.jar /usr/local/bin/openapi-generator
+        #wget https://github.com/OpenAPITools/openapi-generator-cli/releases/download/v5.3.0/openapi-generator-cli-5.3.0.jar
+        wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/7.1.0/openapi-generator-cli-7.1.0.jar
+        chmod +x openapi-generator-cli-7.1.0.jar
+        mv openapi-generator-cli-7.1.0.jar /usr/local/bin/openapi-generator
 
     - name: Generate API Client
       run: |
