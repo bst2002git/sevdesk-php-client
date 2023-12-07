@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **object_name** | **string** | Model name, which is &#39;Discounts&#39; | [optional] [readonly]
 **create** | **\DateTime** | Date of discount creation | [optional] [readonly]
 **update** | **\DateTime** | Date of last discount update | [optional] [readonly]
-**object** | [**\Itsmind\Sevdesk\Model\ModelDiscountObject**](ModelDiscountObject.md) |  | [optional]
+**object** | [**\OpenAPI\Client\Model\ModelDiscountObject**](ModelDiscountObject.md) |  | [optional]
 **sev_client** | **string** | Client to which invoice belongs. Will be filled automatically | [optional] [readonly]
 **text** | **string** | A text describing your position. | [optional] [readonly]
 **percentage** | **string** | Defines if this is a percentage or an absolute discount | [optional]

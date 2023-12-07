@@ -1,4 +1,4 @@
-# Itsmind\Sevdesk\LayoutApi
+# OpenAPI\Client\LayoutApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `getLetterpapersWithThumb()`
 
 ```php
-getLetterpapersWithThumb(): \Itsmind\Sevdesk\Model\GetLetterpapersWithThumb200Response
+getLetterpapersWithThumb(): \OpenAPI\Client\Model\GetLetterpapersWithThumb200Response
 ```
 
 Retrieve letterpapers
@@ -29,12 +29,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\LayoutApi(
+$apiInstance = new OpenAPI\Client\Api\LayoutApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetLetterpapersWithThumb200Response**](../Model/GetLetterpapersWithThumb200Response.md)
+[**\OpenAPI\Client\Model\GetLetterpapersWithThumb200Response**](../Model/GetLetterpapersWithThumb200Response.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ This endpoint does not need any parameter.
 ## `getTemplates()`
 
 ```php
-getTemplates($type): \Itsmind\Sevdesk\Model\GetTemplates200Response
+getTemplates($type): \OpenAPI\Client\Model\GetTemplates200Response
 ```
 
 Retrieve templates
@@ -88,12 +88,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\LayoutApi(
+$apiInstance = new OpenAPI\Client\Api\LayoutApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetTemplates200Response**](../Model/GetTemplates200Response.md)
+[**\OpenAPI\Client\Model\GetTemplates200Response**](../Model/GetTemplates200Response.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ try {
 ## `updateCreditNoteTemplate()`
 
 ```php
-updateCreditNoteTemplate($credit_note_id, $model_change_layout): \Itsmind\Sevdesk\Model\UpdateOrderTemplate200Response
+updateCreditNoteTemplate($credit_note_id, $model_change_layout): \OpenAPI\Client\Model\UpdateOrderTemplate200Response
 ```
 
 Update an of credit note template
@@ -150,19 +150,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\LayoutApi(
+$apiInstance = new OpenAPI\Client\Api\LayoutApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $credit_note_id = 56; // int | ID of credit note to update
-$model_change_layout = new \Itsmind\Sevdesk\Model\ModelChangeLayout(); // \Itsmind\Sevdesk\Model\ModelChangeLayout | Change Layout
+$model_change_layout = new \OpenAPI\Client\Model\ModelChangeLayout(); // \OpenAPI\Client\Model\ModelChangeLayout | Change Layout
 
 try {
     $result = $apiInstance->updateCreditNoteTemplate($credit_note_id, $model_change_layout);
@@ -177,11 +177,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **credit_note_id** | **int**| ID of credit note to update | |
-| **model_change_layout** | [**\Itsmind\Sevdesk\Model\ModelChangeLayout**](../Model/ModelChangeLayout.md)| Change Layout | [optional] |
+| **model_change_layout** | [**\OpenAPI\Client\Model\ModelChangeLayout**](../Model/ModelChangeLayout.md)| Change Layout | [optional] |
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\UpdateOrderTemplate200Response**](../Model/UpdateOrderTemplate200Response.md)
+[**\OpenAPI\Client\Model\UpdateOrderTemplate200Response**](../Model/UpdateOrderTemplate200Response.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ try {
 ## `updateInvoiceTemplate()`
 
 ```php
-updateInvoiceTemplate($invoice_id, $model_change_layout): \Itsmind\Sevdesk\Model\UpdateOrderTemplate200Response
+updateInvoiceTemplate($invoice_id, $model_change_layout): \OpenAPI\Client\Model\UpdateOrderTemplate200Response
 ```
 
 Update an invoice template
@@ -214,19 +214,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\LayoutApi(
+$apiInstance = new OpenAPI\Client\Api\LayoutApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $invoice_id = 56; // int | ID of invoice to update
-$model_change_layout = new \Itsmind\Sevdesk\Model\ModelChangeLayout(); // \Itsmind\Sevdesk\Model\ModelChangeLayout | Change Layout
+$model_change_layout = new \OpenAPI\Client\Model\ModelChangeLayout(); // \OpenAPI\Client\Model\ModelChangeLayout | Change Layout
 
 try {
     $result = $apiInstance->updateInvoiceTemplate($invoice_id, $model_change_layout);
@@ -241,11 +241,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **invoice_id** | **int**| ID of invoice to update | |
-| **model_change_layout** | [**\Itsmind\Sevdesk\Model\ModelChangeLayout**](../Model/ModelChangeLayout.md)| Change Layout | [optional] |
+| **model_change_layout** | [**\OpenAPI\Client\Model\ModelChangeLayout**](../Model/ModelChangeLayout.md)| Change Layout | [optional] |
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\UpdateOrderTemplate200Response**](../Model/UpdateOrderTemplate200Response.md)
+[**\OpenAPI\Client\Model\UpdateOrderTemplate200Response**](../Model/UpdateOrderTemplate200Response.md)
 
 ### Authorization
 
@@ -263,7 +263,7 @@ try {
 ## `updateOrderTemplate()`
 
 ```php
-updateOrderTemplate($order_id, $model_change_layout): \Itsmind\Sevdesk\Model\UpdateOrderTemplate200Response
+updateOrderTemplate($order_id, $model_change_layout): \OpenAPI\Client\Model\UpdateOrderTemplate200Response
 ```
 
 Update an order template
@@ -278,19 +278,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\LayoutApi(
+$apiInstance = new OpenAPI\Client\Api\LayoutApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $order_id = 56; // int | ID of order to update
-$model_change_layout = new \Itsmind\Sevdesk\Model\ModelChangeLayout(); // \Itsmind\Sevdesk\Model\ModelChangeLayout | Change Layout
+$model_change_layout = new \OpenAPI\Client\Model\ModelChangeLayout(); // \OpenAPI\Client\Model\ModelChangeLayout | Change Layout
 
 try {
     $result = $apiInstance->updateOrderTemplate($order_id, $model_change_layout);
@@ -305,11 +305,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **order_id** | **int**| ID of order to update | |
-| **model_change_layout** | [**\Itsmind\Sevdesk\Model\ModelChangeLayout**](../Model/ModelChangeLayout.md)| Change Layout | [optional] |
+| **model_change_layout** | [**\OpenAPI\Client\Model\ModelChangeLayout**](../Model/ModelChangeLayout.md)| Change Layout | [optional] |
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\UpdateOrderTemplate200Response**](../Model/UpdateOrderTemplate200Response.md)
+[**\OpenAPI\Client\Model\UpdateOrderTemplate200Response**](../Model/UpdateOrderTemplate200Response.md)
 
 ### Authorization
 

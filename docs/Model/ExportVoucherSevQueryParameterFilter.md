@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **end_date** | **\DateTime** | End date of the voucher | [optional]
 **start_pay_date** | **\DateTime** | Start pay date of the voucher | [optional]
 **end_pay_date** | **\DateTime** | End pay date of the voucher | [optional]
-**contact** | [**\Itsmind\Sevdesk\Model\ExportVoucherSevQueryParameterFilterContact**](ExportVoucherSevQueryParameterFilterContact.md) |  | [optional]
+**contact** | [**\OpenAPI\Client\Model\ExportVoucherSevQueryParameterFilterContact**](ExportVoucherSevQueryParameterFilterContact.md) |  | [optional]
 **start_amount** | **int** | filters the vouchers by amount | [optional]
 **end_amount** | **int** | filters the vouchers by amount | [optional]
 

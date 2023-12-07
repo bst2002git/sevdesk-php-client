@@ -1,4 +1,4 @@
-# Itsmind\Sevdesk\AccountingContactApi
+# OpenAPI\Client\AccountingContactApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `createAccountingContact()`
 
 ```php
-createAccountingContact($model_accounting_contact): \Itsmind\Sevdesk\Model\GetAccountingContactById200Response
+createAccountingContact($model_accounting_contact): \OpenAPI\Client\Model\GetAccountingContactById200Response
 ```
 
 Create a new accounting contact
@@ -29,18 +29,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\AccountingContactApi(
+$apiInstance = new OpenAPI\Client\Api\AccountingContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$model_accounting_contact = new \Itsmind\Sevdesk\Model\ModelAccountingContact(); // \Itsmind\Sevdesk\Model\ModelAccountingContact | Creation data
+$model_accounting_contact = new \OpenAPI\Client\Model\ModelAccountingContact(); // \OpenAPI\Client\Model\ModelAccountingContact | Creation data
 
 try {
     $result = $apiInstance->createAccountingContact($model_accounting_contact);
@@ -54,11 +54,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **model_accounting_contact** | [**\Itsmind\Sevdesk\Model\ModelAccountingContact**](../Model/ModelAccountingContact.md)| Creation data | [optional] |
+| **model_accounting_contact** | [**\OpenAPI\Client\Model\ModelAccountingContact**](../Model/ModelAccountingContact.md)| Creation data | [optional] |
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetAccountingContactById200Response**](../Model/GetAccountingContactById200Response.md)
+[**\OpenAPI\Client\Model\GetAccountingContactById200Response**](../Model/GetAccountingContactById200Response.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ try {
 ## `deleteAccountingContact()`
 
 ```php
-deleteAccountingContact($accounting_contact_id): \Itsmind\Sevdesk\Model\DeleteAccountingContact200Response
+deleteAccountingContact($accounting_contact_id): \OpenAPI\Client\Model\DeleteAccountingContact200Response
 ```
 
 Deletes an accounting contact
@@ -89,12 +89,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\AccountingContactApi(
+$apiInstance = new OpenAPI\Client\Api\AccountingContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\DeleteAccountingContact200Response**](../Model/DeleteAccountingContact200Response.md)
+[**\OpenAPI\Client\Model\DeleteAccountingContact200Response**](../Model/DeleteAccountingContact200Response.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ try {
 ## `getAccountingContact()`
 
 ```php
-getAccountingContact($contact_id, $contact_object_name): \Itsmind\Sevdesk\Model\GetAccountingContactById200Response
+getAccountingContact($contact_id, $contact_object_name): \OpenAPI\Client\Model\GetAccountingContactById200Response
 ```
 
 Retrieve accounting contact
@@ -151,12 +151,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\AccountingContactApi(
+$apiInstance = new OpenAPI\Client\Api\AccountingContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -182,7 +182,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetAccountingContactById200Response**](../Model/GetAccountingContactById200Response.md)
+[**\OpenAPI\Client\Model\GetAccountingContactById200Response**](../Model/GetAccountingContactById200Response.md)
 
 ### Authorization
 
@@ -200,7 +200,7 @@ try {
 ## `getAccountingContactById()`
 
 ```php
-getAccountingContactById($accounting_contact_id): \Itsmind\Sevdesk\Model\GetAccountingContactById200Response
+getAccountingContactById($accounting_contact_id): \OpenAPI\Client\Model\GetAccountingContactById200Response
 ```
 
 Find accounting contact by ID
@@ -215,12 +215,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\AccountingContactApi(
+$apiInstance = new OpenAPI\Client\Api\AccountingContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -244,7 +244,7 @@ try {
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetAccountingContactById200Response**](../Model/GetAccountingContactById200Response.md)
+[**\OpenAPI\Client\Model\GetAccountingContactById200Response**](../Model/GetAccountingContactById200Response.md)
 
 ### Authorization
 
@@ -262,7 +262,7 @@ try {
 ## `updateAccountingContact()`
 
 ```php
-updateAccountingContact($accounting_contact_id, $model_accounting_contact_update): \Itsmind\Sevdesk\Model\GetAccountingContactById200Response
+updateAccountingContact($accounting_contact_id, $model_accounting_contact_update): \OpenAPI\Client\Model\GetAccountingContactById200Response
 ```
 
 Update an existing accounting contact
@@ -277,19 +277,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Itsmind\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Itsmind\Sevdesk\Api\AccountingContactApi(
+$apiInstance = new OpenAPI\Client\Api\AccountingContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $accounting_contact_id = 56; // int | ID of accounting contact to update
-$model_accounting_contact_update = new \Itsmind\Sevdesk\Model\ModelAccountingContactUpdate(); // \Itsmind\Sevdesk\Model\ModelAccountingContactUpdate | Update data
+$model_accounting_contact_update = new \OpenAPI\Client\Model\ModelAccountingContactUpdate(); // \OpenAPI\Client\Model\ModelAccountingContactUpdate | Update data
 
 try {
     $result = $apiInstance->updateAccountingContact($accounting_contact_id, $model_accounting_contact_update);
@@ -304,11 +304,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **accounting_contact_id** | **int**| ID of accounting contact to update | |
-| **model_accounting_contact_update** | [**\Itsmind\Sevdesk\Model\ModelAccountingContactUpdate**](../Model/ModelAccountingContactUpdate.md)| Update data | [optional] |
+| **model_accounting_contact_update** | [**\OpenAPI\Client\Model\ModelAccountingContactUpdate**](../Model/ModelAccountingContactUpdate.md)| Update data | [optional] |
 
 ### Return type
 
-[**\Itsmind\Sevdesk\Model\GetAccountingContactById200Response**](../Model/GetAccountingContactById200Response.md)
+[**\OpenAPI\Client\Model\GetAccountingContactById200Response**](../Model/GetAccountingContactById200Response.md)
 
 ### Authorization
 

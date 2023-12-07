@@ -10,6 +10,6 @@ Name | Type | Description | Notes
 **end_date** | **\DateTime** | End date of the transactions | [optional]
 **start_amount** | **int** | filters the transactions by amount | [optional]
 **end_amount** | **int** | filters the transactions by amount | [optional]
-**check_account** | [**\Itsmind\Sevdesk\Model\ExportTransactionsSevQueryParameterFilterCheckAccount**](ExportTransactionsSevQueryParameterFilterCheckAccount.md) |  | [optional]
+**check_account** | [**\OpenAPI\Client\Model\ExportTransactionsSevQueryParameterFilterCheckAccount**](ExportTransactionsSevQueryParameterFilterCheckAccount.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
