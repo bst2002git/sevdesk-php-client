@@ -30,7 +30,7 @@ jobs:
     - name: Generate API Client
       run: |
         #java -jar /usr/local/bin/openapi-generator.jar generate -i schema.yaml -g php -o generated-client
-        java -jar /usr/local/bin/openapi-generator.jar generate -i schema.yaml -g php -composerPackageName 'Itsmind\\Sevdesk' --invoker-package 'Itsmind\\Sevdesk' -o .
+        java -jar /usr/local/bin/openapi-generator.jar generate -i schema.yaml -g php --additional-properties composerPackageName='itsmind/sevdesk-php-client' --invoker-package 'Itsmind\\Sevdesk'-o .
 
     - name: Commit Generated Code
       run: |
