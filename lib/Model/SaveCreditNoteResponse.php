@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * SaveCreditNoteResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class SaveCreditNoteResponse implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'voucher' => '\OpenAPI\Client\Model\ModelCreditNoteResponse',
-        'voucher_pos' => '\OpenAPI\Client\Model\ModelCreditNotePosResponse',
+        'voucher' => '\Itsmind\\Sevdesk\Model\ModelCreditNoteResponse',
+        'voucher_pos' => '\Itsmind\\Sevdesk\Model\ModelCreditNotePosResponse',
         'filename' => '\SplFileObject'
     ];
 
@@ -306,7 +306,7 @@ class SaveCreditNoteResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets voucher
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNoteResponse|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNoteResponse|null
      */
     public function getVoucher()
     {
@@ -316,7 +316,7 @@ class SaveCreditNoteResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets voucher
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNoteResponse|null $voucher voucher
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNoteResponse|null $voucher voucher
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class SaveCreditNoteResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets voucher_pos
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNotePosResponse|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponse|null
      */
     public function getVoucherPos()
     {
@@ -343,7 +343,7 @@ class SaveCreditNoteResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets voucher_pos
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNotePosResponse|null $voucher_pos voucher_pos
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNotePosResponse|null $voucher_pos voucher_pos
      *
      * @return self
      */

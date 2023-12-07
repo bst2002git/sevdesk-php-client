@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **object_name** | **string** | The check account object name | [optional] [readonly]
 **create** | **\DateTime** | Date of check account creation | [optional] [readonly]
 **update** | **\DateTime** | Date of last check account update | [optional] [readonly]
-**sev_client** | [**\OpenAPI\Client\Model\ModelCheckAccountResponseSevClient**](ModelCheckAccountResponseSevClient.md) |  | [optional]
+**sev_client** | [**\Itsmind\\Sevdesk\Model\ModelCheckAccountResponseSevClient**](ModelCheckAccountResponseSevClient.md) |  | [optional]
 **name** | **string** | Name of the check account | [optional]
 **type** | **string** | The type of the check account. Account with a CSV or MT940 import are regarded as online.&lt;br&gt;       Apart from that, created check accounts over the API need to be offline, as online accounts with an active connection       to a bank application can not be managed over the API. | [optional]
 **import_type** | **string** | Import type. Transactions can be imported by this method on the check account. | [optional]

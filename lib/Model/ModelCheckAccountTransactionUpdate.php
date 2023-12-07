@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelCheckAccountTransactionUpdate Class Doc Comment
  *
  * @category Class
  * @description CheckAccountTransaction model. Responsible for the transactions on payment accounts.
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,11 +63,11 @@ class ModelCheckAccountTransactionUpdate implements ModelInterface, ArrayAccess,
         'paymt_purpose' => 'string',
         'amount' => 'float',
         'payee_payer_name' => 'string',
-        'check_account' => '\OpenAPI\Client\Model\ModelCheckAccountTransactionUpdateCheckAccount',
+        'check_account' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdateCheckAccount',
         'status' => 'int',
         'enshrined' => '\DateTime',
-        'source_transaction' => '\OpenAPI\Client\Model\ModelCheckAccountTransactionSourceTransaction',
-        'target_transaction' => '\OpenAPI\Client\Model\ModelCheckAccountTransactionTargetTransaction'
+        'source_transaction' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionSourceTransaction',
+        'target_transaction' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionTargetTransaction'
     ];
 
     /**
@@ -533,7 +533,7 @@ class ModelCheckAccountTransactionUpdate implements ModelInterface, ArrayAccess,
     /**
      * Gets check_account
      *
-     * @return \OpenAPI\Client\Model\ModelCheckAccountTransactionUpdateCheckAccount|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdateCheckAccount|null
      */
     public function getCheckAccount()
     {
@@ -543,7 +543,7 @@ class ModelCheckAccountTransactionUpdate implements ModelInterface, ArrayAccess,
     /**
      * Sets check_account
      *
-     * @param \OpenAPI\Client\Model\ModelCheckAccountTransactionUpdateCheckAccount|null $check_account check_account
+     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionUpdateCheckAccount|null $check_account check_account
      *
      * @return self
      */
@@ -631,7 +631,7 @@ class ModelCheckAccountTransactionUpdate implements ModelInterface, ArrayAccess,
     /**
      * Gets source_transaction
      *
-     * @return \OpenAPI\Client\Model\ModelCheckAccountTransactionSourceTransaction|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionSourceTransaction|null
      */
     public function getSourceTransaction()
     {
@@ -641,7 +641,7 @@ class ModelCheckAccountTransactionUpdate implements ModelInterface, ArrayAccess,
     /**
      * Sets source_transaction
      *
-     * @param \OpenAPI\Client\Model\ModelCheckAccountTransactionSourceTransaction|null $source_transaction source_transaction
+     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionSourceTransaction|null $source_transaction source_transaction
      *
      * @return self
      */
@@ -665,7 +665,7 @@ class ModelCheckAccountTransactionUpdate implements ModelInterface, ArrayAccess,
     /**
      * Gets target_transaction
      *
-     * @return \OpenAPI\Client\Model\ModelCheckAccountTransactionTargetTransaction|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionTargetTransaction|null
      */
     public function getTargetTransaction()
     {
@@ -675,7 +675,7 @@ class ModelCheckAccountTransactionUpdate implements ModelInterface, ArrayAccess,
     /**
      * Sets target_transaction
      *
-     * @param \OpenAPI\Client\Model\ModelCheckAccountTransactionTargetTransaction|null $target_transaction target_transaction
+     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionTargetTransaction|null $target_transaction target_transaction
      *
      * @return self
      */

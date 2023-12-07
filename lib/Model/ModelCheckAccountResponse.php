@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelCheckAccountResponse Class Doc Comment
  *
  * @category Class
  * @description CheckAccount model. Responsible for the payment accounts.
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class ModelCheckAccountResponse implements ModelInterface, ArrayAccess, \JsonSer
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'sev_client' => '\OpenAPI\Client\Model\ModelCheckAccountResponseSevClient',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountResponseSevClient',
         'name' => 'string',
         'type' => 'string',
         'import_type' => 'string',
@@ -559,7 +559,7 @@ class ModelCheckAccountResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelCheckAccountResponseSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -569,7 +569,7 @@ class ModelCheckAccountResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelCheckAccountResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */

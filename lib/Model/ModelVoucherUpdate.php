@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelVoucherUpdate Class Doc Comment
  *
  * @category Class
  * @description Voucher model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class ModelVoucherUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'voucher_date' => '\DateTime',
-        'supplier' => '\OpenAPI\Client\Model\ModelVoucherUpdateSupplier',
+        'supplier' => '\Itsmind\\Sevdesk\Model\ModelVoucherUpdateSupplier',
         'supplier_name' => 'string',
         'description' => 'string',
         'pay_date' => '\DateTime',
@@ -71,12 +71,12 @@ class ModelVoucherUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
         'currency' => 'string',
         'property_foreign_currency_deadline' => '\DateTime',
         'property_exchange_rate' => 'float',
-        'tax_set' => '\OpenAPI\Client\Model\ModelVoucherUpdateTaxSet',
+        'tax_set' => '\Itsmind\\Sevdesk\Model\ModelVoucherUpdateTaxSet',
         'payment_deadline' => '\DateTime',
         'delivery_date' => '\DateTime',
         'delivery_date_until' => '\DateTime',
-        'document' => '\OpenAPI\Client\Model\ModelVoucherUpdateDocument',
-        'cost_centre' => '\OpenAPI\Client\Model\ModelVoucherUpdateCostCentre'
+        'document' => '\Itsmind\\Sevdesk\Model\ModelVoucherUpdateDocument',
+        'cost_centre' => '\Itsmind\\Sevdesk\Model\ModelVoucherUpdateCostCentre'
     ];
 
     /**
@@ -527,7 +527,7 @@ class ModelVoucherUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets supplier
      *
-     * @return \OpenAPI\Client\Model\ModelVoucherUpdateSupplier|null
+     * @return \Itsmind\\Sevdesk\Model\ModelVoucherUpdateSupplier|null
      */
     public function getSupplier()
     {
@@ -537,7 +537,7 @@ class ModelVoucherUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets supplier
      *
-     * @param \OpenAPI\Client\Model\ModelVoucherUpdateSupplier|null $supplier supplier
+     * @param \Itsmind\\Sevdesk\Model\ModelVoucherUpdateSupplier|null $supplier supplier
      *
      * @return self
      */
@@ -937,7 +937,7 @@ class ModelVoucherUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets tax_set
      *
-     * @return \OpenAPI\Client\Model\ModelVoucherUpdateTaxSet|null
+     * @return \Itsmind\\Sevdesk\Model\ModelVoucherUpdateTaxSet|null
      */
     public function getTaxSet()
     {
@@ -947,7 +947,7 @@ class ModelVoucherUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets tax_set
      *
-     * @param \OpenAPI\Client\Model\ModelVoucherUpdateTaxSet|null $tax_set tax_set
+     * @param \Itsmind\\Sevdesk\Model\ModelVoucherUpdateTaxSet|null $tax_set tax_set
      *
      * @return self
      */
@@ -1066,7 +1066,7 @@ class ModelVoucherUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets document
      *
-     * @return \OpenAPI\Client\Model\ModelVoucherUpdateDocument|null
+     * @return \Itsmind\\Sevdesk\Model\ModelVoucherUpdateDocument|null
      */
     public function getDocument()
     {
@@ -1076,7 +1076,7 @@ class ModelVoucherUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets document
      *
-     * @param \OpenAPI\Client\Model\ModelVoucherUpdateDocument|null $document document
+     * @param \Itsmind\\Sevdesk\Model\ModelVoucherUpdateDocument|null $document document
      *
      * @return self
      */
@@ -1100,7 +1100,7 @@ class ModelVoucherUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets cost_centre
      *
-     * @return \OpenAPI\Client\Model\ModelVoucherUpdateCostCentre|null
+     * @return \Itsmind\\Sevdesk\Model\ModelVoucherUpdateCostCentre|null
      */
     public function getCostCentre()
     {
@@ -1110,7 +1110,7 @@ class ModelVoucherUpdate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets cost_centre
      *
-     * @param \OpenAPI\Client\Model\ModelVoucherUpdateCostCentre|null $cost_centre cost_centre
+     * @param \Itsmind\\Sevdesk\Model\ModelVoucherUpdateCostCentre|null $cost_centre cost_centre
      *
      * @return self
      */

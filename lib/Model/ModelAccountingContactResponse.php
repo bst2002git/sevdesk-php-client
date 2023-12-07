@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelAccountingContactResponse Class Doc Comment
  *
  * @category Class
  * @description Accounting contact model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class ModelAccountingContactResponse implements ModelInterface, ArrayAccess, \Js
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'contact' => '\OpenAPI\Client\Model\ModelAccountingContactResponseContact',
-        'sev_client' => '\OpenAPI\Client\Model\ModelAccountingContactResponseSevClient',
+        'contact' => '\Itsmind\\Sevdesk\Model\ModelAccountingContactResponseContact',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelAccountingContactResponseSevClient',
         'debitor_number' => 'string',
         'creditor_number' => 'string'
     ];
@@ -450,7 +450,7 @@ class ModelAccountingContactResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ModelAccountingContactResponseContact|null
+     * @return \Itsmind\\Sevdesk\Model\ModelAccountingContactResponseContact|null
      */
     public function getContact()
     {
@@ -460,7 +460,7 @@ class ModelAccountingContactResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ModelAccountingContactResponseContact|null $contact contact
+     * @param \Itsmind\\Sevdesk\Model\ModelAccountingContactResponseContact|null $contact contact
      *
      * @return self
      */
@@ -477,7 +477,7 @@ class ModelAccountingContactResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelAccountingContactResponseSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelAccountingContactResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -487,7 +487,7 @@ class ModelAccountingContactResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelAccountingContactResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelAccountingContactResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */

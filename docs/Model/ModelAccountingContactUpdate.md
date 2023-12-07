@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**contact** | [**\OpenAPI\Client\Model\ModelAccountingContactUpdateContact**](ModelAccountingContactUpdateContact.md) |  | [optional]
+**contact** | [**\Itsmind\\Sevdesk\Model\ModelAccountingContactUpdateContact**](ModelAccountingContactUpdateContact.md) |  | [optional]
 **debitor_number** | **int** | Debitor number of the accounting contact. | [optional]
 **creditor_number** | **int** | Creditor number of the accounting contact. | [optional]
 

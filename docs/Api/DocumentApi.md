@@ -1,4 +1,4 @@
-# OpenAPI\Client\DocumentApi
+# Itsmind\\Sevdesk\DocumentApi
 
 All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://my.sevdesk.de/api/v1, except if the operation d
 ## `getDocuments()`
 
 ```php
-getDocuments($contact, $count_all): \OpenAPI\Client\Model\GetDocuments200Response
+getDocuments($contact, $count_all): \Itsmind\\Sevdesk\Model\GetDocuments200Response
 ```
 
 Retrieve documents
@@ -25,18 +25,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Itsmind\\Sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\DocumentApi(
+$apiInstance = new Itsmind\\Sevdesk\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$contact = new \OpenAPI\Client\Model\GetInvoicesContactParameter(); // GetInvoicesContactParameter | Retrieve all documents for this contact. The value of contact[objectName] must be 'Contact'.
+$contact = new \Itsmind\\Sevdesk\Model\GetInvoicesContactParameter(); // GetInvoicesContactParameter | Retrieve all documents for this contact. The value of contact[objectName] must be 'Contact'.
 $count_all = True; // bool | If all contacts should be counted
 
 try {
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetDocuments200Response**](../Model/GetDocuments200Response.md)
+[**\Itsmind\\Sevdesk\Model\GetDocuments200Response**](../Model/GetDocuments200Response.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Itsmind\\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Itsmind\\Sevdesk\ApiException;
+use Itsmind\\Sevdesk\Configuration;
+use Itsmind\\Sevdesk\HeaderSelector;
+use Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * TagApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,12 +142,12 @@ class TagApi
      *
      * Create a new tag
      *
-     * @param  \OpenAPI\Client\Model\CreateTagRequest $create_tag_request create_tag_request (optional)
+     * @param  \Itsmind\\Sevdesk\Model\CreateTagRequest $create_tag_request create_tag_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetTagRelations200Response
+     * @return \Itsmind\\Sevdesk\Model\GetTagRelations200Response
      */
     public function createTag($create_tag_request = null, string $contentType = self::contentTypes['createTag'][0])
     {
@@ -160,12 +160,12 @@ class TagApi
      *
      * Create a new tag
      *
-     * @param  \OpenAPI\Client\Model\CreateTagRequest $create_tag_request (optional)
+     * @param  \Itsmind\\Sevdesk\Model\CreateTagRequest $create_tag_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetTagRelations200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetTagRelations200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTagWithHttpInfo($create_tag_request = null, string $contentType = self::contentTypes['createTag'][0])
     {
@@ -208,11 +208,11 @@ class TagApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetTagRelations200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetTagRelations200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetTagRelations200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetTagRelations200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -230,13 +230,13 @@ class TagApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetTagRelations200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetTagRelations200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetTagRelations200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetTagRelations200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -269,7 +269,7 @@ class TagApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetTagRelations200Response',
+                        '\Itsmind\\Sevdesk\Model\GetTagRelations200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -284,7 +284,7 @@ class TagApi
      *
      * Create a new tag
      *
-     * @param  \OpenAPI\Client\Model\CreateTagRequest $create_tag_request (optional)
+     * @param  \Itsmind\\Sevdesk\Model\CreateTagRequest $create_tag_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -305,7 +305,7 @@ class TagApi
      *
      * Create a new tag
      *
-     * @param  \OpenAPI\Client\Model\CreateTagRequest $create_tag_request (optional)
+     * @param  \Itsmind\\Sevdesk\Model\CreateTagRequest $create_tag_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -313,7 +313,7 @@ class TagApi
      */
     public function createTagAsyncWithHttpInfo($create_tag_request = null, string $contentType = self::contentTypes['createTag'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetTagRelations200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetTagRelations200Response';
         $request = $this->createTagRequest($create_tag_request, $contentType);
 
         return $this->client
@@ -355,7 +355,7 @@ class TagApi
     /**
      * Create request for operation 'createTag'
      *
-     * @param  \OpenAPI\Client\Model\CreateTagRequest $create_tag_request (optional)
+     * @param  \Itsmind\\Sevdesk\Model\CreateTagRequest $create_tag_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -450,9 +450,9 @@ class TagApi
      * @param  int $tag_id Id of tag to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeleteAccountingContact200Response
+     * @return \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response
      */
     public function deleteTag($tag_id, string $contentType = self::contentTypes['deleteTag'][0])
     {
@@ -468,9 +468,9 @@ class TagApi
      * @param  int $tag_id Id of tag to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteTagWithHttpInfo($tag_id, string $contentType = self::contentTypes['deleteTag'][0])
     {
@@ -513,11 +513,11 @@ class TagApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DeleteAccountingContact200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -535,13 +535,13 @@ class TagApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DeleteAccountingContact200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\DeleteAccountingContact200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -574,7 +574,7 @@ class TagApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeleteAccountingContact200Response',
+                        '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -618,7 +618,7 @@ class TagApi
      */
     public function deleteTagAsyncWithHttpInfo($tag_id, string $contentType = self::contentTypes['deleteTag'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeleteAccountingContact200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
         $request = $this->deleteTagRequest($tag_id, $contentType);
 
         return $this->client
@@ -762,9 +762,9 @@ class TagApi
      * @param  int $tag_id ID of tag to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTagById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetTagById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetTagById200Response
      */
     public function getTagById($tag_id, string $contentType = self::contentTypes['getTagById'][0])
     {
@@ -780,9 +780,9 @@ class TagApi
      * @param  int $tag_id ID of tag to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTagById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetTagById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetTagById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTagByIdWithHttpInfo($tag_id, string $contentType = self::contentTypes['getTagById'][0])
     {
@@ -825,11 +825,11 @@ class TagApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetTagById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetTagById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetTagById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetTagById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -847,13 +847,13 @@ class TagApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetTagById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetTagById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetTagById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetTagById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -886,7 +886,7 @@ class TagApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetTagById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetTagById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -930,7 +930,7 @@ class TagApi
      */
     public function getTagByIdAsyncWithHttpInfo($tag_id, string $contentType = self::contentTypes['getTagById'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetTagById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetTagById200Response';
         $request = $this->getTagByIdRequest($tag_id, $contentType);
 
         return $this->client
@@ -1073,9 +1073,9 @@ class TagApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTagRelations'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetTagRelations200Response
+     * @return \Itsmind\\Sevdesk\Model\GetTagRelations200Response
      */
     public function getTagRelations(string $contentType = self::contentTypes['getTagRelations'][0])
     {
@@ -1090,9 +1090,9 @@ class TagApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTagRelations'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetTagRelations200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetTagRelations200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTagRelationsWithHttpInfo(string $contentType = self::contentTypes['getTagRelations'][0])
     {
@@ -1135,11 +1135,11 @@ class TagApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetTagRelations200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetTagRelations200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetTagRelations200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetTagRelations200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1157,13 +1157,13 @@ class TagApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetTagRelations200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetTagRelations200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetTagRelations200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetTagRelations200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1196,7 +1196,7 @@ class TagApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetTagRelations200Response',
+                        '\Itsmind\\Sevdesk\Model\GetTagRelations200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1238,7 +1238,7 @@ class TagApi
      */
     public function getTagRelationsAsyncWithHttpInfo(string $contentType = self::contentTypes['getTagRelations'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetTagRelations200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetTagRelations200Response';
         $request = $this->getTagRelationsRequest($contentType);
 
         return $this->client
@@ -1367,9 +1367,9 @@ class TagApi
      * @param  string $name Name of the Tag (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTags'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetTagById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetTagById200Response
      */
     public function getTags($id = null, $name = null, string $contentType = self::contentTypes['getTags'][0])
     {
@@ -1386,9 +1386,9 @@ class TagApi
      * @param  string $name Name of the Tag (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTags'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetTagById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetTagById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTagsWithHttpInfo($id = null, $name = null, string $contentType = self::contentTypes['getTags'][0])
     {
@@ -1431,11 +1431,11 @@ class TagApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetTagById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetTagById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetTagById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetTagById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1453,13 +1453,13 @@ class TagApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetTagById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetTagById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetTagById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetTagById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1492,7 +1492,7 @@ class TagApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetTagById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetTagById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1538,7 +1538,7 @@ class TagApi
      */
     public function getTagsAsyncWithHttpInfo($id = null, $name = null, string $contentType = self::contentTypes['getTags'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetTagById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetTagById200Response';
         $request = $this->getTagsRequest($id, $name, $contentType);
 
         return $this->client
@@ -1686,12 +1686,12 @@ class TagApi
      * Update tag
      *
      * @param  int $tag_id ID of tag you want to update (required)
-     * @param  \OpenAPI\Client\Model\UpdateTagRequest $update_tag_request update_tag_request (optional)
+     * @param  \Itsmind\\Sevdesk\Model\UpdateTagRequest $update_tag_request update_tag_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetTagById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetTagById200Response
      */
     public function updateTag($tag_id, $update_tag_request = null, string $contentType = self::contentTypes['updateTag'][0])
     {
@@ -1705,12 +1705,12 @@ class TagApi
      * Update tag
      *
      * @param  int $tag_id ID of tag you want to update (required)
-     * @param  \OpenAPI\Client\Model\UpdateTagRequest $update_tag_request (optional)
+     * @param  \Itsmind\\Sevdesk\Model\UpdateTagRequest $update_tag_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetTagById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetTagById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateTagWithHttpInfo($tag_id, $update_tag_request = null, string $contentType = self::contentTypes['updateTag'][0])
     {
@@ -1753,11 +1753,11 @@ class TagApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetTagById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetTagById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetTagById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetTagById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1775,13 +1775,13 @@ class TagApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetTagById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetTagById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetTagById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetTagById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1814,7 +1814,7 @@ class TagApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetTagById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetTagById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1830,7 +1830,7 @@ class TagApi
      * Update tag
      *
      * @param  int $tag_id ID of tag you want to update (required)
-     * @param  \OpenAPI\Client\Model\UpdateTagRequest $update_tag_request (optional)
+     * @param  \Itsmind\\Sevdesk\Model\UpdateTagRequest $update_tag_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1852,7 +1852,7 @@ class TagApi
      * Update tag
      *
      * @param  int $tag_id ID of tag you want to update (required)
-     * @param  \OpenAPI\Client\Model\UpdateTagRequest $update_tag_request (optional)
+     * @param  \Itsmind\\Sevdesk\Model\UpdateTagRequest $update_tag_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1860,7 +1860,7 @@ class TagApi
      */
     public function updateTagAsyncWithHttpInfo($tag_id, $update_tag_request = null, string $contentType = self::contentTypes['updateTag'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetTagById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetTagById200Response';
         $request = $this->updateTagRequest($tag_id, $update_tag_request, $contentType);
 
         return $this->client
@@ -1903,7 +1903,7 @@ class TagApi
      * Create request for operation 'updateTag'
      *
      * @param  int $tag_id ID of tag you want to update (required)
-     * @param  \OpenAPI\Client\Model\UpdateTagRequest $update_tag_request (optional)
+     * @param  \Itsmind\\Sevdesk\Model\UpdateTagRequest $update_tag_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -9,10 +9,10 @@ Name | Type | Description | Notes
 **map_all** | **bool** |  |
 **create** | **\DateTime** | Date of voucher creation | [optional] [readonly]
 **update** | **\DateTime** | Date of last voucher update | [optional] [readonly]
-**sev_client** | [**\OpenAPI\Client\Model\ModelVoucherSevClient**](ModelVoucherSevClient.md) |  | [optional]
-**create_user** | [**\OpenAPI\Client\Model\ModelVoucherCreateUser**](ModelVoucherCreateUser.md) |  | [optional]
+**sev_client** | [**\Itsmind\\Sevdesk\Model\ModelVoucherSevClient**](ModelVoucherSevClient.md) |  | [optional]
+**create_user** | [**\Itsmind\\Sevdesk\Model\ModelVoucherCreateUser**](ModelVoucherCreateUser.md) |  | [optional]
 **voucher_date** | **\DateTime** | Needs to be provided as timestamp or dd.mm.yyyy | [optional]
-**supplier** | [**\OpenAPI\Client\Model\ModelVoucherSupplier**](ModelVoucherSupplier.md) |  | [optional]
+**supplier** | [**\Itsmind\\Sevdesk\Model\ModelVoucherSupplier**](ModelVoucherSupplier.md) |  | [optional]
 **supplier_name** | **string** | The supplier name.&lt;br&gt;       The value you provide here will determine what supplier name is shown for the voucher in case you did not provide a supplier. | [optional]
 **description** | **string** | The description of the voucher. Essentially the voucher number. | [optional]
 **pay_date** | **\DateTime** | Needs to be timestamp or dd.mm.yyyy | [optional]
@@ -38,11 +38,11 @@ Name | Type | Description | Notes
 **recurring_last_voucher** | **\DateTime** | The date when the last voucher was generated. | [optional] [readonly]
 **recurring_end_date** | **\DateTime** | The date when the recurring vouchers end being generated.&lt;br&gt;      Necessary attribute for all recurring vouchers. | [optional] [readonly]
 **enshrined** | **\DateTime** | Defines if and when voucher was enshrined. Enshrined vouchers can not be manipulated. | [optional] [readonly]
-**tax_set** | [**\OpenAPI\Client\Model\ModelVoucherUpdateTaxSet**](ModelVoucherUpdateTaxSet.md) |  | [optional]
+**tax_set** | [**\Itsmind\\Sevdesk\Model\ModelVoucherUpdateTaxSet**](ModelVoucherUpdateTaxSet.md) |  | [optional]
 **payment_deadline** | **\DateTime** | Payment deadline of the voucher. | [optional]
 **delivery_date** | **\DateTime** | Needs to be provided as timestamp or dd.mm.yyyy | [optional]
 **delivery_date_until** | **\DateTime** | Needs to be provided as timestamp or dd.mm.yyyy | [optional]
-**document** | [**\OpenAPI\Client\Model\ModelVoucherUpdateDocument**](ModelVoucherUpdateDocument.md) |  | [optional]
-**cost_centre** | [**\OpenAPI\Client\Model\ModelVoucherUpdateCostCentre**](ModelVoucherUpdateCostCentre.md) |  | [optional]
+**document** | [**\Itsmind\\Sevdesk\Model\ModelVoucherUpdateDocument**](ModelVoucherUpdateDocument.md) |  | [optional]
+**cost_centre** | [**\Itsmind\\Sevdesk\Model\ModelVoucherUpdateCostCentre**](ModelVoucherUpdateCostCentre.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * GetTagRelations200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetTagRelations200Response implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'objects' => '\OpenAPI\Client\Model\ModelTagCreateResponse[]'
+        'objects' => '\Itsmind\\Sevdesk\Model\ModelTagCreateResponse[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetTagRelations200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets objects
      *
-     * @return \OpenAPI\Client\Model\ModelTagCreateResponse[]|null
+     * @return \Itsmind\\Sevdesk\Model\ModelTagCreateResponse[]|null
      */
     public function getObjects()
     {
@@ -302,7 +302,7 @@ class GetTagRelations200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets objects
      *
-     * @param \OpenAPI\Client\Model\ModelTagCreateResponse[]|null $objects objects
+     * @param \Itsmind\\Sevdesk\Model\ModelTagCreateResponse[]|null $objects objects
      *
      * @return self
      */

@@ -11,14 +11,14 @@ Name | Type | Description | Notes
 **name** | **string** | Name of the part |
 **part_number** | **string** | The part number |
 **text** | **string** | A text describing the part | [optional]
-**category** | [**\OpenAPI\Client\Model\ModelPartCategory**](ModelPartCategory.md) |  | [optional]
+**category** | [**\Itsmind\\Sevdesk\Model\ModelPartCategory**](ModelPartCategory.md) |  | [optional]
 **stock** | **float** | The stock of the part |
 **stock_enabled** | **bool** | Defines if the stock should be enabled | [optional]
-**unity** | [**\OpenAPI\Client\Model\ModelPartUnity**](ModelPartUnity.md) |  |
+**unity** | [**\Itsmind\\Sevdesk\Model\ModelPartUnity**](ModelPartUnity.md) |  |
 **price** | **float** | Net price for which the part is sold. we will change this parameter so that the gross price is calculated automatically, until then the priceGross parameter must be used. | [optional]
 **price_net** | **float** | Net price for which the part is sold | [optional]
 **price_gross** | **float** | Gross price for which the part is sold | [optional]
-**sev_client** | [**\OpenAPI\Client\Model\ModelPartSevClient**](ModelPartSevClient.md) |  | [optional]
+**sev_client** | [**\Itsmind\\Sevdesk\Model\ModelPartSevClient**](ModelPartSevClient.md) |  | [optional]
 **price_purchase** | **float** | Purchase price of the part | [optional]
 **tax_rate** | **float** | Tax rate of the part |
 **status** | **int** | Status of the part. 50 &lt;-&gt; Inactive - 100 &lt;-&gt; Active | [optional]

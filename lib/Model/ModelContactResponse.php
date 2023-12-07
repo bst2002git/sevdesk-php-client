@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelContactResponse Class Doc Comment
  *
  * @category Class
  * @description Contact model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,15 +65,15 @@ class ModelContactResponse implements ModelInterface, ArrayAccess, \JsonSerializ
         'name' => 'string',
         'status' => 'string',
         'customer_number' => 'string',
-        'parent' => '\OpenAPI\Client\Model\ModelContactResponseParent',
+        'parent' => '\Itsmind\\Sevdesk\Model\ModelContactResponseParent',
         'surename' => 'string',
         'familyname' => 'string',
         'titel' => 'string',
-        'category' => '\OpenAPI\Client\Model\ModelContactResponseCategory',
+        'category' => '\Itsmind\\Sevdesk\Model\ModelContactResponseCategory',
         'description' => 'string',
         'academic_title' => 'string',
         'gender' => 'string',
-        'sev_client' => '\OpenAPI\Client\Model\ModelContactResponseSevClient',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelContactResponseSevClient',
         'name2' => 'string',
         'birthday' => '\DateTime',
         'vat_number' => 'string',
@@ -86,7 +86,7 @@ class ModelContactResponse implements ModelInterface, ArrayAccess, \JsonSerializ
         'tax_office' => 'string',
         'exempt_vat' => 'string',
         'tax_type' => 'string',
-        'tax_set' => '\OpenAPI\Client\Model\ModelContactResponseTaxSet',
+        'tax_set' => '\Itsmind\\Sevdesk\Model\ModelContactResponseTaxSet',
         'default_discount_amount' => 'float',
         'default_discount_percentage' => 'string',
         'buyer_reference' => 'string',
@@ -743,7 +743,7 @@ class ModelContactResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets parent
      *
-     * @return \OpenAPI\Client\Model\ModelContactResponseParent|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactResponseParent|null
      */
     public function getParent()
     {
@@ -753,7 +753,7 @@ class ModelContactResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets parent
      *
-     * @param \OpenAPI\Client\Model\ModelContactResponseParent|null $parent parent
+     * @param \Itsmind\\Sevdesk\Model\ModelContactResponseParent|null $parent parent
      *
      * @return self
      */
@@ -851,7 +851,7 @@ class ModelContactResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\ModelContactResponseCategory|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactResponseCategory|null
      */
     public function getCategory()
     {
@@ -861,7 +861,7 @@ class ModelContactResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\ModelContactResponseCategory|null $category category
+     * @param \Itsmind\\Sevdesk\Model\ModelContactResponseCategory|null $category category
      *
      * @return self
      */
@@ -959,7 +959,7 @@ class ModelContactResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelContactResponseSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -969,7 +969,7 @@ class ModelContactResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelContactResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelContactResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -1320,7 +1320,7 @@ class ModelContactResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets tax_set
      *
-     * @return \OpenAPI\Client\Model\ModelContactResponseTaxSet|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactResponseTaxSet|null
      */
     public function getTaxSet()
     {
@@ -1330,7 +1330,7 @@ class ModelContactResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets tax_set
      *
-     * @param \OpenAPI\Client\Model\ModelContactResponseTaxSet|null $tax_set tax_set
+     * @param \Itsmind\\Sevdesk\Model\ModelContactResponseTaxSet|null $tax_set tax_set
      *
      * @return self
      */

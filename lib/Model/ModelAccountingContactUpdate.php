@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelAccountingContactUpdate Class Doc Comment
  *
  * @category Class
  * @description Accounting contact model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ModelAccountingContactUpdate implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'contact' => '\OpenAPI\Client\Model\ModelAccountingContactUpdateContact',
+        'contact' => '\Itsmind\\Sevdesk\Model\ModelAccountingContactUpdateContact',
         'debitor_number' => 'int',
         'creditor_number' => 'int'
     ];
@@ -307,7 +307,7 @@ class ModelAccountingContactUpdate implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ModelAccountingContactUpdateContact|null
+     * @return \Itsmind\\Sevdesk\Model\ModelAccountingContactUpdateContact|null
      */
     public function getContact()
     {
@@ -317,7 +317,7 @@ class ModelAccountingContactUpdate implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ModelAccountingContactUpdateContact|null $contact contact
+     * @param \Itsmind\\Sevdesk\Model\ModelAccountingContactUpdateContact|null $contact contact
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * CreateInvoiceReminderRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CreateInvoiceReminderRequest implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'invoice' => '\OpenAPI\Client\Model\CreateInvoiceReminderRequestInvoice'
+        'invoice' => '\Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequestInvoice'
     ];
 
     /**
@@ -295,7 +295,7 @@ class CreateInvoiceReminderRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets invoice
      *
-     * @return \OpenAPI\Client\Model\CreateInvoiceReminderRequestInvoice
+     * @return \Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequestInvoice
      */
     public function getInvoice()
     {
@@ -305,7 +305,7 @@ class CreateInvoiceReminderRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets invoice
      *
-     * @param \OpenAPI\Client\Model\CreateInvoiceReminderRequestInvoice $invoice invoice
+     * @param \Itsmind\\Sevdesk\Model\CreateInvoiceReminderRequestInvoice $invoice invoice
      *
      * @return self
      */

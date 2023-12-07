@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * GetLetterpapersWithThumb200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetLetterpapersWithThumb200Response implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'result' => 'string',
-        'letterpapers' => '\OpenAPI\Client\Model\GetLetterpapersWithThumb200ResponseLetterpapers'
+        'letterpapers' => '\Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200ResponseLetterpapers'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetLetterpapersWithThumb200Response implements ModelInterface, ArrayAccess
     /**
      * Gets letterpapers
      *
-     * @return \OpenAPI\Client\Model\GetLetterpapersWithThumb200ResponseLetterpapers|null
+     * @return \Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200ResponseLetterpapers|null
      */
     public function getLetterpapers()
     {
@@ -336,7 +336,7 @@ class GetLetterpapersWithThumb200Response implements ModelInterface, ArrayAccess
     /**
      * Sets letterpapers
      *
-     * @param \OpenAPI\Client\Model\GetLetterpapersWithThumb200ResponseLetterpapers|null $letterpapers letterpapers
+     * @param \Itsmind\\Sevdesk\Model\GetLetterpapersWithThumb200ResponseLetterpapers|null $letterpapers letterpapers
      *
      * @return self
      */

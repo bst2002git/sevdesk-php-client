@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * UpdateStatusRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class UpdateStatusRequest implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'value' => '\OpenAPI\Client\Model\Status'
+        'value' => '\Itsmind\\Sevdesk\Model\Status'
     ];
 
     /**
@@ -292,7 +292,7 @@ class UpdateStatusRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\Status|null
+     * @return \Itsmind\\Sevdesk\Model\Status|null
      */
     public function getValue()
     {
@@ -302,7 +302,7 @@ class UpdateStatusRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\Status|null $value value
+     * @param \Itsmind\\Sevdesk\Model\Status|null $value value
      *
      * @return self
      */

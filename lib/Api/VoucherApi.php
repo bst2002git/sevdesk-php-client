@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Itsmind\\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Itsmind\\Sevdesk\ApiException;
+use Itsmind\\Sevdesk\Configuration;
+use Itsmind\\Sevdesk\HeaderSelector;
+use Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * VoucherApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -143,12 +143,12 @@ class VoucherApi
      * Book a voucher
      *
      * @param  int $voucher_id ID of voucher to book (required)
-     * @param  \OpenAPI\Client\Model\BookVoucherRequest $book_voucher_request Booking data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\BookVoucherRequest $book_voucher_request Booking data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bookVoucher'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BookVoucher200Response
+     * @return \Itsmind\\Sevdesk\Model\BookVoucher200Response
      */
     public function bookVoucher($voucher_id, $book_voucher_request = null, string $contentType = self::contentTypes['bookVoucher'][0])
     {
@@ -162,12 +162,12 @@ class VoucherApi
      * Book a voucher
      *
      * @param  int $voucher_id ID of voucher to book (required)
-     * @param  \OpenAPI\Client\Model\BookVoucherRequest $book_voucher_request Booking data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\BookVoucherRequest $book_voucher_request Booking data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bookVoucher'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BookVoucher200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\BookVoucher200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function bookVoucherWithHttpInfo($voucher_id, $book_voucher_request = null, string $contentType = self::contentTypes['bookVoucher'][0])
     {
@@ -210,11 +210,11 @@ class VoucherApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BookVoucher200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\BookVoucher200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\BookVoucher200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\BookVoucher200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -232,13 +232,13 @@ class VoucherApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BookVoucher200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\BookVoucher200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\BookVoucher200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\BookVoucher200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -271,7 +271,7 @@ class VoucherApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BookVoucher200Response',
+                        '\Itsmind\\Sevdesk\Model\BookVoucher200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -287,7 +287,7 @@ class VoucherApi
      * Book a voucher
      *
      * @param  int $voucher_id ID of voucher to book (required)
-     * @param  \OpenAPI\Client\Model\BookVoucherRequest $book_voucher_request Booking data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\BookVoucherRequest $book_voucher_request Booking data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bookVoucher'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -309,7 +309,7 @@ class VoucherApi
      * Book a voucher
      *
      * @param  int $voucher_id ID of voucher to book (required)
-     * @param  \OpenAPI\Client\Model\BookVoucherRequest $book_voucher_request Booking data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\BookVoucherRequest $book_voucher_request Booking data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bookVoucher'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -317,7 +317,7 @@ class VoucherApi
      */
     public function bookVoucherAsyncWithHttpInfo($voucher_id, $book_voucher_request = null, string $contentType = self::contentTypes['bookVoucher'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\BookVoucher200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\BookVoucher200Response';
         $request = $this->bookVoucherRequest($voucher_id, $book_voucher_request, $contentType);
 
         return $this->client
@@ -360,7 +360,7 @@ class VoucherApi
      * Create request for operation 'bookVoucher'
      *
      * @param  int $voucher_id ID of voucher to book (required)
-     * @param  \OpenAPI\Client\Model\BookVoucherRequest $book_voucher_request Booking data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\BookVoucherRequest $book_voucher_request Booking data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bookVoucher'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -467,12 +467,12 @@ class VoucherApi
      *
      * Create a new voucher
      *
-     * @param  \OpenAPI\Client\Model\SaveVoucher $save_voucher Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! (optional)
+     * @param  \Itsmind\\Sevdesk\Model\SaveVoucher $save_voucher Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createVoucherByFactory'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateVoucherByFactory201Response
+     * @return \Itsmind\\Sevdesk\Model\CreateVoucherByFactory201Response
      */
     public function createVoucherByFactory($save_voucher = null, string $contentType = self::contentTypes['createVoucherByFactory'][0])
     {
@@ -485,12 +485,12 @@ class VoucherApi
      *
      * Create a new voucher
      *
-     * @param  \OpenAPI\Client\Model\SaveVoucher $save_voucher Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! (optional)
+     * @param  \Itsmind\\Sevdesk\Model\SaveVoucher $save_voucher Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createVoucherByFactory'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateVoucherByFactory201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\CreateVoucherByFactory201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createVoucherByFactoryWithHttpInfo($save_voucher = null, string $contentType = self::contentTypes['createVoucherByFactory'][0])
     {
@@ -533,11 +533,11 @@ class VoucherApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\CreateVoucherByFactory201Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\CreateVoucherByFactory201Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateVoucherByFactory201Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\CreateVoucherByFactory201Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -555,13 +555,13 @@ class VoucherApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateVoucherByFactory201Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\CreateVoucherByFactory201Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateVoucherByFactory201Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\CreateVoucherByFactory201Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -594,7 +594,7 @@ class VoucherApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateVoucherByFactory201Response',
+                        '\Itsmind\\Sevdesk\Model\CreateVoucherByFactory201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -609,7 +609,7 @@ class VoucherApi
      *
      * Create a new voucher
      *
-     * @param  \OpenAPI\Client\Model\SaveVoucher $save_voucher Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! (optional)
+     * @param  \Itsmind\\Sevdesk\Model\SaveVoucher $save_voucher Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createVoucherByFactory'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -630,7 +630,7 @@ class VoucherApi
      *
      * Create a new voucher
      *
-     * @param  \OpenAPI\Client\Model\SaveVoucher $save_voucher Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! (optional)
+     * @param  \Itsmind\\Sevdesk\Model\SaveVoucher $save_voucher Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createVoucherByFactory'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -638,7 +638,7 @@ class VoucherApi
      */
     public function createVoucherByFactoryAsyncWithHttpInfo($save_voucher = null, string $contentType = self::contentTypes['createVoucherByFactory'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateVoucherByFactory201Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\CreateVoucherByFactory201Response';
         $request = $this->createVoucherByFactoryRequest($save_voucher, $contentType);
 
         return $this->client
@@ -680,7 +680,7 @@ class VoucherApi
     /**
      * Create request for operation 'createVoucherByFactory'
      *
-     * @param  \OpenAPI\Client\Model\SaveVoucher $save_voucher Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! (optional)
+     * @param  \Itsmind\\Sevdesk\Model\SaveVoucher $save_voucher Creation data. Please be aware, that you need to provide at least all required parameter      of the voucher and voucher position model! (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createVoucherByFactory'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -775,9 +775,9 @@ class VoucherApi
      * @param  int $voucher_id ID of voucher to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getVoucherById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetVoucherById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetVoucherById200Response
      */
     public function getVoucherById($voucher_id, string $contentType = self::contentTypes['getVoucherById'][0])
     {
@@ -793,9 +793,9 @@ class VoucherApi
      * @param  int $voucher_id ID of voucher to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getVoucherById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetVoucherById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetVoucherById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getVoucherByIdWithHttpInfo($voucher_id, string $contentType = self::contentTypes['getVoucherById'][0])
     {
@@ -838,11 +838,11 @@ class VoucherApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetVoucherById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetVoucherById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetVoucherById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetVoucherById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -860,13 +860,13 @@ class VoucherApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetVoucherById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetVoucherById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetVoucherById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetVoucherById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -899,7 +899,7 @@ class VoucherApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetVoucherById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetVoucherById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -943,7 +943,7 @@ class VoucherApi
      */
     public function getVoucherByIdAsyncWithHttpInfo($voucher_id, string $contentType = self::contentTypes['getVoucherById'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetVoucherById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetVoucherById200Response';
         $request = $this->getVoucherByIdRequest($voucher_id, $contentType);
 
         return $this->client
@@ -1093,9 +1093,9 @@ class VoucherApi
      * @param  string $contact_object_name Only required if contact[id] was provided. &#39;Contact&#39; should be used as value. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getVouchers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetVoucherById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetVoucherById200Response
      */
     public function getVouchers($status = null, $credit_debit = null, $description_like = null, $start_date = null, $end_date = null, $contact_id = null, $contact_object_name = null, string $contentType = self::contentTypes['getVouchers'][0])
     {
@@ -1117,9 +1117,9 @@ class VoucherApi
      * @param  string $contact_object_name Only required if contact[id] was provided. &#39;Contact&#39; should be used as value. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getVouchers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetVoucherById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetVoucherById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getVouchersWithHttpInfo($status = null, $credit_debit = null, $description_like = null, $start_date = null, $end_date = null, $contact_id = null, $contact_object_name = null, string $contentType = self::contentTypes['getVouchers'][0])
     {
@@ -1162,11 +1162,11 @@ class VoucherApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetVoucherById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetVoucherById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetVoucherById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetVoucherById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1184,13 +1184,13 @@ class VoucherApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetVoucherById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetVoucherById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetVoucherById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetVoucherById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1223,7 +1223,7 @@ class VoucherApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetVoucherById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetVoucherById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1279,7 +1279,7 @@ class VoucherApi
      */
     public function getVouchersAsyncWithHttpInfo($status = null, $credit_debit = null, $description_like = null, $start_date = null, $end_date = null, $contact_id = null, $contact_object_name = null, string $contentType = self::contentTypes['getVouchers'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetVoucherById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetVoucherById200Response';
         $request = $this->getVouchersRequest($status, $credit_debit, $description_like, $start_date, $end_date, $contact_id, $contact_object_name, $contentType);
 
         return $this->client
@@ -1482,12 +1482,12 @@ class VoucherApi
      * Update an existing voucher
      *
      * @param  int $voucher_id ID of voucher to update (required)
-     * @param  \OpenAPI\Client\Model\ModelVoucherUpdate $model_voucher_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelVoucherUpdate $model_voucher_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateVoucher'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetVoucherById200Response
+     * @return \Itsmind\\Sevdesk\Model\GetVoucherById200Response
      */
     public function updateVoucher($voucher_id, $model_voucher_update = null, string $contentType = self::contentTypes['updateVoucher'][0])
     {
@@ -1501,12 +1501,12 @@ class VoucherApi
      * Update an existing voucher
      *
      * @param  int $voucher_id ID of voucher to update (required)
-     * @param  \OpenAPI\Client\Model\ModelVoucherUpdate $model_voucher_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelVoucherUpdate $model_voucher_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateVoucher'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetVoucherById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetVoucherById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateVoucherWithHttpInfo($voucher_id, $model_voucher_update = null, string $contentType = self::contentTypes['updateVoucher'][0])
     {
@@ -1549,11 +1549,11 @@ class VoucherApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetVoucherById200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetVoucherById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetVoucherById200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetVoucherById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1571,13 +1571,13 @@ class VoucherApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetVoucherById200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetVoucherById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetVoucherById200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetVoucherById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1610,7 +1610,7 @@ class VoucherApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetVoucherById200Response',
+                        '\Itsmind\\Sevdesk\Model\GetVoucherById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1626,7 +1626,7 @@ class VoucherApi
      * Update an existing voucher
      *
      * @param  int $voucher_id ID of voucher to update (required)
-     * @param  \OpenAPI\Client\Model\ModelVoucherUpdate $model_voucher_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelVoucherUpdate $model_voucher_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateVoucher'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1648,7 +1648,7 @@ class VoucherApi
      * Update an existing voucher
      *
      * @param  int $voucher_id ID of voucher to update (required)
-     * @param  \OpenAPI\Client\Model\ModelVoucherUpdate $model_voucher_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelVoucherUpdate $model_voucher_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateVoucher'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1656,7 +1656,7 @@ class VoucherApi
      */
     public function updateVoucherAsyncWithHttpInfo($voucher_id, $model_voucher_update = null, string $contentType = self::contentTypes['updateVoucher'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetVoucherById200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetVoucherById200Response';
         $request = $this->updateVoucherRequest($voucher_id, $model_voucher_update, $contentType);
 
         return $this->client
@@ -1699,7 +1699,7 @@ class VoucherApi
      * Create request for operation 'updateVoucher'
      *
      * @param  int $voucher_id ID of voucher to update (required)
-     * @param  \OpenAPI\Client\Model\ModelVoucherUpdate $model_voucher_update Update data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelVoucherUpdate $model_voucher_update Update data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateVoucher'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1806,12 +1806,12 @@ class VoucherApi
      *
      * Upload voucher file
      *
-     * @param  \OpenAPI\Client\Model\VoucherUploadFileRequest $voucher_upload_file_request File to upload (optional)
+     * @param  \Itsmind\\Sevdesk\Model\VoucherUploadFileRequest $voucher_upload_file_request File to upload (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['voucherUploadFile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\VoucherUploadFile201Response
+     * @return \Itsmind\\Sevdesk\Model\VoucherUploadFile201Response
      */
     public function voucherUploadFile($voucher_upload_file_request = null, string $contentType = self::contentTypes['voucherUploadFile'][0])
     {
@@ -1824,12 +1824,12 @@ class VoucherApi
      *
      * Upload voucher file
      *
-     * @param  \OpenAPI\Client\Model\VoucherUploadFileRequest $voucher_upload_file_request File to upload (optional)
+     * @param  \Itsmind\\Sevdesk\Model\VoucherUploadFileRequest $voucher_upload_file_request File to upload (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['voucherUploadFile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\VoucherUploadFile201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\VoucherUploadFile201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherUploadFileWithHttpInfo($voucher_upload_file_request = null, string $contentType = self::contentTypes['voucherUploadFile'][0])
     {
@@ -1872,11 +1872,11 @@ class VoucherApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\VoucherUploadFile201Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\VoucherUploadFile201Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\VoucherUploadFile201Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\VoucherUploadFile201Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1894,13 +1894,13 @@ class VoucherApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\VoucherUploadFile201Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\VoucherUploadFile201Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\VoucherUploadFile201Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\VoucherUploadFile201Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1933,7 +1933,7 @@ class VoucherApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\VoucherUploadFile201Response',
+                        '\Itsmind\\Sevdesk\Model\VoucherUploadFile201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1948,7 +1948,7 @@ class VoucherApi
      *
      * Upload voucher file
      *
-     * @param  \OpenAPI\Client\Model\VoucherUploadFileRequest $voucher_upload_file_request File to upload (optional)
+     * @param  \Itsmind\\Sevdesk\Model\VoucherUploadFileRequest $voucher_upload_file_request File to upload (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['voucherUploadFile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1969,7 +1969,7 @@ class VoucherApi
      *
      * Upload voucher file
      *
-     * @param  \OpenAPI\Client\Model\VoucherUploadFileRequest $voucher_upload_file_request File to upload (optional)
+     * @param  \Itsmind\\Sevdesk\Model\VoucherUploadFileRequest $voucher_upload_file_request File to upload (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['voucherUploadFile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1977,7 +1977,7 @@ class VoucherApi
      */
     public function voucherUploadFileAsyncWithHttpInfo($voucher_upload_file_request = null, string $contentType = self::contentTypes['voucherUploadFile'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\VoucherUploadFile201Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\VoucherUploadFile201Response';
         $request = $this->voucherUploadFileRequest($voucher_upload_file_request, $contentType);
 
         return $this->client
@@ -2019,7 +2019,7 @@ class VoucherApi
     /**
      * Create request for operation 'voucherUploadFile'
      *
-     * @param  \OpenAPI\Client\Model\VoucherUploadFileRequest $voucher_upload_file_request File to upload (optional)
+     * @param  \Itsmind\\Sevdesk\Model\VoucherUploadFileRequest $voucher_upload_file_request File to upload (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['voucherUploadFile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

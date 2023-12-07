@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelOrderUpdate Class Doc Comment
  *
  * @category Class
  * @description Order model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,23 +63,23 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
         'create' => '\DateTime',
         'update' => '\DateTime',
         'order_number' => 'string',
-        'contact' => '\OpenAPI\Client\Model\ModelOrderUpdateContact',
+        'contact' => '\Itsmind\\Sevdesk\Model\ModelOrderUpdateContact',
         'order_date' => '\DateTime',
         'status' => 'int',
         'header' => 'string',
         'head_text' => 'string',
         'foot_text' => 'string',
-        'address_country' => '\OpenAPI\Client\Model\ModelOrderUpdateAddressCountry',
-        'create_user' => '\OpenAPI\Client\Model\ModelOrderUpdateCreateUser',
-        'sev_client' => '\OpenAPI\Client\Model\ModelOrderUpdateSevClient',
+        'address_country' => '\Itsmind\\Sevdesk\Model\ModelOrderUpdateAddressCountry',
+        'create_user' => '\Itsmind\\Sevdesk\Model\ModelOrderUpdateCreateUser',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelOrderUpdateSevClient',
         'delivery_terms' => 'string',
         'payment_terms' => 'string',
-        'origin' => '\OpenAPI\Client\Model\ModelOrderOrigin',
+        'origin' => '\Itsmind\\Sevdesk\Model\ModelOrderOrigin',
         'version' => 'int',
         'small_settlement' => 'bool',
-        'contact_person' => '\OpenAPI\Client\Model\ModelOrderUpdateContactPerson',
+        'contact_person' => '\Itsmind\\Sevdesk\Model\ModelOrderUpdateContactPerson',
         'tax_rate' => 'float',
-        'tax_set' => '\OpenAPI\Client\Model\ModelOrderUpdateTaxSet',
+        'tax_set' => '\Itsmind\\Sevdesk\Model\ModelOrderUpdateTaxSet',
         'tax_text' => 'string',
         'tax_type' => 'string',
         'order_type' => 'string',
@@ -780,7 +780,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ModelOrderUpdateContact|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderUpdateContact|null
      */
     public function getContact()
     {
@@ -790,7 +790,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ModelOrderUpdateContact|null $contact contact
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderUpdateContact|null $contact contact
      *
      * @return self
      */
@@ -994,7 +994,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets address_country
      *
-     * @return \OpenAPI\Client\Model\ModelOrderUpdateAddressCountry|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderUpdateAddressCountry|null
      */
     public function getAddressCountry()
     {
@@ -1004,7 +1004,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets address_country
      *
-     * @param \OpenAPI\Client\Model\ModelOrderUpdateAddressCountry|null $address_country address_country
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderUpdateAddressCountry|null $address_country address_country
      *
      * @return self
      */
@@ -1028,7 +1028,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets create_user
      *
-     * @return \OpenAPI\Client\Model\ModelOrderUpdateCreateUser|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderUpdateCreateUser|null
      */
     public function getCreateUser()
     {
@@ -1038,7 +1038,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets create_user
      *
-     * @param \OpenAPI\Client\Model\ModelOrderUpdateCreateUser|null $create_user create_user
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderUpdateCreateUser|null $create_user create_user
      *
      * @return self
      */
@@ -1055,7 +1055,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelOrderUpdateSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderUpdateSevClient|null
      */
     public function getSevClient()
     {
@@ -1065,7 +1065,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelOrderUpdateSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderUpdateSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -1150,7 +1150,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets origin
      *
-     * @return \OpenAPI\Client\Model\ModelOrderOrigin|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderOrigin|null
      */
     public function getOrigin()
     {
@@ -1160,7 +1160,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets origin
      *
-     * @param \OpenAPI\Client\Model\ModelOrderOrigin|null $origin origin
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderOrigin|null $origin origin
      *
      * @return self
      */
@@ -1252,7 +1252,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets contact_person
      *
-     * @return \OpenAPI\Client\Model\ModelOrderUpdateContactPerson|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderUpdateContactPerson|null
      */
     public function getContactPerson()
     {
@@ -1262,7 +1262,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets contact_person
      *
-     * @param \OpenAPI\Client\Model\ModelOrderUpdateContactPerson|null $contact_person contact_person
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderUpdateContactPerson|null $contact_person contact_person
      *
      * @return self
      */
@@ -1313,7 +1313,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tax_set
      *
-     * @return \OpenAPI\Client\Model\ModelOrderUpdateTaxSet|null
+     * @return \Itsmind\\Sevdesk\Model\ModelOrderUpdateTaxSet|null
      */
     public function getTaxSet()
     {
@@ -1323,7 +1323,7 @@ class ModelOrderUpdate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tax_set
      *
-     * @param \OpenAPI\Client\Model\ModelOrderUpdateTaxSet|null $tax_set tax_set
+     * @param \Itsmind\\Sevdesk\Model\ModelOrderUpdateTaxSet|null $tax_set tax_set
      *
      * @return self
      */

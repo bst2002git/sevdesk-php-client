@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * BookInvoiceRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class BookInvoiceRequest implements ModelInterface, ArrayAccess, \JsonSerializab
         'amount' => 'float',
         'date' => 'int',
         'type' => 'string',
-        'check_account' => '\OpenAPI\Client\Model\BookInvoiceRequestCheckAccount',
-        'check_account_transaction' => '\OpenAPI\Client\Model\BookInvoiceRequestCheckAccountTransaction',
+        'check_account' => '\Itsmind\\Sevdesk\Model\BookInvoiceRequestCheckAccount',
+        'check_account_transaction' => '\Itsmind\\Sevdesk\Model\BookInvoiceRequestCheckAccountTransaction',
         'create_feed' => 'bool'
     ];
 
@@ -462,7 +462,7 @@ class BookInvoiceRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets check_account
      *
-     * @return \OpenAPI\Client\Model\BookInvoiceRequestCheckAccount
+     * @return \Itsmind\\Sevdesk\Model\BookInvoiceRequestCheckAccount
      */
     public function getCheckAccount()
     {
@@ -472,7 +472,7 @@ class BookInvoiceRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets check_account
      *
-     * @param \OpenAPI\Client\Model\BookInvoiceRequestCheckAccount $check_account check_account
+     * @param \Itsmind\\Sevdesk\Model\BookInvoiceRequestCheckAccount $check_account check_account
      *
      * @return self
      */
@@ -489,7 +489,7 @@ class BookInvoiceRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets check_account_transaction
      *
-     * @return \OpenAPI\Client\Model\BookInvoiceRequestCheckAccountTransaction|null
+     * @return \Itsmind\\Sevdesk\Model\BookInvoiceRequestCheckAccountTransaction|null
      */
     public function getCheckAccountTransaction()
     {
@@ -499,7 +499,7 @@ class BookInvoiceRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets check_account_transaction
      *
-     * @param \OpenAPI\Client\Model\BookInvoiceRequestCheckAccountTransaction|null $check_account_transaction check_account_transaction
+     * @param \Itsmind\\Sevdesk\Model\BookInvoiceRequestCheckAccountTransaction|null $check_account_transaction check_account_transaction
      *
      * @return self
      */

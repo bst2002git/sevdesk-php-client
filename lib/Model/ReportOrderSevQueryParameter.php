@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ReportOrderSevQueryParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class ReportOrderSevQueryParameter implements ModelInterface, ArrayAccess, \Json
         'limit' => 'int',
         'model_name' => 'mixed',
         'object_name' => 'mixed',
-        'filter' => '\OpenAPI\Client\Model\ReportOrderSevQueryParameterFilter'
+        'filter' => '\Itsmind\\Sevdesk\Model\ReportOrderSevQueryParameterFilter'
     ];
 
     /**
@@ -414,7 +414,7 @@ class ReportOrderSevQueryParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets filter
      *
-     * @return \OpenAPI\Client\Model\ReportOrderSevQueryParameterFilter|null
+     * @return \Itsmind\\Sevdesk\Model\ReportOrderSevQueryParameterFilter|null
      */
     public function getFilter()
     {
@@ -424,7 +424,7 @@ class ReportOrderSevQueryParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets filter
      *
-     * @param \OpenAPI\Client\Model\ReportOrderSevQueryParameterFilter|null $filter filter
+     * @param \Itsmind\\Sevdesk\Model\ReportOrderSevQueryParameterFilter|null $filter filter
      *
      * @return self
      */

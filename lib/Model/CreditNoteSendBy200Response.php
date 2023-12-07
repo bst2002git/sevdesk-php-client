@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * CreditNoteSendBy200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CreditNoteSendBy200Response implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'objects' => '\OpenAPI\Client\Model\ModelCreditNoteResponse[]'
+        'objects' => '\Itsmind\\Sevdesk\Model\ModelCreditNoteResponse[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class CreditNoteSendBy200Response implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets objects
      *
-     * @return \OpenAPI\Client\Model\ModelCreditNoteResponse[]|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCreditNoteResponse[]|null
      */
     public function getObjects()
     {
@@ -302,7 +302,7 @@ class CreditNoteSendBy200Response implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets objects
      *
-     * @param \OpenAPI\Client\Model\ModelCreditNoteResponse[]|null $objects The credit note object which was marked as sent.
+     * @param \Itsmind\\Sevdesk\Model\ModelCreditNoteResponse[]|null $objects The credit note object which was marked as sent.
      *
      * @return self
      */

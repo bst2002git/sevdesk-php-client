@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelContactAddress Class Doc Comment
  *
  * @category Class
  * @description ContactAddress model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,14 +62,14 @@ class ModelContactAddress implements ModelInterface, ArrayAccess, \JsonSerializa
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'contact' => '\OpenAPI\Client\Model\ModelContactAddressContact',
+        'contact' => '\Itsmind\\Sevdesk\Model\ModelContactAddressContact',
         'street' => 'string',
         'zip' => 'string',
         'city' => 'string',
-        'country' => '\OpenAPI\Client\Model\ModelContactAddressCountry',
-        'category' => '\OpenAPI\Client\Model\ModelContactAddressCategory',
+        'country' => '\Itsmind\\Sevdesk\Model\ModelContactAddressCountry',
+        'category' => '\Itsmind\\Sevdesk\Model\ModelContactAddressCategory',
         'name' => 'string',
-        'sev_client' => '\OpenAPI\Client\Model\ModelContactAddressSevClient',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelContactAddressSevClient',
         'name2' => 'string',
         'name3' => 'string',
         'name4' => 'string'
@@ -505,7 +505,7 @@ class ModelContactAddress implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ModelContactAddressContact
+     * @return \Itsmind\\Sevdesk\Model\ModelContactAddressContact
      */
     public function getContact()
     {
@@ -515,7 +515,7 @@ class ModelContactAddress implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ModelContactAddressContact $contact contact
+     * @param \Itsmind\\Sevdesk\Model\ModelContactAddressContact $contact contact
      *
      * @return self
      */
@@ -634,7 +634,7 @@ class ModelContactAddress implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets country
      *
-     * @return \OpenAPI\Client\Model\ModelContactAddressCountry
+     * @return \Itsmind\\Sevdesk\Model\ModelContactAddressCountry
      */
     public function getCountry()
     {
@@ -644,7 +644,7 @@ class ModelContactAddress implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets country
      *
-     * @param \OpenAPI\Client\Model\ModelContactAddressCountry $country country
+     * @param \Itsmind\\Sevdesk\Model\ModelContactAddressCountry $country country
      *
      * @return self
      */
@@ -661,7 +661,7 @@ class ModelContactAddress implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\ModelContactAddressCategory|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactAddressCategory|null
      */
     public function getCategory()
     {
@@ -671,7 +671,7 @@ class ModelContactAddress implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\ModelContactAddressCategory|null $category category
+     * @param \Itsmind\\Sevdesk\Model\ModelContactAddressCategory|null $category category
      *
      * @return self
      */
@@ -729,7 +729,7 @@ class ModelContactAddress implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelContactAddressSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelContactAddressSevClient|null
      */
     public function getSevClient()
     {
@@ -739,7 +739,7 @@ class ModelContactAddress implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelContactAddressSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelContactAddressSevClient|null $sev_client sev_client
      *
      * @return self
      */

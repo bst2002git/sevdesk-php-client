@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelVoucherPosResponse Class Doc Comment
  *
  * @category Class
  * @description Voucher position model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,10 +62,10 @@ class ModelVoucherPosResponse implements ModelInterface, ArrayAccess, \JsonSeria
         'object_name' => 'string',
         'create' => 'string',
         'update' => 'string',
-        'sev_client' => '\OpenAPI\Client\Model\ModelVoucherPosResponseSevClient',
-        'voucher' => '\OpenAPI\Client\Model\ModelVoucherPosResponseVoucher',
-        'accounting_type' => '\OpenAPI\Client\Model\ModelVoucherPosResponseAccountingType',
-        'estimated_accounting_type' => '\OpenAPI\Client\Model\ModelVoucherPosResponseEstimatedAccountingType',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelVoucherPosResponseSevClient',
+        'voucher' => '\Itsmind\\Sevdesk\Model\ModelVoucherPosResponseVoucher',
+        'accounting_type' => '\Itsmind\\Sevdesk\Model\ModelVoucherPosResponseAccountingType',
+        'estimated_accounting_type' => '\Itsmind\\Sevdesk\Model\ModelVoucherPosResponseEstimatedAccountingType',
         'tax_rate' => 'string',
         'net' => 'bool',
         'is_asset' => 'bool',
@@ -538,7 +538,7 @@ class ModelVoucherPosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelVoucherPosResponseSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelVoucherPosResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -548,7 +548,7 @@ class ModelVoucherPosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelVoucherPosResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelVoucherPosResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -565,7 +565,7 @@ class ModelVoucherPosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets voucher
      *
-     * @return \OpenAPI\Client\Model\ModelVoucherPosResponseVoucher
+     * @return \Itsmind\\Sevdesk\Model\ModelVoucherPosResponseVoucher
      */
     public function getVoucher()
     {
@@ -575,7 +575,7 @@ class ModelVoucherPosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets voucher
      *
-     * @param \OpenAPI\Client\Model\ModelVoucherPosResponseVoucher $voucher voucher
+     * @param \Itsmind\\Sevdesk\Model\ModelVoucherPosResponseVoucher $voucher voucher
      *
      * @return self
      */
@@ -592,7 +592,7 @@ class ModelVoucherPosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets accounting_type
      *
-     * @return \OpenAPI\Client\Model\ModelVoucherPosResponseAccountingType
+     * @return \Itsmind\\Sevdesk\Model\ModelVoucherPosResponseAccountingType
      */
     public function getAccountingType()
     {
@@ -602,7 +602,7 @@ class ModelVoucherPosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets accounting_type
      *
-     * @param \OpenAPI\Client\Model\ModelVoucherPosResponseAccountingType $accounting_type accounting_type
+     * @param \Itsmind\\Sevdesk\Model\ModelVoucherPosResponseAccountingType $accounting_type accounting_type
      *
      * @return self
      */
@@ -619,7 +619,7 @@ class ModelVoucherPosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets estimated_accounting_type
      *
-     * @return \OpenAPI\Client\Model\ModelVoucherPosResponseEstimatedAccountingType|null
+     * @return \Itsmind\\Sevdesk\Model\ModelVoucherPosResponseEstimatedAccountingType|null
      */
     public function getEstimatedAccountingType()
     {
@@ -629,7 +629,7 @@ class ModelVoucherPosResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets estimated_accounting_type
      *
-     * @param \OpenAPI\Client\Model\ModelVoucherPosResponseEstimatedAccountingType|null $estimated_accounting_type estimated_accounting_type
+     * @param \Itsmind\\Sevdesk\Model\ModelVoucherPosResponseEstimatedAccountingType|null $estimated_accounting_type estimated_accounting_type
      *
      * @return self
      */

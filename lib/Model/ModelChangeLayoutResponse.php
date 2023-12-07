@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelChangeLayoutResponse Class Doc Comment
  *
  * @category Class
  * @description Layout model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class ModelChangeLayoutResponse implements ModelInterface, ArrayAccess, \JsonSer
       */
     protected static $openAPITypes = [
         'result' => 'string',
-        'metadaten' => '\OpenAPI\Client\Model\ModelChangeLayoutResponseMetadaten'
+        'metadaten' => '\Itsmind\\Sevdesk\Model\ModelChangeLayoutResponseMetadaten'
     ];
 
     /**
@@ -327,7 +327,7 @@ class ModelChangeLayoutResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets metadaten
      *
-     * @return \OpenAPI\Client\Model\ModelChangeLayoutResponseMetadaten|null
+     * @return \Itsmind\\Sevdesk\Model\ModelChangeLayoutResponseMetadaten|null
      */
     public function getMetadaten()
     {
@@ -337,7 +337,7 @@ class ModelChangeLayoutResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets metadaten
      *
-     * @param \OpenAPI\Client\Model\ModelChangeLayoutResponseMetadaten|null $metadaten metadaten
+     * @param \Itsmind\\Sevdesk\Model\ModelChangeLayoutResponseMetadaten|null $metadaten metadaten
      *
      * @return self
      */

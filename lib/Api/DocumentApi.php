@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Itsmind\\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Itsmind\\Sevdesk\ApiException;
+use Itsmind\\Sevdesk\Configuration;
+use Itsmind\\Sevdesk\HeaderSelector;
+use Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * DocumentApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -131,9 +131,9 @@ class DocumentApi
      * @param  bool $count_all If all contacts should be counted (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDocuments'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetDocuments200Response
+     * @return \Itsmind\\Sevdesk\Model\GetDocuments200Response
      */
     public function getDocuments($contact = null, $count_all = null, string $contentType = self::contentTypes['getDocuments'][0])
     {
@@ -150,9 +150,9 @@ class DocumentApi
      * @param  bool $count_all If all contacts should be counted (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDocuments'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetDocuments200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\GetDocuments200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDocumentsWithHttpInfo($contact = null, $count_all = null, string $contentType = self::contentTypes['getDocuments'][0])
     {
@@ -195,11 +195,11 @@ class DocumentApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetDocuments200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\GetDocuments200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDocuments200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\GetDocuments200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -217,13 +217,13 @@ class DocumentApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDocuments200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\GetDocuments200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetDocuments200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\GetDocuments200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -256,7 +256,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDocuments200Response',
+                        '\Itsmind\\Sevdesk\Model\GetDocuments200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -302,7 +302,7 @@ class DocumentApi
      */
     public function getDocumentsAsyncWithHttpInfo($contact = null, $count_all = null, string $contentType = self::contentTypes['getDocuments'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetDocuments200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\GetDocuments200Response';
         $request = $this->getDocumentsRequest($contact, $count_all, $contentType);
 
         return $this->client

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ExportTransactionsSevQueryParameterFilter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class ExportTransactionsSevQueryParameterFilter implements ModelInterface, Array
         'end_date' => '\DateTime',
         'start_amount' => 'int',
         'end_amount' => 'int',
-        'check_account' => '\OpenAPI\Client\Model\ExportTransactionsSevQueryParameterFilterCheckAccount'
+        'check_account' => '\Itsmind\\Sevdesk\Model\ExportTransactionsSevQueryParameterFilterCheckAccount'
     ];
 
     /**
@@ -496,7 +496,7 @@ class ExportTransactionsSevQueryParameterFilter implements ModelInterface, Array
     /**
      * Gets check_account
      *
-     * @return \OpenAPI\Client\Model\ExportTransactionsSevQueryParameterFilterCheckAccount|null
+     * @return \Itsmind\\Sevdesk\Model\ExportTransactionsSevQueryParameterFilterCheckAccount|null
      */
     public function getCheckAccount()
     {
@@ -506,7 +506,7 @@ class ExportTransactionsSevQueryParameterFilter implements ModelInterface, Array
     /**
      * Sets check_account
      *
-     * @param \OpenAPI\Client\Model\ExportTransactionsSevQueryParameterFilterCheckAccount|null $check_account check_account
+     * @param \Itsmind\\Sevdesk\Model\ExportTransactionsSevQueryParameterFilterCheckAccount|null $check_account check_account
      *
      * @return self
      */

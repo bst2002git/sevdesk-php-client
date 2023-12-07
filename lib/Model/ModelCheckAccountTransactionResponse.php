@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelCheckAccountTransactionResponse Class Doc Comment
  *
  * @category Class
  * @description CheckAccountTransaction model. Responsible for the transactions on payment accounts.
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,17 +62,17 @@ class ModelCheckAccountTransactionResponse implements ModelInterface, ArrayAcces
         'object_name' => 'string',
         'create' => '\DateTime',
         'update' => '\DateTime',
-        'sev_client' => '\OpenAPI\Client\Model\ModelCheckAccountTransactionResponseSevClient',
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseSevClient',
         'value_date' => '\DateTime',
         'entry_date' => '\DateTime',
         'paymt_purpose' => 'string',
         'amount' => 'string',
         'payee_payer_name' => 'string',
-        'check_account' => '\OpenAPI\Client\Model\ModelCheckAccountTransactionResponseCheckAccount',
+        'check_account' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseCheckAccount',
         'status' => 'string',
         'enshrined' => '\DateTime',
-        'source_transaction' => '\OpenAPI\Client\Model\ModelCheckAccountTransactionResponseSourceTransaction',
-        'target_transaction' => '\OpenAPI\Client\Model\ModelCheckAccountTransactionResponseTargetTransaction'
+        'source_transaction' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseSourceTransaction',
+        'target_transaction' => '\Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseTargetTransaction'
     ];
 
     /**
@@ -529,7 +529,7 @@ class ModelCheckAccountTransactionResponse implements ModelInterface, ArrayAcces
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelCheckAccountTransactionResponseSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -539,7 +539,7 @@ class ModelCheckAccountTransactionResponse implements ModelInterface, ArrayAcces
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelCheckAccountTransactionResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */
@@ -691,7 +691,7 @@ class ModelCheckAccountTransactionResponse implements ModelInterface, ArrayAcces
     /**
      * Gets check_account
      *
-     * @return \OpenAPI\Client\Model\ModelCheckAccountTransactionResponseCheckAccount|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseCheckAccount|null
      */
     public function getCheckAccount()
     {
@@ -701,7 +701,7 @@ class ModelCheckAccountTransactionResponse implements ModelInterface, ArrayAcces
     /**
      * Sets check_account
      *
-     * @param \OpenAPI\Client\Model\ModelCheckAccountTransactionResponseCheckAccount|null $check_account check_account
+     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseCheckAccount|null $check_account check_account
      *
      * @return self
      */
@@ -782,7 +782,7 @@ class ModelCheckAccountTransactionResponse implements ModelInterface, ArrayAcces
     /**
      * Gets source_transaction
      *
-     * @return \OpenAPI\Client\Model\ModelCheckAccountTransactionResponseSourceTransaction|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseSourceTransaction|null
      */
     public function getSourceTransaction()
     {
@@ -792,7 +792,7 @@ class ModelCheckAccountTransactionResponse implements ModelInterface, ArrayAcces
     /**
      * Sets source_transaction
      *
-     * @param \OpenAPI\Client\Model\ModelCheckAccountTransactionResponseSourceTransaction|null $source_transaction source_transaction
+     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseSourceTransaction|null $source_transaction source_transaction
      *
      * @return self
      */
@@ -809,7 +809,7 @@ class ModelCheckAccountTransactionResponse implements ModelInterface, ArrayAcces
     /**
      * Gets target_transaction
      *
-     * @return \OpenAPI\Client\Model\ModelCheckAccountTransactionResponseTargetTransaction|null
+     * @return \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseTargetTransaction|null
      */
     public function getTargetTransaction()
     {
@@ -819,7 +819,7 @@ class ModelCheckAccountTransactionResponse implements ModelInterface, ArrayAcces
     /**
      * Sets target_transaction
      *
-     * @param \OpenAPI\Client\Model\ModelCheckAccountTransactionResponseTargetTransaction|null $target_transaction target_transaction
+     * @param \Itsmind\\Sevdesk\Model\ModelCheckAccountTransactionResponseTargetTransaction|null $target_transaction target_transaction
      *
      * @return self
      */

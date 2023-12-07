@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Itsmind\\Sevdesk\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ModelTagResponse Class Doc Comment
  *
  * @category Class
  * @description tag model
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class ModelTagResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         'object_name' => 'string',
         'create' => '\DateTime',
         'name' => 'string',
-        'sev_client' => '\OpenAPI\Client\Model\ModelTagCreateResponseSevClient'
+        'sev_client' => '\Itsmind\\Sevdesk\Model\ModelTagCreateResponseSevClient'
     ];
 
     /**
@@ -429,7 +429,7 @@ class ModelTagResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sev_client
      *
-     * @return \OpenAPI\Client\Model\ModelTagCreateResponseSevClient|null
+     * @return \Itsmind\\Sevdesk\Model\ModelTagCreateResponseSevClient|null
      */
     public function getSevClient()
     {
@@ -439,7 +439,7 @@ class ModelTagResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sev_client
      *
-     * @param \OpenAPI\Client\Model\ModelTagCreateResponseSevClient|null $sev_client sev_client
+     * @param \Itsmind\\Sevdesk\Model\ModelTagCreateResponseSevClient|null $sev_client sev_client
      *
      * @return self
      */

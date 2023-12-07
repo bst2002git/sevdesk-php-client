@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Itsmind\\Sevdesk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Itsmind\\Sevdesk\ApiException;
+use Itsmind\\Sevdesk\Configuration;
+use Itsmind\\Sevdesk\HeaderSelector;
+use Itsmind\\Sevdesk\ObjectSerializer;
 
 /**
  * ContactAddressApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Itsmind\\Sevdesk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,9 +142,9 @@ class ContactAddressApi
      * @param  int $contact_address_id ID of contact address to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['contactAddressId'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactAddressId200Response
+     * @return \Itsmind\\Sevdesk\Model\ContactAddressId200Response
      */
     public function contactAddressId($contact_address_id, string $contentType = self::contentTypes['contactAddressId'][0])
     {
@@ -160,9 +160,9 @@ class ContactAddressApi
      * @param  int $contact_address_id ID of contact address to return (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['contactAddressId'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactAddressId200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\ContactAddressId200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function contactAddressIdWithHttpInfo($contact_address_id, string $contentType = self::contentTypes['contactAddressId'][0])
     {
@@ -205,11 +205,11 @@ class ContactAddressApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactAddressId200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\ContactAddressId200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactAddressId200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\ContactAddressId200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -227,13 +227,13 @@ class ContactAddressApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactAddressId200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\ContactAddressId200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactAddressId200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\ContactAddressId200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -266,7 +266,7 @@ class ContactAddressApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactAddressId200Response',
+                        '\Itsmind\\Sevdesk\Model\ContactAddressId200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -310,7 +310,7 @@ class ContactAddressApi
      */
     public function contactAddressIdAsyncWithHttpInfo($contact_address_id, string $contentType = self::contentTypes['contactAddressId'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactAddressId200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\ContactAddressId200Response';
         $request = $this->contactAddressIdRequest($contact_address_id, $contentType);
 
         return $this->client
@@ -451,12 +451,12 @@ class ContactAddressApi
      *
      * Create a new contact address
      *
-     * @param  \OpenAPI\Client\Model\ModelContactAddress $model_contact_address Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelContactAddress $model_contact_address Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactAddressId200Response
+     * @return \Itsmind\\Sevdesk\Model\ContactAddressId200Response
      */
     public function createContactAddress($model_contact_address = null, string $contentType = self::contentTypes['createContactAddress'][0])
     {
@@ -469,12 +469,12 @@ class ContactAddressApi
      *
      * Create a new contact address
      *
-     * @param  \OpenAPI\Client\Model\ModelContactAddress $model_contact_address Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelContactAddress $model_contact_address Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactAddressId200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\ContactAddressId200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createContactAddressWithHttpInfo($model_contact_address = null, string $contentType = self::contentTypes['createContactAddress'][0])
     {
@@ -517,11 +517,11 @@ class ContactAddressApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ContactAddressId200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\ContactAddressId200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactAddressId200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\ContactAddressId200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -539,13 +539,13 @@ class ContactAddressApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactAddressId200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\ContactAddressId200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactAddressId200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\ContactAddressId200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -578,7 +578,7 @@ class ContactAddressApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactAddressId200Response',
+                        '\Itsmind\\Sevdesk\Model\ContactAddressId200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -593,7 +593,7 @@ class ContactAddressApi
      *
      * Create a new contact address
      *
-     * @param  \OpenAPI\Client\Model\ModelContactAddress $model_contact_address Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelContactAddress $model_contact_address Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -614,7 +614,7 @@ class ContactAddressApi
      *
      * Create a new contact address
      *
-     * @param  \OpenAPI\Client\Model\ModelContactAddress $model_contact_address Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelContactAddress $model_contact_address Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -622,7 +622,7 @@ class ContactAddressApi
      */
     public function createContactAddressAsyncWithHttpInfo($model_contact_address = null, string $contentType = self::contentTypes['createContactAddress'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactAddressId200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\ContactAddressId200Response';
         $request = $this->createContactAddressRequest($model_contact_address, $contentType);
 
         return $this->client
@@ -664,7 +664,7 @@ class ContactAddressApi
     /**
      * Create request for operation 'createContactAddress'
      *
-     * @param  \OpenAPI\Client\Model\ModelContactAddress $model_contact_address Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelContactAddress $model_contact_address Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -759,9 +759,9 @@ class ContactAddressApi
      * @param  int $contact_address_id Id of contact address resource to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteContactAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeleteAccountingContact200Response
+     * @return \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response
      */
     public function deleteContactAddress($contact_address_id, string $contentType = self::contentTypes['deleteContactAddress'][0])
     {
@@ -777,9 +777,9 @@ class ContactAddressApi
      * @param  int $contact_address_id Id of contact address resource to delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteContactAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteContactAddressWithHttpInfo($contact_address_id, string $contentType = self::contentTypes['deleteContactAddress'][0])
     {
@@ -822,11 +822,11 @@ class ContactAddressApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DeleteAccountingContact200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -844,13 +844,13 @@ class ContactAddressApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DeleteAccountingContact200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\DeleteAccountingContact200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -883,7 +883,7 @@ class ContactAddressApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeleteAccountingContact200Response',
+                        '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -927,7 +927,7 @@ class ContactAddressApi
      */
     public function deleteContactAddressAsyncWithHttpInfo($contact_address_id, string $contentType = self::contentTypes['deleteContactAddress'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeleteAccountingContact200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\DeleteAccountingContact200Response';
         $request = $this->deleteContactAddressRequest($contact_address_id, $contentType);
 
         return $this->client
@@ -1070,9 +1070,9 @@ class ContactAddressApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactAddresses'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactAddressId200Response
+     * @return \Itsmind\\Sevdesk\Model\ContactAddressId200Response
      */
     public function getContactAddresses(string $contentType = self::contentTypes['getContactAddresses'][0])
     {
@@ -1087,9 +1087,9 @@ class ContactAddressApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactAddresses'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactAddressId200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\ContactAddressId200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactAddressesWithHttpInfo(string $contentType = self::contentTypes['getContactAddresses'][0])
     {
@@ -1132,11 +1132,11 @@ class ContactAddressApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactAddressId200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\ContactAddressId200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactAddressId200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\ContactAddressId200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1154,13 +1154,13 @@ class ContactAddressApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactAddressId200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\ContactAddressId200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactAddressId200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\ContactAddressId200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1193,7 +1193,7 @@ class ContactAddressApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactAddressId200Response',
+                        '\Itsmind\\Sevdesk\Model\ContactAddressId200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1235,7 +1235,7 @@ class ContactAddressApi
      */
     public function getContactAddressesAsyncWithHttpInfo(string $contentType = self::contentTypes['getContactAddresses'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactAddressId200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\ContactAddressId200Response';
         $request = $this->getContactAddressesRequest($contentType);
 
         return $this->client
@@ -1361,12 +1361,12 @@ class ContactAddressApi
      * update a existing contact address
      *
      * @param  int $contact_address_id ID of contact address to return (required)
-     * @param  \OpenAPI\Client\Model\ModelContactAddressUpdate $model_contact_address_update Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelContactAddressUpdate $model_contact_address_update Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactAddressId200Response
+     * @return \Itsmind\\Sevdesk\Model\ContactAddressId200Response
      */
     public function updateContactAddress($contact_address_id, $model_contact_address_update = null, string $contentType = self::contentTypes['updateContactAddress'][0])
     {
@@ -1380,12 +1380,12 @@ class ContactAddressApi
      * update a existing contact address
      *
      * @param  int $contact_address_id ID of contact address to return (required)
-     * @param  \OpenAPI\Client\Model\ModelContactAddressUpdate $model_contact_address_update Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelContactAddressUpdate $model_contact_address_update Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Itsmind\\Sevdesk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactAddressId200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Itsmind\\Sevdesk\Model\ContactAddressId200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateContactAddressWithHttpInfo($contact_address_id, $model_contact_address_update = null, string $contentType = self::contentTypes['updateContactAddress'][0])
     {
@@ -1428,11 +1428,11 @@ class ContactAddressApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ContactAddressId200Response' === '\SplFileObject') {
+                    if ('\Itsmind\\Sevdesk\Model\ContactAddressId200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactAddressId200Response' !== 'string') {
+                        if ('\Itsmind\\Sevdesk\Model\ContactAddressId200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1450,13 +1450,13 @@ class ContactAddressApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactAddressId200Response', []),
+                        ObjectSerializer::deserialize($content, '\Itsmind\\Sevdesk\Model\ContactAddressId200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactAddressId200Response';
+            $returnType = '\Itsmind\\Sevdesk\Model\ContactAddressId200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1489,7 +1489,7 @@ class ContactAddressApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactAddressId200Response',
+                        '\Itsmind\\Sevdesk\Model\ContactAddressId200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1505,7 +1505,7 @@ class ContactAddressApi
      * update a existing contact address
      *
      * @param  int $contact_address_id ID of contact address to return (required)
-     * @param  \OpenAPI\Client\Model\ModelContactAddressUpdate $model_contact_address_update Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelContactAddressUpdate $model_contact_address_update Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1527,7 +1527,7 @@ class ContactAddressApi
      * update a existing contact address
      *
      * @param  int $contact_address_id ID of contact address to return (required)
-     * @param  \OpenAPI\Client\Model\ModelContactAddressUpdate $model_contact_address_update Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelContactAddressUpdate $model_contact_address_update Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1535,7 +1535,7 @@ class ContactAddressApi
      */
     public function updateContactAddressAsyncWithHttpInfo($contact_address_id, $model_contact_address_update = null, string $contentType = self::contentTypes['updateContactAddress'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactAddressId200Response';
+        $returnType = '\Itsmind\\Sevdesk\Model\ContactAddressId200Response';
         $request = $this->updateContactAddressRequest($contact_address_id, $model_contact_address_update, $contentType);
 
         return $this->client
@@ -1578,7 +1578,7 @@ class ContactAddressApi
      * Create request for operation 'updateContactAddress'
      *
      * @param  int $contact_address_id ID of contact address to return (required)
-     * @param  \OpenAPI\Client\Model\ModelContactAddressUpdate $model_contact_address_update Creation data (optional)
+     * @param  \Itsmind\\Sevdesk\Model\ModelContactAddressUpdate $model_contact_address_update Creation data (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
