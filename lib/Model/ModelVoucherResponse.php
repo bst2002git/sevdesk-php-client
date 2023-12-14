@@ -465,6 +465,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
 
     public const STATUS__50 = '50';
     public const STATUS__100 = '100';
+    public const STATUS__750 = '750';
     public const STATUS__1000 = '1000';
     public const CREDIT_DEBIT_C = 'C';
     public const CREDIT_DEBIT_D = 'D';
@@ -491,6 +492,7 @@ class ModelVoucherResponse implements ModelInterface, ArrayAccess, \JsonSerializ
         return [
             self::STATUS__50,
             self::STATUS__100,
+            self::STATUS__750,
             self::STATUS__1000,
         ];
     }
